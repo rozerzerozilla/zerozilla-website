@@ -1,0 +1,14 @@
+<svg id="Demand_Gen" data-name="Demand Gen" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+  <g id="Сгруппировать_143" data-name="Сгруппировать 143">
+    <path id="Контур_72" data-name="Контур 72" d="M24.348,46.25a5.5,5.5,0,1,1-5.5-5.5,5.5,5.5,0,0,1,5.5,5.5" transform="translate(-3.251 -9.404)" fill="#c31f5d"/>
+    <g id="Сгруппировать_142" data-name="Сгруппировать 142" transform="translate(15.002 11.055)">
+      <path id="Контур_73" data-name="Контур 73" d="M49.826,14.372a9.578,9.578,0,0,0-6.185,16.894l-2.27,2.27h8.455a9.582,9.582,0,1,0,0-19.164Z" transform="translate(-24.46 -14.372)" fill="none" stroke="#4c2e88" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Контур_74" data-name="Контур 74" d="M36.3,21.823a14.655,14.655,0,1,0-1.923,29.185H45.652L42.9,48.258a14.622,14.622,0,0,0,6.131-11.905,14.784,14.784,0,0,0-.125-1.923" transform="translate(-19.725 -16.062)" fill="none" stroke="#4c2e88" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <circle id="Эллипс_18" data-name="Эллипс 18" cx="1.691" cy="1.691" r="1.691" transform="translate(5.636 18.036)" fill="none" stroke="#4c2e88" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <circle id="Эллипс_19" data-name="Эллипс 19" cx="1.691" cy="1.691" r="1.691" transform="translate(11.272 18.036)" fill="none" stroke="#4c2e88" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Контур_75" data-name="Контур 75" d="M49.034,22.148a3.385,3.385,0,1,1,4.673,3.127,2.182,2.182,0,0,0-1.292,2.036v.474" transform="translate(-26.489 -15.385)" fill="none" stroke="#4c2e88" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <line id="Линия_39" data-name="Линия 39" y1="1.127" transform="translate(25.927 14.655)" fill="none" stroke="#4c2e88" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    </g>
+    <rect id="Прямоугольник_63" data-name="Прямоугольник 63" width="60" height="60" fill="none"/>
+  </g>
+</svg>

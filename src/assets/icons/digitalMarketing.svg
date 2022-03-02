@@ -1,0 +1,16 @@
+<svg id="Distribution" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+  <g id="Сгруппировать_144" data-name="Сгруппировать 144">
+    <path id="Контур_76" data-name="Контур 76" d="M54.133,56.512a5.5,5.5,0,1,1-5.5-5.5,5.5,5.5,0,0,1,5.5,5.5" transform="translate(-10.124 -11.772)" fill="#c31f5d"/>
+    <path id="Контур_77" data-name="Контур 77" d="M50.841,13.639V40.654H41.817v5.538L35.2,40.654H17.009V13.639Z" transform="translate(-4.097 -3.147)" fill="none" stroke="#4c2e88" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <g id="Group_10107" data-name="Group 10107" transform="translate(21.494 13)">
+      <path id="Контур_78" data-name="Контур 78" d="M43.548,24.568A8.506,8.506,0,1,1,41.679,22.7" transform="translate(-28.166 -17.862)" fill="none" stroke="#4c2e88" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <path id="Контур_79" data-name="Контур 79" d="M42.57,26.947A6.169,6.169,0,1,1,40.7,25.078" transform="translate(-28.867 -18.563)" fill="none" stroke="#4c2e88" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <path id="Контур_80" data-name="Контур 80" d="M41.553,29.369A3.832,3.832,0,1,1,39.684,27.5" transform="translate(-29.568 -19.264)" fill="none" stroke="#4c2e88" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <path id="Контур_81" data-name="Контур 81" d="M40.2,32.139a1.5,1.5,0,1,1-1.869-1.869" transform="translate(-30.269 -19.985)" fill="none" stroke="#4c2e88" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line id="Линия_40" data-name="Линия 40" y1="10.626" x2="10.626" transform="translate(8.618 1.011)" fill="none" stroke="#4c2e88" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <path id="Контур_82" data-name="Контур 82" d="M48.5,22.7l2.149.676,2.507-2.506L51,20.2" transform="translate(-32.858 -17.662)" fill="none" stroke="#4c2e88" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <path id="Контур_83" data-name="Контур 83" d="M47.789,21.555,47.113,19.4l2.506-2.5.676,2.154" transform="translate(-32.538 -16.9)" fill="none" stroke="#4c2e88" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    </g>
+    <rect id="Прямоугольник_64" data-name="Прямоугольник 64" width="60" height="60" fill="none"/>
+  </g>
+</svg>
