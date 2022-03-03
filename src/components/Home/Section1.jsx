@@ -9,8 +9,8 @@ import $ from "jquery";
 import BookCallButton from "../BookCallButton";
 import SliderNavButtons from "./SliderNav";
 import { AppContext } from "../../context/Context";
-
 const Section1 = () => {
+
   const [isMobile, setIsMobile] = useContext(AppContext);
   const ref = useRef(null);
   return (

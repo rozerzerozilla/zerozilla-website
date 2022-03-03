@@ -9,8 +9,9 @@ import SEOChecker from "../components/Home/SEOChecker";
 import Section6 from "../components/Home/Section6";
 import Section8 from "../components/Home/Section8";
 import Section7 from "../components/Home/Section7";
-
+import AOS from 'aos';
 const HomePage = () => {
+  AOS.init();
   return (
     <div className="container-fluid main" style={{ margin: 0, padding: 0 }}>
       <Section1 />

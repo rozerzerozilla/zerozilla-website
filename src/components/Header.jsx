@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { Link, useHistory } from "react-router-dom";
+import { Link, useHistory, useLocation } from "react-router-dom";
 import { Navbar, Nav, NavDropdown, Container } from "react-bootstrap";
 import appLogo from "../assets/icons/appLogo.png";
 import { AppContext } from "../context/Context";
@@ -7,6 +7,7 @@ import { FaSearch } from "react-icons/fa";
 
 const Header = () => {
   const history = useHistory();
+  const {pathname} = useLocation();
   const [isMobile] = useContext(AppContext);
   const margin = !isMobile ? "70px" : "20px";
   return (
@@ -21,7 +22,6 @@ const Header = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" className="navbar-menu-links">
           <Nav
-            variant="pills"
             defaultActiveKey="/"
             className="nav-links justify-content-end"
             style={{ width: "100%", marginTop: isMobile && "20px" }}
@@ -34,11 +34,12 @@ const Header = () => {
             </Nav.Link>
             <NavDropdown title="Company" id="nav-dropdown">
               <NavDropdown.Item eventKey="4.1" href="/portfolio">
-                Portfolio
-              </NavDropdown.Item>
-              <NavDropdown.Item eventKey="4.2" href="/portfolio/skill-mine">
-                Skillmine
-              </NavDropdown.Item>
+                  Portfolio
+                </NavDropdown.Item>
+                <NavDropdown.Item eventKey="4.2" href="/portfolio/skill-mine">
+                  Skillmine
+                </NavDropdown.Item>
+              
             </NavDropdown>
             <NavDropdown title="Services" id="nav-dropdown">
               <NavDropdown.Item

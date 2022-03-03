@@ -1,6 +1,11 @@
+import { useEffect } from "react";
 import { Switch, Route, Redirect } from "react-router-dom";
 import Header from "./components/Header";
+import CustomHeader from "./components/CustomHeader";
+import Footer from "./components/Footer";
 
+// AOS Package
+import AOS from 'aos';
 //css
 import "./App.css";
 import "./assets/css/base.css";
@@ -28,10 +33,16 @@ import ContactUsPage from "./pages/ContactUs";
 import PortfolioSubPage from "./pages/Portfolio/PortfolioSubPage";
 
 const App = () => {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
+
   return (
     <AppProvider>
       <div className="App">
-        <Header />
+        <CustomHeader/>
+        {/* <Header /> */}
         <Switch>
           <Redirect exact path="/" to="/home" />
           <Route path={"/home"} component={HomePage} />
@@ -63,6 +74,7 @@ const App = () => {
           <Route path={"/contact-us"} component={ContactUsPage} />
         </Switch>
         <GoUp />
+        <Footer/>
       </div>
     </AppProvider>
   );

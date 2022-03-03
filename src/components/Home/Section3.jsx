@@ -49,6 +49,7 @@ const Section3 = () => {
             }}
           >
             <img
+              data-aos={"fade-left"}
               src={sectionCover}
               alt="sectionVideo"
               style={{ width: "90% " }}
