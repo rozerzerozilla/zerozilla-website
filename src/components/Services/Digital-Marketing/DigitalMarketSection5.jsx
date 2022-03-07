@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { AppContext } from "../../../context/Context";
 import { riskFreeBizAnalysis } from "../../../helper/services";
+import Fade from 'react-reveal/Fade';
 
 const Section5 = () => {
   const [isMobile] = useContext(AppContext);
@@ -39,6 +40,7 @@ const Section5 = () => {
         </div>
         <div className="row" style={{ marginTop: !isMobile && 30 }}>
           {riskFreeBizAnalysis.map((card, idx) => (
+            <Fade left={idx%4===0} top={idx%4===3} bottom={idx%4===2} right={idx%4===1}>
             <div
               key={card.id}
               className={`${!isMobile ? "col-3" : "col-12"}`}
@@ -67,6 +69,7 @@ const Section5 = () => {
                 </p>
               </div>
             </div>
+            </Fade>
           ))}
         </div>
       </div>

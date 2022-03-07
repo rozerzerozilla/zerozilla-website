@@ -5,16 +5,16 @@ import appLogo from "../assets/icons/appLogo.png";
 import { AppContext } from "../context/Context";
 import { BsFacebook, BsLinkedin } from "react-icons/bs";
 import {AiFillTwitterCircle} from "react-icons/ai";
-import {footerLink} from "../helper/footer";
-
-import IconButton from '@material-ui/core/IconButton';
+import { footerLink } from "../helper/footer";
+import Fade from 'react-reveal/Fade';
 
 const Footer = ()=>{
     const history = useHistory();
     const [isMobile] = useContext(AppContext);
     const margin = !isMobile ? "70px" : "20px";
     return <footer>
-        <Container maxWidth="lg" className="py-5">
+        <Fade delay={1000}>
+        <Container fluid="lg" className="py-5">
             <Row className="pb-5 footer-bottom-divider" >
                 <Col xs="12" lg="3" className="py-3 pe-4 footer-right-divider">
                     <Navbar.Brand
@@ -86,7 +86,8 @@ const Footer = ()=>{
                     <p className="sectionContent">Terms and Conditions</p>
                 </Col>
             </Row>
-        </Container>
+            </Container>
+        </Fade>
     </footer>
 }
 

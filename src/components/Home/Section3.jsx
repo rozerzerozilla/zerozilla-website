@@ -1,6 +1,7 @@
 import React, {useContext} from "react";
 import sectionCover from "../../assets/images/section3Cover.png";
 import { AppContext } from "../../context/Context";
+import Fade from 'react-reveal/Fade';
 
 const Section3 = () => {
   const [isMobile] = useContext(AppContext);
@@ -20,6 +21,7 @@ const Section3 = () => {
               isMobile ? { padding: "0px 20px", textAlign: "center" } : null
             }
           >
+            <Fade top>
             <div className={`row col-12 ${isMobile && "m-0"}`}>
               <p className="section3Head">
                 We specialise in{" "}
@@ -39,7 +41,8 @@ const Section3 = () => {
             </div>
             <div className="row-col-12" style={{ marginTop: "20px" }}>
               <button className="appBtn">Explore our services</button>
-            </div>
+              </div>
+            </Fade>
           </div>
           <div
             className={`${isMobile ? "col-12" : "col-7 my-auto"}`}
@@ -48,12 +51,14 @@ const Section3 = () => {
               textAlign: isMobile ? "center" : "right",
             }}
           >
+            <Fade bottom>
             <img
               data-aos={"fade-left"}
               src={sectionCover}
               alt="sectionVideo"
               style={{ width: "90% " }}
-            />
+              />
+            </Fade>
           </div>
         </div>
       </div>

@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { AppContext } from "../../../context/Context";
 import { seoStrategy } from "../../../helper/services";
 import CommonCard from "../../Common/CommonCard";
-
+import Fade from 'react-reveal/Fade'
 const Section2 = () => {
   const [isMobile] = useContext(AppContext);
   return (
@@ -21,6 +21,7 @@ const Section2 = () => {
               isMobile ? { padding: "0px 20px", textAlign: "center" } : null
             }
           >
+            <Fade left>
             <div className={`row`}>
               {!isMobile && <div className="col-1"></div>}
               <div className={`${isMobile ? "col-12" : "col-10"}`}>
@@ -35,8 +36,10 @@ const Section2 = () => {
               </div>
               {!isMobile && <div className="col-1"></div>}
             </div>
+            </Fade>
             <div className="row" style={{ marginTop: "40px" }}>
-              {seoStrategy.map((idea) => (
+              {seoStrategy.map((idea, index) => (
+                <Fade top={index % 2 === 0 ? true : false} bottom={index % 2 === 0 ? false : true} key={idea.id}>
                 <div
                   className={`${isMobile ? "col-12" : "col-4 my-auto"}`}
                   key={idea.id}
@@ -52,6 +55,7 @@ const Section2 = () => {
                     padding={"20px 30px"}
                   />
                 </div>
+                </Fade>
               ))}
             </div>
           </div>

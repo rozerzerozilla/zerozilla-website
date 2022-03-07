@@ -7,6 +7,7 @@ import caraouselImage1 from "../../../assets/images/clientSliderImage2.png";
 import OwlCarousel from "react-owl-carousel";
 import SliderNavButtons from "../SliderNav";
 import { AppContext } from "../../../context/Context";
+import Fade from 'react-reveal/Fade';
 
 const Section7 = () => {
   const [isMobile, setIsMobile] = useContext(AppContext);
@@ -47,7 +48,8 @@ const Section7 = () => {
               //   style={{ marginTop: "-30px" }}
               responsive={responsiveSlider}
             >
-              <div className="sliderCard">
+              <Fade top>
+                <div className="sliderCard">
                 <div className="row col-12 imageCustomBorder">
                   <img
                     src={caraouselImage}
@@ -72,8 +74,10 @@ const Section7 = () => {
                   <p className="clientName mb-0">John Doe</p>
                   <p className="clientDetails mb-0">CEO, Artyss Studio</p>
                 </div>
-              </div>
-              <div className="sliderCard">
+                </div>
+              </Fade>
+              <Fade bottom>
+                <div className="sliderCard">
                 <div className="row col-12 imageCustomBorder">
                   <img
                     src={caraouselImage1}
@@ -98,8 +102,10 @@ const Section7 = () => {
                   <p className="clientName mb-0">John Doe</p>
                   <p className="clientDetails mb-0">CEO, Artyss Studio</p>
                 </div>
-              </div>
-              <div className="sliderCard">
+                </div>
+              </Fade>
+              <Fade top>
+                <div className="sliderCard">
                 <div className="row col-12 imageCustomBorder">
                   <img
                     src={caraouselImage1}
@@ -124,8 +130,10 @@ const Section7 = () => {
                   <p className="clientName mb-0">John Doe</p>
                   <p className="clientDetails mb-0">CEO, Artyss Studio</p>
                 </div>
-              </div>
-              <div className="sliderCard">
+                </div>
+              </Fade>
+              <Fade bottom>
+                <div className="sliderCard">
                 <div className="row col-12 imageCustomBorder">
                   <img
                     src={caraouselImage1}
@@ -150,33 +158,37 @@ const Section7 = () => {
                   <p className="clientName mb-0">John Doe</p>
                   <p className="clientDetails mb-0">CEO, Artyss Studio</p>
                 </div>
-              </div>
-              <div className="sliderCard">
-                <div className="row col-12 imageCustomBorder">
-                  <img
-                    src={caraouselImage1}
-                    alt="clientImage"
-                    style={{ padding: 0 }}
-                  />
                 </div>
-                <div className="row col-12 clientCustomBorder">
-                  <div className="absoluteDoubleQuotes">
+              </Fade>
+            
+              <Fade top>
+                <div className="sliderCard">
+                  <div className="row col-12 imageCustomBorder">
                     <img
-                      className="absoluteDoubleQuotesClient"
-                      src={clientQuotes}
-                      alt="quotes"
+                      src={caraouselImage1}
+                      alt="clientImage"
+                      style={{ padding: 0 }}
                     />
                   </div>
-                  <p className="clientSliderContent">
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                    diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                    aliquyam erat, sed diam voluptua. At vero eos et accusam et
-                    justo duo dolores et ea rebum. Stet clita kasd.
-                  </p>
-                  <p className="clientName mb-0">John Doe</p>
-                  <p className="clientDetails mb-0">CEO, Artyss Studio</p>
+                  <div className="row col-12 clientCustomBorder">
+                    <div className="absoluteDoubleQuotes">
+                      <img
+                        className="absoluteDoubleQuotesClient"
+                        src={clientQuotes}
+                        alt="quotes"
+                      />
+                    </div>
+                    <p className="clientSliderContent">
+                      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                      diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                      aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                      justo duo dolores et ea rebum. Stet clita kasd.
+                    </p>
+                    <p className="clientName mb-0">John Doe</p>
+                    <p className="clientDetails mb-0">CEO, Artyss Studio</p>
+                  </div>
                 </div>
-              </div>
+              </Fade>
             </OwlCarousel>
             {!isMobile && (
               <SliderNavButtons

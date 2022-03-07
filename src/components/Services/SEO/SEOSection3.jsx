@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import sectionCover from "../../../assets/images/seo-section-3-cover.png";
 import { AppContext } from "../../../context/Context";
+import Fade from 'react-reveal/Fade';
 
 const Section3 = () => {
   const [isMobile] = useContext(AppContext);
@@ -20,6 +21,7 @@ const Section3 = () => {
               isMobile ? { padding: "0px 20px", textAlign: "center" } : null
             }
           >
+            <Fade bottom>
             <div className={`row col-12 ${isMobile && "m-0"}`}>
               <p className="section3Head black extra-bold">
                 Engaging in fruitful partnerships for a successful outcome
@@ -55,7 +57,8 @@ const Section3 = () => {
                 attention. You need to be interesting, valuable and of optimum
                 quality.
               </p>
-            </div>
+              </div>
+            </Fade>
           </div>
           <div
             className={`${isMobile ? "col-12" : "col-5 my-auto"}`}
@@ -64,11 +67,13 @@ const Section3 = () => {
               textAlign: isMobile ? "center" : "right",
             }}
           >
+            <Fade top>
             <img
               src={sectionCover}
               alt="sectionVideo"
               style={{ width: "90% " }}
-            />
+              />
+            </Fade>
           </div>
         </div>
       </div>

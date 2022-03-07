@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { AppContext } from "../../../context/Context";
 import { rankYourPageCards } from "../../../helper/services";
+import Fade from "react-reveal/Fade";
 
 const Section6 = () => {
   const [isMobile] = useContext(AppContext);
@@ -41,6 +42,7 @@ const Section6 = () => {
         </div>
         <div className="row" style={{ marginTop: !isMobile && 30 }}>
           {rankYourPageCards.map((card, idx) => (
+            <Fade left={idx % 4 === 0} top={idx % 4 === 3} bottom={idx % 4 === 2} right={idx % 4 === 1} key={card.id}>
             <div
               key={card.id}
               className={`${!isMobile ? "col-3" : "col-12"}`}
@@ -68,7 +70,8 @@ const Section6 = () => {
                   {card.description}
                 </p>
               </div>
-            </div>
+              </div>
+            </Fade>
           ))}
         </div>
       </div>

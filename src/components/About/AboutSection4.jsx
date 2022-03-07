@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { AppContext } from "../../context/Context";
 import sectionCover from "../../assets/images/About-Section-4-Cover.png";
+import Fade from 'react-reveal/Fade';
 
 const Section4 = () => {
   const [isMobile] = useContext(AppContext);
@@ -28,6 +29,7 @@ const Section4 = () => {
                 : null
             }
           >
+            <Fade left>
             <div className={`row col-12 ${isMobile && "m-0"}`}>
               <p className="section3Head black extra-bold">Who we are?</p>
               <p className="sectionContent">
@@ -45,7 +47,8 @@ const Section4 = () => {
                 advertising, SEO, social, analytics and digital creative
                 services.
               </p>
-            </div>
+              </div>
+            </Fade>
             <div
               className="row-col-12"
               style={{ marginTop: !isMobile ? "30px" : "20px" }}
@@ -61,11 +64,13 @@ const Section4 = () => {
                 : { paddingLeft: 0, textAlign: "right" }
             }
           >
-            <img
-              src={sectionCover}
-              alt="sectionPic"
-              style={{ width: "90% " }}
-            />
+            <Fade right>
+              <img
+                src={sectionCover}
+                alt="sectionPic"
+                style={{ width: "90% " }}
+                />
+            </Fade>
           </div>
         </div>
       </div>

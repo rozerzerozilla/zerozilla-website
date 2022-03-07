@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { AppContext } from "../../context/Context";
 import BreadCrumbs from "../BreadCrumbs";
 import BookCallButton from "../BookCallButton";
+import Fade from 'react-reveal/Fade';
 
 const CommonSection1 = ({
   title,
@@ -44,12 +45,14 @@ const CommonSection1 = ({
           {/* {type2 && <div className="bg-overlay"></div>} */}
           <div className={`${isMobile ? "mobile" : "desktop"}`}>
             <div className="row-col-12">
+              <Fade top>
               <p
                 className="sliderHead1 no-underline light"
                 style={{ textAlign: "left" }}
               >
                 <BreadCrumbs className={type2 ? "white" : "black"} />
-              </p>
+                </p>
+              </Fade>
             </div>
             <div className="row">
               <div
@@ -65,14 +68,19 @@ const CommonSection1 = ({
                       : null
                   }
                 >
+                  <Fade bottom>
                   <p
                     className="sliderHead2 mb-0"
                     style={{ marginTop: type2 ? 100 : 50, color: titleColor }}
                   >
                     {title}
-                  </p>
+                    </p>
+                  </Fade>
                 </div>
                 <div className="row" style={{ marginTop: "30px" }}>
+                  <Fade bottom>
+                  
+                  
                   <div className="col-12">
                     <p
                       className="sliderHead1 mb-0 no-underline"
@@ -83,13 +91,15 @@ const CommonSection1 = ({
                       {subtitle2} {!isMobile && <br />}
                       {subtitle3}
                     </p>
-                  </div>
+                    </div>
+                  </Fade>
                 </div>
                 {viewBtn && (
                   <div
                     className="row"
                     style={{ marginTop: !isMobile ? "70px" : "50px" }}
                   >
+                    <Fade>
                     <div className="col-12">
                       <div className={`${!isMobile ? "row" : "customFlexBox"}`}>
                         <div
@@ -109,7 +119,8 @@ const CommonSection1 = ({
                           />
                         </div>
                       </div>
-                    </div>
+                      </div>
+                    </Fade>
                   </div>
                 )}
 

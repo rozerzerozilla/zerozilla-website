@@ -4,6 +4,8 @@ import bigWin1 from "../../assets/images/Service-Section-4-Big-Winds-1.png";
 import bigWin2 from "../../assets/images/Service-Section-4-Big-Winds-2.png";
 import bigWin3 from "../../assets/images/Service-Section-4-Big-Winds-3.png";
 import { FaLongArrowAltRight } from "react-icons/fa";
+import Fade from 'react-reveal/Fade';
+import Zoom from 'react-reveal/Zoom';
 
 const CommonBigWinsSection = ({ background, smallerText }) => {
   const [isMobile] = useContext(AppContext);
@@ -30,49 +32,57 @@ const CommonBigWinsSection = ({ background, smallerText }) => {
               isMobile ? { padding: "0px 20px", textAlign: "center" } : null
             }
           >
-            <div className={`row`}>
-              <div className={`${isMobile ? "col-12" : "col-8"}`}>
-                <p
-                  className={`sectionContent primary-color ${
-                    smallerText ? "small" : ""
-                  }`}
-                >
-                  Our Work
-                </p>
-                <p
-                  className={`section3Head black extra-bold text-${
-                    isMobile ? "center" : "left"
-                  } ${smallerText ? "small" : ""}`}
-                >
-                  <span className="highlightedSectionText">
-                    We achieve the big wins.
-                  </span>
-                </p>
-                <p
-                  className={`sectionContent mb-0 text-${
-                    isMobile ? "center" : "left"
-                  } ${smallerText ? "small" : ""}`}
-                >
-                  Our client-first approach, deep technical knowledge, and
-                  performance focus fuel our clients’ successes — and grow their
-                  brands.
-                </p>
+            <Fade>
+              <div className={`row`}>
+                <div className={`${isMobile ? "col-12" : "col-8"}`}>
+                  <p
+                    className={`sectionContent primary-color ${
+                      smallerText ? "small" : ""
+                    }`}
+                  >
+                    Our Work
+                  </p>
+                  <p
+                    className={`section3Head black extra-bold text-${
+                      isMobile ? "center" : "left"
+                    } ${smallerText ? "small" : ""}`}
+                  >
+                    <span className="highlightedSectionText">
+                      We achieve the big wins.
+                    </span>
+                  </p>
+                  <p
+                    className={`sectionContent mb-0 text-${
+                      isMobile ? "center" : "left"
+                    } ${smallerText ? "small" : ""}`}
+                  >
+                    Our client-first approach, deep technical knowledge, and
+                    performance focus fuel our clients’ successes — and grow their
+                    brands.
+                  </p>
+                </div>
               </div>
-            </div>
+            </Fade>
           </div>
         </div>
       </div>
       <div className="col-12 p-0">
         <div className="row g-0">
-          <div className={`${isMobile ? "col-12" : "col-4"}`}>
-            <img className="w-100" src={bigWin1} alt="we-win-big" />
-          </div>
-          <div className={`${isMobile ? "col-12" : "col-4"}`}>
-            <img className="w-100" src={bigWin2} alt="we-win-big" />
-          </div>
-          <div className={`${isMobile ? "col-12" : "col-4"}`}>
-            <img className="w-100" src={bigWin3} alt="we-win-big" />
-          </div>
+          <Zoom>
+            <div className={`${isMobile ? "col-12" : "col-4"}`}>
+              <img className="w-100" src={bigWin1} alt="we-win-big" />
+            </div>
+          </Zoom>
+          <Fade top>
+            <div className={`${isMobile ? "col-12" : "col-4"}`}>
+              <img className="w-100" src={bigWin2} alt="we-win-big" />
+            </div>
+          </Fade>
+          <Zoom>
+            <div className={`${isMobile ? "col-12" : "col-4"}`}>
+              <img className="w-100" src={bigWin3} alt="we-win-big" />
+            </div>
+          </Zoom>
         </div>
       </div>
       <div

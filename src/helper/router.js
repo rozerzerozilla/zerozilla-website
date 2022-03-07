@@ -1,32 +1,51 @@
 import { IoBusinessOutline, IoPricetagsOutline } from "react-icons/io5";
-import { SiIos, SiIbeacon, SiIota, SiReact, SiContactlesspayment, SiTableau } from "react-icons/si";
+import { SiIos, SiIbeacon, SiIota, SiReact, SiContactlesspayment, SiTableau, SiAmazonaws } from "react-icons/si";
 import { GrAndroid, GrRobot, GrReactjs, GrFingerPrint } from "react-icons/gr";
 import { FiSquare, FiShoppingCart, FiMail } from "react-icons/fi";
+import { ImInfinite } from 'react-icons/im'
+
+export const cloudServices = [
+    {
+        catetogy: 'Cloud Services',
+        subtitle: 'AWS',
+        href: '#',
+        id: Math.random() * 10 + 1,
+        icon: SiAmazonaws,
+    },
+    {
+        catetogy: 'Cloud Services',
+        subtitle: 'DevOps',
+        href: '#',
+        id: Math.random() * 10 + 1,
+        icon: ImInfinite,
+    },
+]
+
 export const businessServices = [
     {
-        catetogy: 'Web Design & Development',
-        subtitle: 'Business Website',
+        catetogy: 'Web Application',
+        subtitle: 'Dynamic web application',
         href: '#',
         id: Math.random() * 10 + 1,
         icon: IoBusinessOutline,
     },
     {
-        catetogy: 'Web Design & Development',
-        subtitle: 'E-commerce Website',
+        catetogy: 'Web Application',
+        subtitle: 'E-commerce',
         href: '#',
         id: Math.random() * 10 + 1,
         icon: IoPricetagsOutline,
     },
     {
-        catetogy: 'Web Design & Development',
-        subtitle: 'Personal Website',
+        catetogy: 'Web Application',
+        subtitle: 'Static web application',
         href: '#',
         id: Math.random() * 10 + 1,
         icon: FiSquare,
     },
     {
-        catetogy: 'Web Design & Development',
-        subtitle: 'Blog Website',
+        catetogy: 'Web Application',
+        subtitle: 'Portal web app',
         href: '#',
         id: Math.random() * 10 + 1,
         icon: FiSquare,
@@ -37,28 +56,28 @@ export const marketingServices = [
     {
         catetogy: 'Marketing Services',
         subtitle: 'Digital Marketing',
-        href: '#',
+        href: '/services/digital-marketing',
         id: Math.random() * 10 + 1,
         icon: GrFingerPrint,
     },
     {
         catetogy: 'Marketing Services',
         subtitle: 'SEO',
-        href: '#',
+        href: '/services/search-engine-optimization',
         id: Math.random() * 10 + 1,
         icon: SiTableau,
     },
     {
         catetogy: 'Marketing Services',
         subtitle: 'Pay-Per-Click',
-        href: '#',
+        href: '/services/pay-per-click',
         id: Math.random() * 10 + 1,
         icon: SiContactlesspayment,
     },
     {
         catetogy: 'Marketing Services',
         subtitle: 'Lead Generation',
-        href: '#',
+        href: '/services/lead-generation',
         id: Math.random() * 10 + 1,
         icon: SiTableau,
     },
@@ -72,7 +91,7 @@ export const marketingServices = [
     {
         catetogy: 'Marketing Services',
         subtitle: 'Social Media Marketing',
-        href: '#',
+        href: '/services/social-media-marketing',
         id: Math.random() * 10 + 1,
         icon: SiTableau,
     }
@@ -80,96 +99,96 @@ export const marketingServices = [
 
 export const customServices = [
     {
-        catetogy: 'Custom Applications',
-        subtitle: 'iPhone Apps',
+        catetogy: 'Mobile Applications',
+        subtitle: 'Native Apps',
         href: '#',
         id: Math.random() * 10 + 1,
         icon: SiIos,
     },
     {
-        catetogy: 'Custom Applications',
-        subtitle: 'Android Apps',
+        catetogy: 'Mobile Applications',
+        subtitle: 'Hybrid Apps',
         href: '#',
         id: Math.random() * 10 + 1,
         icon: GrAndroid,
     },
     {
-        catetogy: 'Custom Applications',
-        subtitle: 'Android Games',
-        href: '#',
-        id: Math.random() * 10 + 1,
-        icon: GrAndroid,
-    },
-    {
-        catetogy: 'Custom Applications',
+        catetogy: 'Mobile Applications',
         subtitle: 'Custom Apps',
         href: '#',
         id: Math.random() * 10 + 1,
-        icon: SiTableau,
+        icon: GrAndroid,
     },
     {
-        catetogy: 'Custom Applications',
-        subtitle: 'E-commerce Apps',
-        href: '#',
-        id: Math.random() * 10 + 1,
-        icon: FiShoppingCart,
-    },
-    {
-        catetogy: 'Custom Applications',
-        subtitle: 'Bots Apps',
+        catetogy: 'Mobile Applications',
+        subtitle: 'IoT Apps',
         href: '#',
         id: Math.random() * 10 + 1,
         icon: GrRobot,
     },
-    {
-        catetogy: 'Custom Applications',
-        subtitle: 'iPad Apps',
-        href: '#',
-        id: Math.random() * 10 + 1,
-        icon: SiIos,
-    },
-    {
-        catetogy: 'Custom Applications',
-        subtitle: 'iBeacon Apps',
-        href: '#',
-        id: Math.random() * 10 + 1,
-        icon: SiIbeacon,
-    },
-    {
-        catetogy: 'Custom Applications',
-        subtitle: 'Hybrid Apps',
-        href: '#',
-        id: Math.random() * 10 + 1,
-        icon: SiTableau,
-    },
-    {
-        catetogy: 'Custom Applications',
-        subtitle: 'IoT Apps',
-        href: '#',
-        id: Math.random() * 10 + 1,
-        icon: SiIota,
-    },
-    {
-        catetogy: 'Custom Applications',
-        subtitle: 'React JS Apps',
-        href: '#',
-        id: Math.random() * 10 + 1,
-        icon: SiReact,
-    },
-    {
-        catetogy: 'Custom Applications',
-        subtitle: 'React Native Apps',
-        href: '#',
-        id: Math.random() * 10 + 1,
-        icon: GrReactjs,
-    }
+    // {
+    //     catetogy: 'Mobile Applications',
+    //     subtitle: 'E-commerce Apps',
+    //     href: '#',
+    //     id: Math.random() * 10 + 1,
+    //     icon: FiShoppingCart,
+    // },
+    // {
+    //     catetogy: 'Mobile Applications',
+    //     subtitle: 'Bots Apps',
+    //     href: '#',
+    //     id: Math.random() * 10 + 1,
+    //     icon: GrRobot,
+    // },
+    // {
+    //     catetogy: 'Mobile Applications',
+    //     subtitle: 'iPad Apps',
+    //     href: '#',
+    //     id: Math.random() * 10 + 1,
+    //     icon: SiIos,
+    // },
+    // {
+    //     catetogy: 'Mobile Applications',
+    //     subtitle: 'iBeacon Apps',
+    //     href: '#',
+    //     id: Math.random() * 10 + 1,
+    //     icon: SiIbeacon,
+    // },
+    // {
+    //     catetogy: 'Mobile Applications',
+    //     subtitle: 'Hybrid Apps',
+    //     href: '#',
+    //     id: Math.random() * 10 + 1,
+    //     icon: SiTableau,
+    // },
+    // {
+    //     catetogy: 'Mobile Applications',
+    //     subtitle: 'IoT Apps',
+    //     href: '#',
+    //     id: Math.random() * 10 + 1,
+    //     icon: SiIota,
+    // },
+    // {
+    //     catetogy: 'Mobile Applications',
+    //     subtitle: 'React JS Apps',
+    //     href: '#',
+    //     id: Math.random() * 10 + 1,
+    //     icon: SiReact,
+    // },
+    // {
+    //     catetogy: 'Mobile Applications',
+    //     subtitle: 'React Native Apps',
+    //     href: '#',
+    //     id: Math.random() * 10 + 1,
+    //     icon: GrReactjs,
+    // }
 ]
 
-export const businessInsights = [
+export const portfolioInsights = [
     {
         catetogy: 'Portfoilio',
-        subtitle: 'Portfolios',
-        href: '#',
+        subtitle: 'SkillMine',
+        href: '/portfolio/skill-mine',
         id: Math.random() * 10 + 1,
         icon: FiSquare,
     },
@@ -260,25 +279,25 @@ export const routes = [
         subNavs:[
             [
                 {
-                    catetogy:'Web Design & Development',
+                    catetogy:'Web Application',
                     subtitle:'Business Website',
                     href:'#',
                     id:Math.random() * 10 + 1,
                 },
                 {
-                    catetogy:'Web Design & Development',
+                    catetogy:'Web Application',
                     subtitle: 'E-commerce Website',
                     href: '#',
                     id: Math.random() * 10 + 1,
                 },
                 {
-                    catetogy:'Web Design & Development',
+                    catetogy:'Web Application',
                     subtitle: 'Personal Website',
                     href: '#',
                     id: Math.random() * 10 + 1,
                 },
                 {
-                    catetogy:'Web Design & Development',
+                    catetogy:'Web Application',
                     subtitle: 'Blog Website',
                     href: '#',
                     id: Math.random() * 10 + 1,
@@ -286,25 +305,25 @@ export const routes = [
             ],
             [
                 {
-                    catetogy: 'Custom Applications',
+                    catetogy: 'Mobile Applications',
                     subtitle: 'Business Website',
                     href: '#',
                     id: Math.random() * 10 + 1,
                 },
                 {
-                    catetogy: 'Custom Applications',
+                    catetogy: 'Mobile Applications',
                     subtitle: 'E-commerce Website',
                     href: '#',
                     id: Math.random() * 10 + 1,
                 },
                 {
-                    catetogy: 'Custom Applications',
+                    catetogy: 'Mobile Applications',
                     subtitle: 'Personal Website',
                     href: '#',
                     id: Math.random() * 10 + 1,
                 },
                 {
-                    catetogy: 'Custom Applications',
+                    catetogy: 'Mobile Applications',
                     subtitle: 'Blog Website',
                     href: '#',
                     id: Math.random() * 10 + 1,

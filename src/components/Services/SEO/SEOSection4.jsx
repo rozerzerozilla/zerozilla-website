@@ -3,6 +3,7 @@ import sectionCover from "../../../assets/images/seo-section-4-cover.png";
 import Bullets from '../../../assets/icons/seo-bullets.svg';
 import { AppContext } from "../../../context/Context";
 import { seoTips } from "../../../helper/services";
+import Fade from 'react-reveal/Fade';
 
 const Section4 = () => {
   const [isMobile] = useContext(AppContext);

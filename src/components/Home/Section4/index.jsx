@@ -7,10 +7,13 @@ import digitalMarketing from "../../../assets/icons/digitalMarketing.svg";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import ButtonComponent from "./Button";
 import { AppContext } from "../../../context/Context";
+import Fade from 'react-reveal/Fade';
+import Reveal from 'react-reveal/Reveal';
 
 const Section4 = () => {
   const [isMobile, setIsMobile] = useContext(AppContext);
   return (
+    <Reveal effect="fadeInUp">
     <div className="row Home-area4" style={{ margin: 0, padding: 0 }}>
       <div
         className={`col-12 Home-main-area4`}
@@ -22,6 +25,7 @@ const Section4 = () => {
         }}
       >
         <div className="row">
+          <Fade left>
           <div
             className={`${isMobile ? "col-12" : "col-7 my-auto"}`}
             style={
@@ -35,7 +39,9 @@ const Section4 = () => {
               alt="sectionPic"
               style={{ width: "90% " }}
             />
-          </div>
+            </div>
+          </Fade>
+          <Fade right>
           <div
             className={`${isMobile ? "col-12" : "col-5 my-auto"}`}
             style={
@@ -79,10 +85,12 @@ const Section4 = () => {
                 isMobile={isMobile}
               />
             </div>
-          </div>
+            </div>
+          </Fade>
         </div>
       </div>
-    </div>
+      </div>
+    </Reveal>
   );
 };
 

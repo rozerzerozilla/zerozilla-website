@@ -1,6 +1,8 @@
 import React, { useContext } from "react";
 import { AppContext } from "../../context/Context";
 import BookCallButton from "../BookCallButton";
+import Fade from 'react-reveal/Fade';
+import Zoom from 'react-reveal/Zoom';
 
 const CommonConsultSection = ({ btnText, type2, text, extraBold, applyRadius }) => {
   const [isMobile] = useContext(AppContext);
@@ -54,10 +56,10 @@ const CommonConsultSection = ({ btnText, type2, text, extraBold, applyRadius }) 
               <div className="col-6 my-auto">{btn(false)}</div>
             </>
           ) : (
-            <>
+            <Fade>
               {getText(true)}
               {btn(true)}
-            </>
+            </Fade>
           )}
         </div>
       </div>

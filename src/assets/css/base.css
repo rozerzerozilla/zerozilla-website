@@ -838,6 +838,7 @@ header{
   top: 0;
   background-color: var(--white-color);
   z-index: 101;
+  box-shadow: 0 5px 10px #dddddd;
 }
 nav{
   display: flex;

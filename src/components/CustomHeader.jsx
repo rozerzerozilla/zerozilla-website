@@ -10,9 +10,10 @@ import {
   marketingServices,
   businessServices,
   customServices,
-  businessInsights,
+  portfolioInsights,
   blogInsights,
   videosInsights,
+  cloudServices,
 } from "../helper/router";
 
 const CustomHeader = () => {
@@ -51,8 +52,8 @@ const CustomHeader = () => {
         <div className={`mobile-drop-menu show ${menukey === 'services' ? 'show':'hide'}`} >
           <Container style={{ width: '100%' }}>
             <Row>
-              <Col xs="12" md="4">
-                <h4 className="megaMenuSubheading">Web Design & Development</h4>
+              <Col xs="12" md="3">
+                <h4 className="megaMenuSubheading">Web Application</h4>
                 {businessServices.map(service => <Col xs="12" key={service.id}>
                   <NavLink to={service.href}>
                     <div className="d-flex align-items-center py-3">
@@ -62,9 +63,17 @@ const CustomHeader = () => {
                   </NavLink>
                 </Col>)}
               </Col>
-              <Col xs="12" md="4">
-                <h4 className="megaMenuSubheading">Custom Applications</h4>
-                <Row>
+              <Col xs="12" md="3">
+                <h4 className="megaMenuSubheading">Mobile Applications</h4>
+                {customServices.slice(0, 6).map(service => <Col xs="12" key={service.id}>
+                  <NavLink to={service.href}>
+                    <div className="d-flex align-items-center py-3">
+                      <div className="megaMenuIcons"><service.icon /></div>
+                      <span className="ps-3">{service.subtitle}</span>
+                    </div>
+                  </NavLink>
+                </Col>)}
+                {/* <Row>
                   <Col xs="12" md="6">
                     {customServices.slice(0, 6).map(service => <Col xs="12" key={service.id}>
                       <NavLink to={service.href}>
@@ -86,9 +95,20 @@ const CustomHeader = () => {
                       </NavLink>
                     </Col>)}
                   </Col>
-                </Row>
+                </Row> */}
               </Col>
-              <Col xs="12" md="4">
+              <Col xs="12" md="3">
+                <h4 className="megaMenuSubheading">Cloud Service</h4>
+                {cloudServices.map(service => <Col xs="12" key={service.id}>
+                  <NavLink to={service.href}>
+                    <div className="d-flex align-items-center py-3">
+                      <div className="megaMenuIcons"><service.icon /></div>
+                      <span className="ps-3">{service.subtitle}</span>
+                    </div>
+                  </NavLink>
+                </Col>)}
+              </Col>
+              <Col xs="12" md="3">
                 <h4 className="megaMenuSubheading">Marketing Services</h4>
                 {marketingServices.map(service => <Col xs="12" key={service.id}>
                   <NavLink to={service.href}>
@@ -111,8 +131,8 @@ const CustomHeader = () => {
           <Container style={{ width: '100%' }}>
             <Row>
               <Col xs="12" md="4">
-                <h4 className="megaMenuSubheading">Web Design & Development</h4>
-                {businessServices.map(service => <Col xs="12" key={service.id}>
+                <h4 className="megaMenuSubheading">Portfolios</h4>
+                {portfolioInsights.map(service => <Col xs="12" key={service.id}>
                   <NavLink to={service.href}>
                     <div className="d-flex align-items-center py-3">
                       <div className="megaMenuIcons"><service.icon /></div>
@@ -122,34 +142,21 @@ const CustomHeader = () => {
                 </Col>)}
               </Col>
               <Col xs="12" md="4">
-                <h4 className="megaMenuSubheading">Custom Applications</h4>
-                <Row>
-                  <Col xs="12" md="6">
-                    {customServices.slice(0, 6).map(service => <Col xs="12" key={service.id}>
-                      <NavLink to={service.href}>
-                        <div className="d-flex align-items-center py-3">
-                          <div className="megaMenuIcons"><service.icon /></div>
-                          <span className="ps-3">{service.subtitle}</span>
-                        </div>
-                      </NavLink>
-                    </Col>)}
-
-                  </Col>
-                  <Col xs="12" md="6">
-                    {customServices.slice(6, 12).map(service => <Col xs="12" key={service.id}>
-                      <NavLink to={service.href}>
-                        <div className="d-flex align-items-center py-3">
-                          <div className="megaMenuIcons"><service.icon /></div>
-                          <span className="ps-3">{service.subtitle}</span>
-                        </div>
-                      </NavLink>
-                    </Col>)}
-                  </Col>
-                </Row>
+                <h4 className="megaMenuSubheading">Blogs</h4>
+                <Col xs="12" md="6">
+                  {blogInsights.slice(0, 6).map(service => <Col xs="12" key={service.id}>
+                    <NavLink to={service.href}>
+                      <div className="d-flex align-items-center py-3">
+                        <div className="megaMenuIcons"><service.icon /></div>
+                        <span className="ps-3">{service.subtitle}</span>
+                      </div>
+                    </NavLink>
+                  </Col>)}
+                </Col>
               </Col>
               <Col xs="12" md="4">
-                <h4 className="megaMenuSubheading">Marketing Services</h4>
-                {marketingServices.map(service => <Col xs="12" key={service.id}>
+                <h4 className="megaMenuSubheading">Videos</h4>
+                {videosInsights.map(service => <Col xs="12" key={service.id}>
                   <NavLink to={service.href}>
                     <div className="d-flex align-items-center py-3">
                       <div className="megaMenuIcons"><service.icon /></div>
@@ -180,8 +187,8 @@ const CustomHeader = () => {
           <div className="dropdown-menus">
             <Container style={{ width: '100%' }}>
               <Row>
-                <Col xs="12" md="4">
-                  <h4 className="megaMenuSubheading">Web Design & Development</h4>
+                <Col xs="12" md="3">
+                  <NavLink to={"/services/web-application"}><h4 className="megaMenuSubheading">Web Applications</h4></NavLink>
                   {businessServices.map(service => <Col xs="12" key={service.id}>
                     <NavLink to={service.href}>
                       <div className="d-flex align-items-center py-3">
@@ -191,33 +198,29 @@ const CustomHeader = () => {
                     </NavLink>
                   </Col>)}
                 </Col>
-                <Col xs="12" md="4">
-                  <h4 className="megaMenuSubheading">Custom Applications</h4>
-                  <Row>
-                    <Col xs="12" md="6">
-                      {customServices.slice(0, 6).map(service => <Col xs="12" key={service.id}>
-                        <NavLink to={service.href}>
-                          <div className="d-flex align-items-center py-3">
-                            <div className="megaMenuIcons"><service.icon /></div>
-                            <span className="ps-3">{service.subtitle}</span>
-                          </div>
-                        </NavLink>
-                      </Col>)}
-                      
-                    </Col>
-                    <Col xs="12" md="6">
-                      {customServices.slice(6, 12).map(service => <Col xs="12" key={service.id}>
-                        <NavLink to={service.href}>
-                          <div className="d-flex align-items-center py-3">
-                            <div className="megaMenuIcons"><service.icon /></div>
-                            <span className="ps-3">{service.subtitle}</span>
-                          </div>
-                        </NavLink>
-                      </Col>)}
-                    </Col>
-                  </Row>
+                <Col xs="12" md="3">
+                  <NavLink to={"/services/mobile-application"}><h4 className="megaMenuSubheading">Mobile Applications</h4></NavLink>
+                  {customServices.slice(0, 6).map(service => <Col xs="12" key={service.id}>
+                    <NavLink to={service.href}>
+                      <div className="d-flex align-items-center py-3">
+                        <div className="megaMenuIcons"><service.icon /></div>
+                        <span className="ps-3">{service.subtitle}</span>
+                      </div>
+                    </NavLink>
+                  </Col>)}
                 </Col>
-                <Col xs="12" md="4">
+                <Col xs="12" md="3">
+                  <NavLink to={"/services/cloud-service"}><h4 className="megaMenuSubheading">Cloud Service</h4></NavLink>
+                  {cloudServices.map(service => <Col xs="12" key={service.id}>
+                    <NavLink to={service.href}>
+                      <div className="d-flex align-items-center py-3">
+                        <div className="megaMenuIcons"><service.icon /></div>
+                        <span className="ps-3">{service.subtitle}</span>
+                      </div>
+                    </NavLink>
+                  </Col>)}
+                </Col>
+                <Col xs="12" md="3">
                   <h4 className="megaMenuSubheading">Marketing Services</h4>
                   {marketingServices.map(service => <Col xs="12" key={service.id}>
                     <NavLink to={service.href}>
@@ -238,8 +241,8 @@ const CustomHeader = () => {
             <Container style={{ width: '100%' }}>
               <Row>
                 <Col xs="12" md="4">
-                  <h4 className="megaMenuSubheading">Portfolios</h4>
-                  {businessInsights.map(service => <Col xs="12" key={service.id}>
+                  <NavLink to={"/portfolio"}><h4 className="megaMenuSubheading">Portfolios</h4></NavLink>
+                  {portfolioInsights.map(service => <Col xs="12" key={service.id}>
                     <NavLink to={service.href}>
                       <div className="d-flex align-items-center py-3">
                         <div className="megaMenuIcons"><service.icon /></div>
@@ -283,7 +286,7 @@ const CustomHeader = () => {
   )
   return (<>
     <header>
-      <Container maxWidth="md">
+      <Container fluid="lg">
         <nav>
           <div>
             <img className="appLogo" src={appLogo} alt="appLogo" />

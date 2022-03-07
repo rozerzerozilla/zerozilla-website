@@ -4,8 +4,9 @@ import Header from "./components/Header";
 import CustomHeader from "./components/CustomHeader";
 import Footer from "./components/Footer";
 
-// AOS Package
-import AOS from 'aos';
+// google analytics
+// import ReactGA from "react-ga";
+
 //css
 import "./App.css";
 import "./assets/css/base.css";
@@ -33,10 +34,9 @@ import ContactUsPage from "./pages/ContactUs";
 import PortfolioSubPage from "./pages/Portfolio/PortfolioSubPage";
 
 const App = () => {
-  useEffect(() => {
-    AOS.init();
-    AOS.refresh();
-  }, []);
+  
+  // ReactGA.initialize('UA-000000-01');
+  // ReactGA.pageview(window.location.pathname + window.location.search);
 
   return (
     <AppProvider>
@@ -48,11 +48,11 @@ const App = () => {
           <Route path={"/home"} component={HomePage} />
           <Route path={"/about-us"} component={AboutPage} />
           <Route
-            path={"/services/web-design-and-development"}
+            path={"/services/web-application"}
             component={ServicePage1}
           />
           <Route
-            path={"/services/custom-application-development"}
+            path={"/services/mobile-application"}
             component={ServicePage2}
           />
           <Route

@@ -5,7 +5,7 @@ import sectionCover from "../../../assets/images/Custom-App-Section-1-Cover.png"
 const Section1 = () => {
   return (
     <CommonSection1
-      title={`Custom Application Development`}
+      title={`Mobile Application Development`}
       subtitle1={`Be a part of the app revolution with best Mobile App`}
       subtitle2={`Development Support.`}
       sectionCover={sectionCover}

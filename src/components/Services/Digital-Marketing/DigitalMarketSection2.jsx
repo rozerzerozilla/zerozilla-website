@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { AppContext } from "../../../context/Context";
 import { digitalMarketCards } from "../../../helper/services";
 import BookCallButton from "../../BookCallButton";
+import Fade from 'react-reveal/Fade';
 
 const Section2 = () => {
   const [isMobile] = useContext(AppContext);
@@ -24,6 +25,7 @@ const Section2 = () => {
                 : null
             }
           >
+            <Fade bottom>
             <div className={`row`}>
               <div className={`col-12`}>
                 <p
@@ -44,9 +46,11 @@ const Section2 = () => {
                   business in no time!
                 </p>
               </div>
-            </div>
+              </div>
+            </Fade>
             <div className="row" style={{ marginTop: "40px" }}>
-              {digitalMarketCards.map((card) => (
+              {digitalMarketCards.map((card, idx) => (
+                <Fade top={idx % 3 === 2 ? true : false} bottom={idx % 3 === 1 ? true : false} right={idx % 3 === 0 ? true : false}>
                 <div
                   key={card.id}
                   className={`${!isMobile ? "col-4" : "col-12"}`}
@@ -75,7 +79,8 @@ const Section2 = () => {
                       />
                     </p>
                   </div>
-                </div>
+                  </div>
+                  </Fade>
               ))}
             </div>
           </div>

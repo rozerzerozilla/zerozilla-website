@@ -3,6 +3,7 @@ import { AppContext } from "../../context/Context";
 import sectionCover from "../../assets/images/About-Section-2-Cover.svg";
 import Bullets from "../../assets/icons/About-bullet-icons.svg";
 import { strategies } from "../../helper/about";
+import Fade from 'react-reveal/Fade';
 
 const Section2 = () => {
   const [isMobile] = useContext(AppContext);
@@ -34,7 +35,9 @@ const Section2 = () => {
                       !isMobile ? "my-auto" : ""
                     } text-center`}
                   >
-                    <img src={Bullets} alt="bullet" height="16px" />
+                    <Fade left>
+                      <img src={Bullets} alt="bullet" height="16px" />
+                    </Fade>
                   </div>
                   <div
                     className={`col-11 ${!isMobile ? "my-auto" : ""}`}
@@ -43,7 +46,9 @@ const Section2 = () => {
                       textAlign: isMobile && "left",
                     }}
                   >
-                    {strategy.title}
+                    <Fade right>
+                      {strategy.title}
+                    </Fade>
                   </div>
                 </div>
               ))}
@@ -62,11 +67,13 @@ const Section2 = () => {
               textAlign: isMobile ? "center" : "right",
             }}
           >
-            <img
-              src={sectionCover}
-              alt="sectionVideo"
-              style={{ width: "100% " }}
-            />
+            <Fade>
+              <img
+                src={sectionCover}
+                alt="sectionVideo"
+                style={{ width: "100% " }}
+              />
+            </Fade>
           </div>
         </div>
       </div>

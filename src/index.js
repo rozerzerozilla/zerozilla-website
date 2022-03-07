@@ -5,13 +5,14 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter as Router } from "react-router-dom";
 import AppProvider from "./context/Context";
+import ThemeProvider from "react-bootstrap/ThemeProvider";
 
 ReactDOM.render(
-  <React.StrictMode>
+  <ThemeProvider breakpoints={['xxxl', 'xxl', 'xl', 'lg', 'md', 'sm', 'xs', 'xxs']}>
     <Router>
       <App />
     </Router>
-  </React.StrictMode>,
+  </ThemeProvider>,
   document.getElementById("root")
 );
 

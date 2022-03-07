@@ -3,6 +3,7 @@ import { AppContext } from "../../context/Context";
 import { sliderAreaStyle } from "../../helper";
 import BookCallButton from "../BookCallButton";
 import BreadCrumbs from "../BreadCrumbs";
+import Fade from 'react-reveal/Fade';
 
 const Section1 = () => {
   const [isMobile, setIsMobile] = useContext(AppContext);
@@ -15,7 +16,8 @@ const Section1 = () => {
         <div className={`${isMobile ? "mobile" : "desktop"}`}>
           <div className="row">
             <div className={`${isMobile ? "col-12" : "col-6"}`}>
-              <div
+              <Fade top>
+                <div
                 className="row"
                 style={
                   isMobile ? { padding: "0px 20px", textAlign: "center" } : null
@@ -30,8 +32,10 @@ const Section1 = () => {
                 <p className="sliderHead2 mb-0" style={{ marginTop: "50px" }}>
                   A bunch of enthusiastic & creative minds
                 </p>
-              </div>
-              <div className="row" style={{ marginTop: "30px" }}>
+                </div>
+              </Fade>
+              <Fade bottom>
+                <div className="row" style={{ marginTop: "30px" }}>
                 <div className="col-12">
                   <p
                     className="sliderHead1 mb-0 no-underline"
@@ -42,8 +46,10 @@ const Section1 = () => {
                     What drives us is making a lasting impact on your growth.
                   </p>
                 </div>
-              </div>
-              <div className="row" style={{ marginTop: "70px" }}>
+                </div>
+              </Fade>
+              <Fade>
+                <div className="row" style={{ marginTop: "70px" }}>
                 <div className="col-12">
                   <div className={`${!isMobile ? "row" : "customFlexBox"}`}>
                     <div className={`${!isMobile ? "col-5" : ""}`}>
@@ -56,7 +62,8 @@ const Section1 = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+                </div>
+              </Fade>
             </div>
           </div>
         </div>

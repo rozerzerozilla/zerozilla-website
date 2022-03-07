@@ -1,6 +1,8 @@
 import React, { useContext } from "react";
 import { AppContext } from "../../../context/Context";
 import sectionCover from "../../../assets/images/Custom-App-Section-3-Cover.png";
+import Fade from 'react-reveal/Fade';
+import Zoom from 'react-reveal/Zoom';
 
 const Section3 = () => {
   const [isMobile] = useContext(AppContext);
@@ -22,11 +24,13 @@ const Section3 = () => {
               textAlign: "center",
             }}
           >
+            <Zoom>
             <img
               src={sectionCover}
               alt="section-cover"
               style={{ width: "90%", paddingLeft: !isMobile && 40 }}
-            />
+              />
+            </Zoom>
           </div>
           <div
             className={`${isMobile ? "col-12" : "col-7 my-auto"}`}
@@ -36,6 +40,7 @@ const Section3 = () => {
                 : { paddingLeft: "70px" }
             }
           >
+            <Fade right>
             <div className={`row ${isMobile && "m-0"}`}>
               <div className={`${!isMobile ? "col-9" : "col-12 mt-4"}`}>
                 <p className="section3Head black extra-bold">
@@ -58,6 +63,7 @@ const Section3 = () => {
                 </p>
               </div>
             </div>
+            </Fade>
           </div>
         </div>
       </div>

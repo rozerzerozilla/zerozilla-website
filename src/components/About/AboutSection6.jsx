@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { AppContext } from "../../context/Context";
 import sectionCover from "../../assets/images/About-Section6-Cover.png";
+import Fade from 'react-reveal/Fade';
 
 const Section6 = () => {
   const [isMobile, setIsMobile] = useContext(AppContext);
@@ -24,11 +25,13 @@ const Section6 = () => {
                 : { paddingLeft: 0 }
             }
           >
+            <Fade right>
             <img
               src={sectionCover}
               alt="sectionPic"
               style={{ width: "90% " }}
-            />
+              />
+            </Fade>
           </div>
           <div
             className={`${isMobile ? "col-12" : "col-5 my-auto"}`}
@@ -42,20 +45,22 @@ const Section6 = () => {
                 : null
             }
           >
-            <div className={`row col-12 ${isMobile && "m-0"}`}>
-              <p className="section3Head black extra-bold">
-                <span className="section3Head black">Journey of Zerozilla</span>
-                <br />
-                The Amazing 7+ Years
-              </p>
-              <p className="sectionContent">
-                Our commitment and sincerity in defining what user experience
-                can be is what sets us apart. We are a team of high-quality IT
-                professionals, with a deep commitment to learn and implement, to
-                help B2B, B2C, governments, and other stakeholders and thus
-                improve the industry scenario.
-              </p>
-            </div>
+            <Fade left>
+              <div className={`row col-12 ${isMobile && "m-0"}`}>
+                <p className="section3Head black extra-bold">
+                  <span className="section3Head black">Journey of Zerozilla</span>
+                  <br />
+                  The Amazing 7+ Years
+                </p>
+                <p className="sectionContent">
+                  Our commitment and sincerity in defining what user experience
+                  can be is what sets us apart. We are a team of high-quality IT
+                  professionals, with a deep commitment to learn and implement, to
+                  help B2B, B2C, governments, and other stakeholders and thus
+                  improve the industry scenario.
+                </p>
+              </div>
+            </Fade>
           </div>
         </div>
       </div>

@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { AppContext } from "../../../context/Context";
 import sectionCover1 from "../../../assets/images/marketing-strategy-cover-1.png";
 import sectionCover2 from "../../../assets/images/marketing-strategy-cover-2.png";
+import Fade from 'react-reveal/Fade';
 
 const Section3 = () => {
   const [isMobile] = useContext(AppContext);
@@ -21,6 +22,7 @@ const Section3 = () => {
               isMobile ? { padding: "0px 20px", textAlign: "center" } : null
             }
           >
+            <Fade top>
             <div className={`row`}>
               {!isMobile && <div className="col-1"></div>}
               <div className={`${isMobile ? "col-12" : "col-10"}`}>
@@ -35,10 +37,12 @@ const Section3 = () => {
                 </p>
               </div>
               {!isMobile && <div className="col-1"></div>}
-            </div>
+              </div>
+            </Fade>
           </div>
         </div>
         <div className="row g-0" style={{ marginTop: "20px" }}>
+          <Fade left>
           <div
             className={`${isMobile ? "col-12" : "col-6"} p-0`}
             style={{ borderRadius: !isMobile ? "66px 0 0 0" : "66px" }}
@@ -64,6 +68,8 @@ const Section3 = () => {
               </p>
             </div>
           </div>
+          </Fade>
+          <Fade right>
           <div
             className={`${isMobile ? "col-12" : "col-6"} p-0`}
             style={{ borderRadius: !isMobile ? "0 66px 0 0" : "66px", marginTop: isMobile && 30 }}
@@ -90,6 +96,7 @@ const Section3 = () => {
               </p>
             </div>
           </div>
+          </Fade>
         </div>
       </div>
     </div>

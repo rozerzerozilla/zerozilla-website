@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { AppContext } from "../../../context/Context";
 import FormComponent from "./Form";
 import ClientCarousel from "./Client";
+import Fade from 'react-reveal/Fade';
 
 const CommonFormAndSliderSection = ({ smallerText }) => {
   const [isMobile] = useContext(AppContext);
@@ -24,6 +25,7 @@ const CommonFormAndSliderSection = ({ smallerText }) => {
                 : { paddingRight: 50 }
             }
           >
+            <Fade left>
             <div className={`row`}>
               <div className={`${isMobile ? "col-12" : "col-8"}`}>
                 <p
@@ -49,6 +51,7 @@ const CommonFormAndSliderSection = ({ smallerText }) => {
                 smallerText={smallerText}
               />
             </div>
+            </Fade>
           </div>
           <div
             className={`${isMobile ? "col-12 mt-5" : "col-6 my-auto"}`}
@@ -58,6 +61,7 @@ const CommonFormAndSliderSection = ({ smallerText }) => {
               paddingRight: isMobile && "25px",
             }}
           >
+            <Fade right>
             <div className={`row`}>
               <div className={`${isMobile ? "col-12" : "col-12"}`}>
                 <p
@@ -79,6 +83,7 @@ const CommonFormAndSliderSection = ({ smallerText }) => {
               </div>
             </div>
             <ClientCarousel isMobile={isMobile} smallerText={smallerText} />
+            </Fade>
           </div>
         </div>
       </div>
