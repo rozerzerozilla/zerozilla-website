@@ -1,5 +1,6 @@
 import React from "react";
 import Bullets from "../../assets/icons/seo-bullets.svg";
+import Fade from 'react-reveal/Fade';
 
 const CommonTypesOfLinks = ({ title, isMobile, image, data }) => {
   return (
@@ -11,7 +12,9 @@ const CommonTypesOfLinks = ({ title, isMobile, image, data }) => {
           textAlign: isMobile && "center",
         }}
       >
-        <img src={image} alt="sectionVideo" style={{ width: "80% " }} />
+        <Fade left>
+          <img src={image} alt="sectionVideo" style={{ width: "80% " }} />
+        </Fade>
       </div>
       <div
         className={`${isMobile ? "col-12" : "col-7 my-auto"}`}
@@ -25,6 +28,7 @@ const CommonTypesOfLinks = ({ title, isMobile, image, data }) => {
             : null
         }
       >
+        <Fade bottom>
         <div className={`row col-12 ${isMobile && "m-0"}`}>
           <p className="section3Head black extra-bold small">{title}</p>
           {data.map((strategy, idx) => (
@@ -43,7 +47,8 @@ const CommonTypesOfLinks = ({ title, isMobile, image, data }) => {
               </div>
             </div>
           ))}
-        </div>
+          </div>
+        </Fade>
       </div>
     </div>
   );

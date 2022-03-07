@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { AppContext } from "../../../context/Context";
 import { rankYourPageCards } from "../../../helper/services";
+import Fade from 'react-reveal/Fade'
 
 const Section5 = () => {
   const [isMobile] = useContext(AppContext);
@@ -20,6 +21,7 @@ const Section5 = () => {
               isMobile ? { padding: "0px 20px", textAlign: "center" } : null
             }
           >
+            <Fade top>
             <div className={`row`}>
               {!isMobile && <div className="col-1"></div>}
               <div className={`${isMobile ? "col-12" : "col-10"}`}>
@@ -34,9 +36,11 @@ const Section5 = () => {
                 </p>
               </div>
               {!isMobile && <div className="col-1"></div>}
-            </div>
+              </div>
+            </Fade>
             <div className="row" style={{ marginTop: !isMobile && 20 }}>
               {rankYourPageCards.map((card, idx) => (
+                <Fade key={card.id} left={idx % 3 === 0} top={idx % 3 === 0 && idx >= 3} bottom={idx % 3 === 2} right={idx % 3 === 1}>
                 <div
                   key={card.id}
                   className={`${!isMobile ? "col-3" : "col-12"}`}
@@ -56,7 +60,7 @@ const Section5 = () => {
                         alt={`card-content-${card.id}`}
                         style={{ width: "60px", height: "60px" }}
                       />
-                    </div>
+                      </div>
                     <p className="sectionContent large bold secondary-color mt-2 small">
                       {card.name}
                     </p>
@@ -67,7 +71,8 @@ const Section5 = () => {
                       {card.description}
                     </p>
                   </div>
-                </div>
+                  </div>
+                </Fade>
               ))}
             </div>
           </div>

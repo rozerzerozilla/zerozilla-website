@@ -9,6 +9,9 @@ import image4 from "../../assets/images/portfolio/portfolio-img-4.png";
 import image5 from "../../assets/images/portfolio/portfolio-img-5.png";
 import image6 from "../../assets/images/portfolio/portfolio-img-6.png";
 import image7 from "../../assets/images/portfolio/portfolio-img-7.png";
+// React animations
+import Fade from "react-reveal/Fade";
+import Zoom from "react-reveal/Zoom";
 
 const Section2 = () => {
   const [active, setActive] = useState(1);
@@ -39,29 +42,43 @@ const Section2 = () => {
       <>
         <div className="row mt-3">
           <div className={`${isMobile ? "col-12 mb-2" : "col-7"}`}>
-            <img className="w-100" src={image1} alt="portfolio-1" />
+            <Fade left>
+              <img className="w-100" src={image1} alt="portfolio-1" />
+            </Fade>
           </div>
           <div className={`${isMobile ? "col-12 mb-2" : "col-5"}`}>
-            <img className="w-100" src={image2} alt="portfolio-2" />
+            <Fade top>
+              <img className="w-100" src={image2} alt="portfolio-2" />
+            </Fade>
           </div>
         </div>
         <div className="row mt-2">
+          <Fade bottom>
           <div className={`${isMobile ? "col-12 mb-2" : "col-4"}`}>
             <img className="w-100" src={image3} alt="portfolio-1" />
+            </div>
+          </Fade>
+          <div className={`${isMobile ? "col-12 mb-2" : "col-4"}`}>
+            <Fade right>
+              <img className="w-100" src={image4} alt="portfolio-2" />
+            </Fade>
           </div>
           <div className={`${isMobile ? "col-12 mb-2" : "col-4"}`}>
-            <img className="w-100" src={image4} alt="portfolio-2" />
-          </div>
-          <div className={`${isMobile ? "col-12 mb-2" : "col-4"}`}>
-            <img className="w-100" src={image5} alt="portfolio-2" />
+            <Zoom>
+              <img className="w-100" src={image5} alt="portfolio-2" />
+            </Zoom>
           </div>
         </div>
         <div className="row mt-2">
           <div className={`${isMobile ? "col-12 mb-2" : "col-5"}`}>
-            <img className="w-100" src={image6} alt="portfolio-1" />
+            <Fade right>
+              <img className="w-100" src={image6} alt="portfolio-1" />
+            </Fade>
           </div>
           <div className={`${isMobile ? "col-12 mb-2" : "col-7"}`}>
-            <img className="w-100" src={image7} alt="portfolio-2" />
+            <Fade left>
+              <img className="w-100" src={image7} alt="portfolio-2" />
+            </Fade>
           </div>
         </div>
       </>

@@ -3,6 +3,7 @@ import { AppContext } from "../../../context/Context";
 import sectionCover from "../../../assets/images/lead-gen-section2-cover.png";
 import Bullets from "../../../assets/icons/seo-bullets.svg";
 import { leadGenSection2Points } from "../../../helper/services";
+import Fade from 'react-reveal/Fade'
 
 const Section2 = () => {
   const [isMobile] = useContext(AppContext);
@@ -30,6 +31,7 @@ const Section2 = () => {
                 : null
             }
           >
+            <Fade left>
             <div className={`row col-12 ${isMobile && "m-0"}`}>
               <p className="section3Head black extra-bold small">
                 Our end-to-end lead generation will evoke interest, inform,
@@ -87,6 +89,7 @@ const Section2 = () => {
                 </div>
               ))}
             </div>
+            </Fade>
           </div>
           <div
             className={`${isMobile ? "col-12" : "col-5"}`}
@@ -96,7 +99,8 @@ const Section2 = () => {
                 : { paddingLeft: 0, textAlign: "right" }
             }
           >
-            <img className="h-100 w-100" src={sectionCover} alt="sectionPic" />
+            <Fade bottom><img className="h-100 w-100" src={sectionCover} alt="sectionPic" /></Fade>
+            
           </div>
         </div>
       </div>

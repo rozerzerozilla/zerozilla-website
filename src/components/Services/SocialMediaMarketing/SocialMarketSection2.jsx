@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { AppContext } from "../../../context/Context";
 import { generatePromisingSocialLinks } from "../../../helper/services";
 import CommonCard from "../../Common/CommonCard";
+import Fade from "react-reveal/Fade";
 
 const Section2 = () => {
   const [isMobile] = useContext(AppContext);
@@ -21,6 +22,7 @@ const Section2 = () => {
               isMobile ? { padding: "0px 20px", textAlign: "center" } : null
             }
           >
+            <Fade right>
             <div className={`row`}>
               {!isMobile && <div className="col-1"></div>}
               <div className={`${isMobile ? "col-12" : "col-10"}`}>
@@ -33,9 +35,11 @@ const Section2 = () => {
                 </p>
               </div>
               {!isMobile && <div className="col-1"></div>}
-            </div>
+              </div>
+            </Fade>
             <div className="row" style={{ marginTop: "40px" }}>
-              {generatePromisingSocialLinks.map((idea) => (
+              {generatePromisingSocialLinks.map((idea, idx) => (
+                <Fade left={idx % 4 === 0} top={idx % 4 === 3} bottom={idx % 4 === 2} right={idx % 4 === 1} key={idea.id}>
                 <div
                   className={`${isMobile ? "col-12" : "col-6 my-auto"}`}
                   key={idea.id}
@@ -50,7 +54,8 @@ const Section2 = () => {
                     imageWidth={"50%"}
                     padding={"20px 30px"}
                   />
-                </div>
+                  </div>
+                </Fade>
               ))}
             </div>
           </div>

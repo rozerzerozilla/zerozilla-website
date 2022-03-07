@@ -5,6 +5,7 @@ import { leadGenTypes } from "../../../helper/services";
 import oneWayLink from "../../../assets/images/one-way-building.png";
 import { typesOfLinks } from "../../../helper/renderData";
 import CommonTypesOfLinks from "../../Common/CommonTypesOfLinks";
+import Fade from 'react-reveal/Fade';
 
 const Section3 = () => {
   const [active, setActive] = useState(1);
@@ -86,6 +87,7 @@ const Section3 = () => {
             className={"col-12"}
             style={isMobile ? { textAlign: "center" } : null}
           >
+            <Fade top>
             {!isMobile ? (
               <div
                 className="row col-12"
@@ -93,11 +95,13 @@ const Section3 = () => {
                   justifyContent: "center",
                 }}
               >
+                
                 <div className="d-flex justify-content-around appfilters">
                   {leadGenTypes.map((filter) => (
                     <>{sectionButton(filter, null, false)}</>
                   ))}
-                </div>
+                  </div>
+                
               </div>
             ) : (
               <div className="p1 custom-overflow">
@@ -108,6 +112,7 @@ const Section3 = () => {
                 ))}
               </div>
             )}
+            </Fade>
             {renderActiveSection()}
           </div>
         </div>

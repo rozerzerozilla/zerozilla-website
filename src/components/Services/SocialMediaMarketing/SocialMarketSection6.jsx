@@ -3,6 +3,8 @@ import { AppContext } from "../../../context/Context";
 import sectionCover from "../../../assets/images/social-market-section-6-cover.png";
 import Bullets from "../../../assets/icons/seo-bullets.svg";
 import { roleOfSocialMedia } from "../../../helper/services";
+import Fade from "react-reveal/Fade";
+
 
 const Section6 = () => {
   const [isMobile] = useContext(AppContext);
@@ -44,6 +46,7 @@ const Section6 = () => {
                 : null
             }
           >
+            <Fade top>
             <div className={`row col-12 ${isMobile && "m-0"}`}>
               <p className="section3Head black extra-bold mt-4">
                 <span className="section3Head black">
@@ -57,9 +60,11 @@ const Section6 = () => {
                 in expanding your clientele. The better you engage the better
                 will be your client base.
               </p>
-            </div>
+              </div>
+            </Fade>
             <div className="row">
               {roleOfSocialMedia.map((card, idx) => (
+                <Fade left={idx % 4 === 0} top={idx % 4 === 3} bottom={idx % 4 === 2} right={idx % 4 === 1} key={card.id}>
                 <div
                   key={card.id}
                   className={`${!isMobile ? "col-6 ps-0" : "col-12"}`}
@@ -92,7 +97,8 @@ const Section6 = () => {
                       {card.description}
                     </p>
                   </div>
-                </div>
+                  </div>
+                </Fade>
               ))}
             </div>
           </div>

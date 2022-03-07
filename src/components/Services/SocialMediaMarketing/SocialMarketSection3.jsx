@@ -3,6 +3,7 @@ import { AppContext } from "../../../context/Context";
 import sectionCover from "../../../assets/images/social-media-section3-cover.png";
 import Bullets from "../../../assets/icons/seo-bullets.svg";
 import { fruitfulPartnershipsTips1 } from "../../../helper/services";
+import Fade from "react-reveal/Fade";
 
 const Section3 = () => {
   const [isMobile] = useContext(AppContext);
@@ -30,6 +31,7 @@ const Section3 = () => {
                 : null
             }
           >
+            <Fade top>
             <div className={`row col-12 ${isMobile && "m-0"}`}>
               <p className="section3Head black extra-bold">
                 Engaging in fruitful partnerships for a successful outcome
@@ -75,6 +77,7 @@ const Section3 = () => {
                 </div>
               ))}
             </div>
+            </Fade>
           </div>
           <div
             className={`${isMobile ? "col-12" : "col-5"}`}
@@ -84,11 +87,13 @@ const Section3 = () => {
                 : { paddingLeft: 0, textAlign: "right" }
             }
           >
+            <Fade bottom>
             <img
               className="h-100 w-100"
               src={sectionCover}
               alt="sectionPic"
-            />
+              />
+            </Fade>
           </div>
         </div>
       </div>

@@ -1,5 +1,7 @@
 import React, { useContext } from "react";
 import { AppContext } from "../../../context/Context";
+import Zoom from "react-reveal/Zoom";
+import Fade from "react-reveal/Fade";
 
 const Section4 = () => {
   const [isMobile] = useContext(AppContext);
@@ -21,6 +23,7 @@ const Section4 = () => {
                 : null
             }
           >
+            <Zoom>
             <div className={`row`}>
               {!isMobile && <div className="col-1"></div>}
               <div className={`${isMobile ? "col-12 ps-3" : "col-10"}`}>
@@ -31,12 +34,14 @@ const Section4 = () => {
                 </p>
               </div>
               {!isMobile && <div className="col-1"></div>}
-            </div>
+              </div>
+            </Zoom>
             <div className="row text-center" style={{ marginTop: "40px" }}>
               <div
                 className={`${!isMobile ? "col-4" : "col-12"}`}
                 style={{ marginBottom: "40px" }}
               >
+                <Fade top>
                 <div className="service-card">
                   <p className="sectionContent large bold secondary-color">
                     Finding the Right Platform
@@ -48,12 +53,14 @@ const Section4 = () => {
                     audience as well as potential buyers. As per your audience
                     category we optimise your profiles on right channel.
                   </p>
-                </div>
+                  </div>
+                </Fade>
               </div>
               <div
                 className={`${!isMobile ? "col-4" : "col-12"}`}
                 style={{ marginBottom: "40px" }}
               >
+                <Fade bottom>
                 <div className="service-card">
                   <p className="sectionContent large bold secondary-color">
                     Targeting Perfection
@@ -65,12 +72,14 @@ const Section4 = () => {
                     campaign which resonates with them & make them take action
                     which results in fruitful results.
                   </p>
-                </div>
+                  </div>
+                </Fade>
               </div>
               <div
                 className={`${!isMobile ? "col-4" : "col-12"}`}
                 style={{ marginBottom: "40px" }}
               >
+                <Fade top>
                 <div className="service-card">
                   <p className="sectionContent large bold secondary-color">
                     Performance Tracking
@@ -82,7 +91,8 @@ const Section4 = () => {
                     reporting gives a clarity on where you stand and what should
                     we do to improve for the better.
                   </p>
-                </div>
+                  </div>
+                </Fade>
               </div>
             </div>
           </div>

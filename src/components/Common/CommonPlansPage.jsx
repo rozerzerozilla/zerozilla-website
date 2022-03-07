@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { AppContext } from "../../context/Context";
 import BookCallButton from "../BookCallButton";
+import Fade from 'react-reveal/Fade'
 
 const CommonPlansComponent = ({ data, smallerText, background }) => {
   const [isMobile] = useContext(AppContext);
@@ -27,6 +28,7 @@ const CommonPlansComponent = ({ data, smallerText, background }) => {
               isMobile ? { padding: "0px 20px", textAlign: "center" } : null
             }
           >
+            <Fade bottom>
             <div className={`row`}>
               {!isMobile && <div className="col-1"></div>}
               <div className={`${isMobile ? "col-12" : "col-10"}`}>
@@ -46,12 +48,14 @@ const CommonPlansComponent = ({ data, smallerText, background }) => {
                 </p>
               </div>
               {!isMobile && <div className="col-1"></div>}
-            </div>
+              </div>
+            </Fade>
           </div>
         </div>
         <div className="row g-0" style={{ marginTop: !isMobile ? 50 : 20 }}>
           {data.map((card, idx, arr) => (
-            <div
+            <Fade key={card.id} left={idx % 3 === 0} top={idx % 3 === 0 && idx >= 3} bottom={idx % 3 === 2} right={idx % 3 === 1}>
+              <div
               key={card.id}
               className={`${!isMobile ? "col-4 my-auto" : "col-12"}`}
               style={{ marginBottom: "40px" }}
@@ -139,9 +143,11 @@ const CommonPlansComponent = ({ data, smallerText, background }) => {
                   />
                 </p>
               </div>
-            </div>
+              </div>
+            </Fade>
           ))}
-        </div>
+            </div>
+           
       </div>
     </div>
   );
