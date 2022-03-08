@@ -30,7 +30,8 @@ const Section2 = () => {
                       isMobile ? "center" : "left"
                     }`}
                   >
-                    Web services we provide
+                    Improve your customer experience
+                    with classy website that SELL!
                   </p>
                   <p
                     className={`sectionContent text-${

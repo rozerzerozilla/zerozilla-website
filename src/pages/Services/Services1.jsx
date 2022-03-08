@@ -6,7 +6,7 @@ import Section5 from "../../components/Services/Web-Development/ServiceSecton5";
 import Section1 from "../../components/Services/Web-Development/ServicesSection1";
 import Section2 from "../../components/Services/Web-Development/ServicesSection2";
 
-const ServicePage1 = () => {
+const WebDevlopment = () => {
   return (
     <div className="container-fluid main" style={{ margin: 0, padding: 0 }}>
       <Section1 />
@@ -19,4 +19,4 @@ const ServicePage1 = () => {
   );
 };
 
-export default ServicePage1;
+export default WebDevlopment;

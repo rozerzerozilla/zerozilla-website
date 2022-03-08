@@ -505,3 +505,108 @@ export const oneLink = [
       "Harness the power of one way linking juice",
   },
 ];
+
+
+
+export const awsStrategy = [
+  {
+    id: 1,
+    image: "project-analysis-icon.svg",
+    name: "Operating system support ",
+    description:
+      "We offer support for Red Hat Enterprise, Amazon Linux, and Microsoft Windows Servers.",
+  },
+  {
+    id: 2,
+    image: "on-page-seo-icon.svg",
+    name: "Workload management",
+    description:
+      "Our solutions help you to enhance the workload management for cloud services.",
+  },
+  {
+    id: 3,
+    image: "off-page-seo-icon.svg",
+    name: "Application deployment",
+    description:
+      "We are experts in developing and deploying high-performance cloud applications.",
+  },
+  {
+    id: 4,
+    image: "competitor-research-icon.svg",
+    name: "AWS services",
+    description:
+      "Competitors research helps understanding why other sites are ranking higher and what we should plan to outrank them.",
+  },
+  {
+    id: 5,
+    image: "reaccess-icon.svg",
+    name: "Cloud Support",
+    description:
+      "We are keen on the timely delivery of extensive cloud support and infrastructure.",
+  },
+  {
+    id: 6,
+    image: "reporting-icon.svg",
+    name: "Terraform integration",
+    description:
+      "Our capability includes efficiently integrating Terraform to build, change, and specify data infrastructure.",
+  },
+];
+
+export const awsTips = [
+  {
+    id: 1,
+    title:
+      "Incident and change management - Monitor your cloud infrastructure, keep track of all incidents, and incorporate changes in your cloud infrastructure easily. ",
+  },
+  {
+    id: 2,
+    title:
+      "Access and patch Management  - Secure your business with patches that improve overall efficiency and support Identity and Access Management (IAM) for authorized cloud services.",
+  },
+  {
+    id: 3,
+    title:
+      "Security and continuity management - Secure your data, maintain your cloud infrastructure, and back up all your Big Data with AWS stacks that can be restored in all cases.",
+  },
+  {
+    id: 4,
+    title:
+      "Reporting - Create monthly reports and recommendations to optimize your cloud performance and business assets.",
+  },
+  {
+    id: 5,
+    title:
+      "Cloud Migration - Migrate all your assets with secure facilities and ensure a hassle-free and secure cloud migration.",
+  },
+];
+export const awsPageCards = [
+  {
+    id: 1,
+    image: "sales-spikes-icon.svg",
+    name: "Optimized resource usage",
+    description:
+      "We focus on keeping your AWS bills minimal by optimizing your business’ resource consumption.",
+  },
+  {
+    id: 2,
+    image: "positive-roi-icon.svg",
+    name: "Terraform integration",
+    description:
+      "We integrate Terraform to construct, update, and specify data infrastructure safely and efficiently.",
+  },
+  {
+    id: 3,
+    image: "target-perfection.svg",
+    name: "AWS cloud service expertise",
+    description:
+      "Our expertise ranges across Amazon CloudFront, Redshift, Amazon server migration service (SMS), AWS Data Sync Database migration service, and more.",
+  },
+  {
+    id: 4,
+    image: "brand-awareness.svg",
+    name: "Security and compliance",
+    description:
+      "We not only manage the infrastructure and applications but also follow stringent norms to tighten your business security.",
+  },
+];

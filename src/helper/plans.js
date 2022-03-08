@@ -445,3 +445,104 @@ export const leadGenerationPlans = [
     ],
   },
 ];
+
+
+export const awsPlans = [
+  {
+    id: 1,
+    name: "AWS Cloud Architecture ",
+    most_popular: false,
+    content: [
+      {
+        id: 11,
+        title: `A team of AWS is experts in all subject-matter`,
+      },
+      {
+        id: 12,
+        title: `Precise and excellent guidance for all AWS Services`,
+      },
+      {
+        id: 13,
+        title: `Amazon cloud execution Knowledge on IaaS, PaaS, and Hybrid models`,
+      },
+      {
+        id: 14,
+        title: `Protection and disaster recovery Planning Services`,
+      },
+      {
+        id: 15,
+        title: `Design high-level hybrid cloud`,
+      },
+      {
+        id: 16,
+        title: `Audit simulation and support`,
+      },
+    ],
+  },
+  {
+    id: 2,
+    name: "AWS Cloud Migration",
+    most_popular: true,
+    content: [
+      {
+        id: 21,
+        title: `AWS migration assessment and planning`,
+      },
+      {
+        id: 22,
+        title: `Database migration to AWS SQL database`,
+      },
+      {
+        id: 23,
+        title: `Migration of all applications with AWS`,
+      },
+      {
+        id: 24,
+        title: `Application migration to AWS server  `,
+      },
+      {
+        id: 25,
+        title: `Database migration to AWS SQL database  `,
+      },
+      {
+        id: 26,
+        title: `Infrastructure migration to AWS IaaS  `,
+      },
+      {
+        id: 27,
+        title: `Post-migration support`,
+      }
+    ],
+  },
+  {
+    id: 3,
+    name: "AWS Cloud Management",
+    most_popular: false,
+    content: [
+      {
+        id: 31,
+        title: `Managed services for cloud environment`,
+      },
+      {
+        id: 32,
+        title: `System health checks, updates, and tune-ups  `,
+      },
+      {
+        id: 33,
+        title: `Managed high-performance computing`,
+      },
+      {
+        id: 34,
+        title: `Monitoring, alerting, patching, and updating  `,
+      },
+      {
+        id: 35,
+        title: `Reporting and performance analysis  `,
+      },
+      {
+        id: 36,
+        title: `24*7 Service management`,
+      }
+    ],
+  },
+];

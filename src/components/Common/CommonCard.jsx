@@ -26,14 +26,7 @@ const CommonCard = ({
           className="col-8 row-height"
           style={{ padding: padding ? padding : "20px 50px" }}
         >
-          <p
-            className="cardHead"
-            style={
-              !isMobile
-                ? { fontSize: name.length > 16 ? "16px" : "18px" }
-                : null
-            }
-          >
+          <p className="cardHead">
             {name}
           </p>
           <p className="cardDescription">{description}</p>

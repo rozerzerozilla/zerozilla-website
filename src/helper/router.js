@@ -8,7 +8,7 @@ export const cloudServices = [
     {
         catetogy: 'Cloud Services',
         subtitle: 'AWS',
-        href: '#',
+        href: '/services/aws',
         id: Math.random() * 10 + 1,
         icon: SiAmazonaws,
     },
@@ -24,32 +24,32 @@ export const cloudServices = [
 export const businessServices = [
     {
         catetogy: 'Web Application',
-        subtitle: 'Dynamic web application',
+        subtitle: 'Business Website',
         href: '#',
         id: Math.random() * 10 + 1,
         icon: IoBusinessOutline,
     },
     {
         catetogy: 'Web Application',
-        subtitle: 'E-commerce',
+        subtitle: 'E-commerce Website',
         href: '#',
         id: Math.random() * 10 + 1,
         icon: IoPricetagsOutline,
     },
     {
         catetogy: 'Web Application',
-        subtitle: 'Static web application',
+        subtitle: 'Personal or Blog Website',
         href: '#',
         id: Math.random() * 10 + 1,
         icon: FiSquare,
     },
-    {
-        catetogy: 'Web Application',
-        subtitle: 'Portal web app',
-        href: '#',
-        id: Math.random() * 10 + 1,
-        icon: FiSquare,
-    }
+    // {
+    //     catetogy: 'Web Application',
+    //     subtitle: 'Portal web app',
+    //     href: '#',
+    //     id: Math.random() * 10 + 1,
+    //     icon: FiSquare,
+    // }
 ]
 
 export const marketingServices = [

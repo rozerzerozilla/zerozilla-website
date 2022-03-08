@@ -6,7 +6,7 @@ import Fade from 'react-reveal/Fade';
 
 const CommonFormAndSliderSection = ({ smallerText }) => {
   const [isMobile] = useContext(AppContext);
-  const handleFormSubmit = () => console.log("submitting");
+  const handleFormSubmit = (e) => console.log("submitting");
   return (
     <div className="row Home-area3 service" style={{ margin: 0, padding: 0 }}>
       <div

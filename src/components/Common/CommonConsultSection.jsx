@@ -9,19 +9,19 @@ const CommonConsultSection = ({ btnText, type2, text, extraBold, applyRadius }) 
 
   const getText = (center) => {
     return (
-      <p
+      <div
         className={`mb-0 ${type2 && "small"} ${
           center ? "text-center" : ""
         } ${extraBold ? 'sliderHead2' : 'seoHead'}`}
       >
         {text}
-      </p>
+      </div>
     );
   };
   const btn = (center) => {
     // console.log(type2)
     return (
-      <p className={`${center ? "text-center mt-4" : "mb-0"}`}>
+      <div className={`${center ? "text-center mt-4" : "mb-0"}`}>
         <BookCallButton
           className={null}
           isColored={true}
@@ -30,7 +30,7 @@ const CommonConsultSection = ({ btnText, type2, text, extraBold, applyRadius }) 
           smallText={type2}
           applyRadius={applyRadius}
         />
-      </p>
+      </div>
     );
   };
 

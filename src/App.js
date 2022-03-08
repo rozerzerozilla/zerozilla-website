@@ -22,16 +22,18 @@ import { AppProvider } from "./context/Context";
 //pages
 import HomePage from "./pages/Home";
 import AboutPage from "./pages/About";
-import ServicePage1 from "./pages/Services/Services1";
+import WebDevlopment from "./pages/Services/Services1";
 import ServicePage2 from "./pages/Services/Services2";
 import ServicePage3 from "./pages/Services/Services3";
 import ServicePage4 from "./pages/Services/Services4";
 import ServicePage5 from "./pages/Services/Services5";
 import ServicePage6 from "./pages/Services/Services6";
 import ServicePage7 from "./pages/Services/Services7";
+import AWS from "./pages/Services/AWS";
 import PortfolioPage from "./pages/Portfolio";
 import ContactUsPage from "./pages/ContactUs";
 import PortfolioSubPage from "./pages/Portfolio/PortfolioSubPage";
+import ThankYou from "./pages/ThankYou";
 
 const App = () => {
   
@@ -49,7 +51,11 @@ const App = () => {
           <Route path={"/about-us"} component={AboutPage} />
           <Route
             path={"/services/web-application"}
-            component={ServicePage1}
+            component={WebDevlopment}
+          />
+          <Route
+            path={"/services/aws"}
+            component={AWS}
           />
           <Route
             path={"/services/mobile-application"}
@@ -72,6 +78,7 @@ const App = () => {
           <Route exact path={"/portfolio"} component={PortfolioPage} />
           <Route path={"/portfolio/skill-mine"} component={PortfolioSubPage} />
           <Route path={"/contact-us"} component={ContactUsPage} />
+          <Route path={"/thank-you"} component={ThankYou}/>
         </Switch>
         <GoUp />
         <Footer/>

@@ -11,33 +11,66 @@ const BookCallButton = ({
   smallText,
   type2,
   applyRadius,
+  disabled,
+  type='button'
 }) => {
   // console.log('small', smallText)
-  return (
-    <button
-      className={`sliderBtns ${isColored ? "colored" : ""} ${className}`}
-      onClick={handleFunction}
-      style={
-        btnColor
-          ? { background: btnColor, color: "#fff", border: btnColor }
-          : {
+  if (type === 'submit') {
+    return (
+      <button
+        type={type}
+        disabled={disabled}
+        className={`sliderBtns ${isColored ? "colored" : ""} ${className}`}
+        style={
+          btnColor
+            ? { background: btnColor, color: "#fff", border: btnColor }
+            : {
               background: smallText && "transparent",
               border: type2 && "2px solid #fff",
               color: type2 && "#fff",
               borderRadius: applyRadius && "30px",
             }
-      }
-    >
-      {showImage && (
-        <span style={{ marginRight: "10px" }}>
-          <FaPhoneAlt />
+        }
+      >
+        {showImage && (
+          <span style={{ marginRight: "10px" }}>
+            <FaPhoneAlt />
+          </span>
+        )}
+        <span className={`${smallText ? "sectionContent small" : ""}`}>
+          {text}
         </span>
-      )}
-      <span className={`${smallText ? "sectionContent small" : ""}`}>
-        {text}
-      </span>
-    </button>
-  );
+      </button>
+    );
+  } else {
+    return (
+      <button
+        type={type}
+        className={`sliderBtns ${isColored ? "colored" : ""} ${className}`}
+        onClick={handleFunction}
+        style={
+          btnColor
+            ? { background: btnColor, color: "#fff", border: btnColor }
+            : {
+              background: smallText && "transparent",
+              border: type2 && "2px solid #fff",
+              color: type2 && "#fff",
+              borderRadius: applyRadius && "30px",
+            }
+        }
+      >
+        {showImage && (
+          <span style={{ marginRight: "10px" }}>
+            <FaPhoneAlt />
+          </span>
+        )}
+        <span className={`${smallText ? "sectionContent small" : ""}`}>
+          {text}
+        </span>
+      </button>
+    );
+  }
+  
 };
 
 export default BookCallButton;

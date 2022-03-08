@@ -9,7 +9,7 @@ const CommonSection1 = ({
   background,
   subtitle1,
   subtitle2,
-  subtitle3,
+  subtitle3 = '',
   btnText,
   sectionCover,
   boxShadow,

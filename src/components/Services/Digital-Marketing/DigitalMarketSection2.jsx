@@ -50,7 +50,7 @@ const Section2 = () => {
             </Fade>
             <div className="row" style={{ marginTop: "40px" }}>
               {digitalMarketCards.map((card, idx) => (
-                <Fade top={idx % 3 === 2 ? true : false} bottom={idx % 3 === 1 ? true : false} right={idx % 3 === 0 ? true : false}>
+                <Fade key={card.id} top={idx % 3 === 2 ? true : false} bottom={idx % 3 === 1 ? true : false} right={idx % 3 === 0 ? true : false}>
                 <div
                   key={card.id}
                   className={`${!isMobile ? "col-4" : "col-12"}`}

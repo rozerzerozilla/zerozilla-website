@@ -54,28 +54,28 @@ const CommonPlansComponent = ({ data, smallerText, background }) => {
         </div>
         <div className="row g-0" style={{ marginTop: !isMobile ? 50 : 20 }}>
           {data.map((card, idx, arr) => (
-            <Fade key={card.id} left={idx % 3 === 0} top={idx % 3 === 0 && idx >= 3} bottom={idx % 3 === 2} right={idx % 3 === 1}>
-              <div
+            <div
               key={card.id}
               className={`${!isMobile ? "col-4 my-auto" : "col-12"}`}
               style={{ marginBottom: "40px" }}
             >
+              <Fade key={card.id} left={idx % 3 === 0} top={idx % 3 === 0 && idx >= 3} bottom={idx % 3 === 2} right={idx % 3 === 1}>
               <div
                 className="service-card parent"
                 style={{
-                  background: card.most_popular && "#C31F5D",
-                  color: card.most_popular && "#fff",
+                  background: Boolean(card.most_popular) && "#C31F5D",
+                  color: Boolean(card.most_popular) && "#fff",
                   borderRadius:
-                    card.most_popular || isMobile
+                    Boolean(card.most_popular) || isMobile
                       ? "47px"
                       : idx !== arr.length - 1
                       ? "47px 0 0 47px"
                       : "0 47px 47px 47px",
-                  width: !isMobile && card.most_popular && "105%",
-                  zIndex: !isMobile && card.most_popular && 2,
+                  width: !isMobile && Boolean(card.most_popular) && "105%",
+                  zIndex: !isMobile && Boolean(Boolean(card.most_popular)) && 4,
                 }}
               >
-                {card.most_popular && (
+                {Boolean(card.most_popular) && (
                   <div className="popular-card child">
                     <p
                       className={`sectionContent ${
@@ -87,15 +87,15 @@ const CommonPlansComponent = ({ data, smallerText, background }) => {
                   </div>
                 )}
                 <p
-                  className={`text-center extra-bold subHead ${
+                  className={`text-center subHead ${
                     smallerText ? "small mt-2" : "mt-4"
-                  } underline`}
+                  }`}
                 >
                   {card.name}
                 </p>
-                <p className="sliderHead1 no-underline small text-center mt-4">
+                <p className="sliderHead1 no-underline small text-left mt-4">
                   {card.content.map((content) => (
-                    <span key={content.id}>
+                    <div key={content.id}>
                       <p
                         className={`sectionContent medium ${
                           smallerText && "small"
@@ -128,7 +128,7 @@ const CommonPlansComponent = ({ data, smallerText, background }) => {
                           </>
                         )}
                       </p>
-                    </span>
+                    </div>
                   ))}
                 </p>
                 <p
@@ -143,8 +143,8 @@ const CommonPlansComponent = ({ data, smallerText, background }) => {
                   />
                 </p>
               </div>
+              </Fade>
               </div>
-            </Fade>
           ))}
             </div>
            

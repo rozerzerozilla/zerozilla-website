@@ -40,7 +40,7 @@ const Section5 = () => {
         </div>
         <div className="row" style={{ marginTop: !isMobile && 30 }}>
           {riskFreeBizAnalysis.map((card, idx) => (
-            <Fade left={idx%4===0} top={idx%4===3} bottom={idx%4===2} right={idx%4===1}>
+            <Fade left={idx % 4 === 0} top={idx % 4 === 3} bottom={idx % 4 === 2} right={idx % 4 === 1} key={card.id}>
             <div
               key={card.id}
               className={`${!isMobile ? "col-3" : "col-12"}`}
