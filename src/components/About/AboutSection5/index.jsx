@@ -7,7 +7,7 @@ const Section5 = () => {
   const [isMobile] = useContext(AppContext);
 
   return (
-    <div className="row Home-area4 about" style={{ margin: 0, padding: 0 }}>
+    <div className="row Home-area4 about" style={{ margin: 0, padding: 0 }} id="ourteam">
       <div
         className={`col-12 Home-main-area5`}
         style={{

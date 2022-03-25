@@ -8,199 +8,126 @@ import OwlCarousel from "react-owl-carousel";
 import SliderNavButtons from "../SliderNav";
 import { AppContext } from "../../../context/Context";
 import Fade from 'react-reveal/Fade';
+import { Container, Row } from "react-bootstrap";
+
+
+const clientTestimonials = [
+  {
+    name: "SHRIPAD PUJARI",
+    testimonial: "I worked with Zerozilla. I must say the team is really good. They understand the client’s requirements really well and deliver the same. They are always available and deliver services quickly. I highly recommend them.",
+    company:"Ayubazaar",
+  },
+  // {
+  //   name: "DEEPIKA",
+  //   testimonial: "Great guys! They designed our event management website.",
+  //   company: "DUSTINEVENTS",
+  // },
+  // {
+  //   name: "VINOD",
+  //   testimonial: "They have developed our billing application and website. Awesome team, express service",
+  //   company: "MEDICLIVE",
+  // },
+  {
+    name: "Dinakar",
+    testimonial: "Our ongoing journey with Zerozilla team has been thoroughly professional and they are quick in terms of response. With core strength in SEO, website, and APP-related projects they are a complete solution provider. Highly recommended!",
+    company: "Handiman Services Ltd",
+  },
+  {
+    name: "Prashanth B.M",
+    testimonial: "We got online registration website while creating the web we got all support from Mr.Vinay and his team and they did all work with good coordination with us. Overall I can say very good services and managing the client.",
+    company: "Success Thumb Services",
+  },
+  {
+    name: "Jayapalashri Anil",
+    testimonial: "I was given a reference of them by a very good friend, and I was assured I won’t be disappointed. Trust me I am not disappointed; the response is instant. My appreciation goes to the entire team of Zerozilla... Kudos.",
+    company:"Samskara Healing Center",
+  },
+  {
+    name: "Aarti Bhatt",
+    testimonial: "We have been working closely with ZZ for more than a year. Working with them has been a pleasure. The team of professionals at Zerozilla is easy to work with and is available at any point of time for support",
+    company: "Leadership Tribe",
+  },
+]
 
 const Section7 = () => {
   const [isMobile, setIsMobile] = useContext(AppContext);
   const ref = useRef(null);
   return (
-    <div className="row Home-area7" style={{ margin: 0, padding: 0 }}>
-      <div
-        className={`col-12 Home-main-area7`}
-        style={commonColPadding(isMobile, "30px")}
-      >
-        <div className="row">
+    <div className="Home-area7" style={{ margin: 0, padding: 0 }}>
+      <Container fluid="lg">
+        <Row style={{position:"relative"}}>
           <div
-            className="row col-12"
-            style={{ paddingLeft: isMobile && "25px" }}
+            className={`col-12 Home-main-area7`}
+            style={commonColPadding(isMobile, "30px")}
           >
-            <p className="section3Head mb-0">Testimonials</p>
-          </div>
-          <div
-            className={`carouselContainer ${isMobile ? "mt-4" : ""}`}
-            style={{ marginTop: !isMobile && "40px" }}
-          >
-            <div className="absoluteDoubleQuotes">
-              <img
-                className="absoluteDoubleQuotes"
-                src={carouselQuotes}
-                alt="quotes"
-              />
-            </div>
-            <OwlCarousel
-              ref={ref}
-              loop
-              autoPlay={true}
-              autoplayTimeout={1000}
-              margin={20}
-              //   nav
-              items={3}
-              className="owl-theme"
-              //   style={{ marginTop: "-30px" }}
-              responsive={responsiveSlider}
-            >
-              <Fade top>
-                <div className="sliderCard">
-                <div className="row col-12 imageCustomBorder">
+            <div className="row">
+              <div
+                className="row col-12"
+                style={{ paddingLeft: isMobile && "25px" }}
+              >
+                <p className="section3Head mb-0">Hear it from our happy customers</p>
+              </div>
+              <div
+                className={`carouselContainer ${isMobile ? "mt-4" : ""}`}
+                style={{ marginTop: !isMobile && "40px", padding: isMobile?"0px":"70px" }}
+              >
+                <div className="absoluteDoubleQuotes">
                   <img
-                    src={caraouselImage}
-                    alt="clientImage"
-                    style={{ padding: 0 }}
+                    className="absoluteDoubleQuotes"
+                    src={carouselQuotes}
+                    alt="quotes"
                   />
                 </div>
-                <div className="row col-12 clientCustomBorder">
-                  <div className="absoluteDoubleQuotes">
-                    <img
-                      className="absoluteDoubleQuotesClient"
-                      src={clientQuotes}
-                      alt="quotes"
-                    />
-                  </div>
-                  <p className="clientSliderContent">
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                    diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                    aliquyam erat, sed diam voluptua. At vero eos et accusam et
-                    justo duo dolores et ea rebum. Stet clita kasd.
-                  </p>
-                  <p className="clientName mb-0">John Doe</p>
-                  <p className="clientDetails mb-0">CEO, Artyss Studio</p>
-                </div>
-                </div>
-              </Fade>
-              <Fade bottom>
-                <div className="sliderCard">
-                <div className="row col-12 imageCustomBorder">
-                  <img
-                    src={caraouselImage1}
-                    alt="clientImage"
-                    style={{ padding: 0 }}
-                  />
-                </div>
-                <div className="row col-12 clientCustomBorder">
-                  <div className="absoluteDoubleQuotes">
-                    <img
-                      className="absoluteDoubleQuotesClient"
-                      src={clientQuotes}
-                      alt="quotes"
-                    />
-                  </div>
-                  <p className="clientSliderContent">
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                    diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                    aliquyam erat, sed diam voluptua. At vero eos et accusam et
-                    justo duo dolores et ea rebum. Stet clita kasd.
-                  </p>
-                  <p className="clientName mb-0">John Doe</p>
-                  <p className="clientDetails mb-0">CEO, Artyss Studio</p>
-                </div>
-                </div>
-              </Fade>
-              <Fade top>
-                <div className="sliderCard">
-                <div className="row col-12 imageCustomBorder">
-                  <img
-                    src={caraouselImage1}
-                    alt="clientImage"
-                    style={{ padding: 0 }}
-                  />
-                </div>
-                <div className="row col-12 clientCustomBorder">
-                  <div className="absoluteDoubleQuotes">
-                    <img
-                      className="absoluteDoubleQuotesClient"
-                      src={clientQuotes}
-                      alt="quotes"
-                    />
-                  </div>
-                  <p className="clientSliderContent">
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                    diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                    aliquyam erat, sed diam voluptua. At vero eos et accusam et
-                    justo duo dolores et ea rebum. Stet clita kasd.
-                  </p>
-                  <p className="clientName mb-0">John Doe</p>
-                  <p className="clientDetails mb-0">CEO, Artyss Studio</p>
-                </div>
-                </div>
-              </Fade>
-              <Fade bottom>
-                <div className="sliderCard">
-                <div className="row col-12 imageCustomBorder">
-                  <img
-                    src={caraouselImage1}
-                    alt="clientImage"
-                    style={{ padding: 0 }}
-                  />
-                </div>
-                <div className="row col-12 clientCustomBorder">
-                  <div className="absoluteDoubleQuotes">
-                    <img
-                      className="absoluteDoubleQuotesClient"
-                      src={clientQuotes}
-                      alt="quotes"
-                    />
-                  </div>
-                  <p className="clientSliderContent">
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                    diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                    aliquyam erat, sed diam voluptua. At vero eos et accusam et
-                    justo duo dolores et ea rebum. Stet clita kasd.
-                  </p>
-                  <p className="clientName mb-0">John Doe</p>
-                  <p className="clientDetails mb-0">CEO, Artyss Studio</p>
-                </div>
-                </div>
-              </Fade>
-            
-              <Fade top>
-                <div className="sliderCard">
-                  <div className="row col-12 imageCustomBorder">
-                    <img
-                      src={caraouselImage1}
-                      alt="clientImage"
-                      style={{ padding: 0 }}
-                    />
-                  </div>
-                  <div className="row col-12 clientCustomBorder">
-                    <div className="absoluteDoubleQuotes">
-                      <img
-                        className="absoluteDoubleQuotesClient"
-                        src={clientQuotes}
-                        alt="quotes"
-                      />
+                <OwlCarousel
+                  ref={ref}
+                  loop={true}
+                  autoPlay={true}
+                  autoplayTimeout={1000}
+                  margin={20}
+                  //   nav
+                  items={1}
+                  className="owl-theme"
+                  responsive={responsiveSlider}
+                >
+                  {clientTestimonials.map((ele, idx) => <Fade key={idx} top={idx % 2 === 0} bottom={idx % 2 !== 0}>
+                    <div className="sliderCard">
+                      <div className="row col-12 imageCustomBorder">
+                        <img
+                          src={caraouselImage}
+                          alt="clientImage"
+                          style={{ padding: 0 }}
+                        />
+                      </div>
+                      <div className="row col-12 clientCustomBorder">
+                        <div className="absoluteDoubleQuotes">
+                          <img
+                            className="absoluteDoubleQuotesClient"
+                            src={clientQuotes}
+                            alt="quotes"
+                          />
+                        </div>
+                        <p className="clientSliderContent">
+                          {ele.testimonial}
+                        </p>
+                        <p className="clientName mb-0">{ele.name}</p>
+                        <p className="clientDetails mb-0">{ele.company}</p>
+                      </div>
                     </div>
-                    <p className="clientSliderContent">
-                      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                      diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                      aliquyam erat, sed diam voluptua. At vero eos et accusam et
-                      justo duo dolores et ea rebum. Stet clita kasd.
-                    </p>
-                    <p className="clientName mb-0">John Doe</p>
-                    <p className="clientDetails mb-0">CEO, Artyss Studio</p>
-                  </div>
-                </div>
-              </Fade>
-            </OwlCarousel>
-            {!isMobile && (
-              <SliderNavButtons
-                reference={ref}
-                justify={"left"}
-                margin={0}
-                absolute={true}
-              />
-            )}
+                  </Fade>)}
+                </OwlCarousel>
+                {!isMobile && (
+                  <SliderNavButtons
+                    reference={ref}
+                    justify={"left"}
+                    margin={0}
+                    absolute={true}
+                  />
+                )}
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
+        </Row>
+      </Container>
     </div>
   );
 };

@@ -12,9 +12,6 @@ const BreadCrumbs = ({className}) => {
         <>
             {pathNames.slice(1).map((path, idx) => (
                 <span key={idx + 1}>
-                    {/* {(()=>{
-                        console.log(path)
-                    })()} */}
                     /<Link className={`customLink ${className}`} to={`/${path}`}>{' '}{path === '' ? 'Home' : capSentence(path)}</Link>
                 </span>
             ))}

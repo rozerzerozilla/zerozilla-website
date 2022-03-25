@@ -9,6 +9,8 @@ import validator from 'validator';
 import Recaptcha from "react-recaptcha";
 import BookCallButton from "../../BookCallButton";
 
+const domain = process.env.REACT_APP_ENDPOINT_API
+
 const handleValidate = values => {
   let errors = {};
   if (!values.firstname)
@@ -21,29 +23,29 @@ const handleValidate = values => {
     errors.email = 'Invalid email address';
   }
 
-  if (!values.enquiryType)
-    errors.enquiryType = 'Required'
   return errors;
 }
 
+
 const FormComponent = ({ isMobile, handleFormSubmit, smallerText }) => {
+  const [isVerified, setIsVerified] = useState(false);
   const formik = useFormik({
     initialValues: {
       firstname: '',
       lastname: '',
       email: '',
-      enquiryType: '',
+      // enquiryType: '',
       message: '',
     },
     onSubmit: (values, { setSubmitting }) => {
       const data = {
-        name: "name",
+        name: `${values.firstname} ${values.lastname}`,
         email: values.email,
         phone: "0987654321",
-        enquiryType: values.enquiryType,
+        enquiryType: '',
         message: values.message
       }
-      fetch("http://localhost:9000/web-mails", {
+      fetch(`${domain}/web-mails`, {
         method: "POST",
         headers: {
           "Content-type":"application/json"
@@ -60,17 +62,8 @@ const FormComponent = ({ isMobile, handleFormSubmit, smallerText }) => {
     },
     validate: handleValidate,
   })
-  const [isVerified, setIsVerified] = useState(false);
-  const handleSubmit = (values, { setSubmitting }) => {
-    console.log(values)
-    if (!isVerified) {
-      alert(`Please confirm that you're not a Robot!`);
-      return;
-    }
-    alert(JSON.stringify(values, null, 2));
-    // setSubmitting(false)
-    // handleFormSubmit();
-  };
+  
+  console.log(formik)
 
   return (
     <>
@@ -119,7 +112,7 @@ const FormComponent = ({ isMobile, handleFormSubmit, smallerText }) => {
             </div>
             <label className="form-error">{formik.errors.email && formik.touched.email && formik.errors.email}</label>
           </div>
-          <div className="row mt-4">
+          {/* <div className="row mt-4">
             <div className="col-12">
               <input
                 className={`app-form-inputs sectionContent w-100 ${smallerText ? "small" : ""
@@ -133,7 +126,7 @@ const FormComponent = ({ isMobile, handleFormSubmit, smallerText }) => {
               />
               <label className="form-error">{formik.errors.enquiryType && formik.touched.enquiryType && formik.errors.enquiryType}</label>
             </div>
-          </div>
+          </div> */}
           <div className="row mt-4">
             <div className="col-12">
               <textarea
@@ -141,7 +134,7 @@ const FormComponent = ({ isMobile, handleFormSubmit, smallerText }) => {
                 className={`app-form-inputs sectionContent w-100 ${smallerText ? "small" : ""
                   }`}
                 type="text"
-                placeholder="Project details"
+                placeholder="Message"
                 name="message"
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}

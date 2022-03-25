@@ -5,7 +5,7 @@ import BookCallButton from "../BookCallButton";
 import BreadCrumbs from "../BreadCrumbs";
 import Fade from 'react-reveal/Fade';
 
-const Section1 = () => {
+const Section1 = ({ handleFunction}) => {
   const [isMobile, setIsMobile] = useContext(AppContext);
   return (
     <div className="row Home-area1 about" style={{ margin: 0, padding: 0 }}>
@@ -53,7 +53,8 @@ const Section1 = () => {
                 <div className="col-12">
                   <div className={`${!isMobile ? "row" : "customFlexBox"}`}>
                     <div className={`${!isMobile ? "col-5" : ""}`}>
-                      <BookCallButton
+                        <BookCallButton
+                          handleFunction={handleFunction}
                         className={null}
                         isColored={false}
                         text={`Let's talk`}

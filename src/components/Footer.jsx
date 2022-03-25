@@ -1,10 +1,9 @@
 import React, { useContext } from "react";
 import { Link, useHistory } from "react-router-dom";
 import { Container, Row, Col, Navbar, Nav } from "react-bootstrap";
-import appLogo from "../assets/icons/appLogo.png";
+import appLogo from "../assets/icons/logoWhite.svg";
 import { AppContext } from "../context/Context";
-import { BsFacebook, BsLinkedin } from "react-icons/bs";
-import {AiFillTwitterCircle} from "react-icons/ai";
+import { BsFacebook, BsLinkedin, BsTwitter, BsInstagram, BsYoutube, BsPinterest } from "react-icons/bs";
 import { footerLink } from "../helper/footer";
 import Fade from 'react-reveal/Fade';
 
@@ -13,77 +12,102 @@ const Footer = ()=>{
     const [isMobile] = useContext(AppContext);
     const margin = !isMobile ? "70px" : "20px";
     return <footer>
-        <Fade delay={1000}>
-        <Container fluid="lg" className="py-5">
-            <Row className="pb-5 footer-bottom-divider" >
-                <Col xs="12" lg="3" className="py-3 pe-4 footer-right-divider">
+        <Fade>
+        <Container fluid="lg" className="pt-5 pb-2">
+            <Row className="pb-3 footer-bottom-divider" style={{color:"white"}}>
+                <Col xs="12" lg="3" className="pt-3 pe-4 footer-right-divider">
                     <Navbar.Brand
                         onClick={() => history.go(0)}
                         style={{ cursor: "pointer" }}
                         >
                         <img className="appLogo" src={appLogo} alt="appLogo" />
                     </Navbar.Brand>
-                    <p className="sectionContent">
+                    <p className="mt-4">
                         If there’s one thing we’ve learned about marketing in these times, is that ‘if it’s not on the web, it doesn’t really count!’ Out of the 7.7 billion people on earth, almost 4 billion have the means to access the internet.
                     </p>
                 </Col>
-                {footerLink.map((link, index)=><Col xs="12" lg="2" key={index + 'footer-link'} className="py-3 ps-3 footer-right-divider">
+                {footerLink.map((link, index)=><Col xs="12" lg="2" key={index + 'footer-link'} className="pt-3 ps-3 footer-right-divider">
                     <Row>
                         <Col lg="12">
-                            {link.title}
+                            <h3 style={{color:"white"}}>{link.title}</h3>
                         </Col>
                         {link.subList.map((subLink, i)=><Col lg="12" key={subLink.id}><Nav.Link href={subLink.href} className="footerLink">
                                 {subLink.name}
                             </Nav.Link></Col>)}
                     </Row>
                 </Col>)}
-                <Col xs="12" lg="3" className="py-3 ps-3">
-                    <p>Get In touch</p>
-                    <p className="sectionContent">+91 9916585246</p>
-                    <p className="sectionContent">info@zerozilla.com</p>
-                    <p className="sectionContent">INDIA : <br/>
-                        T1, 3rd Floor, Swastik Manandi Arcade Opp.Sheshadripuram police station, Sheshadripuram, Bengaluru, Karnataka 560020, India
-                    </p>
+                    <Col xs="12" lg="3" className="pt-3 ps-3">
+                        <h3 style={{color:"white"}}>Get In touch</h3>
+                        <p >+91 9916585246</p>
+                        <p>info@zerozilla.com</p>
+                    <div className="d-flex flex-column w-100">
+                        <div className="w-100">
+                            <p >#1<br />
+                                T1, 3rd Floor, Swastik Manandi Arcade Opp.Sheshadripuram police station, Sheshadripuram, Bengaluru, Karnataka 560020, India
+                            </p>
+                        </div> 
+                        <div className="w-100">
+                            <p >#2<br />
+                                Silver Spirit Tech. Park
+                                WAP Factory Rd, Meenakunte, Hebbal Industrial Estate, Hebbal, Ilavala Hobli, Karnataka 570016
+                            </p>
+                            </div> 
+                            <div className="w-100">
+                                <p >#3<br />
+                                    Matawan NJ 07747,USA
+                                </p>
+                        </div> 
+                            
+                    </div>
                 </Col>
             </Row>
             <br/>
             <Row className="pb-4 footer-bottom-divider">
                 <Col xs="12" lg="4" className="py-md-2 footer-right-divider">
-                    <h3>Social Media</h3>
+                    <h3 style={{color:"white"}}>Zerozilla social</h3>
                     <button className="footer-icon-btn">
                         <BsFacebook style={{fontSize:'30px'}}/>
                     </button>
                     <button className="footer-icon-btn">
-                        <AiFillTwitterCircle style={{fontSize:'30px'}}/>
+                        <BsTwitter style={{fontSize:'30px'}}/>
                     </button>
                     <button className="footer-icon-btn">
                         <BsLinkedin style={{fontSize:'30px'}}/>
+                    </button>
+                    <button className="footer-icon-btn">
+                        <BsInstagram style={{ fontSize: '30px' }} />
+                    </button>
+                    <button className="footer-icon-btn">
+                        <BsYoutube style={{ fontSize: '30px' }} />
+                    </button>
+                    <button className="footer-icon-btn">
+                        <BsPinterest style={{ fontSize: '30px' }} />
                     </button>
                 </Col>
                 <Col xs="12" lg="8">
                     <Row className="align-items-center">
                         <Col xs="12" lg="6" className="px-md-5">
-                            <h3>Subscribe</h3>
-                            <p className="sectionContent">Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                            <h3 style={{color:"white"}}>Subscribe</h3>
+                            <p >Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
                         </Col>
                         <Col xs="12" lg="6" className="ps-md-5">
                             <div className="footerInputWrapper">
-                                <input placeholder="Enter Id" className="footerInput"/>
+                                <input placeholder="Email" className="footerInput"/>
                                 <button className="footerButton">Send</button>
                             </div>
                         </Col>
                     </Row>
                 </Col>
             </Row>
-            <Row className="mt-5">
+            <Row className="pt-2">
                 <Col xs="12" lg="6">
-                    <p className="footerCopyright"><em>Copyright ©{new Date().getFullYear()-1}-{new Date().getDate()}, Zerozilla Infotech Pvt Ltd</em></p>
+                    <p className="footerCopyright"><em>Copyright ©{new Date().getFullYear()}, Zerozilla Infotech Pvt Ltd</em></p>
                 </Col>
                 <Col xs="12" lg="3">
-                    <p className="sectionContent">Privacy Policy</p>
+                    <p >Privacy Policy</p>
                 </Col>
                 <Col xs="12" lg="3">
-                    <p className="sectionContent">Terms and Conditions</p>
+                    <p >Terms and Conditions</p>
                 </Col>
             </Row>
             </Container>

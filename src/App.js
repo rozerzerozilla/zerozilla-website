@@ -1,8 +1,6 @@
-import { useEffect } from "react";
+import { useEffect, Suspense, lazy } from "react";
 import { Switch, Route, Redirect } from "react-router-dom";
-import Header from "./components/Header";
-import CustomHeader from "./components/CustomHeader";
-import Footer from "./components/Footer";
+
 
 // google analytics
 // import ReactGA from "react-ga";
@@ -14,26 +12,35 @@ import "./assets/css/base.css";
 //components
 import GoUp from "./components/GoUp";
 
-// import "antd/dist/antd.css";
+import "antd/dist/antd.css";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import { AppProvider } from "./context/Context";
 
+// import routes
+import { customServices, marketingServices, businessServices, cloudServices } from "./helper/router"
+import Loader from "./components/MainLoader"
 //pages
-import HomePage from "./pages/Home";
-import AboutPage from "./pages/About";
-import WebDevlopment from "./pages/Services/Services1";
-import ServicePage2 from "./pages/Services/Services2";
-import ServicePage3 from "./pages/Services/Services3";
-import ServicePage4 from "./pages/Services/Services4";
-import ServicePage5 from "./pages/Services/Services5";
-import ServicePage6 from "./pages/Services/Services6";
-import ServicePage7 from "./pages/Services/Services7";
-import AWS from "./pages/Services/AWS";
-import PortfolioPage from "./pages/Portfolio";
-import ContactUsPage from "./pages/ContactUs";
-import PortfolioSubPage from "./pages/Portfolio/PortfolioSubPage";
-import ThankYou from "./pages/ThankYou";
+// import AboutPage from "./pages/About";
+// import ServicePage2 from "./pages/Services/CustomApplication";
+// import AWS from "./pages/Services/AWS";
+// import PortfolioPage from "./pages/Portfolio";
+// import ContactUsPage from "./pages/ContactUs";
+// import PortfolioSubPage from "./pages/Portfolio/PortfolioSubPage";
+// import ThankYou from "./pages/ThankYou";
+// import PagenotFound from "./pages/PageNotFound";
+const HomePage = lazy(() => import('./pages/Home'));
+const AboutPage = lazy(() => import('./pages/About'));
+const DigtalMarketing = lazy(() => import("./pages/Services/DigtalMarketing"));
+const PortfolioPage = lazy(() => import('./pages/Portfolio'));
+const Career = lazy(() => import('./pages/Career'));
+const ContactUsPage = lazy(() => import('./pages/ContactUs'));
+const PortfolioSubPage = lazy(() => import('./pages/Portfolio/PortfolioSubPage'));
+const ThankYou = lazy(() => import('./pages/ThankYou'));
+const PagenotFound = lazy(() => import('./pages/PageNotFound'));
+const WebDevlopment = lazy(() => import('./pages/Home'));
+
+
 
 const App = () => {
   
@@ -43,45 +50,27 @@ const App = () => {
   return (
     <AppProvider>
       <div className="App">
-        <CustomHeader/>
+        <Suspense fallback={<Loader/>}>
         {/* <Header /> */}
         <Switch>
-          <Redirect exact path="/" to="/home" />
-          <Route path={"/home"} component={HomePage} />
+          <Route exact path={"/"} component={HomePage} />
           <Route path={"/about-us"} component={AboutPage} />
-          <Route
-            path={"/services/web-application"}
-            component={WebDevlopment}
-          />
-          <Route
-            path={"/services/aws"}
-            component={AWS}
-          />
-          <Route
-            path={"/services/mobile-application"}
-            component={ServicePage2}
-          />
-          <Route
-            path={"/services/digital-marketing"}
-            component={ServicePage3}
-          />
-          <Route
-            path={"/services/search-engine-optimization"}
-            component={ServicePage4}
-          />
-          <Route
-            path={"/services/social-media-marketing"}
-            component={ServicePage5}
-          />
-          <Route path={"/services/pay-per-click"} component={ServicePage6} />
-          <Route path={"/services/lead-generation"} component={ServicePage7} />
+          {businessServices.map((ele, idx) => <Route key={idx + Math.random() * 10} path={ele.href} component={ele.component} />)}
+          {customServices.map((ele, idx) => <Route key={idx + Math.random() * 10} path={ele.href} component={ele.component}/>)}
+          {cloudServices.map((ele, idx) => <Route key={idx + Math.random() * 10} path={ele.href} component={ele.component} />)}
+          
+          {marketingServices.map((ele, idx) => <Route key={idx + Math.random() * 10} path={ele.href} component={ele.component} />)}
+            <Route path={"/digital-marketing"} component={DigtalMarketing} />
+            <Route path={"/web-application"} component={WebDevlopment}/>
+          <Route path={"/career"} component={Career} />
           <Route exact path={"/portfolio"} component={PortfolioPage} />
           <Route path={"/portfolio/skill-mine"} component={PortfolioSubPage} />
           <Route path={"/contact-us"} component={ContactUsPage} />
-          <Route path={"/thank-you"} component={ThankYou}/>
+          <Route path={"/thank-you"} component={ThankYou} />
+          <Route component={PagenotFound} />
         </Switch>
         <GoUp />
-        <Footer/>
+        </Suspense>
       </div>
     </AppProvider>
   );

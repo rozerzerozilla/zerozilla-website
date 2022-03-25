@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="102" height="102" viewBox="0 0 102 102">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_4491" data-name="Rectangle 4491" width="102" height="102" transform="translate(1340 4093)" fill="#edf9ff"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_26" data-name="Mask Group 26" transform="translate(-1340 -4093)" clip-path="url(#clip-path)">
+    <path id="flutter-plain" d="M9.8,51.159,60.8,0H92.2L25.58,66.619ZM60.8,102H92.2L65.025,74.827,92.2,47.1H60.8L33.628,74.508Z" transform="translate(1340 4093)" fill="#3fb6d3"/>
+  </g>
+</svg>

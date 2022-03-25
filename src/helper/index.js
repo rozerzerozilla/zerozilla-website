@@ -47,45 +47,91 @@ export const staticHomeSlider = [
 export const bizIdeas = [
   {
     id: 1,
-    image: "cardImage1.svg",
-    name: "Competitor Research",
+    image: "organic-search.svg",
+    name: "Enhanced performance",
     description:
-      "We fathom the level of competition that your business will face & other competition beating strategies",
+      "Our out-of-box ideas align with your objectives, enhance your performance, and help you place a firm foot in the business world.",
   },
   {
     id: 2,
-    image: "cardImage1.svg",
-    name: "Innovative Ideas",
+    image: "creativity-bulb.svg",
+    name: "Innovation",
     description:
-      "We come up with outof-the-box ideas & make them work in favor of your business goals",
+      "As an IT services company, we devise creative products, services, and solutions that help your business experience scalability and progress at a faster pace.",
   },
   {
     id: 3,
-    image: "cardImage1.svg",
-    name: "Skyrocketing Growth",
+    image: "skyrocketing.svg",
+    name: "Modernization",
     description:
-      "We enhance the growth potential of your business & find out new growth avenues for you",
+      "We instill modernization into our services by chartering new growth avenues for your business by unleashing the power of existing technologies.",
   },
   {
     id: 4,
-    image: "cardImage1.svg",
-    name: "Strategy Draft",
+    image: "search-servers.svg",
+    name: "Strategy preparation",
     description:
-      "We prepare a blueprint of business growth strategy for you & help you follow it meticulously",
+      "We prepare a blueprint of the business growth strategy and guide you to follow and execute it meticulously.",
   },
   {
     id: 5,
-    image: "cardImage1.svg",
-    name: "Web Engineering",
+    image: "web-engg.svg",
+    name: "Digitalization",
     description:
-      "We understand well the technicalities associated with World Wide Web & other you the necessary support",
+      "Intelligent digital solutions are implemented to automate manual business processes and to enhance user experience.",
   },
   {
     id: 6,
-    image: "cardImage1.svg",
+    image: "data-report.svg",
     name: "Project Mapping",
     description:
-      "We map out the journey of a project & prepare our arsenal accordingly to help you grow",
+      "A thorough mapping of your project milestones is done to help your business confront challenges and overcome obstacles. ",
+  },
+];
+
+
+export const webIdeas = [
+  {
+    id: 1,
+    image: "organic-search.svg",
+    name: "Enhanced performance",
+    description:
+      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
+  },
+  {
+    id: 2,
+    image: "creativity-bulb.svg",
+    name: "Innovation",
+    description:
+      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
+  },
+  {
+    id: 3,
+    image: "skyrocketing.svg",
+    name: "Modernization",
+    description:
+      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
+  },
+  {
+    id: 4,
+    image: "search-servers.svg",
+    name: "Strategy preparation",
+    description:
+      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
+  },
+  {
+    id: 5,
+    image: "web-engg.svg",
+    name: "Digitalization",
+    description:
+      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
+  },
+  {
+    id: 6,
+    image: "data-report.svg",
+    name: "Project Mapping",
+    description:
+      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
   },
 ];
 
@@ -190,3 +236,55 @@ export const responsiveSlider = {
     items: 3,
   },
 };
+
+
+
+export const devopsServices = [
+  {
+    id: 1,
+    image: "tachometer.svg",
+    name: "Speed",
+    description:
+      "Move at an accelerated pace and adapt to market trends efficiently with DevOps.",
+  },
+  {
+    id: 2,
+    image: "lighting.svg",
+    name: "Fast delivery",
+    description:
+      "Innovate products and respond faster to with CI/CD practices from software building to deployment.",
+  },
+  {
+    id: 3,
+    image: "heart-outline.svg",
+    name: "Reliability",
+    description:
+      "Maintain a positive experience for end-users by reliably delivering at a rapid pace.",
+  },
+  {
+    id: 4,
+    image: "upgraph.svg",
+    name: "Scalability",
+    description:
+      "Manage complex systems efficiently with automation and consistency and scale when the need arises.",
+  },
+  {
+    id: 5,
+    image: "dashboard-view.svg",
+    name: "Increased collaboration",
+    description:
+      "Collaborate, manage workflows, and share responsibilities effectively under a DevOps cultural model.",
+  },
+  {
+    id: 6,
+    image: "safe-lock.svg",
+    name: "Security",
+    description:
+      "Use a DevOps model to maintain control and compliance through automated compliance policies and controls.",
+  },
+];
+
+
+
+export const prodAPI = 'http://192.81.213.186:9000';
+export const deveAPI = 'http://localhost:9000';

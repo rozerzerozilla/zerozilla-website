@@ -1,22 +1,24 @@
 import React from "react";
 import CommonSection1 from "../../Common/CommonSection1";
-import lottieJson from './lottieAWS.json';
+import * as lottieJson from "./lottieAWS.json";
+import AWSCover from "../../../assets/images/aws-page.gif";
 
-const Section1 = () => {
+const Section1 = ({handleFunction}) => {
 
-  // const imagesrc = JSON.parse(lottieJson)
-  console.log(lottieJson)
+  
   return (
     <CommonSection1
+      handleFunction={handleFunction}
+      animatedImage={true}
+      animationData={lottieJson}
       title={`AWS Managed Services and Support`}
       subtitle1={`Unchain your business with cloud technology`}
       subtitle2={`Unlock optimum computing power now`}
-      subtitle3={'CTA: Maximize your cloud potential.'}
-      sectionCover={""}
+      sectionCover={AWSCover}
       background={`#F2EBFF`}
       btnText={`Let’s Talk`}
       boxShadow={false}
-      extraText={`Qualified Leads  ·  Generate Calls  ·  Make Transitions  ·  New Clients`}
+      extraText=""
       isColored={true}
       titleColor={`#4C2E88`}
       btnColor={`#4C2E88`}

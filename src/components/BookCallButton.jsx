@@ -6,21 +6,26 @@ const BookCallButton = ({
   showImage,
   text,
   className,
-  handleFunction,
   btnColor,
   smallText,
   type2,
   applyRadius,
   disabled,
-  type='button'
+  type = 'button',
+  bordered = false,
+  width = 'unset',
+  handleFunction = () => { },
+  linkType = false,
+  link
 }) => {
   // console.log('small', smallText)
   if (type === 'submit') {
     return (
       <button
+        onClick={handleFunction}
         type={type}
         disabled={disabled}
-        className={`sliderBtns ${isColored ? "colored" : ""} ${className}`}
+        className={`sliderBtns ${isColored ? "bordered" : ""} ${className}`}
         style={
           btnColor
             ? { background: btnColor, color: "#fff", border: btnColor }
@@ -29,6 +34,7 @@ const BookCallButton = ({
               border: type2 && "2px solid #fff",
               color: type2 && "#fff",
               borderRadius: applyRadius && "30px",
+              width: width
             }
         }
       >
@@ -46,7 +52,7 @@ const BookCallButton = ({
     return (
       <button
         type={type}
-        className={`sliderBtns ${isColored ? "colored" : ""} ${className}`}
+        className={`sliderBtns ${isColored ? "colored " : bordered ? "bordered" : ""} ${className}`}
         onClick={handleFunction}
         style={
           btnColor
@@ -56,6 +62,7 @@ const BookCallButton = ({
               border: type2 && "2px solid #fff",
               color: type2 && "#fff",
               borderRadius: applyRadius && "30px",
+              width: width
             }
         }
       >

@@ -9,7 +9,7 @@ import $ from "jquery";
 import BookCallButton from "../BookCallButton";
 import SliderNavButtons from "./SliderNav";
 import { AppContext } from "../../context/Context";
-const Section1 = () => {
+const Section1 = ({ handleFunction}) => {
 
   const [isMobile, setIsMobile] = useContext(AppContext);
   const ref = useRef(null);
@@ -41,12 +41,12 @@ const Section1 = () => {
                               : null
                           }
                         >
-                          <p className="sliderHead1">
-                            Welcome to the Power of Zerozilla!
+                          <p className="sliderHead1" style={{fontSize:"16px"}}>
+                            Experience ‘digital’ like never before!
                           </p>
                           <p className="sliderHead2 mb-0">
-                            The most valued addition your business will ever
-                            Experience!
+                            {/* Your dependable partner for business success! */}
+                            The most valued addition your business will ever experience!
                           </p>
                         </div>
                         <div className="row" style={{ marginTop: "30px" }}>
@@ -58,9 +58,11 @@ const Section1 = () => {
                             >
                               <div className={`${!isMobile ? "col-4" : ""}`}>
                                 <BookCallButton
+                                  handleFunction={handleFunction}
+                                  width={"100%"}
                                   className={null}
                                   isColored={false}
-                                  text={"Book Now"}
+                                  text={"Contact Now"}
                                   showImage={true}
                                 />
                               </div>
@@ -68,31 +70,17 @@ const Section1 = () => {
                                 className={`${!isMobile ? "col-4 pl-0" : ""}`}
                                 style={{ paddingLeft: !isMobile ? 0 : "" }}
                               >
-                                <button className="sliderBtns">
-                                  <span>Learn more</span>
-                                </button>
+                                <a href="#about-us-home">
+                                  <button className="sliderBtns colored" style={{ width: "100%" }}>
+                                    <span>Know more</span>
+                                  </button>
+                                </a>
+                                
                               </div>
                             </div>
                           </div>
                         </div>
-                        <div className="row" style={{ marginTop: "40px" }}>
-                          <div
-                            className={`col-lg-4 my-auto ${isMobile && "mb-3"}`}
-                            style={
-                              isMobile
-                                ? { textAlign: "center" }
-                                : { marginRight: "20px" }
-                            }
-                          >
-                            <img src={sliderPeople} alt="sliderPeople" />
-                          </div>
-                          <div
-                            className="col-lg-7 my-auto needHelpText"
-                            style={isMobile ? { textAlign: "center" } : null}
-                          >
-                            Need help ? Contact our experts
-                          </div>
-                        </div>
+
                       </div>
                     </div>
                   </div>

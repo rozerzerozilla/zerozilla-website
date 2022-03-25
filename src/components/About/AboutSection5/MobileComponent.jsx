@@ -18,10 +18,21 @@ const MobileTeamView = () => {
         style={{ paddingRight: "20px" }}
       responsive={responsiveSlider}
     >
-      {cardContent.map((card) => (
+      {cardContent.map((card, idx) => (
         <div className="sliderCard" key={card.id}>
           <div className="row col-12 imageCustomBorder">
-            <img src={cardCover} alt="clientImage" style={{ padding: 0 }} />
+            <img
+              className="card-img team-img"
+              src={require(`../../../assets/teams/${card.img}`)}
+              alt={`card-${idx + 1}`}
+              style={{ width: "100%", transition: "all 0.3s ease-out" }}
+            />
+            {/* <img
+              className="card-img image-hover"
+              src={require(`../../../assets/teams/${card.hoverimg}`)}
+              alt={`card-hover-${idx + 1}`}
+              style={{ transition: "all 0.3s ease-out" }}
+            /> */}
           </div>
           <div className="row col-12 clientCustomBorder">
             <div className="absoluteDoubleQuotes"></div>

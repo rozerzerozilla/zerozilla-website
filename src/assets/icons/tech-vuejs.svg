@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="102" height="102" viewBox="0 0 102 102">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_4462" data-name="Rectangle 4462" width="102" height="102" transform="translate(909 3568)" fill="#c31f5d"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_10" data-name="Mask Group 10" transform="translate(-909 -3568)" clip-path="url(#clip-path)">
+    <g id="vuejs-original" transform="translate(909 3567.996)">
+      <path id="Path_37278" data-name="Path 37278" d="M0,7.119l39.727.126,11.289,19.5,11.5-19.5L102,7.12,51.132,94.888Zm101.187.508-19.412.016L51.115,60.279,20.473,7.644.751,7.628,51.122,93.6ZM81.147,7.621l-18.125.134-12,19.641L39.219,7.754,21.055,7.62,51.122,59Zm-60.43-.135,18.33.007m-18.33-.008,18.33.008" fill="none"/>
+      <path id="Path_37279" data-name="Path 37279" d="M20.716,7.485l18.33.007L51.028,27.381,62.967,7.494l18.314,0L51.12,59.808Z" fill="#35495e"/>
+      <path id="Path_37280" data-name="Path 37280" d="M.725,7.625,20.7,7.488,51.1,59.81,81.265,7.491l20.01.021L51.1,93.622Z" fill="#41b883"/>
+    </g>
+  </g>
+</svg>

@@ -6,7 +6,7 @@ import Fade from 'react-reveal/Fade';
 const Section6 = () => {
   const [isMobile, setIsMobile] = useContext(AppContext);
   return (
-    <div className="row Home-area3" style={{ margin: 0, padding: 0 }}>
+    <div className="row Home-area3" style={{ margin: 0, padding: 0 }} id="journey">
       <div
         className={`col-12 Home-main-area4`}
         style={{
@@ -50,7 +50,7 @@ const Section6 = () => {
                 <p className="section3Head black extra-bold">
                   <span className="section3Head black">Journey of Zerozilla</span>
                   <br />
-                  The Amazing 7+ Years
+                  The Amazing {parseInt(new Date().getFullYear()) - 2015}+ Years
                 </p>
                 <p className="sectionContent">
                   Our commitment and sincerity in defining what user experience

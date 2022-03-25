@@ -1,9 +1,10 @@
 import React from "react";
 import CommonSection1 from "../Common/CommonSection1";
 
-const Section1 = () => {
+const Section1 = ({ handleFunction}) => {
   return (
     <CommonSection1
+      handleFunction={handleFunction}
       title={`Contact us`}
       subtitle1={`If you’re interested in true digital reality through clear and touchable results, it’s time for you to become partner`}
       subtitle2={`with us for full-service digital solutions that fuel innovation and understand customer intent at its core.`}

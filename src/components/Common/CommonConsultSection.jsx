@@ -4,7 +4,7 @@ import BookCallButton from "../BookCallButton";
 import Fade from 'react-reveal/Fade';
 import Zoom from 'react-reveal/Zoom';
 
-const CommonConsultSection = ({ btnText, type2, text, extraBold, applyRadius }) => {
+const CommonConsultSection = ({ btnText, type2, text, extraBold, applyRadius, handleFunction }) => {
   const [isMobile] = useContext(AppContext);
 
   const getText = (center) => {
@@ -23,6 +23,7 @@ const CommonConsultSection = ({ btnText, type2, text, extraBold, applyRadius }) 
     return (
       <div className={`${center ? "text-center mt-4" : "mb-0"}`}>
         <BookCallButton
+          handleFunction={handleFunction}
           className={null}
           isColored={true}
           showImage={false}

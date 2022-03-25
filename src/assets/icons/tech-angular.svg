@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="102" height="102" viewBox="0 0 102 102">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_4466" data-name="Rectangle 4466" width="102" height="102" transform="translate(343 3568)" fill="#c31f5d"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_11" data-name="Mask Group 11" transform="translate(-343 -3568)" clip-path="url(#clip-path)">
+    <path id="angularjs-plain" d="M42.812,51.831H61.666L51.644,30.874Zm8.865-51L3.687,17.72,11.27,80.595l40.458,22.236L92.394,80.294l7.58-62.873ZM38.909,60.739l-5.884,14.72-11,.045L51.674,9.842l-.057-.124h-.052V9.611l.051.108h.114l.1-.222v.222h-.1l-.056.124L82.6,75.778l-10.588-.232L65.5,60.5l-13.908.066" transform="translate(342.169 3567.169)" fill="#c4473a"/>
+  </g>
+</svg>

@@ -111,66 +111,66 @@ export const customWebDevCard = [
 export const digitalMarketCards = [
   {
     id: 1,
-    image: "business-site-icon.svg",
-    name: "Business Website",
+    image: "dm-seo.svg",
+    name: "Search Engine Optimization",
     description:
-      "Rich UI, Mobile-friendly business website designing specifically curated for your industry Demands",
+      "Soar to a high rank in the top search engines & get noticed before all others in the queue",
   },
   {
     id: 2,
-    image: "ecomm-site.svg",
-    name: "E-commerce Website",
+    image: "dm-payperclick.svg",
+    name: "Pay-Per Click",
     description:
-      "Cart management to inventory management stunning Ecommerce site development with the latest technology",
+      "Unleash the power of PPC Ads to get multiple clicks to your website & generate big sales figures",
   },
   {
     id: 3,
-    image: "blog-site.svg",
-    name: "Personal or Blog Website",
+    image: "dm-socialmarketing.svg",
+    name: "Social Media Marketing",
     description:
-      "Static to dynamic customised website designing to boost your personal branding",
+      "Be a known figure on social media & get more traffic for your business through social media marketing",
   },
   {
     id: 4,
-    image: "business-site-icon.svg",
-    name: "Business Website",
+    image: "dm-leadgeneration.svg",
+    name: "Lead Generation Services",
     description:
-      "Rich UI, Mobile-friendly business website designing specifically curated for your industry Demands",
+      "Generate valuable, targeted & qualified leads and convert your leads into sure-shot buyers in just no time!",
   },
   {
     id: 5,
-    image: "ecomm-site.svg",
-    name: "E-commerce Website",
+    image: "dm-branding.svg",
+    name: "Branding Services",
     description:
-      "Cart management to inventory management stunning Ecommerce site development with the latest technology",
+      "Position your brand in the right way, garner all attention and build an impressive brand identity online",
   },
   {
     id: 6,
-    image: "blog-site.svg",
-    name: "Personal or Blog Website",
+    image: "dm-contentmarketing.svg",
+    name: "Content Marketing Services",
     description:
-      "Static to dynamic customised website designing to boost your personal branding",
+      "Industry-best content marketing support to help you create optimized content aimed at fueling conversions and boosting sales",
   },
   {
     id: 7,
-    image: "business-site-icon.svg",
-    name: "Business Website",
+    image: "dm-videomarketing.svg",
+    name: "Video Marketing",
     description:
-      "Rich UI, Mobile-friendly business website designing specifically curated for your industry Demands",
+      "Grab the audience’s interest & let them stay interested in your products and services through engaging marketing films",
   },
   {
     id: 8,
-    image: "ecomm-site.svg",
-    name: "E-commerce Website",
+    image: "dm-appmarketing.svg",
+    name: "App Marketing Services",
     description:
-      "Cart management to inventory management stunning Ecommerce site development with the latest technology",
+      "Make use of creatively designed mobile apps in order to access a larger audience in a shorter time period",
   },
   {
     id: 9,
-    image: "blog-site.svg",
-    name: "Personal or Blog Website",
+    image: "dm-emailmarketing.svg",
+    name: "Email Marketing Service",
     description:
-      "Static to dynamic customised website designing to boost your personal branding",
+      "Send marketing emails that make your target audience read it over & over again and then buy from you",
   },
 ];
 
@@ -511,42 +511,42 @@ export const oneLink = [
 export const awsStrategy = [
   {
     id: 1,
-    image: "project-analysis-icon.svg",
+    image: "aws-windows.png",
     name: "Operating system support ",
     description:
       "We offer support for Red Hat Enterprise, Amazon Linux, and Microsoft Windows Servers.",
   },
   {
     id: 2,
-    image: "on-page-seo-icon.svg",
+    image: "aws-cloud-settings.png",
     name: "Workload management",
     description:
       "Our solutions help you to enhance the workload management for cloud services.",
   },
   {
     id: 3,
-    image: "off-page-seo-icon.svg",
+    image: "aws-startup.png",
     name: "Application deployment",
     description:
       "We are experts in developing and deploying high-performance cloud applications.",
   },
   {
     id: 4,
-    image: "competitor-research-icon.svg",
+    image: "aws-logo.svg",
     name: "AWS services",
     description:
       "Competitors research helps understanding why other sites are ranking higher and what we should plan to outrank them.",
   },
   {
     id: 5,
-    image: "reaccess-icon.svg",
+    image: "aws-maintenance.png",
     name: "Cloud Support",
     description:
       "We are keen on the timely delivery of extensive cloud support and infrastructure.",
   },
   {
     id: 6,
-    image: "reporting-icon.svg",
+    image: "aws-cloud-database.png",
     name: "Terraform integration",
     description:
       "Our capability includes efficiently integrating Terraform to build, change, and specify data infrastructure.",
@@ -609,4 +609,609 @@ export const awsPageCards = [
     description:
       "We not only manage the infrastructure and applications but also follow stringent norms to tighten your business security.",
   },
+];
+
+
+// devops
+export const devopsTips = [
+  {
+    id: 1,
+    title:
+      "Jenkins - Jenkins is an open-source tool written in the Java programming language used to implement Continuous Integration/ Continuous Development (CI/CD) workflows.",
+  },
+  {
+    id: 2,
+    title:
+      "Git - A free and open-source tool, Git is used to handle small to large projects efficiently by enabling multiple developers to work on non-linear development.",
+  },
+  {
+    id: 3,
+    title:
+      "Docker - A crucial part of DevOps, the Docker tool lets developers focus on application development without worrying about the platform.",
+  },
+  {
+    id: 4,
+    title:
+      "Terraform - Terraform enables you to programmatically provision the physical resources that is required by an application to run.",
+  },
+];
+export const devopsPageCards = [
+  {
+    id: 1,
+    image: "users-community.svg",
+    name: "Unites Teams",
+    description:
+      "Ensures faster product shipment by better collaboration and unity among teams.",
+  },
+  {
+    id: 2,
+    image: "links.svg",
+    name: "Introduces Automation",
+    description:
+      "Makes that the deployment is smoother and faster with the help of automation.",
+  },
+  {
+    id: 3,
+    image: "tecttalk.svg",
+    name: "End-to-end Support",
+    description:
+      "Keeps everyone on the same page by positively affecting all aspects of the business.",
+  },
+  {
+    id: 4,
+    image: "devops-setting.svg",
+    name: "Simplifies development focus",
+    description:
+      "Simplifies the way work is prioritized by helping you focus on one thing at a time.",
+  },
+];
+
+// mobile services strategy
+export const androidStrategy = [
+  {
+    id: 1,
+    image: "project-analysis-icon.svg",
+    name: "Custom Mobile App Development",
+    description:
+      "We offer support for Red Hat Enterprise, Amazon Linux, and Microsoft Windows Servers.",
+  },
+  {
+    id: 2,
+    image: "on-page-seo-icon.svg",
+    name: "E-commerce Mobile App",
+    description:
+      "Our solutions help you to enhance the workload management for cloud services.",
+  },
+  {
+    id: 3,
+    image: "off-page-seo-icon.svg",
+    name: "Bots Application Development",
+    description:
+      "We are experts in developing and deploying high-performance cloud applications.",
+  }
+];
+export const iOSStrategy = [
+  {
+    id: 1,
+    image: "project-analysis-icon.svg",
+    name: "Custom Mobile App Development",
+    description:
+      "We offer support for Red Hat Enterprise, Amazon Linux, and Microsoft Windows Servers.",
+  },
+  {
+    id: 2,
+    image: "on-page-seo-icon.svg",
+    name: "E-commerce Mobile App",
+    description:
+      "Our solutions help you to enhance the workload management for cloud services.",
+  },
+  {
+    id: 3,
+    image: "off-page-seo-icon.svg",
+    name: "Bots Application Development",
+    description:
+      "We are experts in developing and deploying high-performance cloud applications.",
+  }
+];
+
+export const iPadStrategy = [
+  {
+    id: 1,
+    image: "project-analysis-icon.svg",
+    name: "Custom Mobile App Development",
+    description:
+      "We offer support for Red Hat Enterprise, Amazon Linux, and Microsoft Windows Servers.",
+  },
+  {
+    id: 2,
+    image: "on-page-seo-icon.svg",
+    name: "E-commerce Mobile App",
+    description:
+      "Our solutions help you to enhance the workload management for cloud services.",
+  },
+  {
+    id: 3,
+    image: "off-page-seo-icon.svg",
+    name: "Bots Application Development",
+    description:
+      "We are experts in developing and deploying high-performance cloud applications.",
+  }
+];
+export const androidUXStrategy = [
+  {
+    id: 1,
+    image: "project-analysis-icon.svg",
+    name: "Custom Mobile App Development",
+    description:
+      "We offer support for Red Hat Enterprise, Amazon Linux, and Microsoft Windows Servers.",
+  },
+  {
+    id: 2,
+    image: "on-page-seo-icon.svg",
+    name: "E-commerce Mobile App",
+    description:
+      "Our solutions help you to enhance the workload management for cloud services.",
+  },
+  {
+    id: 3,
+    image: "off-page-seo-icon.svg",
+    name: "Bots Application Development",
+    description:
+      "We are experts in developing and deploying high-performance cloud applications.",
+  }
+];
+
+export const customStrategy = [
+  {
+    id: 1,
+    image: "project-analysis-icon.svg",
+    name: "Custom Mobile App Development",
+    description:
+      "We offer support for Red Hat Enterprise, Amazon Linux, and Microsoft Windows Servers.",
+  },
+  {
+    id: 2,
+    image: "on-page-seo-icon.svg",
+    name: "E-commerce Mobile App",
+    description:
+      "Our solutions help you to enhance the workload management for cloud services.",
+  },
+  {
+    id: 3,
+    image: "off-page-seo-icon.svg",
+    name: "Bots Application Development",
+    description:
+      "We are experts in developing and deploying high-performance cloud applications.",
+  }
+];
+export const ecommerceStrategy = [
+  {
+    id: 1,
+    image: "project-analysis-icon.svg",
+    name: "Custom Mobile App Development",
+    description:
+      "We offer support for Red Hat Enterprise, Amazon Linux, and Microsoft Windows Servers.",
+  },
+  {
+    id: 2,
+    image: "on-page-seo-icon.svg",
+    name: "E-commerce Mobile App",
+    description:
+      "Our solutions help you to enhance the workload management for cloud services.",
+  },
+  {
+    id: 3,
+    image: "off-page-seo-icon.svg",
+    name: "Bots Application Development",
+    description:
+      "We are experts in developing and deploying high-performance cloud applications.",
+  }
+];
+export const iBeaconStrategy = [
+  {
+    id: 1,
+    image: "project-analysis-icon.svg",
+    name: "Custom Mobile App Development",
+    description:
+      "We offer support for Red Hat Enterprise, Amazon Linux, and Microsoft Windows Servers.",
+  },
+  {
+    id: 2,
+    image: "on-page-seo-icon.svg",
+    name: "E-commerce Mobile App",
+    description:
+      "Our solutions help you to enhance the workload management for cloud services.",
+  },
+  {
+    id: 3,
+    image: "off-page-seo-icon.svg",
+    name: "Bots Application Development",
+    description:
+      "We are experts in developing and deploying high-performance cloud applications.",
+  }
+];
+export const iotStrategy = [
+  {
+    id: 1,
+    image: "project-analysis-icon.svg",
+    name: "Custom Mobile App Development",
+    description:
+      "We offer support for Red Hat Enterprise, Amazon Linux, and Microsoft Windows Servers.",
+  },
+  {
+    id: 2,
+    image: "on-page-seo-icon.svg",
+    name: "E-commerce Mobile App",
+    description:
+      "Our solutions help you to enhance the workload management for cloud services.",
+  },
+  {
+    id: 3,
+    image: "off-page-seo-icon.svg",
+    name: "Bots Application Development",
+    description:
+      "We are experts in developing and deploying high-performance cloud applications.",
+  }
+];
+export const botsStrategy = [
+  {
+    id: 1,
+    image: "project-analysis-icon.svg",
+    name: "Custom Mobile App Development",
+    description:
+      "We offer support for Red Hat Enterprise, Amazon Linux, and Microsoft Windows Servers.",
+  },
+  {
+    id: 2,
+    image: "on-page-seo-icon.svg",
+    name: "E-commerce Mobile App",
+    description:
+      "Our solutions help you to enhance the workload management for cloud services.",
+  },
+  {
+    id: 3,
+    image: "off-page-seo-icon.svg",
+    name: "Bots Application Development",
+    description:
+      "We are experts in developing and deploying high-performance cloud applications.",
+  }
+];
+export const hybridStrategy = [
+  {
+    id: 1,
+    image: "project-analysis-icon.svg",
+    name: "Custom Mobile App Development",
+    description:
+      "We offer support for Red Hat Enterprise, Amazon Linux, and Microsoft Windows Servers.",
+  },
+  {
+    id: 2,
+    image: "on-page-seo-icon.svg",
+    name: "E-commerce Mobile App",
+    description:
+      "Our solutions help you to enhance the workload management for cloud services.",
+  },
+  {
+    id: 3,
+    image: "off-page-seo-icon.svg",
+    name: "Bots Application Development",
+    description:
+      "We are experts in developing and deploying high-performance cloud applications.",
+  }
+];
+export const reactNativeStrategy = [
+  {
+    id: 1,
+    image: "project-analysis-icon.svg",
+    name: "Custom Mobile App Development",
+    description:
+      "We offer support for Red Hat Enterprise, Amazon Linux, and Microsoft Windows Servers.",
+  },
+  {
+    id: 2,
+    image: "on-page-seo-icon.svg",
+    name: "E-commerce Mobile App",
+    description:
+      "Our solutions help you to enhance the workload management for cloud services.",
+  },
+  {
+    id: 3,
+    image: "off-page-seo-icon.svg",
+    name: "Bots Application Development",
+    description:
+      "We are experts in developing and deploying high-performance cloud applications.",
+  }
+];
+
+export const brandingStrategy = [
+  {
+    id: 1,
+    image: "meeting.png",
+    name: "Knowing your business",
+    description:
+      "As entrepreneur you need to understand your business as well as your target audience thoroughly. Sound understanding of your business & market can pave the way for a perfect social media marketing plan.",
+  },
+  {
+    id: 2,
+    image: "analytics.png",
+    name: "Market research and Gap Analysis",
+    description:
+      "In-depth market research can make you identify the loopholes or gaps in your marketing plan and chalk out fitting solutions to plug those gaps. Also, market research & analysis can help you fathom the degree of competition in the market.",
+  },
+  {
+    id: 3,
+    image: "aws-startup.png",
+    name: "Watch your traffic grow exponentially",
+    description:
+      "Traffic to your business website and to your social platforms can make your business grow & your sales soar. Get increased traffic through your social media interactions based on well researched & well optimized social media marketing plans.",
+  }
+];
+
+export const webdevCommonStrategy = [
+  {
+    id: 1,
+    image: "meeting.png",
+    name: "Wordpress Design",
+    description:
+      "There are many variations of lorem duos spassages of Lorem Ipsum available lora internet tend to repeat predefined.",
+  },
+  {
+    id: 2,
+    image: "analytics.png",
+    name: "Responsive Design",
+    description:
+      "There are many variations of lorem duos spassages of Lorem Ipsum available lora internet tend to repeat predefined.",
+  },
+  {
+    id: 3,
+    image: "aws-startup.png",
+    name: "UI/UX Rich Design",
+    description:
+      "There are many variations of lorem duos spassages of Lorem Ipsum available lora internet tend to repeat predefined.",
+  }
+];
+
+export const webDevlopmentStrategy = [
+  {
+    id: 1,
+    image: "meeting.png",
+    name: "Business Website",
+    description:
+      "Rich UI, Mobile-friendly business website designing specifically curated for your industry Demands",
+  },
+  {
+    id: 2,
+    image: "analytics.png",
+    name: "E-commerce Website",
+    description:
+      "Cart management to inventory management stunning Ecommerce site development with the latest technology",
+  },
+  {
+    id: 3,
+    image: "aws-startup.png",
+    name: "Personal or Blog Website",
+    description:
+      "Static to dynamic customised website designing to boost your personal branding",
+  }
+];
+
+
+export const webdevServices = [
+  {
+    id: 1,
+    image: "web-php.png",
+    name: "PHP Developers",
+    description:
+      "Rich UI, Mobile-friendly business website designing specifically curated for your industry Demands",
+  },
+  {
+    id: 2,
+    image: "web-laravel.png",
+    name: "Laravel Development",
+    description:
+      "Rich UI, Mobile-friendly business website designing specifically curated for your industry Demands",
+  },
+  {
+    id: 3,
+    image: "web-wordpress.png",
+    name: "WordPress Development",
+    description:
+      "Rich UI, Mobile-friendly business website designing specifically curated for your industry Demands",
+  },
+  {
+    id: 3,
+    image: "web-angularjs.png",
+    name: "Angular Js",
+    description:
+      "Rich UI, Mobile-friendly business website designing specifically curated for your industry Demands",
+  },
+  {
+    id: 3,
+    image: "web-nodejs.png",
+    name: "NodeJs",
+    description:
+      "Rich UI, Mobile-friendly business website designing specifically curated for your industry Demands",
+  },
+  {
+    id: 3,
+    image: "web-magento.png",
+    name: "Magento Development",
+    description:
+      "Rich UI, Mobile-friendly business website designing specifically curated for your industry Demands",
+  },
+  {
+    id: 3,
+    image: "web-opencart.png",
+    name: "Opencart Development",
+    description:
+      "Rich UI, Mobile-friendly business website designing specifically curated for your industry Demands",
+  },
+  {
+    id: 3,
+    image: "web-payment.png",
+    name: "Payment Gateway Services",
+    description:
+      "Rich UI, Mobile-friendly business website designing specifically curated for your industry Demands",
+  },
+  {
+    id: 3,
+    image: "web-joomla.png",
+    name: "Joomla Development",
+    description:
+      "Rich UI, Mobile-friendly business website designing specifically curated for your industry Demands",
+  },
+  {
+    id: 3,
+    image: "web-codeigniter.png",
+    name: "Codeigniter Development",
+    description:
+      "Rich UI, Mobile-friendly business website designing specifically curated for your industry Demands",
+  },
+  {
+    id: 3,
+    image: "web-javascript.png",
+    name: "JavaScript",
+    description:
+      "Rich UI, Mobile-friendly business website designing specifically curated for your industry Demands",
+  },
+  {
+    id: 3,
+    image: "web-drupal.png",
+    name: "Drupal",
+    description:
+      "Rich UI, Mobile-friendly business website designing specifically curated for your industry Demands",
+  },
+ 
+]
+
+
+
+
+
+
+
+export const softwarePageCards = [
+  {
+    id: 1,
+    image: "software-sec-3-icon-1.svg",
+    name: "Agile Process",
+    description:
+      "Our team adheres to a tried-and-true agile process custom-made to your business requirements & values.",
+  },
+  {
+    id: 2,
+    image: "software-sec-3-icon-2.svg",
+    name: "Code Standard",
+    description:
+      "We establish and maintain code style guidelines and best practices around source code workflows across all teams.",
+  },
+  {
+    id: 3,
+    image: "software-sec-3-icon-3.svg",
+    name: "Quality",
+    description:
+      "Each phase goes through a rigorous internal quality assessment (QA) process to ensure highest quality.",
+  },
+  {
+    id: 4,
+    image: "software-sec-3-icon-4.svg",
+    name: "On time Delivery",
+    description:
+      "Our developers pride themselves on meeting timelines through set processes that help mitigate risks and maximize efficiency.",
+  },
+];
+
+export const nodeJSCards = [
+  {
+    id: 1,
+    image: "project-analysis-icon.svg",
+    name: "Open-source & Lightweight",
+    description:
+      "There are many variations of lorem duos spassages of Lorem Ipsum available lora internet tend to repeat predefined.",
+  },
+  {
+    id: 2,
+    image: "on-page-seo-icon.svg",
+    name: "Improved Productivity",
+    description:
+      "There are many variations of lorem duos spassages of Lorem Ipsum available lora internet tend to repeat predefined.",
+  },
+  {
+    id: 3,
+    image: "off-page-seo-icon.svg",
+    name: "Real-time Applications",
+    description:
+      "There are many variations of lorem duos spassages of Lorem Ipsum available lora internet tend to repeat predefined.",
+  }
+];
+
+export const vueJSCards = [
+  {
+    id: 1,
+    image: "project-analysis-icon.svg",
+    name: "Lightning-quick speed",
+    description:
+      "There are many variations of lorem duos spassages of Lorem Ipsum available lora internet tend to repeat predefined.",
+  },
+  {
+    id: 2,
+    image: "on-page-seo-icon.svg",
+    name: "Suitable for long-term",
+    description:
+      "There are many variations of lorem duos spassages of Lorem Ipsum available lora internet tend to repeat predefined.",
+  },
+  {
+    id: 3,
+    image: "off-page-seo-icon.svg",
+    name: "Simple Integration",
+    description:
+      "There are many variations of lorem duos spassages of Lorem Ipsum available lora internet tend to repeat predefined.",
+  }
+];
+
+
+
+export const javaCards = [
+  {
+    id: 1,
+    image: "java-icon-1.svg",
+    name: "Web Application Development",
+    description:
+      "Creating modular, scalable, reliable, and responsive solutions are what our custom java application development is all about. We serve a wide range of industries including finance, healthcare, and manufacturing.",
+  },
+  {
+    id: 2,
+    image: "java-icon-2.svg",
+    name: "Java API Development",
+    description:
+      "Our Java developers are experts in creating light-weight, high performance, and secure REST API which can be consumed by any front end or 3rd party applications.",
+  },
+  {
+    id: 3,
+    image: "java-icon-3.svg",
+    name: "Enterprise Java Integration",
+    description:
+      "Our Java development team provides seamless communication between mission-critical heterogeneous business applications to help and automate your business.",
+  },
+  {
+    id: 4,
+    image: "java-icon-4.svg",
+    name: "Java Application Migration",
+    description:
+      "Our Java development team provides seamless communication between mission-critical heterogeneous business applications to help and automate your business.",
+  },
+  {
+    id: 5,
+    image: "java-icon-5.svg",
+    name: "Java Maintenance & Support",
+    description:
+      "As a Java application development company, we offer full-fledged Java application maintenance and support services to add new features and modules in your application as and when required.",
+  },
+  {
+    id: 6,
+    image: "java-icon-6.svg",
+    name: "Dedicated Java Team",
+    description:
+      "Our highly motivated team of Java programmers can comfortably work as your extended team which can be ramped up or down as per the business needs and scenario which is proven to be a cost-effective solution.",
+  }
 ];

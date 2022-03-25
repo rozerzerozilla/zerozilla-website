@@ -57,13 +57,13 @@ const Section2 = () => {
                   style={{ marginBottom: "40px" }}
                 >
                   <div className="service-card">
-                    <p className="text-center mt-3">
+                    <div className="d-flex flex-column align-items-center justify-content-center">
                       <img
                         src={require(`../../../assets/icons/${card.image}`)}
                         alt={`card-content-${card.id}`}
-                        style={{ width: "50px", marginBottom: "40px" }}
+                        style={{ width: "80px", marginBottom: "30px" }}
                       />
-                    </p>
+                    </div>
                     <p className="sliderHead1 no-underline text-center">
                       {card.name}
                     </p>
@@ -74,7 +74,7 @@ const Section2 = () => {
                       <BookCallButton
                         className={"common-section-1"}
                         isColored={false}
-                        text={`Get Quote`}
+                        text={`Know More`}
                         showImage={false}
                       />
                     </p>

@@ -18,7 +18,7 @@ const Section4 = () => {
       >
         <div className="row">
           <div
-            className={`${isMobile ? "col-12" : "col-5 my-auto"}`}
+            className={`${isMobile ? "col-12" : "col-4 my-auto"}`}
             style={
               isMobile
                 ? {
@@ -57,7 +57,7 @@ const Section4 = () => {
             </div>
           </div>
           <div
-            className={`${isMobile ? "col-12" : "col-7 my-auto"}`}
+            className={`${isMobile ? "col-12" : "col-8 my-auto"}`}
             style={
               isMobile
                 ? { marginTop: "40px", textAlign: "center" }

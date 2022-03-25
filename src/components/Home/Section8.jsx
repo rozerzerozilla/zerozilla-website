@@ -1,14 +1,14 @@
 import React, { useContext } from "react";
 import { AppContext } from "../../context/Context";
 import { commonColPadding } from "../../helper";
-import BookCallButton from "../BookCallButton";
+import { FaPhoneAlt } from "react-icons/fa";
 import Fade from 'react-reveal/Fade';
 
-const Section8 = () => {
+const Section8 = ({ handleFunction}) => {
   const [isMobile, setIsMobile] = useContext(AppContext);
   return (
     <Fade>
-      <div className="row Home-area8" style={{ margin: 0, padding: 0 }}>
+      <div className="row Home-area8" style={{ margin: 0, padding: 0, backgroundColor:"#4c2e88", color:"white" }}>
         <div
           className={`col-12 Home-main-area8`}
           style={commonColPadding(isMobile)}
@@ -18,26 +18,24 @@ const Section8 = () => {
               className="row col-12"
               style={{ paddingLeft: isMobile && "25px" }}
             >
-              <p className="section3Head black mb-0">Ready to get started?</p>
-              <p className="sectionContent">
-                Take the first step towards your BRAND EVOLUTION!
+              <p className="section3Head white mb-0">Ready to get started?</p>
+              <p className="sectionContent mt-1">
+                Take your first step towards business transformation!
               </p>
             </div>
           </div>
-          <div
-            className={`row ${isMobile ? "mt-4" : ""}`}
-            style={{ marginTop: !isMobile && "40px" }}
-          >
-            {!isMobile && <div className="col-5"></div>}
-            <div className={`${isMobile ? "col-12" : "col-2"}`}>
-              <BookCallButton
-                className={null}
-                isColored={true}
-                showImage={true}
-                text={"Book Intro Call"}
-              />
-            </div>
-            {!isMobile && <div className="col-5"></div>}
+          <div className={`mx-auto ${isMobile ? "col-12" : "col-3"}`}>
+            <button
+              className={`sliderBtns colored`}
+              onClick={handleFunction}
+            >
+              <span style={{ marginRight: "10px" }}>
+                <FaPhoneAlt />
+              </span>
+              <span className={`sectionContent small`}>
+                Book an Intro Call
+              </span>
+            </button>
           </div>
         </div>
       </div>

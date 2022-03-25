@@ -1,4 +1,8 @@
 import React, { useContext } from "react";
+
+// react lottie
+import Lottie from 'react-lottie';
+
 import { AppContext } from "../../context/Context";
 import BreadCrumbs from "../BreadCrumbs";
 import BookCallButton from "../BookCallButton";
@@ -21,8 +25,20 @@ const CommonSection1 = ({
   type2,
   opacity,
   viewBtn,
+  animatedImage = false,
+  animationData = {},
+  handleFunction = function(){}
 }) => {
   const [isMobile] = useContext(AppContext);
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: 'xMidYMid slice'
+    }
+  };
+
   return (
     <div className="row Home-area3" style={{ margin: 0, padding: 0 }}>
       <div
@@ -109,7 +125,8 @@ const CommonSection1 = ({
                               : ""
                           }`}
                         >
-                          <BookCallButton
+                            <BookCallButton
+                            handleFunction={handleFunction}
                             className={"common-section-1"}
                             isColored={isColored}
                             text={btnText}
@@ -138,11 +155,13 @@ const CommonSection1 = ({
                   className={`${isMobile ? "col-12" : "col-6 my-auto"} p-0`}
                   style={{ marginTop: isMobile && "50px" }}
                 >
-                  <img
+                  {animatedImage ? <Lottie options={defaultOptions}
+                    width={"100%"}
+                  />:<img
                     src={sectionCover}
                     alt="section-1"
-                    style={{ width: imageWidth ? imageWidth : "100%" }}
-                  />
+                    style={{ width: imageWidth ? imageWidth : "100%", maxHeight:"424px" }}
+                  />}
                 </div>
               )}
             </div>

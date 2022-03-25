@@ -14,7 +14,7 @@ const Section4 = () => {
   const [isMobile, setIsMobile] = useContext(AppContext);
   return (
     <Reveal effect="fadeInUp">
-    <div className="row Home-area4" style={{ margin: 0, padding: 0 }}>
+      <div className="row Home-area4" style={{ margin: 0, padding: 0 }} id="what-we-do">
       <div
         className={`col-12 Home-main-area4`}
         style={{
@@ -37,7 +37,7 @@ const Section4 = () => {
             <img
               src={sectionCover}
               alt="sectionPic"
-              style={{ width: "90% " }}
+              style={{ width: "100% " }}
             />
             </div>
           </Fade>
@@ -57,29 +57,31 @@ const Section4 = () => {
             <div className={`row col-12 ${isMobile && "m-0"}`}>
               <p className="section4Head">What we do?</p>
               <p className="sectionContent">
-                We are a bunch of enthusiastic & creative minds, intending to
-                help you, Empower YOUR Business with seamless web solutions
-                ranging from Web Designing & Development, Mobile Application,
-                Custom Software Development & Digital Marketing Services.
+                Call us an integrated team of enthusiastic and creative professionals on a mission- Empower your business and take it to the Top! Our expertise lies in providing seamless web solutions ranging from Web Designing & Development,
+                    <b>Pay-per-click Advertising, Lead Generation Marketing, Mobile Application Development Services, Custom Software Development, Search Engine Optimization, Content Marketing, Social Media Marketing, and Digital Marketing Services.</b>
               </p>
             </div>
             <div className="row-col-12" style={{ marginTop: "20px" }}>
               <ButtonComponent
+                path={"/web-design"}
                 image={webDev}
-                name="Web Design & Development"
+                name="Website Development"
                 isMobile={isMobile}
               />
               <ButtonComponent
+                path={"/software-development"}
                 image={applicationDev}
-                name="Application Developments"
+                    name="Software Development"
                 isMobile={isMobile}
               />
               <ButtonComponent
+                path={"/mobile-app-devlopment"}
                 image={customSoftware}
-                name="Custom Software"
+                name="Mobile Application Development"
                 isMobile={isMobile}
               />
               <ButtonComponent
+                path={"/digital-marketing"}
                 image={digitalMarketing}
                 name="Digital Marketing"
                 isMobile={isMobile}

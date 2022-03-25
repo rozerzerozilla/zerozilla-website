@@ -2,9 +2,10 @@ import React from "react";
 import sectionCover from "../../../assets/images/Digital-Market-Section-1-Cover.png";
 import CommonSection1 from "../../Common/CommonSection1";
 
-const Section1 = () => {
+const Section1 = ({handleFunction}) => {
   return (
     <CommonSection1
+      handleFunction={handleFunction}
       title={`Digital Marketing`}
       subtitle1={`Sparks your business to a new peak with our digital `}
       subtitle2={`marketing services and experience consulting.`}

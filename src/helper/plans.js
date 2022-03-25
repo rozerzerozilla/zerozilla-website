@@ -546,3 +546,298 @@ export const awsPlans = [
     ],
   },
 ];
+
+export const brandingPlans = [
+  {
+    id: 1,
+    name: "Basic Plan",
+    most_popular: false,
+    content: [
+      {
+        id: 11,
+        title: `Weekly 2 Content/Poll/Contest Updates`,
+      },
+      {
+        id: 12,
+        title: `Reputation Management`,
+      },
+      {
+        id: 13,
+        title: `Fan Base Improvement`,
+      },
+    ],
+  },
+  {
+    id: 2,
+    name: "Advance Plan",
+    most_popular: true,
+    content: [
+      
+      {
+        id: 22,
+        title: `4 Social Media Optimisation & Marketing`,
+      },
+      {
+        id: 23,
+        title: `Weekly 3 Content/Poll/Contest Updates`,
+      },
+      {
+        id: 24,
+        title: `Reputation Management`,
+      },
+      {
+        id: 25,
+        title: `Paid Campaigns`,
+      },
+      {
+        id: 26,
+        title: `Fan Base Improvement`,
+      },
+      {
+        id: 27,
+        title: `LinkedIn Article Creation & Submission`,
+      },
+      {
+        id: 28,
+        title: `Q & A Submissions`,
+      },
+    ],
+  },
+  {
+    id: 3,
+    name: "Premium Plan",
+    most_popular: false,
+    content: [
+      {
+        id: 31,
+        title: `All Social Media Optimisation & Marketing`,
+      },
+      {
+        id: 32,
+        title: `Regular Content/Poll/Contest Updates`,
+      },
+      {
+        id: 33,
+        title: `Reputation Management`,
+      },
+      {
+        id: 34,
+        title: `Paid Campaigns`,
+      },
+      {
+        id: 35,
+        title: `Fan Base Improvement`,
+      },
+      {
+        id: 36,
+        title: `LinkedIn Article Creation & Submission`,
+      },
+      {
+        id: 37,
+        title: `Q & A Submissions`,
+      },
+      {
+        id: 38,
+        title: `ORM Integration`,
+      },
+      {
+        id: 39,
+        title: `Theme Based Campaigns`,
+      },
+      {
+        id: 311,
+        title: `Advanced Support`,
+      },
+    ],
+  },
+];
+
+export const contentServicePlans = [
+  {
+    id: 1,
+    name: "Basic Plan",
+    most_popular: false,
+    content: [
+      {
+        id: 11,
+        title: "2 Blogs Writing & Publishing",
+      },
+      {
+        id: 12,
+        title: "2 Article Writing & Publishing",
+      },
+      {
+        id: 13,
+        title: "High Quality Image For Blogs",
+      },
+      {
+        id: 14,
+        title: "Blog: 300 Words Article: 400-500 Words Content",
+      },
+      {
+        id: 15,
+        title: "Turnaround Time – 5 Working Days",
+      },
+    ],
+  },
+  {
+    id: 2,
+    name: "Bronze Plan",
+    most_popular: true,
+    content: [
+
+      {
+        id: 22,
+        title: "4 Blogs Writing & Publishing",
+      },
+      {
+        id: 23,
+        title: "4 Article Writing & Publishing",
+      },
+      {
+        id: 24,
+        title: "High Quality Image For Blogs",
+      },
+      {
+        id: 25,
+        title: "Blog: 300 Words Article: 400-500 Words Content",
+      },
+      {
+        id: 26,
+        title: "Turnaround Time – 10 Working Days",
+      }
+    ],
+  },
+  {
+    id: 3,
+    name: "Premium Plan",
+    most_popular: false,
+    content: [
+      {
+        id: 31,
+        title: "4 Blogs Writing & Publishing",
+      },
+      {
+        id: 32,
+        title: "4 Article Writing & Publishing",
+      },
+      {
+        id: 33,
+        title: "High Quality Image For Blogs",
+      },
+      {
+        id: 34,
+        title: "Blog: 300 Words Article: 400-500 Words Content",
+      },
+      {
+        id: 35,
+         title: "Turnaround Time – 10 Working Days",
+      }
+    ],
+  },
+];
+
+export const appmarketingPlans = [
+  {
+    id: 1,
+    name: "Basic Plan",
+    most_popular: false,
+    content: [
+      {
+        id: 11,
+        title: "Weekly 2 Content/Poll/Contest Updates",
+      },
+      {
+        id: 12,
+        title: "Reputation Management",
+      },
+      {
+        id: 13,
+        title: "Fan Base Improvement",
+      },
+    ],
+  },
+  {
+    id: 2,
+    name: "Advance Plan",
+    most_popular: true,
+    content: [
+
+      {
+        id: 22,
+        title: "4 Social Media Optimisation & Marketing",
+      },
+      {
+        id: 23,
+        title: "Weekly 3 Content/Poll/Contest Updates",
+      },
+      {
+        id: 24,
+        title: "Reputation Management",
+      },
+      {
+        id: 25,
+        title: "Paid Campaigns",
+      },
+      {
+        id: 26,
+        title: "Turnaround Time – 10 Working Days",
+      },
+      {
+        id: 26,
+        title: "LinkedIn Article Creation & Submission",
+      },
+      {
+        id: 26,
+        title: "Q & A Submissions",
+      }
+    ],
+  },
+  {
+    id: 3,
+    name: "Premium Plan",
+    most_popular: false,
+    content: [
+      {
+        id: 31,
+        title: "All Social Media Optimisation & Marketing",
+      },
+      {
+        id: 32,
+        title: "Regular Content/Poll/Contest Updates",
+      },
+      {
+        id: 33,
+        title: "Reputation Management",
+      },
+      {
+        id: 34,
+        title: "Paid Campaigns",
+      },
+      {
+        id: 35,
+        title: "Fan Base Improvement",
+      },
+      {
+        id: 36,
+        title: "LinkedIn Article Creation & Submission",
+      },
+      {
+        id: 37,
+        title: "Q & A Submissions",
+      },
+      {
+        id: 38,
+        title: "ORM Integration",
+      },
+      {
+        id: 39,
+        title: "Theme Based Campaigns",
+      },
+      {
+        id: 311,
+        title: "Advanced Support",
+      }
+    ],
+  },
+];

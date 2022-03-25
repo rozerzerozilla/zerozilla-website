@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import {Link} from "react-router-dom"
 import { AppContext } from "../../context/Context";
 import { commonColPadding } from "../../helper";
 import BookCallButton from "../BookCallButton";
@@ -27,23 +28,29 @@ const Section7 = () => {
             </div>
           </Fade>
         </div>
+        <Fade top>
         <div
           className={`row ${isMobile ? "mt-4" : ""}`}
           style={{ marginTop: !isMobile && "40px" }}
         >
-          <Fade top>
+          
           {!isMobile && <div className="col-5"></div>}
           <div className={`${isMobile ? "col-12" : "col-2"}`}>
-            <BookCallButton
-              className={null}
-              isColored={true}
-              showImage={false}
-              text={"See Openings"}
-            />
-            </div>
-          </Fade>
-          {!isMobile && <div className="col-5"></div>}
-        </div>
+            <Link to="/career">
+              <BookCallButton
+                className={null}
+                isColored={true}
+                showImage={false}
+                text={"See Openings"}
+              />
+            </Link>
+          </div>
+              
+          
+            {!isMobile && <div className="col-5"></div>}
+          
+          </div>
+        </Fade>
       </div>
     </div>
   );
