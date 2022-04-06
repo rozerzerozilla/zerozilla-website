@@ -27,11 +27,10 @@ const Section2 = () => {
               {!isMobile && <div className="col-1"></div>}
               <div className={`${isMobile ? "col-12" : "col-10"}`}>
                 <p className="section3Head black extra-bold text-center">
-                  Generating Promising Social Links
+                  Get ready for everything EXTRA, with SMM 
                 </p>
                 <p className="sectionContent text-center">
-                  Build powerful, sharable social links on social media to get
-                  more leads & expand your clientele
+                    Build powerful, sharable social links to scale social media.
                 </p>
               </div>
               {!isMobile && <div className="col-1"></div>}

@@ -1,5 +1,7 @@
+import { SiReact, SiActigraph } from "react-icons/si";
+import { CgComponents } from "react-icons/cg";
+import { FiSettings } from "react-icons/fi"
 // website dev
-
 export const cardContent = [
   {
     id: 1,
@@ -25,6 +27,41 @@ export const cardContent = [
 ];
 
 // custom apps
+export const reactJSCard = [
+  {
+    id: 1,
+    image: <SiReact style={{ fontSize: "36px", color:"#C31F5D", fontWeight:"600"}}/>,
+    name: "Custom ReactJS development",
+    description:
+      "As a leading provider of custom ReactJS consulting solutions, we develop, implement, and deploy a custom model,",
+    href: '/ios-app-development',
+  },
+  {
+    id: 1,
+    image: <SiActigraph style={{ fontSize: "36px", color: "#C31F5D", fontWeight: "600" }} />,
+    name: "Interactive UI/UX Development ",
+    description:
+      "Get a cost-effective, interactive layout and high-quality website design delivered within the time frame.",
+    href: '/ios-app-development',
+  },
+  {
+    id: 1,
+    image: <CgComponents style={{ fontSize: "36px", color: "#C31F5D", fontWeight: "600" }} />,
+    name: "ReactJS Components Development",
+    description:
+      "To complete tasks that involve both autonomous and collaborative work, our team follows the planning, architecture, and reuse of existing components.",
+    href: '/ios-app-development',
+  },
+  {
+    id: 1,
+    image: <FiSettings style={{ fontSize: "36px", color: "#C31F5D", fontWeight: "600" }} />,
+    name: "ReactJS Support & Maintenance ",
+    description:
+      "Add value to your online presence, by letting us handle upgrades and technical developments in addition to offering maintenance for your web projects. ",
+    href: '/ios-app-development',
+  },
+]
+
 
 export const customWebDevCard = [
   {
@@ -33,6 +70,7 @@ export const customWebDevCard = [
     name: "iPhone App Development",
     description:
       "Best in class iPhone app development to boost the global reach of your business & get more customers!",
+    href: '/ios-app-development',
   },
   {
     id: 2,
@@ -40,6 +78,7 @@ export const customWebDevCard = [
     name: "Android App Development",
     description:
       "Best quality android apps powered by user intuitive technology & custom made features made for your business",
+    href: '/android-app-development',
   },
   {
     id: 3,
@@ -47,20 +86,24 @@ export const customWebDevCard = [
     name: "Android Game UX Design",
     description:
       "Special expertise in crafting the best gamer demographic inclusive UX Android Gaming Design to enhance your gaming experience!",
+    href: '/android-game-ux-design-services',
   },
-  {
-    id: 4,
-    image: "custom-app-dev.svg",
-    name: "Custom App Development",
-    description:
-      "End to end, custom made enterprise mobility technologies make our mobile apps the best fit for your business!",
-  },
+  // {
+  //   id: 4,
+  //   image: "custom-app-dev.svg",
+  //   name: "Custom App Development",
+  //   description:
+  //     "End to end, custom made enterprise mobility technologies make our mobile apps the best fit for your business!",
+  //   href: '/custom-mobile-app-development-services',
+  //   component: AndroidUXDesign,
+  // },
   {
     id: 5,
     image: "cart-icon.svg",
     name: "E-commerce App",
     description:
       "Add power & functionality to your ecommerce business through our cutting edge ecommerce mobile app development solutions",
+    href: '/e-commerce-mobile-app-development',
   },
   {
     id: 6,
@@ -68,6 +111,7 @@ export const customWebDevCard = [
     name: "Bots App",
     description:
       "Improve the quality of real time, automated interactions with your customers through our innovative & customized Bots Apps",
+    href: '/bots-app-development',
   },
   {
     id: 7,
@@ -75,13 +119,15 @@ export const customWebDevCard = [
     name: "iPad App",
     description:
       "Maximize your iPad’s functionality and speed through our best in class, well designed; feature rich iPad App building solutions",
+    href: '/ipad-app-development',
   },
   {
     id: 8,
     image: "beacon-icon.svg",
     name: "iBeacon App",
     description:
-      "We create iBeacon technology powered apps for  offers hassle-free functioning & amazing connectivity",
+    "We create iBeacon technology powered apps for  offers hassle-free functioning & amazing connectivity",
+    href: '/ibeacon-app-development',
   },
   {
     id: 9,
@@ -89,6 +135,7 @@ export const customWebDevCard = [
     name: "Hybrid App",
     description:
       "Our in-depth knowledge about various Hybrid application frameworks allows us to come up with topnotch quality hybrid apps",
+    href: '/hybrid-app-development',
   },
   {
     id: 10,
@@ -96,6 +143,7 @@ export const customWebDevCard = [
     name: "IoT App",
     description:
       "Reshape your business & consolidate your digital presence through our world class, smart IoT App Development Solutions",
+    href: '/iot-app-development',
   },
   {
     id: 11,
@@ -103,6 +151,7 @@ export const customWebDevCard = [
     name: "React Native Apps",
     description:
       "We boast of our expertise in designing Javascript framework based uniquely ‘native’ & reactive Apps that empower businesses",
+    href: '/react-native-app-development',
   },
 ];
 
@@ -209,44 +258,44 @@ export const seoStrategy = [
   {
     id: 1,
     image: "project-analysis-icon.svg",
-    name: "Project Analysis",
+    name: "SEO Audit",
     description:
-      "Let us analyse your goals & craft a proper SEO strategy with the amount of efforts to be pout in and timeline.",
+      "We examine your website's current performance in terms of content, mapping, coding, and keyword volume after understanding your company, target market, and intended outcomes.  ",
   },
   {
     id: 2,
     image: "on-page-seo-icon.svg",
-    name: "On-page SEO",
+    name: "Objective and strategy ",
     description:
-      "All the pages in your website will be optimised according to the Google algorithm updates to rank higher.",
+      "We set the objectives and goals for your SEO campaigns after establishing a close relationship with the customer. A strategy is then planned to improve your present website in order to reach the desired results.",
   },
   {
     id: 3,
     image: "off-page-seo-icon.svg",
-    name: "Off-page SEO",
+    name: "Configuration",
     description:
-      "Link building to off-page blogging kicks off to develop a high quality traffic from the external sources and build a strong content bank.",
+      "Thorough keyword research is conducted in order to develop a content strategy that will improve your search ranking. (Blogs, articles, guides, whitepapers, and other pillar content curation and creation)",
   },
   {
     id: 4,
     image: "competitor-research-icon.svg",
-    name: "Competitor Research",
+    name: "Deployment",
     description:
-      "Competitors research helps understanding why other sites are ranking higher and what we should plan to outrank them.",
+      "We undertake cleaning up your site's code, content, architecture, mapping (internal links, synonyms, etc.), Content and Image Optimization, Page Speed Optimization, Landing Page Load Speed, Navigation, or Crawlability in the webpage, URL Structure, and Code Cleaning. ",
   },
   {
     id: 5,
     image: "reaccess-icon.svg",
-    name: "Re-assessment",
+    name: "Implementation and Monitoring ",
     description:
-      "We ensure to follow the new and evolving updates from search engines in order to keep improving the site ranking.",
+      "We implement off-page optimization strategies such as quality link building (Back Links), link building through content marketing, SMO (Twitter, Facebook, LinkedIn, etc.), engagement in Q&A forums, links to social bookmarking, and so on.",
   },
   {
     id: 6,
     image: "reporting-icon.svg",
-    name: "Reporting",
+    name: "Report and Analysis ",
     description:
-      "Monthly reporting with customised dashboards to track all the results & also SEO consultation to find new opportunities.",
+      "We assess the campaign's results, monitor performance and milestones in real-time, and keep in touch with customers at the same time. Following the launch of the campaign, on-the-go optimization is used to fill in the gaps.",
   },
 ];
 
@@ -255,29 +304,26 @@ export const generatePromisingSocialLinks = [
     id: 1,
     image: "brand-positioning-icon.svg",
     name: "Brand Positioning",
-    description:
-      "The consistent approach helps in positioning your brand on social media making it memorable & trustworthy. We help you with the right messaging tone, voice and the right way to reach out to your audience which constantly improves your Brand Value.",
+    description:"Our consistent approach enhances key messaging via a unique style that portrays your brand. This helps to position your brand on social media making it memorable & trustworthy. Create a reliable and understandable brand image with us."
+  
   },
   {
     id: 2,
     image: "lead-generation-icon.svg",
     name: "Leads Generation",
-    description:
-      "Strategic positioning & boosting the engagement results in driving quality traffic to your website. Qualifying the leads with the right strategies on social media makes them buy your products or services frequently",
+    description: "Driving quality traffic to your website requires strategic positioning and increased engagement. We qualify leads with the right social media marketing services by encouraging them to buy your products or services on a regular basis. "
   },
   {
     id: 3,
     image: "increase-engagement.svg",
     name: "Increased Engagement",
-    description:
-      "As the name suggests, social media are a place to get social to build trust for your brand. Consumer-focused campaigns make it memorable & drive more engagement. Our engagement strategy just fits right for your Brand as we believe in actionable strategies not bookish.",
+    description:"Social media opens up avenues to build trust for your brand. Consumer-focused campaigns make them memorable and create more engagement. We believe in actionable social media management services to drive your engagement strategy. "
   },
   {
     id: 4,
     image: "project-analysis-icon.svg",
     name: "Social Proof for Growth",
-    description:
-      "Social media are the best place to show what your happy customers say about your products or services. This helps in building trust and a powerful brand association for your customers. We find the best way to build strong social proof & present across the platforms.",
+    description:"The best place to show the world what your happy customers have to say about your services is social media. We help in building trust and a powerful brand association for your customers by finding the best way to build strong social proof."
   },
 ];
 
@@ -316,45 +362,42 @@ export const seoTips = [
   {
     id: 1,
     title:
-      "Stay Alert And On Top – of the ever-evolving search engine algorithms.",
+      "A team of SEO specialists with experience particularly for B2Bs/Enterprises.",
   },
   {
     id: 2,
     title:
-      "Master The Keywords Game – striking a careful balance between popular, untapped and original keywords, all backed with technical analysis.",
+      "We employ a bottom-up model or a targeted customer empathy strategy.",
   },
   {
     id: 3,
     title:
-      "Curate Optimized Content – choosing each word to fulfill semantic SEO and to ensure a high share-ability rate.",
+      "SEO process with an agile approach that provides the ability to reach milestones throughout the project's timeline. ",
   },
   {
     id: 4,
     title:
-      "Find the Right Opportunities To Disperse Content – via blogs, social media, adwords, emails, videos.",
+      "We test and measure using measures such as keyword ranks, backlinking quality, organic and mobile web traffic, bounce rate, and click-through rates. ",
   },
   {
     id: 5,
     title:
-      "Test and Measure – with metrics that tell us keyword rankings, back-linking quality, web traffic – organic and mobile, bounce rate, click-through-rates.",
+      "We curate optimized content carefully selecting each term to ensure semantic SEO and a high rate of shareability. ",
   },
 ];
 
 export const fruitfulPartnershipsTips1 = [
   {
     id: 1,
-    title:
-      "Utilize the perfect blend of social media tools to create enough buzz that drives traffic directly to your website and product pages.",
+    title: "Develop brand awareness by utilizing the perfect blend of social media tools.",
   },
   {
     id: 2,
-    title:
-      "We create exciting theme-based Facebook ad campaigns. Run your social media accounts with content that draws in the readers.",
+    title: "Build engagement by creating a strong connection with your audience."
   },
   {
     id: 3,
-    title:
-      "Use our knowledge of trending hashtags, manage comments and feedback and spread your word, far and wide. You got something to say, we gotta post it!",
+    title:"Increase website exposure by creating theme-based Facebook ad campaigns."
   },
 ];
 
@@ -402,30 +445,30 @@ export const rankYourPageCards = [
   {
     id: 1,
     image: "sales-spikes-icon.svg",
-    name: "Sales Spikes",
+    name: "High-quality traffic ",
     description:
-      "You attract more potential buyers who are searching with buying intent. Hence you see the sales spikes!",
+      "By identifying the right business keywords and optimizing them we drive organic traffic to your website.",
   },
   {
     id: 2,
     image: "positive-roi-icon.svg",
-    name: "Positive ROI",
+    name: "Powerful branding",
     description:
-      "More sales, more revenue. Page 1 ranked website attracts convertible leads so you will see the positive Return on Investment.",
+      "Higher the ranking, the higher the awareness of your brand. Top ranking sets you apart from your competitors & builds Brand trust.",
   },
   {
     id: 3,
     image: "target-perfection.svg",
-    name: "Targeting perfection",
+    name: "Higher conversion and sales ",
     description:
-      "Targeting the search queries which have good average monthly searches in your location makes it easy to meet your ideal customers.",
+      "You attract more potential buyers who are searching with buying intent. Hence you see the sales spikes!",
   },
   {
     id: 4,
     image: "brand-awareness.svg",
-    name: "Brand Awareness",
+    name: "Market dominance",
     description:
-      "Higher the ranking, higher the awareness for your Brand. Top ranking sets you apart from your competitors & builds a Brand trust.",
+      "SEO is the most cost-effective way to beat your competitors. Through our enterprise Search Engine Optimization we help you stay ahead of your competitors. ",
   },
 ];
 
@@ -433,16 +476,16 @@ export const roleOfSocialMedia = [
   {
     id: 1,
     image: "brand-awareness.svg",
-    name: "Improved Brand Awareness",
+    name: "89% of online marketers",
     description:
-      "Talk about your brand on social media & make all aware of its distinctiveness and value in the market.",
+      "State that Instagram has been a very effective social media platform for influencer marketing.",
   },
   {
     id: 2,
     image: "positive-roi-icon.svg",
-    name: "Increased Traffic and SEO Ranking",
+    name: "83% of Pinners",
     description:
-      "The way you interact with your audience on social media can influence the quality of traffic you receive & your SEO ranking too!",
+      "Have reportedly made a purchase based on the content they saw from brands on Pinterest.",
   },
 ];
 
@@ -550,6 +593,31 @@ export const awsStrategy = [
     name: "Terraform integration",
     description:
       "Our capability includes efficiently integrating Terraform to build, change, and specify data infrastructure.",
+  },
+];
+
+
+export const ecomWebStrategy = [
+  {
+    id: 1,
+    image: "aws-windows.png",
+    name: "Custom Mobile App Development",
+    description:
+      "We offer support for Red Hat Enterprise, Amazon Linux, and Microsoft Windows Servers.",
+  },
+  {
+    id: 2,
+    image: "aws-cloud-settings.png",
+    name: "E-commerce Mobile App",
+    description:
+      "Our solutions help you to enhance the workload management for cloud services.",
+  },
+  {
+    id: 3,
+    image: "aws-startup.png",
+    name: "Bots Application Development",
+    description:
+      "We are experts in developing and deploying high-performance cloud applications.",
   },
 ];
 

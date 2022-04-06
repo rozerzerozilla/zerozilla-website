@@ -32,7 +32,7 @@ const Section2 = () => {
                                 className={`${isMobile ? "col-12" : "col-4 my-auto"}`}
                             >
                                 <p className={`mb-0 seoHead ${isMobile && "text-center"}`}>
-                                    Get a world-class web development partner
+                                    Get a world-class software development partner 
                                 </p>
                             </div>
                             <div className={`${isMobile ? "col-12" : "col-2 my-auto"} ${!isMobile && "d-flex justify-content-center align-items-center"
@@ -49,7 +49,7 @@ const Section2 = () => {
                             >
                                 
                                 <div>
-                                    We at Zerozilla provide the best in class Web App Development Services created using the latest technology as per the industry standard within the budget limits given to us by our clients. Our projects highlight the immense confidence our clients put in our work. As a Web application development company, we are equipped to develop highly secured, robust and innovative solutions.
+                                    As a software development services provider, we enable businesses like yours to make use of the latest technologies. We create best-in-class software as per the industry standard within your budget constraints. Zerozilla provides full-cycle software development services that adapt smoothly to your project objectives and business demands- from IT strategy consulting and complete technological roadmaps to end-to-end development of scalable solutions. 
                                 </div>
                             </div>
                         </div>

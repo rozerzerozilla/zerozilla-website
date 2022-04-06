@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import sectionCover from "../../../assets/images/aws-managing.png";
+import sectionCover from "../../../assets/images/aws-managing.webp";
 import { AppContext } from "../../../context/Context";
 import Fade from 'react-reveal/Fade';
 

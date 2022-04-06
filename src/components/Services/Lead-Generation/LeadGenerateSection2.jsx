@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { AppContext } from "../../../context/Context";
-import sectionCover from "../../../assets/images/lead-gen-section2-cover.png";
+import sectionCover from "../../../assets/images/lead-gen-section2-cover.webp";
 import Bullets from "../../../assets/icons/seo-bullets.svg";
 import { leadGenSection2Points } from "../../../helper/services";
 import Fade from 'react-reveal/Fade'

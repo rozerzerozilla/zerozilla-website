@@ -1,23 +1,6 @@
 import React from "react"
 import { Container } from "react-bootstrap"
 import styled from "styled-components"
-import {
-    SiIos, SiIbeacon, SiIota,
-    SiReact,
-    SiContactlesspayment,
-    SiTableau,
-    SiAmazonaws,
-    SiJava,
-    SiJavascript,
-    SiWordpress,
-    SiLaravel,
-    SiPhp,
-    SiCakephp,
-    SiAngular,
-    SiVuedotjs,
-    SiCodeigniter,
-    SiNodemon
-} from "react-icons/si";
 
 const Text = styled.div`
     width: 100%;
@@ -84,9 +67,11 @@ const techStacks = [
 function Section7() {
   return (
       <Container>
-          <div className="row">
+          <div className="row mt-4">
               <div className="col-xs-12 col-md-8 mx-auto">
-                  <p>Web Technologies, We’ve Expertise In</p>
+                  <p className="black-head-section extra-bold text-center">
+                      Web Technologies, We’ve Expertise In
+                  </p>
                   <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</p>
               </div>
           </div>

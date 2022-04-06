@@ -1,7 +1,8 @@
 import React, { useContext } from "react";
 import { AppContext } from "../../context/Context";
-import sectionCover from "../../assets/images/About-Section-4-Cover.png";
+import sectionCover from "../../assets/images/About-Section-4-Cover.webp";
 import Fade from 'react-reveal/Fade';
+import { Link } from "react-router-dom";
 
 const Section4 = () => {
   const [isMobile] = useContext(AppContext);
@@ -53,7 +54,7 @@ const Section4 = () => {
               className="row-col-12"
               style={{ marginTop: !isMobile ? "30px" : "20px" }}
             >
-              <button className="appBtn">Join our Team</button>
+              <Link to="/career"><button className="appBtn">Join our Team</button></Link>
             </div>
           </div>
           <div

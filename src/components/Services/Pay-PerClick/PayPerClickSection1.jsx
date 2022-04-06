@@ -1,5 +1,6 @@
 import React from "react";
 import CommonSection1 from "../../Common/CommonSection1";
+import sectionCover from "../../../assets/images/pay-per-section-1-cover.webp"
 
 const Section1 = ({handleFunction}) => {
   return (
@@ -8,7 +9,7 @@ const Section1 = ({handleFunction}) => {
       title={`Pay-Per Click`}
       subtitle1={`You don’t pay till your customer is 50% committed.`}
       subtitle2={"That’s the beauty of PPC and we know how to make it happen!"}
-      //   sectionCover={sectionCover}
+        sectionCover={sectionCover}
       btnText={`Let's talk`}
       background={"#E8C5CE"}
       boxShadow={true}

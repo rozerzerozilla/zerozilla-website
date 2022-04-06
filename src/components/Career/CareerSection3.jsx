@@ -1,5 +1,8 @@
 import { useContext, useEffect, useState } from "react";
 import { AppContext } from "../../context/Context";
+
+import Collapse from '@material-ui/core/Collapse';
+
 // form library
 import { useFormik } from 'formik';
 
@@ -13,6 +16,7 @@ import moment from 'moment'
 import JobApplyModal from "../Modals/JobApplyModal"
 
 // icons
+import { MdKeyboardArrowDown } from "react-icons/md"
 import search from "../../assets/icons/career-search.svg";
 import locationIcon from "../../assets/icons/career-location.svg";
 import departmentIcon from "../../assets/icons/career-department.svg";
@@ -69,6 +73,8 @@ const careerList = [
 const domain = process.env.REACT_APP_ENDPOINT_API
 
 const Section3 = () => {
+    const [mainIndex, setMainIndex] = useState(-1);
+    const openRow = (index) => index === mainIndex ? setMainIndex(-1) : setMainIndex(index);
     const [openModal, setModalShow] = useState(false);
     const [designation, setDesignation] = useState('');
     const [career, setCareer] = useState(careerList);
@@ -83,9 +89,12 @@ const Section3 = () => {
         onSubmit: (values, { setSubmitting }) => {
             console.log("form submitted");
             fetch(`${domain}/career/job-serch-filters?location=${values.location}&department=${values.department}&worktype=${values.workType}`)
-                .then(res => res.json())
                 .then(res => {
-                    // console.log(res);
+                    console.log(res);
+                    return res.json()
+                })
+                .then(res => {
+                    console.log(res);
                     const arr = [];
                     res.message.map((ele, index) => arr.push({
                         id: index,
@@ -152,12 +161,16 @@ const Section3 = () => {
     useEffect(() => {
         
         fetch(`${domain}/career/job-serch-filters`)
-            .then(res => res.json())
             .then(res => {
-                // console.log(res);
+                console.log(res);
+                return res.json();
+            })
+            .then(res => {
+                console.log(res);
                 const arr = [];
                 res.message.map((ele, index) => arr.push({
                     id: index,
+                    jd: ele.job_details,
                     post: ele.designation,
                     remote: ele.worktype === "Remote" ? true : false,
                     location: ele.location,
@@ -176,15 +189,17 @@ const Section3 = () => {
         <div className="container-fluid career-section-3" id="job-applying">
             <div className="container">
                 <br/><br/>
-                <div className="row align-items-center text-left mt-5">
-                    <h2>Are You Ready To Make A Difference?</h2>
-                    <div className="w-100">
-                        <label className="career-subtitle">
-                            We believe in marketing, we believe in entrepreneurship,
-                            and we believe small businesses are the lifeblood of
-                            our communities. If you have that spirit and you believe
-                            in helping small businesses grow, we're looking for you!
-                        </label>
+                <div className="row align-items-center text-center mt-5">
+                        <div className="col-8 mx-auto" >
+                            <h2>Are You Ready To Make A Difference?</h2>
+                            <div className="w-100">
+                                <label className="career-subtitle">
+                                    We believe in marketing, we believe in entrepreneurship,
+                                    and we believe small businesses are the lifeblood of
+                                    our communities. If you have that spirit and you believe
+                                    in helping small businesses grow, we're looking for you!
+                                </label>
+                            </div>
                     </div>
                 </div>
 
@@ -207,7 +222,7 @@ const Section3 = () => {
 
                 <form onSubmit={formik.handleSubmit}>
                     <div className="row align-items-center">
-                        <div className={`${isMobile ? "col-12" : "col-3"}`}>
+                        <div className={`${isMobile ? "col-12" : "col-4"}`}>
                             <div className={`career-form-inputs sectionContent w-100 d-flex align-items-center`}>
                                 <img width={"20px"} height={"20px"} src={locationIcon} alt="icons" />
                                 <select className="ms-3"
@@ -249,12 +264,9 @@ const Section3 = () => {
                                 </select>
                             </div>
                         </div>
-                        <div className={`${isMobile ? "col-12 mt-4" : "col-3"}`}>
+                        <div className={`${isMobile ? "col-12 mt-4" : "col-2"}`}>
                             <div className="d-flex align-items-center justify-content-between">
-                                <div className="form-check form-switch">
-                                    <input className="form-check-input" type="checkbox" id="flexSwitchCheckDefault" />
-                                    <label className="form-check-label" for="flexSwitchCheckDefault">Remote only</label>
-                                </div>
+                                
                                 <div className="ms-2">
                                     <button
                                         type="submit"
@@ -275,17 +287,27 @@ const Section3 = () => {
                             <table className="career-table">
                                 <thead>
                                     <tr>
+                                        <th style={{width:"20px"}}></th>
                                         <th>Designation</th>
                                         <th>No of Positions</th>
-                                        <th>Remote Type</th>
+                                        <th>Work Type</th>
                                         <th>Location</th>
                                         <th>Department</th>
                                         <th></th>
                                     </tr>
                                 </thead>
                             <tbody>
-                                {career.map((career, idx) =>
-                                    <tr key={idx}>
+                                {career.map((career, idx) =><>
+                                    <tr key={idx} onClick={() => openRow(idx)} >
+                                        <td onClick={() => openRow(idx)} style={{cursor:"pointer", width:"20px"}}>
+                                            <MdKeyboardArrowDown
+                                                style={{
+                                                    fontSize: "24px",
+                                                    fontWeight: "700",
+                                                    color: "#4c2e88",
+                                                    transform: mainIndex === idx ? 'rotate(180deg)' : 'rotate(0deg)',
+                                                }} />
+                                        </td>
                                         <td>
                                             <div className="d-flex flex-column align-items-start py-3">
                                                 <label className="career-postion-text">{career.post}</label>
@@ -319,20 +341,45 @@ const Section3 = () => {
                                                         setDesignation(career.post)
                                                         setModalShow(true)
                                                     }}
-                                                    style={{
-                                                        border: "1px solid black",
-                                                        fontSize:"14px",
-                                                        padding: "3px 8px",
-                                                        background: "transparent",
-                                                        borderRadius:"5px",
-                                                        "&:hover": {
-                                                            color: "blue"
-                                                        }
-                                                    }}
+                                                    className={"sliderBtns colored-outlined"}
+                                                    // style={{
+                                                    //     border: "1px solid black",
+                                                    //     fontSize:"14px",
+                                                    //     padding: "5px 10px",
+                                                    //     background: "transparent",
+                                                    //     borderRadius:"5px",
+                                                    //     "&:hover": {
+                                                    //         color: "blue"
+                                                    //     }
+                                                    // }}
                                                 >Apply</button>
                                             </div>
                                         </td>
                                     </tr>
+                                    <tr>
+                                        <td colSpan={6} style={{ width: "100%" }}>
+                                            <Collapse in={mainIndex === idx} style={{ width: "100%" }}>
+                                            
+                                                <div className="row w-100">
+                                                    <div className="col-6">
+                                                        <h3>Job Descriptions</h3>
+                                                        {career.job_details?.job_descriptions.map((ele, i) => <p>{ele}</p>)}
+                                                    </div>
+                                                    <div className="col-6 ps-4">
+                                                        <h3>Basic Requirements</h3>
+                                                        {career.job_details?.basic_requirements.map((ele, i) => <p>{ele}</p>)}
+                                                    </div>
+                                                    {/* <div className="col-12 w-100">
+                                                        <h3>We Offer</h3>
+                                                        {career.job_details?.we_offer.map((ele, i) => <p>{ele}</p>)}
+                                                    </div> */}
+                                                </div>
+                                            
+                                            </Collapse>
+                                        </td>
+                                    </tr>
+                                    
+                                </>
                                 )}
                                 
                             </tbody>

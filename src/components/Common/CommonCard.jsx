@@ -11,7 +11,9 @@ const CommonCard = ({
   padding,
   vertical = false,
   buttonCard = false,
-  imageCard = true
+  imageCard = true,
+  button = false,
+  handleFunction
 }) => {
   if (buttonCard && imageCard) { 
     return (
@@ -50,7 +52,7 @@ const CommonCard = ({
             src={require(`../../assets/icons/${image}`)}
             // src={require(`../../assets/icons/${image}`)}
             alt="cardImage"
-            style={{ height: "80px" }}
+            style={{ height: "80px", objectFit: "cover", width:"unset" }}
           />
         </div>
         <div className="col-12 text-center p-5">
@@ -70,15 +72,15 @@ const CommonCard = ({
     );
   } else {
     return (
-      isMobile ? <div className="bizCard row" style={{ minHeight: "250px" }}>
+      isMobile ? <div className="bizCard">
         <div
           className="col-12 cardTopCol"
-          style={{ background: background, minHeight: "250px" }}
+          style={{ background: background }}
         >
           <img
             src={require(`../../assets/icons/${image}`)}
             alt="cardImage"
-            style={{ height: "80px" }}
+            style={{ height: "80px", objectFit: "cover", width: "unset" }}
           />
         </div>
         <div className="col-12 text-center p-5">
@@ -91,16 +93,16 @@ const CommonCard = ({
         
       :
         
-      <div className="bizCard" style={{minHeight:"250px"}}>
-        < div className = "row" >
-          <div
+      <div className="bizCard">
+          <div className="d-flex align-items-center justify-content-center h-100">
+            <div
               className={`col-4 row-height cardLeftCol`}
-              style={{ background: background, minHeight: "250px" }}
-          >
+              style={{ background: background }}
+            >
             <img
               src={require(`../../assets/icons/${image}`)}
               alt="cardImage"
-              style={{ height: "80px" }}
+                style={{ height: "80px", objectFit: "cover", width: "unset" }}
               />
               {icontext && <p className="cardHead">
                 {name}
@@ -109,18 +111,19 @@ const CommonCard = ({
           </div>
           <div
             className="col-8 row-height d-flex flex-column align-items-start justify-content-center"
-            style={{ padding: padding ? padding : "20px 10px 10px 30px" }}
+            style={{ padding: padding ? padding : "10px" }}
           >
             {!icontext && <p className="cardHead">
               {name}
             </p>}
               <p className="cardDescription">{description}</p>
-              {buttonCard ? <div className="col-12 text-center pb-3">
-                <BookCallButton
-                  isColored={true}
-                  text={`Get a Qoute`}
-                  showImage={false}
-                />
+              {button ? <div className="col-12 pb-3">
+                <button
+                  className={`sliderBtns bordered`}
+                  onClick={handleFunction}
+                >
+                  Get a qoutes
+                </button>
               </div> : null}
           </div>
         </div >

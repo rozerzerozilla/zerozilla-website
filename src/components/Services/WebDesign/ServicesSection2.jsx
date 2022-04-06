@@ -37,12 +37,13 @@ const Section2 = () => {
                 <div className="row" style={{ marginTop: "40px" }}>
                   {webIdeas.map((idea, index) => (
                     <div
-                      className={`${isMobile ? "col-12" : "col-6 my-auto"}`}
+                      className={`${isMobile ? "col-12" : "col-4 my-auto mx-auto"}`}
                       key={idea.id}
                       style={!isMobile ? { paddingRight: "20px" } : null}
                     >
                       <Fade top={index % 2 === 0 ? true : false} bottom={index % 2 === 0 ? false : true}>
-                        <CommonCard
+                        {/* <CommonCard
+                          button={false}
                           icontext={true}
                           image={idea.image}
                           name={idea.name}
@@ -50,8 +51,32 @@ const Section2 = () => {
                           isMobile={isMobile}
                           background={"#EDF9FF"}
                           imageWidth={"50%"}
-                          padding={"20px 30px"}
-                        />
+                          padding={"0px 30px"}
+                        /> */}
+                        <div className="bizCard">
+                          <div className="d-flex align-items-center justify-content-center h-100">
+                            <div
+                              className={`col-4 row-height cardLeftCol`}
+                              style={{ background: "#EDF9FF", padding:"0 10px" }}
+                            >
+                              <img
+                                src={require(`../../../assets/icons/${idea.image}`)}
+                                alt="cardImage"
+                                style={{ height: "80px", objectFit: "cover", width: "unset" }}
+                              />
+                              {true && <p className="cardHead" style={{fontSize:"15px"}}>
+                                {idea.name}
+                              </p>}
+                            </div>
+                            <div
+                              className="col-8 row-height d-flex flex-column align-items-start justify-content-center"
+                              style={{ padding: "0px 30px" }}
+                            >
+                              <p className="cardDescription">{idea.description}</p>
+                              
+                            </div>
+                          </div >
+                        </div>
                       </Fade>
                     </div>
                   ))}

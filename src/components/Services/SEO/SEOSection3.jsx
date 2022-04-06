@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import sectionCover from "../../../assets/images/seo-section-3-cover.png";
+import sectionCover from "../../../assets/images/seo-section-3-cover.webp";
 import { AppContext } from "../../../context/Context";
 import Fade from 'react-reveal/Fade';
 
@@ -24,39 +24,28 @@ const Section3 = () => {
             <Fade bottom>
             <div className={`row col-12 ${isMobile && "m-0"}`}>
               <p className="section3Head black extra-bold">
-                Engaging in fruitful partnerships for a successful outcome
+                  Stay in the spotlight with Zerozilla’s enterprise SEO! 
               </p>
               <p className="sectionContent">
-                Most of us rely on the professionals that is, deep sea divers
-                and perhaps, marine experts to enlighten us about underwater
-                existence. If the experts like what they see, they will bring it
-                to the surface for us to appreciate and utilize. You see… that’s
-                their main job.
+                  Any business today recognizes the value and returns associated with a web page's first-page internet search result for a relevant search query. Hence, businesses today understand the importance of being associated with the best SEO company. At Zerozilla, we take care of all areas of your business related to your ROI and tune them for the expected outcome. As a top SEO company, we offer search engine optimization, local SEO services, and more. 
               </p>
               <p className="sectionContent">
-                Search engines are like deep sea marine experts. As a player in
-                the market you are somewhere in this sea, whether you like it or
-                not! Your buyers do not have the time, ability or inclination to
-                enter the unknown waters and look for you. So they wait, all
-                along the shoreline to grab what pops up!
+                  A flawless corporate SEO strategy campaign is built based on the quality of content, design, keywords, and linkages. How do we get a lot of attention on the internet? How do you get your website indexed in search engines? How to Outperform Your Competitors? How to meet the desired return on investment (ROI) targets. We try to answer these questions with our strategies.
               </p>
               <p className="sectionContent large bold secondary-color">
-                If you don’t surface soon, you will drown.
+                  Enhance your digital portfolio to generate leads! 
               </p>
               <p className="sectionContent">
-                The same way in which if you are on the Internet, and not
-                optimized, you will be obsolete.
-              </p>
-              <p className="sectionContent large bold secondary-color">
-                Another thing
-              </p>
-              <p className="sectionContent">
-                These “deep sea experts” are getting smarter every day (enhanced
-                algorithms such as GoogleRankBrain). It takes a lot more than
-                bright, neon colors (a standard website) to attract their
-                attention. You need to be interesting, valuable and of optimum
-                quality.
-              </p>
+                  We undertake the actual Google search for keywords to understand the industry and get real results. 
+                </p>
+                
+                <p className="sectionContent large bold secondary-color">
+                  Not just that! 
+                </p>
+                <p className="sectionContent">
+                  We recognize that the second page of an online search seldom yields any business results. Hence, we curate search relevance on your website pages in real-time with refreshed content. 
+                </p>
+
               </div>
             </Fade>
           </div>

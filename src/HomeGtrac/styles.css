@@ -1,0 +1,26 @@
+:root{
+    --black: #000000;
+    --white: #ffffff;
+    --orange: #ff700f;
+    --teal: #368070;
+}
+
+.gtrac-card{
+  border-radius: 14px;
+  box-shadow: 0 16px 40px 0 rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+.gtrac-card .gtrac-card-title{
+    font-size: 20px;
+    color: var(--black)
+}
+
+.gtrac-card .gtrac-card-description{
+    font-size: 16px;
+    color: var(--black)
+}
+
+.gtrac-card .gtrac-card-image{
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+}

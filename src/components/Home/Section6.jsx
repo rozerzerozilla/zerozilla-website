@@ -1,12 +1,15 @@
 import React, { useContext } from "react";
-import sectionCover from "../../assets/images/section6Cover.png";
+import sectionCover from "../../assets/images/section6Cover.webp";
 import { AppContext } from "../../context/Context";
 import Fade from 'react-reveal/Fade';
 import { Container } from "react-bootstrap";
 import CountUp from 'react-countup';
 
 const Section6 = () => {
+  
+  const containerRef = React.useRef();
   const [isMobile] = useContext(AppContext);
+  
   return (
     <Container fluid="xl">
       <div className="row Home-area6" style={{ margin: 0, padding: 0 }}>

@@ -1,5 +1,5 @@
 import React from "react";
-import sectionCover from "../../../assets/images/Digital-Market-Section-1-Cover.png";
+import sectionCover from "../../../assets/images/Digital-Market-Section-1-Cover.webp";
 import CommonSection1 from "../../Common/CommonSection1";
 
 const Section1 = ({handleFunction}) => {

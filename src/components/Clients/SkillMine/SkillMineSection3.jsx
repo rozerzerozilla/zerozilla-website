@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { AppContext } from "../../../context/Context";
 import logo from "../../../assets/icons/skill-mine-logo.svg";
-import sectionCover from "../../../assets/images/skill-mine-section3-cover.png";
+import sectionCover from "../../../assets/images/skill-mine-section3-cover.webp";
 
 const Section3 = () => {
   const [isMobile] = useContext(AppContext);

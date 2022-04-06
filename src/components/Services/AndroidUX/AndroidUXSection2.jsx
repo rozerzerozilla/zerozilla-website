@@ -2,7 +2,6 @@ import React, { useContext } from "react";
 // react lottie
 import Lottie from 'react-lottie';
 
-import sectionCover from "../../../assets/images/seo-section-3-cover.png";
 import { AppContext } from "../../../context/Context";
 import Fade from 'react-reveal/Fade';
 import * as animationData from "./lottie.json";

@@ -1,6 +1,6 @@
 import React from "react";
 import CommonSection1 from "../../Common/CommonSection1";
-import sectionCover from "../../../assets/images/php-section-1-cover.png";
+import sectionCover from "../../../assets/images/php-section-1-cover.webp";
 
 const Section1 = ({handleFunction}) => {
     return (

@@ -18,7 +18,7 @@ import "owl.carousel/dist/assets/owl.theme.default.css";
 import { AppProvider } from "./context/Context";
 
 // import routes
-import { customServices, marketingServices, businessServices, cloudServices } from "./helper/router"
+import { customServices, marketingServices, businessServices, cloudServices, mobileComponents } from "./helper/router"
 import Loader from "./components/MainLoader"
 //pages
 // import AboutPage from "./pages/About";
@@ -60,8 +60,10 @@ const App = () => {
           {cloudServices.map((ele, idx) => <Route key={idx + Math.random() * 10} path={ele.href} component={ele.component} />)}
           
           {marketingServices.map((ele, idx) => <Route key={idx + Math.random() * 10} path={ele.href} component={ele.component} />)}
-            <Route path={"/digital-marketing"} component={DigtalMarketing} />
-            <Route path={"/web-application"} component={WebDevlopment}/>
+          {mobileComponents.map((ele, idx) => <Route key={idx + Math.random() * 10} path={ele.href} component={ele.component} />)}
+            
+          <Route path={"/digital-marketing"} component={DigtalMarketing} />
+          <Route path={"/web-application"} component={WebDevlopment}/>
           <Route path={"/career"} component={Career} />
           <Route exact path={"/portfolio"} component={PortfolioPage} />
           <Route path={"/portfolio/skill-mine"} component={PortfolioSubPage} />

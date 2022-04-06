@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react";
 import { AppContext } from "../../../context/Context";
 import { oneLink } from "../../../helper/services";
 import { leadGenTypes } from "../../../helper/services";
-import oneWayLink from "../../../assets/images/one-way-building.png";
+import oneWayLink from "../../../assets/images/one-way-building.webp";
 import { typesOfLinks } from "../../../helper/renderData";
 import CommonTypesOfLinks from "../../Common/CommonTypesOfLinks";
 import Fade from 'react-reveal/Fade';

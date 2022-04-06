@@ -6,7 +6,8 @@ import { useFormik, Field } from 'formik';
 
 // valiator
 import validator from 'validator';
-
+import { IoCall, IoLocationOutline } from "react-icons/io5";
+import { FiMail } from "react-icons/fi";
 const handleValidate = values => {
     let errors = {};
     if (!values.firstname)
@@ -66,26 +67,24 @@ const Section2 = () => {
     })
 
 
-
-
     return (
         <div className="container contact-card mb-5">
             <div className="row">
                 {!isMobile ? <div className="col-4">
                     <div className="rectangle-4604">
-                        <h3>Contact Information</h3>
+                        <h3 className="color-white font600">Contact Information</h3>
                         <p>Fill up the form and our team will get back to you within 24 hours</p>
                         <div className="d-flex align-items-start justify-content-start">
-                            <div className="me-2">icon</div>
+                            <div className="me-2"><IoCall/></div>
                             <div>+91 98765 43210</div>
                         </div>
                         <div className="d-flex align-items-start justify-content-start pt-2">
-                            <div className="me-2">icon</div>
-                            <div>hello@zerozilla.com</div>
+                            <div className="me-2"><FiMail/></div>
+                            <div>info@zerozilla.com</div>
                         </div>
                         <div className="d-flex align-items-start justify-content-start pt-2">
-                            <div className="me-2">icon</div>
-                            <div>100, Zerozilla Hub, Bengaluru - 560102</div>
+                            <div className="me-2"><IoLocationOutline style={{color: "white"}}/></div>
+                            <div>Royal Avenue Gopalan Enterprises, 1st Cross Rd 3rd Stage, Banashankari, Bengaluru,<br/> 560085</div>
                         </div>
                         <div className="ellipse-13"></div>
                         <div className="ellipse-12"></div>
@@ -156,12 +155,11 @@ const Section2 = () => {
                                         value={formik.values.phone} />
                                 </div>
                             </div>
-                            <div className="col-12">
+                            {/* <div className="col-12">
                                 <h6>What are the services you need?</h6>
-                            </div>
-                            <div className="col-12 form-standard mb-4">
+                            </div> */}
+                            {/* <div className="col-12 form-standard mb-4">
                                 <div className="form-check form-check-inline">
-                                    {/* <Field type="radio" name="picked" value="One" /> */}
                                     <input
                                         className="form-check-input"
                                         type="radio"
@@ -221,7 +219,7 @@ const Section2 = () => {
                                     />
                                     <label className="form-check-label" for="inlineRadio2">Other</label>
                                 </div>
-                            </div>
+                            </div> */}
                             <div className="col-12 form-standard mb-4">
                                 <div className="col-12">
                                     <label className="form-standard-label">Message</label>

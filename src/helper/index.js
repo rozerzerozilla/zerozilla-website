@@ -93,43 +93,57 @@ export const bizIdeas = [
 export const webIdeas = [
   {
     id: 1,
-    image: "organic-search.svg",
-    name: "Enhanced performance",
+    image: "webdev-icon-1.svg",
+    name: "Custom Web App Development",
     description:
       "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
   },
   {
     id: 2,
-    image: "creativity-bulb.svg",
-    name: "Innovation",
+    image: "webdev-icon-2.svg",
+    name: "Enterprise Web Development",
     description:
       "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
   },
   {
     id: 3,
-    image: "skyrocketing.svg",
-    name: "Modernization",
+    image: "webdev-icon-3.svg",
+    name: "Backend & API Development",
     description:
       "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
   },
   {
     id: 4,
-    image: "search-servers.svg",
-    name: "Strategy preparation",
+    image: "webdev-icon-4.svg",
+    name: "Full Stack Development",
     description:
       "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
   },
   {
     id: 5,
-    image: "web-engg.svg",
-    name: "Digitalization",
+    image: "webdev-icon-5.svg",
+    name: "Social Media App Integration",
     description:
       "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
   },
   {
     id: 6,
-    image: "data-report.svg",
-    name: "Project Mapping",
+    image: "webdev-icon-6.svg",
+    name: "Payment Gateway Integration",
+    description:
+      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
+  },
+  {
+    id: 7,
+    image: "webdev-icon-7.svg",
+    name: "Migration & Upgradation",
+    description:
+      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
+  },
+  {
+    id: 8,
+    image: "webdev-icon-8.svg",
+    name: "Maintenance & Support",
     description:
       "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
   },
@@ -138,7 +152,7 @@ export const webIdeas = [
 export const clientSlider = [
   {
     id: 1,
-    image: "clientSliderImage1.png",
+    image: "clientSliderImage1.webp",
     name: "John Doe",
     designation: "CEO",
     company: "Skillmine Inc",
@@ -147,7 +161,7 @@ export const clientSlider = [
   },
   {
     id: 2,
-    image: "clientSliderImage2.png",
+    image: "clientSliderImage2.webp",
     name: "John Doe",
     designation: "CEO",
     company: "Artyss Studio",
@@ -156,7 +170,7 @@ export const clientSlider = [
   },
   {
     id: 3,
-    image: "clientSliderImage1.png",
+    image: "clientSliderImage1.webp",
     name: "John Doe",
     designation: "CEO",
     company: "Social.hr",
@@ -165,7 +179,7 @@ export const clientSlider = [
   },
   {
     id: 1,
-    image: "clientSliderImage1.png",
+    image: "clientSliderImage1.webp",
     name: "John Doe",
     designation: "CEO",
     company: "Skillmine Inc",
@@ -174,7 +188,7 @@ export const clientSlider = [
   },
   {
     id: 2,
-    image: "clientSliderImage2.png",
+    image: "clientSliderImage2.webp",
     name: "John Doe",
     designation: "CEO",
     company: "Artyss Studio",
@@ -183,7 +197,7 @@ export const clientSlider = [
   },
   {
     id: 3,
-    image: "clientSliderImage1.png",
+    image: "clientSliderImage1.webp",
     name: "John Doe",
     designation: "CEO",
     company: "Social.hr",
@@ -192,7 +206,7 @@ export const clientSlider = [
   },
   {
     id: 1,
-    image: "clientSliderImage1.png",
+    image: "clientSliderImage1.webp",
     name: "John Doe",
     designation: "CEO",
     company: "Skillmine Inc",
@@ -201,7 +215,7 @@ export const clientSlider = [
   },
   {
     id: 2,
-    image: "clientSliderImage2.png",
+    image: "clientSliderImage2.webp",
     name: "John Doe",
     designation: "CEO",
     company: "Artyss Studio",
@@ -210,7 +224,7 @@ export const clientSlider = [
   },
   {
     id: 3,
-    image: "clientSliderImage1.png",
+    image: "clientSliderImage1.webp",
     name: "John Doe",
     designation: "CEO",
     company: "Social.hr",

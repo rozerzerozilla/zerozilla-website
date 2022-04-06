@@ -20,7 +20,7 @@ const Section10 = ({handleFunction}) => {
               Ready to grow your business with us?
             </p>
             <p className="sectionContent">
-              Take the first step towards your BRAND EVOLUTION!
+              Maximize the ROI and improve search engine ranking for your business through Zerozilla’s innovative strategies, SEO audit, and analysis
             </p>
           </div>
         </div>

@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { AppContext } from "../../context/Context";
-import sectionCover from "../../assets/images/About-Section6-Cover.png";
+import sectionCover from "../../assets/images/About-Section6-Cover.webp";
 import Fade from 'react-reveal/Fade';
 
 const Section6 = () => {

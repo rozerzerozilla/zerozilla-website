@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import { AppContext } from "../../../context/Context";
-import video from "../../../assets/images/skill-mine-video.png";
+import video from "../../../assets/images/skill-mine-video.webp";
 
 const Section2 = () => {
   const [isMobile] = useContext(AppContext);

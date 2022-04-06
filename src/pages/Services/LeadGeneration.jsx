@@ -24,12 +24,12 @@ const LeadGeneration = () => {
       <Section1 handleFunction={handleModal}/>
       <Section2 />
       <Section3 />
-      <Section4 />
+      <Section4 handleFunction={handleModal}/>
       <Section5 />
       {/* <Section6 /> */}
       <Section7 />
-      <Section8 />
-      <Section9 />
+      <Section8/>
+        <Section9 handleFunction={handleModal} />
       </div>
       <Footer />
       <ModalsForm

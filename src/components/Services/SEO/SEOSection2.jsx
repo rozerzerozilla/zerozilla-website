@@ -26,12 +26,10 @@ const Section2 = () => {
               {!isMobile && <div className="col-1"></div>}
               <div className={`${isMobile ? "col-12" : "col-10"}`}>
                 <p className="section3Head black extra-bold text-center">
-                  Marketing Strategy that works in REAL!
+                    Drive organic traffics, leads, and sales with our enterprise SEO service 
                 </p>
                 <p className="sectionContent text-center">
-                  No more bookish strategies or fake promises! Transparent &
-                  proven methodologies for skyrocketing <br />
-                  your business in no time!
+                    Maximize ROI with transparent & data-driven methodologies! 
                 </p>
               </div>
               {!isMobile && <div className="col-1"></div>}

@@ -40,7 +40,7 @@ const Section3 = () => {
                 <div className="row" style={{ marginTop: !isMobile && 30 }}>
                     {softwarePageCards.map((card, idx) => (
 
-                        <div
+                        <div 
                             key={card.id}
                             className={`${!isMobile ? "col-3" : "col-12"}`}
                             style={

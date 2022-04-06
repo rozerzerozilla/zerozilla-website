@@ -5,8 +5,24 @@ import Bullets from "../../assets/icons/About-bullet-icons.svg";
 import { strategies } from "../../helper/about";
 import Fade from 'react-reveal/Fade';
 
+// react lottie
+import Lottie from 'react-lottie';
+import animationData from './about-lottie.json';
+
+
 const Section2 = () => {
+
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: 'xMidYMid slice'
+    }
+  };
+
   const [isMobile] = useContext(AppContext);
+  
   return (
     <div className="row Home-area3" style={{ margin: 0, padding: 0 }}>
       <div
@@ -57,7 +73,9 @@ const Section2 = () => {
               className="row-col-12"
               style={{ marginTop: !isMobile ? "40px" : "20px" }}
             >
-              <button className="appBtn">Discover more!</button>
+              <a href="/about-us#who-we-are">
+                <button className="appBtn">Discover more!</button>
+              </a>
             </div>
           </div>
           <div
@@ -68,10 +86,8 @@ const Section2 = () => {
             }}
           >
             <Fade>
-              <img
-                src={sectionCover}
-                alt="sectionVideo"
-                style={{ width: "100% " }}
+              <Lottie options={defaultOptions}
+                width={"100%"}
               />
             </Fade>
           </div>

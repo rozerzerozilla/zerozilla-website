@@ -16,8 +16,8 @@ import {
   videosInsights,
   cloudServices,
 } from "../helper/router";
-
-const CustomHeader = () => {
+import sectionCover from "../assets/images/About-Section-3-Cover.webp"
+ const CustomHeader = () => {
   const menu = useRef(null);
   const history = useHistory();
   const [isMobile] = useContext(AppContext);
@@ -276,43 +276,49 @@ const CustomHeader = () => {
           <div className="dropdown-menus">
             <Container style={{ width: '100%' }}>
               <Row>
-                <Col xs="12">
-                  <NavLink to={"/about-us"}
-                    className={isActive =>
-                    "subnavlink" + (isActive ? " active-subnavlink" : "")
-                  }
-                    isActive={(match, location) => {
-                      if (!match) {
-                        return false;
+                <Col xs="7">
+                  <Col xs="12">
+                    <NavLink to={"/about-us"}
+                      className={isActive =>
+                        "subnavlink" + (isActive ? " active-subnavlink" : "")
                       }
-                      return location.pathname === '/about-us'
-                    }}
-                  >
-                    <div className="d-flex align-items-center py-2">
-                      <div className="megaMenuIcons"><FaUser/></div>
-                      <span className="ps-3">About Us</span>
-                    </div>
-                  </NavLink>
+                      isActive={(match, location) => {
+                        if (!match) {
+                          return false;
+                        }
+                        return location.pathname === '/about-us'
+                      }}
+                    >
+                      <div className="d-flex align-items-center py-2">
+                        <div className="megaMenuIcons"><FaUser /></div>
+                        <span className="ps-3">About Us</span>
+                      </div>
+                    </NavLink>
+                  </Col>
+                  <Col xs="12">
+                    <a href={"/about-us#journey"}
+                      className={"subnavlink"}
+                    >
+                      <div className="d-flex align-items-center py-2">
+                        <div className="megaMenuIcons"><FaUser /></div>
+                        <span className="ps-3">Journey</span>
+                      </div>
+                    </a>
+                  </Col>
+                  <Col xs="12">
+                    <a href={"/about-us#ourteam"}
+                      className={"subnavlink"}
+                    >
+                      <div className="d-flex align-items-center py-2">
+                        <div className="megaMenuIcons"><FaTeamspeak /></div>
+                        <span className="ps-3">Our Team</span>
+                      </div>
+                    </a>
+                  </Col>
                 </Col>
-                <Col xs="12">
-                  <a href={"/about-us#journey"}
-                    className={"subnavlink"}
-                  >
-                    <div className="d-flex align-items-center py-2">
-                      <div className="megaMenuIcons"><FaUser /></div>
-                      <span className="ps-3">Journey</span>
-                    </div>  
-                  </a>
-                </Col>
-                <Col xs="12">
-                  <a href={"/about-us#ourteam"}
-                    className={"subnavlink"}
-                  >
-                    <div className="d-flex align-items-center py-2">
-                      <div className="megaMenuIcons"><FaTeamspeak /></div>
-                      <span className="ps-3">Our Team</span>
-                    </div>
-                  </a>
+
+                <Col xs="5">
+                  <img src={sectionCover} style={{height:"100%", width:"100px", objectFit:"cover", borderRadius:"8px"}}/>
                 </Col>
               </Row>
             </Container>
@@ -444,59 +450,65 @@ const CustomHeader = () => {
           <div className="dropdown-menus">
             <Container style={{ width: '100%' }}>
               <Row>
-                <Col xs="12">
-                  <NavLink to={"/portfolio"}
-                    className={isActive =>
-                      "subnavlink" + (isActive ? " active-subnavlink" : "")
-                    }
-                    isActive={(match, location) => {
-                      if (!match) {
-                        return false;
+                <Col xs="7">
+                  <Col xs="12">
+                    <NavLink to={"/portfolio"}
+                      className={isActive =>
+                        "subnavlink" + (isActive ? " active-subnavlink" : "")
                       }
-                      return location.pathname === '/portfolio'
-                    }}
-                  >
-                    <div className="d-flex align-items-center py-2">
-                      <div className="megaMenuIcons"><FaSquare /></div>
-                      <span className="ps-3">Portfolio</span>
-                    </div>
-                  </NavLink>
+                      isActive={(match, location) => {
+                        if (!match) {
+                          return false;
+                        }
+                        return location.pathname === '/portfolio'
+                      }}
+                    >
+                      <div className="d-flex align-items-center py-2">
+                        <div className="megaMenuIcons"><FaSquare /></div>
+                        <span className="ps-3">Portfolio</span>
+                      </div>
+                    </NavLink>
+                  </Col>
+                  <Col xs="12">
+                    <NavLink to={"/journey"}><a href="https://www.zerozilla.com/blog/" target="_blank"
+                      className={isActive =>
+                        "navlink" + (isActive ? " active-navlink" : "")
+                      }
+                      isActive={(match, location) => {
+                        if (!match) {
+                          return false;
+                        }
+                        return location.pathname === "https://www.zerozilla.com/blog/"
+                      }}
+                    >
+                      <div className="d-flex align-items-center py-2">
+                        <div className="megaMenuIcons"><FaSquare /></div>
+                        <span className="ps-3">Blog</span>
+                      </div>
+                    </a></NavLink>
+                  </Col>
+                  <Col xs="12">
+                    <NavLink to={"/career"}
+                      className={isActive =>
+                        "subnavlink" + (isActive ? " active-subnavlink" : "")
+                      }
+                      isActive={(match, location) => {
+                        if (!match) {
+                          return false;
+                        }
+                        return location.pathname === '/career'
+                      }}
+                    >
+                      <div className="d-flex align-items-center py-2">
+                        <div className="megaMenuIcons"><FaSquare /></div>
+                        <span className="ps-3">Gallery</span>
+                      </div>
+                    </NavLink>
+                  </Col>
                 </Col>
-                <Col xs="12">
-                  <NavLink to={"/journey"}><a href="https://www.zerozilla.com/blog/" target="_blank"
-                    className={isActive =>
-                      "navlink" + (isActive ? " active-navlink" : "")
-                    }
-                    isActive={(match, location) => {
-                      if (!match) {
-                        return false;
-                      }
-                      return location.pathname === "https://www.zerozilla.com/blog/"
-                    }}
-                  >
-                    <div className="d-flex align-items-center py-2">
-                      <div className="megaMenuIcons"><FaSquare /></div>
-                      <span className="ps-3">Blog</span>
-                    </div>
-                  </a></NavLink>
-                </Col>
-                <Col xs="12">
-                  <NavLink to={"/career"}
-                    className={isActive =>
-                      "subnavlink" + (isActive ? " active-subnavlink" : "")
-                    }
-                    isActive={(match, location) => {
-                      if (!match) {
-                        return false;
-                      }
-                      return location.pathname === '/career'
-                    }}
-                  >
-                    <div className="d-flex align-items-center py-2">
-                      <div className="megaMenuIcons"><FaSquare /></div>
-                      <span className="ps-3">Gallery</span>
-                    </div>
-                  </NavLink>
+
+                <Col xs="5">
+                  <img src={sectionCover} style={{ height: "100%", width: "100px", objectFit: "cover", borderRadius: "8px" }} />
                 </Col>
               </Row>
             </Container>
@@ -527,10 +539,11 @@ const CustomHeader = () => {
               return location.pathname === '/contact-us'
             }}
         >Contact</NavLink></li>
-        <li><NavLink to="/career"
+        <li style={{display:"inline-flex"}}><NavLink to="/career"
           className={isActive =>
             "navlink" + (isActive ? " active-navlink" : "")
           }
+          style={{ display: "inline-flex" }}
           isActive={(match, location) => {
             if (!match) {
               return false;
@@ -538,7 +551,7 @@ const CustomHeader = () => {
             return location.pathname === '/career'
           }}
         >
-          <Tooltip title="We are hiring"
+          {/* <Tooltip title="We are hiring"
             overlayInnerStyle={{
               color: "#c31f5d",
               backgroundColor: "#ffeaf2",
@@ -556,8 +569,20 @@ const CustomHeader = () => {
             color={"#ffeaf2"}
             placement="rightTop"
           >
-            <span>Careers</span>
-          </Tooltip>
+            
+          </Tooltip> */}
+          <span>Careers</span>
+          <div style={{
+            color: "#c31f5d",
+            backgroundColor: "#ffeaf2",
+            borderRadius: "5px",
+            boxShadow: "none",
+            fontSize: "12px",
+            padding: "2px 10px",
+            marginLeft:"5px"
+          }}>
+            We are hiring
+          </div>
         </NavLink></li>
       </ul>
     </>

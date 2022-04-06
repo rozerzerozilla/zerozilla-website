@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import { AppContext } from "../../../context/Context";
-import sectionCover from "../../../assets/images/skill-mine-section4-cover.png";
+import sectionCover from "../../../assets/images/skill-mine-section4-cover.webp";
 
 const Section5 = () => {
   const [isMobile] = useContext(AppContext);

@@ -48,18 +48,19 @@ import { ImInfinite } from 'react-icons/im'
 // import Laravel from "../pages/Services/Laravel";
 // import Wordpress from "../pages/Services/Wordpress";
 
-// const CustomApplication = lazy(() => import('../pages/Services/CustomApplication'));
-// const AndroidApps = lazy(() => import('../pages/Services/AndroidApp'));
-// const AndroidUXDesign = lazy(() => import("../pages/Services/AndroidUX"));
-// const IOSApps = lazy(() => import("../pages/Services/iOS"));
-// const EcommerceApps = lazy(() => import("../pages/Services/Ecommerce"));
-// const IBeaconApps = lazy(() => import("../pages/Services/iBeacon"));
-// const IoTApps = lazy(() => import("../pages/Services/IoT"));
-// const IpadApps = lazy(() => import("../pages/Services/IPadApps"));
-// const ReactNativeApps = lazy(() => import("../pages/Services/ReactNative"));
-// const BotsApps = lazy(() => import("../pages/Services/BotsApp"));
-// const HybridApps = lazy(() => import("../pages/Services/HybridApps"));
+const CustomApplication = lazy(() => import('../pages/Services/CustomApplication'));
+const AndroidApps = lazy(() => import('../pages/Services/AndroidApp'));
+const AndroidUXDesign = lazy(() => import("../pages/Services/AndroidUX"));
+const IOSApps = lazy(() => import("../pages/Services/iOS"));
+const IBeaconApps = lazy(() => import("../pages/Services/iBeacon"));
+const IoTApps = lazy(() => import("../pages/Services/IoT"));
+const IpadApps = lazy(() => import("../pages/Services/IPadApps"));
+const ReactNativeApps = lazy(() => import("../pages/Services/ReactNative"));
+const BotsApps = lazy(() => import("../pages/Services/BotsApp"));
+const HybridApps = lazy(() => import("../pages/Services/HybridApps"));
+const Ecommerce = lazy(() => import("../pages/Services/EcommerceWeb"));
 const SoftwareDevelopment = lazy(() => import("../pages/Services/SoftwareDevelopment"));
+
 const DigtalMarketing = lazy(() => import("../pages/Services/DigtalMarketing"));
 const SearchEngineOptimization = lazy(() => import("../pages/Services/SearchEngineOptimization"));
 const LeadGeneration = lazy(() => import("../pages/Services/LeadGeneration"));
@@ -104,6 +105,107 @@ export const cloudServices = [
     },
 ]
 
+
+export const mobileComponents = [
+    {
+        catetogy: 'Mobile Applications',
+        subtitle: 'IOS Apps',
+        href: '/ios-app-development',
+        id: Math.random() * 10 + 1,
+        icon: GrAndroid,
+        component: IOSApps,
+    },
+    {
+        catetogy: 'Mobile Applications',
+        subtitle: 'Android Apps',
+        href: '/android-app-development',
+        id: Math.random() * 10 + 1,
+        icon: GrAndroid,
+        component: AndroidApps,
+    },
+    {
+        catetogy: 'Mobile Applications',
+        subtitle: 'Android Game UX Design',
+        href: '/android-game-ux-design-services',
+        id: Math.random() * 10 + 1,
+        icon: GrAndroid,
+        component: AndroidUXDesign,
+    },
+    // {
+    //     catetogy: 'Mobile Applications',
+    //     subtitle: 'Custom Apps',
+    //     href: '/custom-mobile-app-development-services',
+    //     id: Math.random() * 10 + 1,
+    //     icon: GrRobot,
+    //     component: CustomApplication,
+    // },
+    {
+        catetogy: 'Mobile Applications',
+        subtitle: 'E-commerce Apps',
+        href: '/e-commerce-mobile-app-development',
+        id: Math.random() * 10 + 1,
+        icon: FiShoppingCart,
+        component: Ecommerce,
+    },
+    {
+        catetogy: 'Mobile Applications',
+        subtitle: 'Bots Apps',
+        href: '/bots-app-development',
+        id: Math.random() * 10 + 1,
+        icon: GrRobot,
+        component: BotsApps,
+    },
+    {
+        catetogy: 'Mobile Applications',
+        subtitle: 'iPad Apps',
+        href: '/ipad-app-development',
+        id: Math.random() * 10 + 1,
+        icon: SiIos,
+        component: IpadApps,
+    },
+    {
+        catetogy: 'Mobile Applications',
+        subtitle: 'iBeacon Apps',
+        href: '/ibeacon-app-development',
+        id: Math.random() * 10 + 1,
+        icon: SiIbeacon,
+        component: IBeaconApps,
+    },
+    {
+        catetogy: 'Mobile Applications',
+        subtitle: 'Hybrid Apps',
+        href: '/hybrid-app-development',
+        id: Math.random() * 10 + 1,
+        icon: SiTableau,
+        component: HybridApps,
+        
+    },
+    {
+        catetogy: 'Mobile Applications',
+        subtitle: 'IoT Apps',
+        href: '/iot-app-development',
+        id: Math.random() * 10 + 1,
+        icon: SiIota,
+        component: IoTApps,
+    },
+    // {
+    //     catetogy: 'Mobile Applications',
+    //     subtitle: 'React JS Apps',
+    //     href: '/react-js-app-devlopment',
+    //     id: Math.random() * 10 + 1,
+    //     icon: SiReact,
+    //     component: ReactJsApps,
+    // },
+    {
+        catetogy: 'Mobile Applications',
+        subtitle: 'React Native Apps',
+        href: '/react-native-app-development',
+        id: Math.random() * 10 + 1,
+        icon: GrReactjs,
+        component: ReactNativeApps,
+    }
+]
+
 export const businessServices = [
     {
         catetogy: 'Web Application',
@@ -132,10 +234,10 @@ export const businessServices = [
     {
         catetogy: 'Web Application',
         subtitle: 'E-commerce Website',
-        href: '#',
+        href: '/ecommerce-website',
         id: Math.random() * 10 + 1,
         icon: IoPricetagsOutline,
-        component: DigtalMarketing,
+        component: Ecommerce,
     },
     {
         catetogy: 'Web Application',
@@ -303,95 +405,6 @@ export const customServices = [
         icon: SiCodeigniter,
         component: Codeigniter,
     },
-    // {
-    //     catetogy: 'Mobile Applications',
-    //     subtitle: 'Android Apps',
-    //     href: '/android-app-development',
-    //     id: Math.random() * 10 + 1,
-    //     icon: GrAndroid,
-    //     component: AndroidApps,
-    // },
-    // {
-    //     catetogy: 'Mobile Applications',
-    //     subtitle: 'Android Game UX Design',
-    //     href: '/android-game-ux-design-services',
-    //     id: Math.random() * 10 + 1,
-    //     icon: GrAndroid,
-    //     component: AndroidUXDesign,
-    // },
-    // {
-    //     catetogy: 'Mobile Applications',
-    //     subtitle: 'Custom Apps',
-    //     href: '/custom-mobile-app-development-services',
-    //     id: Math.random() * 10 + 1,
-    //     icon: GrRobot,
-    //     component: CustomApplication,
-    // },
-    // {
-    //     catetogy: 'Mobile Applications',
-    //     subtitle: 'E-commerce Apps',
-    //     href: '/e-commerce-mobile-app-development',
-    //     id: Math.random() * 10 + 1,
-    //     icon: FiShoppingCart,
-    //     component: EcommerceApps,
-    // },
-    // {
-    //     catetogy: 'Mobile Applications',
-    //     subtitle: 'Bots Apps',
-    //     href: '/bots-app-development',
-    //     id: Math.random() * 10 + 1,
-    //     icon: GrRobot,
-    //     component: BotsApps,
-    // },
-    // {
-    //     catetogy: 'Mobile Applications',
-    //     subtitle: 'iPad Apps',
-    //     href: '/ipad-app-development',
-    //     id: Math.random() * 10 + 1,
-    //     icon: SiIos,
-    //     component: IpadApps,
-    // },
-    // {
-    //     catetogy: 'Mobile Applications',
-    //     subtitle: 'iBeacon Apps',
-    //     href: '/ibeacon-app-development',
-    //     id: Math.random() * 10 + 1,
-    //     icon: SiIbeacon,
-    //     component: IBeaconApps,
-    // },
-    // {
-    //     catetogy: 'Mobile Applications',
-    //     subtitle: 'Hybrid Apps',
-    //     href: '/hybrid-app-development',
-    //     id: Math.random() * 10 + 1,
-    //     icon: SiTableau,
-    //     component: HybridApps,
-        
-    // },
-    // {
-    //     catetogy: 'Mobile Applications',
-    //     subtitle: 'IoT Apps',
-    //     href: '/iot-app-development',
-    //     id: Math.random() * 10 + 1,
-    //     icon: SiIota,
-    //     component: IoTApps,
-    // },
-    // {
-    //     catetogy: 'Mobile Applications',
-    //     subtitle: 'React JS Apps',
-    //     href: '/react-js-app-devlopment',
-    //     id: Math.random() * 10 + 1,
-    //     icon: SiReact,
-    //     component: ReactJsApps,
-    // },
-    // {
-    //     catetogy: 'Mobile Applications',
-    //     subtitle: 'React Native Apps',
-    //     href: '/react-native-app-development',
-    //     id: Math.random() * 10 + 1,
-    //     icon: GrReactjs,
-    //     component: ReactNativeApps,
-    // }
 ]
 
 export const portfolioInsights = [

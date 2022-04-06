@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { AppContext } from "../../../context/Context";
-import sectionCover from "../../../assets/images/social-media-section3-cover.png";
+import sectionCover from "../../../assets/images/social-media-section3-cover.webp";
 import Bullets from "../../../assets/icons/seo-bullets.svg";
 import { fruitfulPartnershipsTips1 } from "../../../helper/services";
 import Fade from "react-reveal/Fade";
@@ -34,24 +34,16 @@ const Section3 = () => {
             <Fade top>
             <div className={`row col-12 ${isMobile && "m-0"}`}>
               <p className="section3Head black extra-bold">
-                Engaging in fruitful partnerships for a successful outcome
+                  Have you tasted success on social media yet? It’s YUM! 
               </p>
               <p className="sectionContent">
-                Right now, at this very moment, 77% of World’s citizens are
-                either posting, sharing, clicking, liking, following or thinking
-                “Let’s see what’s up on FB today!”. That’s the social media
-                craze that’s hit our masses and like how! By 2025, there will be
-                close to 5 billion social media users on this planet. A Big
-                “Like” to that, we say!
+                  What can a social media marketing services company do for me?" you might wonder. In simple words, the most significant advantage that our social media marketing company can offer you is more time and a higher ROI at a low cost. 
               </p>
               <p className="sectionContent">
-                Why? ‘Cos now we know where, how, and when your customer eats,
-                drinks, sleeps, travels, purchases and what! But like everything
-                else, social media marketing (SMM) needs to be done right.
+                  The ability to minimize your CPA (cost per acquisition) and increase your ROI is the key to developing a successful social media management campaign (or any digital marketing campaign for that matter!) We, at Zerozilla, assist businesses like you with social media marketing services to save time and generate results.
               </p>
               <p className="sectionContent">
-                SMM is the new avatar of Internet Marketing but of course,
-                better. It’s more focused, refined, interactive and effective.
+                  More traffic, more engagement, more leads for your business. This is the motto of our SMM services.  
               </p>
               <p className="sectionContent large bold secondary-color">
                 Accordingly we:

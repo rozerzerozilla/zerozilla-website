@@ -1,11 +1,12 @@
 import React, { useContext } from "react";
 import { AppContext } from "../../context/Context";
-import bigWin1 from "../../assets/images/Service-Section-4-Big-Winds-1.png";
-import bigWin2 from "../../assets/images/Service-Section-4-Big-Winds-2.png";
-import bigWin3 from "../../assets/images/Service-Section-4-Big-Winds-3.png";
+import bigWin1 from "../../assets/images/Service-Section-4-Big-Winds-1.webp";
+import bigWin2 from "../../assets/images/Service-Section-4-Big-Winds-2.webp";
+import bigWin3 from "../../assets/images/Service-Section-4-Big-Winds-3.webp";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import Fade from 'react-reveal/Fade';
 import Zoom from 'react-reveal/Zoom';
+import { Link } from "react-router-dom";
 
 const CommonBigWinsSection = ({ background, smallerText }) => {
   const [isMobile] = useContext(AppContext);
@@ -69,18 +70,36 @@ const CommonBigWinsSection = ({ background, smallerText }) => {
       <div className="col-12 p-0">
         <div className="row g-0">
           <Zoom>
-            <div className={`${isMobile ? "col-12" : "col-4"}`}>
+            <div className={`case-study ${isMobile ? "col-12" : "col-4"}`}>
               <img className="w-100" src={bigWin1} alt="we-win-big" />
+              <div className="case-study-hover d-flex flex-column align-items-center justify-content-around">
+                <br /> <br /><br /> <br />
+                <Link to="/portfolio/skill-mine">
+                  <button className="sliderBtns white-colored-outline">View Case</button>
+                </Link>
+              </div>
             </div>
           </Zoom>
           <Fade top>
-            <div className={`${isMobile ? "col-12" : "col-4"}`}>
+            <div className={`case-study ${isMobile ? "col-12" : "col-4"}`}>
               <img className="w-100" src={bigWin2} alt="we-win-big" />
+              <div className="case-study-hover d-flex flex-column align-items-center justify-content-around">
+                <br /> <br /><br /><br />
+                <Link to="/portfolio/skill-mine">
+                  <button className="sliderBtns white-colored-outline">View Case</button>
+                </Link>
+              </div>
             </div>
           </Fade>
           <Zoom>
-            <div className={`${isMobile ? "col-12" : "col-4"}`}>
+            <div className={`case-study ${isMobile ? "col-12" : "col-4"}`}>
               <img className="w-100" src={bigWin3} alt="we-win-big" />
+              <div className="case-study-hover d-flex flex-column align-items-center justify-content-around">
+                <br /> <br /><br /> <br />
+                <Link to="/portfolio/skill-mine">
+                  <button className="sliderBtns white-colored-outline">View Case</button>
+                </Link>
+              </div>
             </div>
           </Zoom>
         </div>

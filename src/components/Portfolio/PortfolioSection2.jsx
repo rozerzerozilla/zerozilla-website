@@ -2,21 +2,21 @@ import React, { useContext, useState } from "react";
 import { AppContext } from "../../context/Context";
 import { functionalAreas } from "../../helper/renderData";
 
-import image1 from "../../assets/images/portfolio/portfolio-1.png";
-import image2 from "../../assets/images/portfolio/portfolio-2.png";
-import image3 from "../../assets/images/portfolio/portfolio-3.png";
-import image4 from "../../assets/images/portfolio/portfolio-4.png";
-import image5 from "../../assets/images/portfolio/portfolio-5.png";
-import image6 from "../../assets/images/portfolio/portfolio-6.png";
-import image7 from "../../assets/images/portfolio/portfolio-7.png";
+import image1 from "../../assets/images/portfolio/portfolio-1.webp";
+import image2 from "../../assets/images/portfolio/portfolio-2.webp";
+import image3 from "../../assets/images/portfolio/portfolio-3.webp";
+import image4 from "../../assets/images/portfolio/portfolio-4.webp";
+import image5 from "../../assets/images/portfolio/portfolio-5.webp";
+import image6 from "../../assets/images/portfolio/portfolio-6.webp";
+import image7 from "../../assets/images/portfolio/portfolio-7.webp";
 
-import icon1 from "../../assets/images/portfolio/portfolio-icon-1.png";
-import icon2 from "../../assets/images/portfolio/portfolio-icon-2.png";
-import icon3 from "../../assets/images/portfolio/portfolio-icon-3.png";
-import icon4 from "../../assets/images/portfolio/portfolio-icon-4.png";
-import icon5 from "../../assets/images/portfolio/portfolio-icon-5.png";
-import icon6 from "../../assets/images/portfolio/portfolio-icon-6.png";
-import icon7 from "../../assets/images/portfolio/portfolio-icon-7.png";
+import icon1 from "../../assets/images/portfolio/portfolio-icon-1.webp";
+import icon2 from "../../assets/images/portfolio/portfolio-icon-2.webp";
+import icon3 from "../../assets/images/portfolio/portfolio-icon-3.webp";
+import icon4 from "../../assets/images/portfolio/portfolio-icon-4.webp";
+import icon5 from "../../assets/images/portfolio/portfolio-icon-5.webp";
+import icon6 from "../../assets/images/portfolio/portfolio-icon-6.webp";
+import icon7 from "../../assets/images/portfolio/portfolio-icon-7.webp";
 // React animations
 import Fade from "react-reveal/Fade";
 import Zoom from "react-reveal/Zoom";

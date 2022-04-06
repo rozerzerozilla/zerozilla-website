@@ -1,10 +1,11 @@
 import React from "react";
 import CommonConsultSection from "../../Common/CommonConsultSection";
 
-const Section4 = () => {
+const Section4 = ({handleFunction}) => {
   return (
     <CommonConsultSection
-      type2={true}
+      handleFunction={handleFunction}
+      type2={false}
       btnText={"Enquire now"}
       text={"Talk to us today for a consultation"}
       extraBold={false}

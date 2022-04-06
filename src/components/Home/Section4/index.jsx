@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import sectionCover from "../../../assets/images/section4Cover.png";
+import sectionCover from "../../../assets/images/section4Cover.webp";
 import webDev from "../../../assets/icons/webDev.svg";
 import applicationDev from "../../../assets/icons/appDevelopment.svg";
 import customSoftware from "../../../assets/icons/customSoftware.svg";
@@ -27,7 +27,7 @@ const Section4 = () => {
         <div className="row">
           <Fade left>
           <div
-            className={`${isMobile ? "col-12" : "col-7 my-auto"}`}
+            className={`${isMobile ? "col-12" : "col-6 my-auto"}`}
             style={
               isMobile
                 ? { marginTop: "40px", textAlign: "center" }
@@ -43,7 +43,7 @@ const Section4 = () => {
           </Fade>
           <Fade right>
           <div
-            className={`${isMobile ? "col-12" : "col-5 my-auto"}`}
+            className={`${isMobile ? "col-12" : "col-6 my-auto"}`}
             style={
               isMobile
                 ? {
@@ -55,11 +55,10 @@ const Section4 = () => {
             }
           >
             <div className={`row col-12 ${isMobile && "m-0"}`}>
-              <p className="section4Head">What we do?</p>
-              <p className="sectionContent">
-                Call us an integrated team of enthusiastic and creative professionals on a mission- Empower your business and take it to the Top! Our expertise lies in providing seamless web solutions ranging from Web Designing & Development,
-                    <b>Pay-per-click Advertising, Lead Generation Marketing, Mobile Application Development Services, Custom Software Development, Search Engine Optimization, Content Marketing, Social Media Marketing, and Digital Marketing Services.</b>
-              </p>
+              <div className="section4Head">What we do?</div>
+              <div className="sectionContent">
+                Call us an integrated team of enthusiastic and creative professionals on a mission- Empower your business and take it to the Top!
+              </div>
             </div>
             <div className="row-col-12" style={{ marginTop: "20px" }}>
               <ButtonComponent
@@ -75,7 +74,7 @@ const Section4 = () => {
                 isMobile={isMobile}
               />
               <ButtonComponent
-                path={"/mobile-app-devlopment"}
+                    path={"/mobile-app-development"}
                 image={customSoftware}
                 name="Mobile Application Development"
                 isMobile={isMobile}

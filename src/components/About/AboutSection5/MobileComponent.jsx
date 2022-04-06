@@ -1,7 +1,7 @@
 import React from "react";
 import OwlCarousel from "react-owl-carousel";
 import { responsiveSlider } from "../../../helper";
-import cardCover from "../../../assets/images/About-Section-5-Card-Image.png";
+import cardCover from "../../../assets/images/About-Section-5-Card-Image.webp";
 import { cardContent } from "../../../helper/about";
 
 const MobileTeamView = () => {

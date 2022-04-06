@@ -1,14 +1,15 @@
 import React from "react";
 import CommonSection1 from "../../Common/CommonSection1";
-import sectionCover from '../../../assets/images/seo-section-1-cover.png';
+import sectionCover from '../../../assets/images/seo-section-1-cover.webp';
 
 const Section1 = ({handleFunction}) => {
   return (
     <CommonSection1
       handleFunction={handleFunction}
-      title={`Search Engine Optimization`}
-      subtitle1={`Get Optimized or Get Out!`}
-      subtitle2={`Let us help you Stay on Top of the Internet!`}
+      title={`Enterprise <br/> SEO`}
+      subtitle1={`Let us help you Stay on Top of the Internet!`}
+      subtitle2={`SEO solutions that generate actual results!`}
+      subtitle3={`Find your spot on Page #1 with Us!`}
       sectionCover={sectionCover}
       background={`#F4F8FF`}
       btnText={`Let’s rank you on Page #1`}

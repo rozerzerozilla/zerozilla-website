@@ -1,6 +1,6 @@
 import React from "react";
 import { cardContent } from "../../../helper/about";
-import cardCover from "../../../assets/images/About-Section-5-Card-Image.png";
+import cardCover from "../../../assets/images/About-Section-5-Card-Image.webp";
 
 const DesktopTeamView = () => {
   return (

@@ -2,7 +2,6 @@ import { useState } from "react";
 import Section1 from "../components/Career/CareerSection1";
 import Section2 from "../components/Career/CareerSection2";
 import Section3 from "../components/Career/CareerSection3";
-import LeadershipSection from "../components/About/LedershipSections";
 import Section4 from "../components/Career/CareerSection4";
 import Section5 from "../components/Career/CareerSection5";
 
@@ -22,8 +21,7 @@ const Career = () => {
                 <Section3 />
                 <br />
                 <br/>
-                <LeadershipSection />
-                <Section4 />
+                {/* <Section4 /> */}
                 {/* <Section5 /> */}
             </div>
             <Footer />

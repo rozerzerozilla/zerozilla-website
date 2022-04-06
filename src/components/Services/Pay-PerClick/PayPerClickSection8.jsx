@@ -3,7 +3,7 @@ import { AppContext } from "../../../context/Context";
 import { commonColPadding } from "../../../helper";
 import BookCallButton from "../../BookCallButton";
 
-const Section8 = () => {
+const Section8 = ({handleFunction}) => {
   const [isMobile] = useContext(AppContext);
   return (
     <div className="row Home-area4 about" style={{ margin: 0, padding: 0 }}>
@@ -31,6 +31,7 @@ const Section8 = () => {
           {!isMobile && <div className="col-5"></div>}
           <div className={`${isMobile ? "col-12" : "col-2"}`}>
             <BookCallButton
+              handleFunction={handleFunction}
               className={null}
               isColored={true}
               showImage={false}

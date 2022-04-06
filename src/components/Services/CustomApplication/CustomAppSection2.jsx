@@ -4,6 +4,7 @@ import { customWebDevCard } from "../../../helper/services";
 import BookCallButton from "../../BookCallButton";
 import Fade from 'react-reveal/Fade';
 import { Container, Row } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const Section2 = () => {
   const [isMobile] = useContext(AppContext);
@@ -38,15 +39,13 @@ const Section2 = () => {
                         className={`section3Head black extra-bold text-${isMobile ? "center" : "left"
                           }`}
                       >
-                        Stellar Collection of Jaw-Dropping Mobile Apps
+                        Create innovative experiences for your customers with mobile apps!
                       </p>
                       <p
                         className={`sectionContent text-${isMobile ? "center" : "left"
                           }`}
                       >
-                        Get smart phone compatible mobile apps & do business the
-                        smartest way through our perfect & affordable mobile app
-                        solutions
+                        Strategize new ideas and generate true value for your business with competitive mobile apps. Help your customers engage with your business in the smartest way possible! 
                       </p>
                     </div>
                   </div>
@@ -86,12 +85,13 @@ const Section2 = () => {
                             {card.description}
                           </p>
                           <p className="text-center" style={{ marginTop: "20px" }}>
-                            <BookCallButton
-                              className={"common-section-1"}
-                              isColored={false}
-                              text={`Get Quote`}
-                              showImage={false}
-                            />
+                            <Link to={card.href}>
+                              <button
+                                className={`sliderBtns colored-outlined`}
+                              >
+                                Know More
+                              </button>
+                            </Link>
                           </p>
                         </div>
                       </div>

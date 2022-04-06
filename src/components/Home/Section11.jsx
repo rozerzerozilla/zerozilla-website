@@ -2,7 +2,7 @@ import React from "react"
 import { Container } from "react-bootstrap"
 import { Link } from "react-router-dom";
 import { AppContext } from "../../context/Context";
-import coverimage from "../../assets/images/career-home-cover.png";
+import coverimage from "../../assets/images/career-home-cover.webp";
 function Section11() {
     const [isMobile, setIsMobile] = React.useContext(AppContext);
   return (

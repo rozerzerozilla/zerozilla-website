@@ -26,7 +26,7 @@ const IOSSection3 = () => {
                                 {!isMobile && <div className="col-1"></div>}
                                 <div className={`${isMobile ? "col-12" : "col-10"}`}>
                                     <p className="section3Head black extra-bold text-center">
-                                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+                                        Banner: Brace up. Scale up. With our ReactJS services. 
                                     </p>
                                     <p className="sectionContent text-center">
                                         Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions.

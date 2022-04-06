@@ -73,12 +73,12 @@ const JobApplyModal = ({ isMobile, title = 'Select Plan', ...rest}) => {
         <Modal
             animation
             {...rest}
-            size="lg"
+            size="md"
             aria-labelledby="contained-modal-title-vcenter"
             centered
         >
             <Modal.Header closeButton>
-                <Modal.Title>{title}</Modal.Title>
+                <Modal.Title>Get In Touch</Modal.Title>
             </Modal.Header>
 
             <Modal.Body>
@@ -147,7 +147,7 @@ const JobApplyModal = ({ isMobile, title = 'Select Plan', ...rest}) => {
                                     rows={3}
                                     className={`app-form-inputs sectionContent w-100 small`}
                                     type="text"
-                                    placeholder="Project details"
+                                    placeholder="Message"
                                     name="message"
                                     onChange={formik.handleChange}
                                     onBlur={formik.handleBlur}
@@ -162,7 +162,11 @@ const JobApplyModal = ({ isMobile, title = 'Select Plan', ...rest}) => {
 
             <Modal.Footer>
                 {/* <Button variant="secondary"{...rest}>Close</Button> */}
-                <Button variant="success" type="submit" onClick={formik.handleSubmit}>Submit</Button>
+                <button className="sliderBtns  colored"
+                    type="submit" onClick={formik.handleSubmit}
+                >
+                    Submit
+                </button>
                 {/* <BookCallButton
                     type="submit"
                     disabled={formik.isSubmitting}

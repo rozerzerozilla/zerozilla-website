@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { AppContext } from "../../../context/Context";
-import sectionCover from "../../../assets/images/pay-per-click-section2-cover.png";
+import sectionCover from "../../../assets/images/pay-per-click-section2-cover.webp";
 import Bullets from "../../../assets/icons/seo-bullets.svg";
 import { fruitfulPartnershipsTips2 } from "../../../helper/services";
 import Fade from "react-reveal/Fade";

@@ -6,6 +6,8 @@ import { AppContext } from "../context/Context";
 import { BsFacebook, BsLinkedin, BsTwitter, BsInstagram, BsYoutube, BsPinterest } from "react-icons/bs";
 import { footerLink } from "../helper/footer";
 import Fade from 'react-reveal/Fade';
+import nasscom from "../assets/icons/nasscom.svg";
+import iso from "../assets/icons/iso.svg";
 
 const Footer = ()=>{
     const history = useHistory();
@@ -25,6 +27,13 @@ const Footer = ()=>{
                     <p className="mt-4">
                         If there’s one thing we’ve learned about marketing in these times, is that ‘if it’s not on the web, it doesn’t really count!’ Out of the 7.7 billion people on earth, almost 4 billion have the means to access the internet.
                     </p>
+                        <div className="d-flex w-100 justify-content-between align-items-center">
+                            <img src={nasscom}
+                                 width={"200px"}/>
+                            <img  width={"50px"}
+                                src={iso}
+                            />
+                    </div>
                 </Col>
                 {footerLink.map((link, index)=><Col xs="12" lg="2" key={index + 'footer-link'} className="pt-3 ps-3 footer-right-divider">
                     <Row>
@@ -64,25 +73,42 @@ const Footer = ()=>{
             <br/>
             <Row className="pb-4 footer-bottom-divider">
                 <Col xs="12" lg="4" className="py-md-2 footer-right-divider">
-                    <h3 style={{color:"white"}}>Zerozilla social</h3>
-                    <button className="footer-icon-btn">
-                        <BsFacebook style={{fontSize:'30px'}}/>
-                    </button>
-                    <button className="footer-icon-btn">
-                        <BsTwitter style={{fontSize:'30px'}}/>
-                    </button>
-                    <button className="footer-icon-btn">
-                        <BsLinkedin style={{fontSize:'30px'}}/>
-                    </button>
-                    <button className="footer-icon-btn">
-                        <BsInstagram style={{ fontSize: '30px' }} />
-                    </button>
-                    <button className="footer-icon-btn">
-                        <BsYoutube style={{ fontSize: '30px' }} />
-                    </button>
-                    <button className="footer-icon-btn">
-                        <BsPinterest style={{ fontSize: '30px' }} />
-                    </button>
+                    <h3 style={{ color: "white" }}>Zerozilla social</h3>
+                    <a href="https://www.facebook.com/Zerozilladigitalagency/" target="_blank">
+                        <button className="footer-icon-btn">
+                            <BsFacebook style={{ fontSize: '24px' }} />
+                        </button>
+                    </a>
+    
+                        <a href="https://twitter.com/Zerozilla_com" target="_blank">
+                        <button className="footer-icon-btn">
+                            <BsTwitter style={{ fontSize: '24px' }} />
+                        </button>
+                    </a>
+                
+                        <a href="https://www.linkedin.com/company/zerozillaofficial" target="_blank">
+                        <button className="footer-icon-btn">
+                            <BsLinkedin style={{ fontSize: '24px' }} />
+                        </button>
+                    </a>
+                
+                        <a href="https://www.instagram.com/zerozillaofficial/" target="_blank">
+                        <button className="footer-icon-btn">
+                            <BsInstagram style={{ fontSize: '24px' }} />
+                        </button>
+                    </a>
+                
+                        <a href="https://www.youtube.com/channel/UCnvBj9lC1P_j_46FEhqsqMg" target="_blank">
+                        <button className="footer-icon-btn">
+                            <BsYoutube style={{ fontSize: '24px' }} />
+                        </button>
+                    </a>
+                
+                        <a href="https://in.pinterest.com/zerozillaofficial/" target="_blank">
+                        <button className="footer-icon-btn">
+                            <BsPinterest style={{ fontSize: '24px' }} />
+                        </button>
+                    </a>
                 </Col>
                 <Col xs="12" lg="8">
                     <Row className="align-items-center">

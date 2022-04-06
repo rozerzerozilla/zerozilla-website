@@ -7,7 +7,7 @@ const Section10 = ({handleFunction}) => {
       handleFunction={handleFunction}
       btnText={`Let’s Talk`}
       type2={false}
-      text={"Talk to us today for a consultation"}
+      text={"Response with business day, Guaranteed!! "}
       extraBold={false}
     />
   );

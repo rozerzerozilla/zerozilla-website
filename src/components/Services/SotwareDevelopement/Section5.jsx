@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { AppContext } from "../../../context/Context";
 import BookCallButton from "../../BookCallButton";
-import sectionCover from "../../../assets/images/soft-section-5-cover.png"
+import sectionCover from "../../../assets/images/soft-section-5-cover.webp"
 import Fade from 'react-reveal/Fade';
 
 const Section5 = ({ handleFunction }) => {
@@ -20,10 +20,12 @@ const Section5 = ({ handleFunction }) => {
                 <div
                     className={`mb-3 sliderHead2`}
                 >
-                    Build scalable & engaging Software
+                    Scale, Grow and Flourish with US! 
+                    {/* Build scalable & engaging Software */}
                 </div>
                 <div>
-                    Let's build your next-gen Application<br/> to help you sail smoothly through your business challenges & emerge a winner.
+                    Find a powerful combination of software development expertise aligned with years of experience at Zerozilla! 
+                    {/* Let's build your next-gen Application<br/> to help you sail smoothly through your business challenges & emerge a winner. */}
                 </div>
                 <div className={`text-center mt-4`}>
                     <button onClick={handleFunction} className="sliderBtns colored" style={{ border: "none", padding: "10px 15px" }}>

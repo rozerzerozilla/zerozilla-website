@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { AppContext } from "../../../context/Context";
-import sectionCover from "../../../assets/images/Custom-App-Section-3-Cover.png";
+import sectionCover from "../../../assets/images/Custom-App-Section-3-Cover.webp";
 import Fade from 'react-reveal/Fade';
 import Zoom from 'react-reveal/Zoom';
 import { Container, Row } from "react-bootstrap";
@@ -44,11 +44,11 @@ const Section3 = () => {
                 }
               >
                 <Fade right>
-                  <div className={`row ${isMobile && "m-0"}`}>
-                    <div className={`${!isMobile ? "col-9" : "col-12 mt-4"}`}>
+                  <div className={`row ${!isMobile && "mt-4"}`}>
+                    <div className={`${isMobile ? "col-12 mt-4" : "col-10"}`}>
                       <p className="section3Head black extra-bold">
                         <span className="section3Head black">
-                          Digital Transformation of business with
+                          Transform your business the smart way! 
                         </span>
                         <br />
                         <span className="highlightedSectionText secondary-color">
@@ -60,9 +60,7 @@ const Section3 = () => {
                   <div className={`row ${isMobile && "m-0"}`}>
                     <div className={`${!isMobile ? "col-9" : "col-12"}`}>
                       <p className="sectionContent">
-                        We design innovative mobile applications that are thoroughly
-                        tailored to the need of your brand. That improves the reach of
-                        your brand & helps you do profitable, crowd pulling business!
+                        We provide end-to-end application design and integration. Whether it's a consumer-facing app or a game-changing enterprise-class solution, we oversee the whole mobile app development process, from design to delivery and beyond! 
                       </p>
                     </div>
                   </div>

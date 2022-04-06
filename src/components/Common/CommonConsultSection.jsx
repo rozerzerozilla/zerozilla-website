@@ -25,7 +25,7 @@ const CommonConsultSection = ({ btnText, type2, text, extraBold, applyRadius, ha
         <BookCallButton
           handleFunction={handleFunction}
           className={null}
-          isColored={true}
+          isColored={false}
           showImage={false}
           text={btnText}
           smallText={type2}

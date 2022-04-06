@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { AppContext } from "../../../context/Context";
-import sectionCover1 from "../../../assets/images/marketing-strategy-cover-1.png";
-import sectionCover2 from "../../../assets/images/marketing-strategy-cover-2.png";
+import sectionCover1 from "../../../assets/images/marketing-strategy-cover-1.webp";
+import sectionCover2 from "../../../assets/images/marketing-strategy-cover-2.webp";
 import Fade from 'react-reveal/Fade';
 
 const Section3 = () => {

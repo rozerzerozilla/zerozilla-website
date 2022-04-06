@@ -1,6 +1,6 @@
 import React from "react";
 import CommonSection1 from "../../Common/CommonSection1";
-import sectionCover from '../../../assets/images/nodejs-section-1-cover.svg';
+import sectionCover from '../../../assets/images/cake-php-section-1-cover.svg';
 const Section1 = ({handleFunction}) => {
     return (
         <CommonSection1
@@ -8,7 +8,7 @@ const Section1 = ({handleFunction}) => {
             title={`CakePHP Development`}
             subtitle1={`Get Optimized or Get Out!`}
             subtitle2={`Let us help you Stay on Top of the Internet!`}
-            sectionCover={"https://angular.io/assets/images/logos/angular/angular.svg"}
+            sectionCover={sectionCover}
             background={`#F4F8FF`}
             btnText={`Get a quote`}
             boxShadow={false}

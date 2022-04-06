@@ -26,14 +26,12 @@ const Section6 = () => {
               <div className={`${isMobile ? "col-12" : "col-10"}`}>
                 <p className="section3Head black extra-bold text-center">
                   <span className="section3Head black">
-                    Rank your Website on
+                    Stay on top of the SEO game with our 
                   </span>{" "}
-                  <span className="section3Head black extra-bold"></span>the
-                  Page #1
+                  <span className="section3Head black extra-bold">enterprise  SEO service!</span>
                 </p>
                 <p className="sectionContent text-center">
-                  What happens when your website ranks higher on the Google
-                  Search results for specific search query?
+                  Here’s what happens if your website appears higher in the Google Search results for a certain search query?  
                 </p>
               </div>
               {!isMobile && <div className="col-1"></div>}

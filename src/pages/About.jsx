@@ -21,8 +21,8 @@ const AboutPage = () => {
       <Section2 />
       <Section3 />
       <Section4 />
-      <Section5 />
-      <LeadershipSection/>
+      <LeadershipSection />
+      {/* <Section5 /> */}
       <Section6 />
       <Section7 />
       </div>

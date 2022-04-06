@@ -1,12 +1,12 @@
 import React, { useContext } from "react";
 import { AppContext } from "../../context/Context";
-import sectionCover from "../../assets/images/About-Section-3-Cover.png";
+import sectionCover from "../../assets/images/About-Section-3-Cover.webp";
 import Fade from 'react-reveal/Fade';
 
 const Section3 = () => {
   const [isMobile] = useContext(AppContext);
   return (
-    <div className="row Home-area4 about" style={{ margin: 0, padding: 0 }}>
+    <div className="row Home-area4 about" style={{ margin: 0, padding: 0 }} id="who-we-are">
       <div
         className={`col-12 Home-main-area4`}
         style={{

@@ -1,5 +1,5 @@
 import React from "react";
-import sectionCover from "../../../assets/images/Common-Section-1-Cover.png";
+import sectionCover from "../../../assets/images/Common-Section-1-Cover.webp";
 import CommonSection1 from "../../Common/CommonSection1";
 
 const Section1 = ({handleFunction}) => {
@@ -11,7 +11,7 @@ const Section1 = ({handleFunction}) => {
       subtitle2={`What drives us is making a lasting impact on your growth.`}
       sectionCover={sectionCover}
       btnText={`Let's talk`}
-      background={"#FFEFEF"}
+      background={"#F8F5FF"}
       boxShadow={false}
       isColored={false}
       titleColor={`#C31F5D`}

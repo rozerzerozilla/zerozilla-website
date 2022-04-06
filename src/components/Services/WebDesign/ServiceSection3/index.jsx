@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { AppContext } from "../../../../context/Context";
-import sectionCover from "../../../../assets/images/Service-Section-3-Cover.png";
+import sectionCover from "../../../../assets/images/Service-Section-3-Cover.webp";
 import KeySkills from "./KeySkills";
 import Fade from 'react-reveal/Fade';
 

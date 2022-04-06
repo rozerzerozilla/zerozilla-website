@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import sectionCover from "../../../assets/images/seo-section-4-cover.png";
+import sectionCover from "../../../assets/images/seo-section-4-cover.webp";
 import Bullets from '../../../assets/icons/seo-bullets.svg';
 import { AppContext } from "../../../context/Context";
 import { seoTips } from "../../../helper/services";
@@ -46,8 +46,7 @@ const Section4 = () => {
           >
             <div className={`row col-12 ${isMobile && "m-0"}`}>
               <p className="section3Head black extra-bold">
-                Here is some of what we do to keep you a float and relevant to
-                potential customers
+                Here is why you should choose Zerozilla as your enterprise SEO partner! 
               </p>
               {seoTips.map((strategy, idx) => (
                 <div className="row sectionContent mb-2" key={idx + 1}>

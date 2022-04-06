@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 
 import { AppContext } from "../../../context/Context";
 import Fade from 'react-reveal/Fade';
-import sectionCover from "../../../assets/images/nodejs-section-2-cover.png";
+import sectionCover from "../../../assets/images/java-section-2-cover.webp";
 import { Container } from "react-bootstrap";
 const Section2 = () => {
     const [isMobile] = useContext(AppContext);

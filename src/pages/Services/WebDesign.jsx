@@ -10,6 +10,8 @@ import Section6 from "../../components/Services/WebDesign/ServiceSection6";
 import Section5 from "../../components/Services/WebDesign/ServiceSecton5";
 import Section1 from "../../components/Services/WebDesign/ServicesSection1";
 import Section2 from "../../components/Services/WebDesign/ServicesSection2";
+import Section7 from "../../components/Services/SotwareDevelopement/Section7";
+import Section8 from "../../components/Services/WebDesign/ServicesSection7";
 
 const WebDevlopment = () => {
   const [openModal, setOpenModal] = React.useState(false)
@@ -20,10 +22,12 @@ const WebDevlopment = () => {
       <CustomHeader />
     <div className="container-fluid main" style={{ margin: 0, padding: 0 }}>
         <Section1 handleFunction={handleModal}/>
-      <Section2 handleFunction={handleModal}/>
-      <Section3 />
+        <Section2 handleFunction={handleModal} />
+        <Section7 />
+        <Section8 />
+        <Section3 />
       <Section4 />
-      <Section5 />
+        <Section5 />
       <Section6 handleFunction={handleModal}/>
       </div>
       <Footer />

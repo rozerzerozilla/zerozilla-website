@@ -36,9 +36,8 @@ const Section5 = () => {
                 <div className="row" style={{ marginTop: "40px" }}>
                   {bizIdeas.map((idea, index) => (
                     <div
-                      className={`${isMobile ? "col-12" : "col-4 my-auto"}`}
+                      className={`${isMobile ? "col-12" : "col-4 mb-4"}`}
                       key={idea.id}
-                      style={!isMobile ? { paddingRight: "20px" } : null}
                     >
                       <Fade top={index % 2 === 0 ? true : false} bottom={index % 2 === 0 ? false : true}>
                         <CommonCard
@@ -48,7 +47,7 @@ const Section5 = () => {
                           isMobile={isMobile}
                           background={"#E0D1FF"}
                           imageWidth={"50%"}
-                          padding={"20px 30px"}
+                          padding={"0px 20px"}
                         />
                       </Fade>
                     </div>

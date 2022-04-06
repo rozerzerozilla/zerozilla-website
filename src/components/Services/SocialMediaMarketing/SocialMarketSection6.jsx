@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { AppContext } from "../../../context/Context";
-import sectionCover from "../../../assets/images/social-market-section-6-cover.png";
+import sectionCover from "../../../assets/images/social-market-section-6-cover.webp";
 import Bullets from "../../../assets/icons/seo-bullets.svg";
 import { roleOfSocialMedia } from "../../../helper/services";
 import Fade from "react-reveal/Fade";
@@ -50,15 +50,13 @@ const Section6 = () => {
             <div className={`row col-12 ${isMobile && "m-0"}`}>
               <p className="section3Head black extra-bold mt-4">
                 <span className="section3Head black">
-                  Social media plays a crucial role in
+                    Do you think  
                 </span>{" "}
-                <span className="section3Head black extra-bold"></span>reaching
-                out to masses
+                  <span className="section3Head black extra-bold">social media management</span>{" "}
+                  services can help my business?
               </p>
               <p className={`sectionContent ${isMobile ? "mb-0" : ""}`}>
-                The way you engage your audience on social media goes a long way
-                in expanding your clientele. The better you engage the better
-                will be your client base.
+                  So we thought maybe numbers can put across our point better. See these stats for yourself before you take that crucial step.
               </p>
               </div>
             </Fade>

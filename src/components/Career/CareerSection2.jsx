@@ -25,7 +25,7 @@ const Section2 = () => {
                     {teams.slice(0, 4).map((card, idx) => (
                         <div
                             key={card.id}
-                            className={`${!isMobile ? "col-3" : "col-12"}`}
+                            className={`${!isMobile ? "col-4" : "col-12"}`}
                             style={
                                 isMobile
                                     ? { marginBottom: "25px", marginTop: idx === 0 && "25px" }
@@ -47,7 +47,7 @@ const Section2 = () => {
                                     <br />
                                     <label
                                         className="text-left"
-                                        style={{ fontSize: "12px" }}
+                                        style={{ fontSize: "15px" }}
                                     >
                                         {card.description}
                                     </label>

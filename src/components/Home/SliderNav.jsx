@@ -1,5 +1,5 @@
 import React from "react";
-import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
+import { FaCircle } from "react-icons/fa";
 
 const SliderNavButtons = ({ reference , justify, margin, absolute }) => {
   return (
@@ -11,13 +11,13 @@ const SliderNavButtons = ({ reference , justify, margin, absolute }) => {
         className={`leftSliderBtn ${absolute ? 'absolutePos' : ''}`}
         onClick={() => reference.current.prev()}
       >
-        <FaAngleLeft />
+        <FaCircle />
       </button>
       <button
         className={`rightSliderBtn ${absolute ? 'absolutePos' : ''}`}
         onClick={() => reference.current.next()}
       >
-        <FaAngleRight />
+        <FaCircle />
       </button>
     </div>
   );

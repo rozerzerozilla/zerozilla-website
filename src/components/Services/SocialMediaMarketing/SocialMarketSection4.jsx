@@ -28,9 +28,9 @@ const Section4 = () => {
               {!isMobile && <div className="col-1"></div>}
               <div className={`${isMobile ? "col-12 ps-3" : "col-10"}`}>
                 <p className="section3Head black extra-bold text-center">
-                  Which Platform is best for you?
-                  <br />
-                  Where your customers hanging out?
+                    Many queries on Social Media Marketing?
+                    <br/>
+                    Let us help you with the answers! 
                 </p>
               </div>
               {!isMobile && <div className="col-1"></div>}
@@ -47,11 +47,7 @@ const Section4 = () => {
                     Finding the Right Platform
                   </p>
                   <p className="sectionContent">
-                    Every social media Platform doesn’t fit right to reach your
-                    ideal customers. Reaching out to them where they are
-                    spending more time is the best way to generate engaged
-                    audience as well as potential buyers. As per your audience
-                    category we optimise your profiles on right channel.
+                      Not every social media platform is the right one to connect with your ideal customers. The easiest method to build engaged audiences, as well as potential buyers, is to reach out to them where they spend the most time. We optimize your profiles on the appropriate channel based on your audience
                   </p>
                   </div>
                 </Fade>
@@ -66,11 +62,7 @@ const Section4 = () => {
                     Targeting Perfection
                   </p>
                   <p className="sectionContent">
-                    Everyone is not your Target Audience. Successful outcomes
-                    are strategically planned & implemented. By understanding
-                    your audience pain points & their behaviour, we craft a
-                    campaign which resonates with them & make them take action
-                    which results in fruitful results.
+                      Also, not everyone is your target audience. We design successful outcomes and deliver them intelligently. Through a campaign that resonates with your audience and motivates them to take action, we generate beneficial outcomes, that address their pain points. 
                   </p>
                   </div>
                 </Fade>
@@ -85,11 +77,7 @@ const Section4 = () => {
                     Performance Tracking
                   </p>
                   <p className="sectionContent">
-                    Measuring the performance & tracking the results helps in
-                    adopting the results based approach. We ensure to audit the
-                    campaigns regularly for successful outcomes. Detailed
-                    reporting gives a clarity on where you stand and what should
-                    we do to improve for the better.
+                      Measuring performance and tracking results aid in the implementation of a results-based approach. We audit the campaigns regularly to guarantee that they are producing the required results. Detailed reporting gives insights on your position and methodologies to improve the same. 
                   </p>
                   </div>
                 </Fade>

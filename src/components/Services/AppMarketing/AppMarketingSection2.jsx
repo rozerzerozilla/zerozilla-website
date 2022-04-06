@@ -3,7 +3,7 @@ import React, { useContext } from "react";
 // react lottie
 import Lottie from 'react-lottie';
 
-import sectionCover from "../../../assets/images/branding-section2-cover.png";
+import sectionCover from "../../../assets/images/branding-section2-cover.webp";
 import { AppContext } from "../../../context/Context";
 import Fade from 'react-reveal/Fade';
 import * as animationData from "./appmarket-lottie.json";

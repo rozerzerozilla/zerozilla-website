@@ -1,6 +1,6 @@
 import React from "react";
 import CommonSection1 from "../../Common/CommonSection1";
-import sectionCover from '../../../assets/images/seo-section-1-cover.png';
+import sectionCover from '../../../assets/images/seo-section-1-cover.webp';
 import * as lottieJson from "./bots-lottie.json";
 
 const Section1 = ({handleFunction}) => {

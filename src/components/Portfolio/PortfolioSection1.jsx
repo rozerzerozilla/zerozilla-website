@@ -10,7 +10,7 @@ const Section1 = ({ handleFunction}) => {
       subtitle2={`with us for full-service digital solutions that fuel innovation and understand customer intent at its core.`}
       sectionCover={""}
       btnText={`Let's talk`}
-      background={`transparent url(${require(`../../assets/images/portfolio-section1-cover.png`)})`}
+      background={`transparent url(${require(`../../assets/images/portfolio-section1-cover.webp`)})`}
       boxShadow={true}
       isColored={false}
       titleColor={`#fff`}

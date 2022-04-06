@@ -2,8 +2,7 @@ import React, { useContext, useRef } from "react";
 import { commonColPadding, responsiveSlider } from "../../../helper";
 import carouselQuotes from "../../../assets/images/carouselQuotes.svg";
 import clientQuotes from "../../../assets/images/carouselItemQuotes.svg";
-import caraouselImage from "../../../assets/images/clientSliderImage1.png";
-import caraouselImage1 from "../../../assets/images/clientSliderImage2.png";
+import caraouselImage from "../../../assets/images/clientSliderImage1.webp";
 import OwlCarousel from "react-owl-carousel";
 import SliderNavButtons from "../SliderNav";
 import { AppContext } from "../../../context/Context";
@@ -34,7 +33,7 @@ const clientTestimonials = [
   },
   {
     name: "Prashanth B.M",
-    testimonial: "We got online registration website while creating the web we got all support from Mr.Vinay and his team and they did all work with good coordination with us. Overall I can say very good services and managing the client.",
+    testimonial: "We are glad to have worked with Zerozilla. We got a great deal of support from Mr Vinay and and his team. They coordinated the entire website development cycle with us. Overall, very good service.",
     company: "Success Thumb Services",
   },
   {

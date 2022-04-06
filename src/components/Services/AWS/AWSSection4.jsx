@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 // react lottie
 import Lottie from 'react-lottie';
 
-import sectionCover from "../../../assets/images/aws-managing.png";
+import sectionCover from "../../../assets/images/aws-managing.webp";
 import Bullets from '../../../assets/icons/seo-bullets.svg';
 import { AppContext } from "../../../context/Context";
 import { awsTips } from "../../../helper/services";

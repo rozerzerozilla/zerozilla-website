@@ -22,11 +22,11 @@ import { AppContext } from "../../context/Context";
 const Section2 = () => {
   const [isMobile, setIsMobile] = useContext(AppContext);
   const sectionClass = `${
-    !isMobile ? "col-2 my-auto" : "col-12 justify-content-center text-center"
+    !isMobile ? "col-3 my-auto" : "col-12 justify-content-center text-center"
   }`;
   const sectionStyle = { marginBottom: isMobile && "50px" };
   return (
-    <div className="row Home-area2" style={{ margin: 0, padding: 0 }}>
+    <div className="row Home-area2" style={{ margin: 0, padding: "-50px", height: "" }}>
       <div className="col-12 Home-main-area2" style={{ marginTop: "50px" }}>
         <div className=" kuLJSR">
           {!isMobile && <div className="col-1 my-auto"></div>}

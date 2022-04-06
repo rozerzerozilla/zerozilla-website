@@ -10,11 +10,12 @@ const Badge = styled.div`;
   position: absolute;
   top: 100%;
   right: 20px;
-  background: #C31F5D;
+  color: #C31F5D;
+  background-color: #ffeaf2;
   border-radius: 19px;
-  color: white;
-  padding: 8px 15px;
+  padding: 8px 20px;
   font-size: 13px;
+  box-shadow: 3px 6px 15px #cccccc;
 `;
 
 export const Link = styled.a`

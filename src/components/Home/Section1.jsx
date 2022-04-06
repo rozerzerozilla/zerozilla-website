@@ -1,11 +1,6 @@
 import React, { useRef, useContext } from "react";
 import { Carousel } from "react-bootstrap";
 import { sliderAreaStyle, staticHomeSlider } from "../../helper";
-import { FaPhoneAlt, FaAngleLeft, FaAngleRight } from "react-icons/fa";
-import leftArrow from "../../assets/icons/sliderLeftNav.svg";
-import rightArrow from "../../assets/icons/sliderRightNav.svg";
-import sliderPeople from "../../assets/images/sliderPeople.png";
-import $ from "jquery";
 import BookCallButton from "../BookCallButton";
 import SliderNavButtons from "./SliderNav";
 import { AppContext } from "../../context/Context";
@@ -92,7 +87,7 @@ const Section1 = ({ handleFunction}) => {
         <SliderNavButtons
           reference={ref}
           justify={"center"}
-          margin={"-100px"}
+          margin={"-30px"}
           absolute={false}
         />
       </div>

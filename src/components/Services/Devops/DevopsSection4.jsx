@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 
-import sectionCover from "../../../assets/images/devops-section-3-cover.png";
+import sectionCover from "../../../assets/images/devops-section-3-cover.webp";
 import Bullets from '../../../assets/icons/seo-bullets.svg';
 import { AppContext } from "../../../context/Context";
 import { devopsTips } from "../../../helper/services";

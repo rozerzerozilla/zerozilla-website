@@ -16,6 +16,7 @@ import Section7 from "../components/Home/Section7";
 import Section9 from "../components/Home/Section9";
 import Section10 from "../components/Home/Section10";
 import Section11 from "../components/Home/Section11";
+import Standarization from "../components/Home/Standarization";
 const HomePage = () => {
 
   const [openModal, setOpenModal] = useState(false)
@@ -25,16 +26,17 @@ const HomePage = () => {
       <CustomHeader />
     <div className="container-fluid main" style={{ margin: 0, padding: 0 }}>
       <Section1 handleFunction={handleModal}/>
-      <Section2 />
       <Section3 />
       <Section4 />
       <Section5 />
       <Section9 />
       <Section6 />
       <Section7 />
+      {/* <Standarization/> */}
       <Section8 handleFunction={handleModal} />
       <Section10 />
       <Section11 />
+        <Section2 />
       </div>
       <Footer />
       <ModalForm

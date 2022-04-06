@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { AppContext } from "../../../context/Context";
-import { customWebDevCard } from "../../../helper/services";
+import { reactJSCard } from "../../../helper/services";
 import BookCallButton from "../../BookCallButton";
 import Fade from 'react-reveal/Fade';
 
@@ -35,15 +35,13 @@ const IOSSection4 = () => {
                                         className={`section3Head black extra-bold text-${isMobile ? "center" : "left"
                                             }`}
                                     >
-                                        Stellar Collection of Jaw-Dropping Mobile Apps
+                                        Banner: Brace up. Scale up. With our ReactJS services.
                                     </p>
                                     <p
                                         className={`sectionContent text-${isMobile ? "center" : "left"
                                             }`}
                                     >
-                                        Get smart phone compatible mobile apps & do business the
-                                        smartest way through our perfect & affordable mobile app
-                                        solutions
+                                        We ensure that the highest quality requirements are met and that projects are completed on time. 
                                     </p>
                                 </div>
                             </div>
@@ -52,7 +50,7 @@ const IOSSection4 = () => {
                             className={`row ${!isMobile ? "justify-content-center" : ""}`}
                             style={{ marginTop: "50px" }}
                         >
-                            {customWebDevCard.slice(0,4).map((card, idx) => (
+                            {reactJSCard.slice(0,4).map((card, idx) => (
                                 <Fade top={idx % 3 === 2 ? true : false} bottom={idx % 3 === 1 ? true : false} right={idx % 3 === 0 ? true : false}>
                                     <div
                                         key={card.id}
@@ -66,20 +64,21 @@ const IOSSection4 = () => {
                                         <div className="service-card text-center parent">
                                             <div
                                                 className="circle child"
-                                                style={{ padding: 25, background: "#fff" }}
+                                                style={{ padding: 20, background: "#fff", }}
                                             >
-                                                <img
+                                                {card.image}
+                                                {/* <img
                                                     src={require(`../../../assets/icons/${card.image}`)}
                                                     alt={`card-content-${card.id}`}
                                                     style={{ width: "40px", height: "40px" }}
-                                                />
+                                                /> */}
                                             </div>
-                                            <p className="sliderHead1 no-underline text-center" style={{ marginTop: "40px" }}>
+                                            <p className="sliderHead1 no-underline text-center font600" style={{ marginTop: "40px" }}>
                                                 {card.name}
                                             </p>
                                             <p
                                                 className="sliderHead1 no-underline small text-center"
-                                                style={{ fontSize: "12px" }}
+                                                
                                             >
                                                 {card.description}
                                             </p>
