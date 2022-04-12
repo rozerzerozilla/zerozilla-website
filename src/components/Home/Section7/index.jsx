@@ -71,11 +71,11 @@ const Section7 = () => {
                 style={{ marginTop: !isMobile && "40px", padding: isMobile?"0px":"70px" }}
               >
                 <div className="absoluteDoubleQuotes">
-                  <img
+                  {!isMobile && <img
                     className="absoluteDoubleQuotes"
                     src={carouselQuotes}
                     alt="quotes"
-                  />
+                  />}
                 </div>
                 <OwlCarousel
                   ref={ref}

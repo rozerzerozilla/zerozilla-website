@@ -21,7 +21,7 @@ const EcommerceApps = () => {
             <EcommerceSection1 handleFunction={handleModal} />
             <EcommerceSection2 />
             {/* <EcommerceSection3 /> */}
-            <EcommerceSection4 />
+            {/* <EcommerceSection4 /> */}
             <EcommerceSection5 />
             <EcommerceSection6 />
             </div>

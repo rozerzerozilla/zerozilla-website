@@ -77,7 +77,7 @@ export const customWebDevCard = [
     image: "android-icon.svg",
     name: "Android App Development",
     description:
-      "Best quality android apps powered by user intuitive technology & custom made features made for your business",
+      "We create easy-to-use and customized android apps powered by user intuitive technology that will propel your business to success! ",
     href: '/android-app-development',
   },
   {
@@ -85,7 +85,7 @@ export const customWebDevCard = [
     image: "android-game-icon.svg",
     name: "Android Game UX Design",
     description:
-      "Special expertise in crafting the best gamer demographic inclusive UX Android Gaming Design to enhance your gaming experience!",
+      "Our expertise in crafting the best game UX design can enhance the gaming experience for your audience! ",
     href: '/android-game-ux-design-services',
   },
   // {
@@ -102,7 +102,7 @@ export const customWebDevCard = [
     image: "cart-icon.svg",
     name: "E-commerce App",
     description:
-      "Add power & functionality to your ecommerce business through our cutting edge ecommerce mobile app development solutions",
+      "Add power & functionality to your ecommerce business through our cutting-edge ecommerce mobile app development solutions",
     href: '/e-commerce-mobile-app-development',
   },
   {
@@ -110,7 +110,7 @@ export const customWebDevCard = [
     image: "bot-icon.svg",
     name: "Bots App",
     description:
-      "Improve the quality of real time, automated interactions with your customers through our innovative & customized Bots Apps",
+      "Improve the quality of real-time, automated interactions with your customers through our well-crafted Bots Apps",
     href: '/bots-app-development',
   },
   {
@@ -118,7 +118,7 @@ export const customWebDevCard = [
     image: "ipad-ios-icon.svg",
     name: "iPad App",
     description:
-      "Maximize your iPad’s functionality and speed through our best in class, well designed; feature rich iPad App building solutions",
+      "Maximize your iPad’s functionality and speed through our best-in-class iPad App building solutions that are aligned with the latest features",
     href: '/ipad-app-development',
   },
   {
@@ -126,7 +126,7 @@ export const customWebDevCard = [
     image: "beacon-icon.svg",
     name: "iBeacon App",
     description:
-    "We create iBeacon technology powered apps for  offers hassle-free functioning & amazing connectivity",
+    "We create iBeacon technology powered apps that offers hassle-free functioning & amazing connectivity",
     href: '/ibeacon-app-development',
   },
   {
@@ -134,7 +134,7 @@ export const customWebDevCard = [
     image: "hybrid-app-icon.svg",
     name: "Hybrid App",
     description:
-      "Our in-depth knowledge about various Hybrid application frameworks allows us to come up with topnotch quality hybrid apps",
+      "Our in-depth knowledge about various Hybrid application frameworks allows us to come up with top-notch hybrid apps ",
     href: '/hybrid-app-development',
   },
   {
@@ -142,7 +142,7 @@ export const customWebDevCard = [
     image: "iot-icon.svg",
     name: "IoT App",
     description:
-      "Reshape your business & consolidate your digital presence through our world class, smart IoT App Development Solutions",
+      "Using Wi-Fi, Bluetooth, NFC, and other technologies unlock the potential of high-performing mobile apps that interface with hardware/wearables/IoT. ",
     href: '/iot-app-development',
   },
   {

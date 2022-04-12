@@ -21,7 +21,7 @@ const IBeaconApps = () => {
             <IBeaconSection1 handleFunction={handleModal}/>
             <IBeaconSection2 />
             {/* <IBeaconSection3 /> */}
-            <IBeaconSection4 />
+            {/* <IBeaconSection4 /> */}
             <IBeaconSection5 />
             <IBeaconSection6 />
             </div>

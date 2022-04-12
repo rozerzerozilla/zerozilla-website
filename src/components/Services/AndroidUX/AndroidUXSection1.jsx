@@ -7,8 +7,8 @@ const Section1 = ({handleFunction}) => {
         <CommonSection1
             handleFunction={handleFunction}
             title={`Android Game UX Design`}
-            subtitle1={`Get Optimized or Get Out!`}
-            subtitle2={`Let us help you Stay on Top of the Internet!`}
+            subtitle1={`Unique interactive gaming experience`}
+            subtitle2={`Gaming apps that bring the best designs to life`}
             sectionCover={sectionCover}
             background={`#F4F8FF`}
             btnText={`Get a qoute`}

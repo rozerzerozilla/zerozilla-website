@@ -54,39 +54,49 @@ const Section4 = () => {
                 : null
             }
           >
-            <div className={`row col-12 ${isMobile && "m-0"}`}>
-              <div className="section4Head">What we do?</div>
-              <div className="sectionContent">
-                Call us an integrated team of enthusiastic and creative professionals on a mission- Empower your business and take it to the Top!
-              </div>
+            <div className={`row ${isMobile && "m-0"}`}>
+                <div className="col-12">
+                  <div className="section4Head mb-4">What we do?</div>
+                  <div className="sectionContent">
+                    Call us an integrated team of enthusiastic and creative professionals on a mission- Empower your business and take it to the Top!
+                  </div>
+                  </div>
+                  <div className="col-10" style={{ marginTop: "20px" }}>
+                    <ButtonComponent
+                      path={"/web-design"}
+                      image={webDev}
+                      name="Website Development"
+                      isMobile={isMobile}
+                    />
+                    
+                  </div>
+                  <div className="col-10" style={{ marginTop: "10px" }}>
+                    <ButtonComponent
+                      path={"/software-development"}
+                      image={applicationDev}
+                      name="Software Development"
+                      isMobile={isMobile}
+                    />
+                  </div>
+                  <div className="col-10" style={{ marginTop: "10px" }}>
+                    <ButtonComponent
+                      path={"/mobile-app-development"}
+                      image={customSoftware}
+                      name="Mobile Application Development"
+                      isMobile={isMobile}
+                    />
+                  </div>
+                  <div className="col-10" style={{ marginTop: "10px" }}>
+                    <ButtonComponent
+                      path={"/digital-marketing"}
+                      image={digitalMarketing}
+                      name="Digital Marketing"
+                      isMobile={isMobile}
+                    />
+                  </div>
+                  
             </div>
-            <div className="row-col-12" style={{ marginTop: "20px" }}>
-              <ButtonComponent
-                path={"/web-design"}
-                image={webDev}
-                name="Website Development"
-                isMobile={isMobile}
-              />
-              <ButtonComponent
-                path={"/software-development"}
-                image={applicationDev}
-                    name="Software Development"
-                isMobile={isMobile}
-              />
-              <ButtonComponent
-                    path={"/mobile-app-development"}
-                image={customSoftware}
-                name="Mobile Application Development"
-                isMobile={isMobile}
-              />
-              <ButtonComponent
-                path={"/digital-marketing"}
-                image={digitalMarketing}
-                name="Digital Marketing"
-                isMobile={isMobile}
-              />
-            </div>
-            </div>
+          </div>
           </Fade>
         </div>
       </div>

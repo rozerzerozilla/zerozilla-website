@@ -16,12 +16,12 @@ function Section11() {
                       Ready to unleash your expert thinking?
                   </p>
               </div>
-              <div className={`${isMobile ? "col-12" : "col-2 mx-auto mt-2 d-flex align-items-center justify-content-center"}`}>
+              <div className={`d-flex align-items-center justify-content-center ${isMobile ? "col-12 mx-auto" : "col-2 mx-auto mt-2"}`}>
                   <Link to={{
                       pathname: "/career",
                       hash: "#job-applying",
                       search: "",
-                        state:{},
+                      state: {},
                   }}>
                       <button className={`sliderBtns colored`}>
                           <span className={`sectionContent small`}>

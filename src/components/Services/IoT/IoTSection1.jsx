@@ -7,8 +7,8 @@ const Section1 = ({handleFunction}) => {
         <CommonSection1
             handleFunction={handleFunction}
             title={`IoT Application Development`}
-            subtitle1={`Get Optimized or Get Out!`}
-            subtitle2={`Let us help you Stay on Top of the Internet!`}
+            subtitle1={`Smart and connected IoT solutions!`}
+            subtitle2={`Transform your business NOW!`}
             sectionCover={sectionCover}
             background={`#F4F8FF`}
             btnText={`Get a qoute`}

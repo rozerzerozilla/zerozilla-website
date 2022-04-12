@@ -65,7 +65,7 @@ const Section9 = () => {
                     >
                         <div className="row">
                             <div
-                                    className={"col-8 mx-auto mb-3"}
+                                    className={"col-xs-12 col-md-8 mx-auto mb-3"}
                             >
                                 <p className={`mb-0 seoHead text-center}`}>
                                         Confused on what suits best for your business growth?
@@ -82,7 +82,7 @@ const Section9 = () => {
                                             value={formik.values.email} />
                                         {/* <label style={{ color: "white", fontSize: "12px" }}>{formik.errors.email && formik.touched.email && formik.errors.email}</label> */}
                                     </div>
-                                    <div className={`w-100 ${isMobile && "col-12 mb-4 mt-5"}`}>
+                                    <div className={`w-100 ${isMobile && "col-12 mb-4"}`}>
                                         <input placeholder="Email" name="email"
                                             onChange={formik.handleChange}
                                             onBlur={formik.handleBlur}

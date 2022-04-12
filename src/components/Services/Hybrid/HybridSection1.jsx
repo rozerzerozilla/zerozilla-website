@@ -7,8 +7,8 @@ const Section1 = ({handleFunction}) => {
         <CommonSection1
             handleFunction={handleFunction}
             title={`Hybrid Application Development`}
-            subtitle1={`Get Optimized or Get Out!`}
-            subtitle2={`Let us help you Stay on Top of the Internet!`}
+            subtitle1={`Experience versatility with Hybrid apps!`}
+            subtitle2={`Trendy Hybrid apps that can take you to the top!`}
             sectionCover={sectionCover}
             background={`#F4F8FF`}
             btnText={`Get a qoute`}

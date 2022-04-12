@@ -21,7 +21,7 @@ const IoTApps = () => {
             <IoTSection1 handleFunction={handleModal}/>
             <IoTSection2 />
             {/* <IoTSection3 /> */}
-            <IoTSection4 />
+            {/* <IoTSection4 /> */}
             <IoTSection5 />
             <IoTSection6 />
             </div>

@@ -26,10 +26,10 @@ const IOSSection3 = () => {
                                 {!isMobile && <div className="col-1"></div>}
                                 <div className={`${isMobile ? "col-12" : "col-10"}`}>
                                     <p className="section3Head black extra-bold text-center">
-                                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+                                        Bespoke solutions. Bountiful returns! 
                                     </p>
                                     <p className="sectionContent text-center">
-                                        Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions.
+                                        We understand your business needs to develop apps that take full advantage of features exclusive to iPad. 
                                     </p>
                                 </div>
                                 {!isMobile && <div className="col-1"></div>}

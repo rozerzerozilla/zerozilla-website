@@ -22,7 +22,7 @@ const AndroidUXDesign = () => {
             <AndroidUXSection1 handleFunction={handleModal}/>
             <AndroidUXSection2 />
             {/* <AndroidUXSection3 /> */}
-            <AndroidUXSection4 />
+            {/* <AndroidUXSection4 /> */}
             <AndroidUXSection5 />
             <AndroidUXSection6 />
         </div>

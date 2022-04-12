@@ -34,13 +34,13 @@ const IoTSection2 = () => {
                             <div className={`row col-12 ${isMobile && "m-0"}`}>
                                 <div className={`row col-12 ${isMobile && "m-0"}`}>
                                     <p className="section3Head black extra-bold">
-                                        Need an IoT App? Yes, it is possible!
+                                        Bridge the gap between REAL and DIGITAL with our IoT SOLUTIONS!
                                     </p>
                                     <p className="sectionContent">
-                                        It’s no longer just about the Internet. Its the Internet of Things that are going to transform your life and business. You wake up in the morning and get out of bed. Before you step into your bathroom, the temperature regulates to suit your morning preferences. The shower detects the ambient temperature, cross checks with your inputs and with just one press of a button, perfectly warm jets of water are released. No adjusting of taps, no shocking hot or cold bursts, no stress. That’s a short trailer from the Internet of Things. As you were reading that paragraph, multiple new ideas were invented under the IoT umbrella! We are not far from a super connected, intelligent and somewhat predictive life owing to the IoT technology that’s sweeping across the globe. We play our part by developing IoT applications that enable miraculous possibilities in your business.
+                                        Our IoT development team is well-versed in the networking landscape. We understand how important it is to maintain a high degree of scalability, speed, and security, which is why we include these elements in all our IoT application development services. We use cutting-edge technologies and methodologies to give you mobile IoT app solutions that are tailored to meet your specific company requirements. 
                                     </p>
                                     <p className="sectionContent large bold secondary-color">
-                                        We can provide an IoT application solution for it.
+                                        We help build smart solutions for smarter brands. 
                                     </p>
                                     <ul>
                                         <li className="sectionContent">

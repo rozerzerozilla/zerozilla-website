@@ -21,7 +21,7 @@ const IpadApps = () => {
             <IpadSection1 handleFunction={handleModal}/>
             <IpadSection2 />
             {/* <IpadSection3 /> */}
-            <IpadSection4 />
+            {/* <IpadSection4 /> */}
             <IpadSection5 />
             <IpadSection6 />
             </div>

@@ -60,7 +60,7 @@ const Section3 = () => {
                   <div className={`row ${isMobile && "m-0"}`}>
                     <div className={`${!isMobile ? "col-9" : "col-12"}`}>
                       <p className="sectionContent">
-                        We provide end-to-end application design and integration. Whether it's a consumer-facing app or a game-changing enterprise-class solution, we oversee the whole mobile app development process, from design to delivery and beyond! 
+                        We provide end-to-end application design and integration.Whether it's a consumer-facing app or a game-changing enterprise-class solution, we oversee the whole mobile app development process, from design to delivery and beyond!  
                       </p>
                     </div>
                   </div>

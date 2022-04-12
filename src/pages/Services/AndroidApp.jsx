@@ -23,7 +23,7 @@ const AndroidApps = () => {
             <AndroidSection1 handleFunction={handleModal}/>
             <AndroidSection2 />
             {/* <AndroidSection3 /> */}
-            <AndroidSection4 />
+            {/* <AndroidSection4 /> */}
             <AndroidSection5 />
             <AndroidSection6 />
             </div>

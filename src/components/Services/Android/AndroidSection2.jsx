@@ -35,12 +35,12 @@ const AndroidSection3 = () => {
                         <Fade bottom>
                             <div className={`row col-12 ${isMobile && "m-0"}`}>
                                 <p className="section3Head black extra-bold">
-                                    Need Android app solutions for your business?
+                                    Your search for Android app solutions ends here! 
                                 </p>
                                 <p className="sectionContent">
                                     Android is a cult and we admit that the geeks at Zerozilla are cult followers!
                                     <br /><br />
-                                    Not only do we all own one (or a few) each but we also specialize in Android applications development. It’s not just that we’re good at it. The fact is that we love it!
+                                    Get ahead of the competition with high-performing and effective customized Android apps developed by our tech minds.
                                 </p>
                                 <p className="sectionContent large bold secondary-color">
                                     Our developers can:
@@ -56,7 +56,7 @@ const AndroidSection3 = () => {
                                         Deliver high performing and reliable applications according to the business.
                                     </li>
                                     <li className="sectionContent">
-                                        Needs of companies across market sectors.
+                                        Guarantee scalability and expertise.
                                     </li>
                                 </ul>
 

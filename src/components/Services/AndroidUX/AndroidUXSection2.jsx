@@ -39,9 +39,13 @@ const AndroidUXSection3 = () => {
                                     Need a superior Android game? Yes, it is possible!
                                 </p>
                                 <p className="sectionContent">
-                                    Androids make up nearly 80% of the total number of mobile phones in the world.<br /><br />
-                                    With Android phones making a conscious shift to improve their UX designs, especially with relation to gaming, the Android Game UX Design market is growing.<br /><br />
-                                    We’ve entered this sector to help boost the Android gaming sector!
+                                    We help you leverage the power of the best UI and UX practices.
+                                </p>
+                                <p className="sectionContent">
+                                    Our Android Game UX Design services guarantee a perfect balance of a seamless user experience, magnificent design, and flawless appearance.  We help our customers bring the game they visualize into reality. 
+                                </p>
+                                <p className="sectionContent">
+                                    Our exceptional game UI/UX design engages with your customers like never before. With us, you can create a human-centered interface to better the experience and build trust.
                                 </p>
                                 <p className="sectionContent large bold secondary-color">
                                     To achieve this we will:

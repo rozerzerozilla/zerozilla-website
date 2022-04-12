@@ -1,9 +1,4 @@
-body {
-  font-family: Regular !important;
-  font-size: 24px;
-  margin: 0 !important;
-  padding: 0 !important;
-}
+
 :root {
   --primary-color: #4c2e88;
   --secondary-color: #c31f5d;
@@ -12,6 +7,21 @@ body {
   --footer-background: #212121;
   --white-color: #ffffff;
   --btn-border-radius: 4px;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  -webkit-text-size-adjust: 100%
+}
+body {
+  font-family: Regular !important;
+  font-size: 24px;
+  margin: 0 !important;
+  padding: 0 !important;
+  -webkit-text-size-adjust: 100%
 }
 input:focus,
 input:hover,
@@ -154,6 +164,11 @@ input:active{
   background: transparent url("../images/About-Section1-Cover.webp");
   background-repeat: no-repeat;
 }
+@media screen and (max-width:700px) {
+  .career{
+    height: 100vh;
+  }
+}
 .career {
   background: transparent url("../images/career-section-1-cover.webp");
   background-repeat: no-repeat;
@@ -162,6 +177,8 @@ input:active{
   color: var(--white-color);
   text-align: center;
 }
+
+
 .slider-area2 {
   background: transparent url("../images/sliderImage1.webp");
   background-repeat: no-repeat;
@@ -248,7 +265,7 @@ input:active{
   color: #fff;
   background: transparent;
   border: 2px solid #fff;
-  padding: 10px 14px;
+  padding: 15px 25px;
   border-radius: 8px;
   transition: 0.3s;
 }
@@ -258,7 +275,7 @@ input:active{
   color: #fff;
   background: transparent;
   border: 2px solid #fff;
-  padding: 10px 25px;
+  padding: 15px 25px;
   border-radius: 8px;
   transition: 0.3s;
   font-weight: 400;
@@ -273,6 +290,17 @@ input:active{
   border: 2px solid var(--white-color);
   color: var(--secondary-color);
 }
+
+.sliderBtns.secondary-colored {
+  background: var(--secondary-color);
+  border: 2px solid var(--secondary-color);
+  color: var(--white-color);
+}
+
+.sliderBtns.secondary-colored:hover {
+  border: 2px solid var(--white-color);
+}
+
 
 .sliderBtns.colored {
   background: var(--secondary-color);
@@ -345,6 +373,7 @@ input:active{
 }
 .sliderBtns:hover,
 .appBtn:hover {
+  border: 2px solid var(--primary-color) !important;
   background: #fff;
   color: var(--primary-color);
   font-family: Medium;
@@ -1219,15 +1248,19 @@ nav .nav-search-wrapper{
   /* border: 1px solid #c31f5e34; */
   border-radius: 5px;
   padding: 8px;
+  transition: 0.2s;
 }
 nav .nav-search-wrapper input{
-  width: 100%;
+  width: 0px;
   color: var(--primary-color);
   font-weight: 500;
   cursor: pointer;
   outline: none;
+  background-color: var(--gray-background);
   border: none;
   font-size: 14px;
+  transition: 0.2s;
+  border-radius: 2px;
 }
 @media screen and (max-width:1000px){
 	nav{
@@ -1472,7 +1505,7 @@ nav .nav-search-wrapper input{
 .career-sectio-2 .career-subtitle{
   font-size: 16px;
   max-width: 500px;
-  width: 100%s;
+  width: 100%;
 }
 .career-section-3 {
   background-color: #F8F8F8;
@@ -1673,6 +1706,7 @@ nav .nav-search-wrapper input{
 .element {
   border-radius: 20px;
   transform: skew(25deg, 25deg);
+  background-image: url('https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg');
 }
 
 .black-head-section{

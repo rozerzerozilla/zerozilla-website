@@ -36,7 +36,7 @@ const HomePage = () => {
       <Section8 handleFunction={handleModal} />
       <Section10 />
       <Section11 />
-        <Section2 />
+      <Section2 />
       </div>
       <Footer />
       <ModalForm

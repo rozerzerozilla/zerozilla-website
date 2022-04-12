@@ -1,8 +1,17 @@
 import React, { useContext } from "react";
-import sectionCover from "../../../assets/images/seo-section-3-cover.webp";
+import Lottie from 'react-lottie';
 import { AppContext } from "../../../context/Context";
 import Fade from 'react-reveal/Fade';
+import * as animationData from "./ios-lottie.json";
 
+const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: animationData,
+    rendererSettings: {
+        preserveAspectRatio: 'xMidYMid slice'
+    }
+};
 const IOSSection3 = () => {
     const [isMobile] = useContext(AppContext);
     return (
@@ -24,22 +33,22 @@ const IOSSection3 = () => {
                         <Fade bottom>
                             <div className={`row col-12 ${isMobile && "m-0"}`}>
                                 <p className="section3Head black extra-bold">
-                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut.
+                                    Let us help you design a captivating, agile, and innovative app that can outdo your competitors! 
                                 </p>
                                 <p className="sectionContent">
-                                    Around 395 iPhones are sold every 60 seconds, 1.2 billion iPhones have been sold in total. There are 85.8 million iPhone users in the US and 68% of the world’s teenagers own an iPhone. The iPhone is, by far, world’s favourite. Hence we work hand-in-hand with iPhone technologies to bring to you customized iOS solutions to take your business to the next level!
+                                    Expanding your business beyond the borders is our goal, just like you. We help you reinvigorate your business strategy with bespoke solutions. Our iPhone app development services enable your business to stay at the top while delivering an enhanced customer experience.
                                 </p>
                                 <p className="sectionContent large bold secondary-color">
-                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod.
+                                    Tech proficiency combined with years of experience and unmatched service! 
                                 </p>
                                 <p className="sectionContent">
-                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.
+                                    At Zerozilla, we have derived customer confidence and trust by transforming businesses across domains with our customized digital solutions. 
                                 </p>
                                 <p className="sectionContent large bold secondary-color">
-                                    Lorem ipsum dolor sit amet, consetetur.
+                                    Impeccable, aesthetic, and functional digital solutions
                                 </p>
                                 <p className="sectionContent">
-                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.
+                                    Our technical experts are proficient in devising solutions with a responsiveness attribute. They are adept at incorporating such solutions into devices having varying screen sizes. 
                                 </p>
                             </div>
                         </Fade>
@@ -52,10 +61,8 @@ const IOSSection3 = () => {
                         }}
                     >
                         <Fade top>
-                            <img
-                                src={sectionCover}
-                                alt="sectionVideo"
-                                style={{ width: "90% " }}
+                            <Lottie options={defaultOptions}
+                                width={"100%"}
                             />
                         </Fade>
                     </div>

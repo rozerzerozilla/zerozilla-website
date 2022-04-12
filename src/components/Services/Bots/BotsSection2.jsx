@@ -24,16 +24,16 @@ const IOSSection3 = () => {
                         <Fade bottom>
                             <div className={`row col-12 ${isMobile && "m-0"}`}>
                                 <p className="section3Head black extra-bold">
-                                    Need BOTs App? Yes, it is possible!
+                                    Revolutionize your business with Bots apps!
                                 </p>
                                 <p className="sectionContent">
-                                    Chatbots are revolutionizing customer support. By 2029, chatbots will be indistinguishable from humans predicts Ray Kurzweil of Google.In 2019, people are already more open to communicating with chatbots. In fact, 63% of people say that would message an online chatbot, especially for answers needed in an emergency.Taking advantage of this revolution is easy. Get a Bots App made for your company or brand. It will boost efficiency, create stronger customer relationships, assist in disseminating information and help initiate valuable two-way dialogues with your target audiences.We build, connect, deploy, and manage intelligent bots to interact naturally with your users via websites, apps, Skype, Slack, Facebook Messenger and more. But you pay only for what you use.
+                                    Chatbots are revolutionizing customer support. The popularity of chatbots has gone up with people choosing to interact with them to find answers during emergency situations. You can take advantage of this revolution easily, with Zerozilla. Get a Bots App made for your company or brand to boost efficiency, create stronger customer relationships, assist in disseminating information and help initiate valuable two-way dialogues with your target audiences. We build, connect, deploy, and manage intelligent bots to interact naturally with your users via websites, apps, Skype, Slack, Facebook Messenger, and more. Sounds cool, right?
                                 </p>
                                 <p className="sectionContent large bold secondary-color">
-                                    Our e-commerce mobile apps are Android and iOS based.
+                                    Get industry-specific chatbots designed by the experts! 
                                 </p>
                                 <p className="sectionContent">
-                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.
+                                    Zerozilla specializes in inventing and embedding programming languages, as well as incorporating smart features into human-like bots that imitate real-time conversations and automate high-frequency interactions.
                                 </p>
                             </div>
                         </Fade>

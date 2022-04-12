@@ -26,10 +26,10 @@ const IOSSection3 = () => {
                                 {!isMobile && <div className="col-1"></div>}
                                 <div className={`${isMobile ? "col-12" : "col-10"}`}>
                                     <p className="section3Head black extra-bold text-center">
-                                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+                                        Have a hybrid app idea? We can make it a reality!
                                     </p>
                                     <p className="sectionContent text-center">
-                                        Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions.
+                                        We strive to create hybrid apps that adapt to each customer's specific demands in order to maximize your business' ROI.
                                     </p>
                                 </div>
                                 {!isMobile && <div className="col-1"></div>}

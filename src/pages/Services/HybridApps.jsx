@@ -21,7 +21,7 @@ const HybridApps = () => {
             <HybridSection1 handleFunction={handleModal}/>
             <HybridSection2 />
             {/* <HybridSection3 /> */}
-            <HybridSection4 />
+            {/* <HybridSection4 /> */}
             <HybridSection5 />
             <HybridSection6 />
             </div>

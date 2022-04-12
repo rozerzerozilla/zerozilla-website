@@ -26,10 +26,10 @@ const IOSSection3 = () => {
                                 {!isMobile && <div className="col-1"></div>}
                                 <div className={`${isMobile ? "col-12" : "col-10"}`}>
                                     <p className="section3Head black extra-bold text-center">
-                                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+                                        Your partner to create the best game UI/UX design 
                                     </p>
                                     <p className="sectionContent text-center">
-                                        Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions.
+                                        Get a unique identity for your game UI/UX design and improve the interaction of players with your game app. 
                                     </p>
                                 </div>
                                 {!isMobile && <div className="col-1"></div>}

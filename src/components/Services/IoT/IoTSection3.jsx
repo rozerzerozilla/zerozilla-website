@@ -26,10 +26,10 @@ const IOSSection3 = () => {
                                 {!isMobile && <div className="col-1"></div>}
                                 <div className={`${isMobile ? "col-12" : "col-10"}`}>
                                     <p className="section3Head black extra-bold text-center">
-                                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+                                        Kick-start your journey in the IoT space! 
                                     </p>
                                     <p className="sectionContent text-center">
-                                        Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions.
+                                        Our team of IoT app developers will guide businesses through the process of becoming familiar with the Internet of Things technology and incorporating it into their business strategies.
                                     </p>
                                 </div>
                                 {!isMobile && <div className="col-1"></div>}

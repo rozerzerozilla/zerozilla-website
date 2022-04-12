@@ -21,7 +21,7 @@ const BotsApps = () => {
             <BotsSection1 handleFunction={handleModal}/>
             <BotsSection2 />
             {/* <BotsSection3 /> */}
-            <BotsSection4 />
+            {/* <BotsSection4 /> */}
             <BotsSection5 />
             <BotsSection6 />
             </div>

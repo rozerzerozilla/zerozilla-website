@@ -21,7 +21,7 @@ const ReactNativeApps = () => {
             <ReactNativeSection1 handleFunction={handleModal}/>
             <ReactNativeSection2 />
             {/* <ReactNativeSection3 /> */}
-            <ReactNativeSection4 />
+            {/* <ReactNativeSection4 /> */}
             <ReactNativeSection5 />
             <ReactNativeSection6 />
             </div>

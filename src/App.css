@@ -33,3 +33,6 @@
   font-family: Italic;
   src: url(./fonts/webfonts/PlusJakartaSans-Italic.woff);
 }
+html{
+  -webkit-text-size-adjust: 100%
+}

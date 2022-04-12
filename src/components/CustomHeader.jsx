@@ -30,6 +30,8 @@ import sectionCover from "../assets/images/About-Section-3-Cover.webp"
       setMenuKey(null)
     }
   };
+   
+  const [showInput, setShowInput] = useState(false);
 
   useEffect(() => {
     document.addEventListener('click', handleClickOutside, true);
@@ -572,14 +574,18 @@ import sectionCover from "../assets/images/About-Section-3-Cover.webp"
             
           </Tooltip> */}
           <span>Careers</span>
-          <div style={{
+          <div ref={el => {
+            setInterval(() => el.style.opacity = 0.5, 500)
+            setInterval(() => el.style.opacity = 1, 1000)
+          }} style={{
             color: "#c31f5d",
             backgroundColor: "#ffeaf2",
             borderRadius: "5px",
             boxShadow: "none",
             fontSize: "12px",
             padding: "2px 10px",
-            marginLeft:"5px"
+            marginLeft: "5px",
+            transition: "ease"
           }}>
             We are hiring
           </div>
@@ -598,10 +604,10 @@ import sectionCover from "../assets/images/About-Section-3-Cover.webp"
           <div className="d-flex align-items-center">
             {isMobile ? mobileMenu : desktopMenu}
             <div className="nav-search-wrapper d-flex align-items-center justify-content-end"
-              style={{ width: isMobile ? 'unset': '200px'}}
+              style={{ width: isMobile ? 'unset' : showInput ? '200px': "50px"}}
             >
-              <input placeholder=""/>
-              <FaSearch />
+              <input placeholder="" className="search-input" style={{ width: showInput ? "100%" : "0px", padding: showInput ? "5px" : "0px"}}/>
+              <FaSearch onClick={()=>setShowInput(prevState => !prevState)}/>
             </div>
           </div>
 

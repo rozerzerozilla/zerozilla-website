@@ -24,22 +24,22 @@ const IOSSection3 = () => {
                         <Fade bottom>
                             <div className={`row col-12 ${isMobile && "m-0"}`}>
                                 <p className="section3Head black extra-bold">
-                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut.
+                                    A comprehensive approach to strategize, build and deliver engaging apps for a larger audience! 
                                 </p>
                                 <p className="sectionContent">
-                                    Around 395 iPhones are sold every 60 seconds, 1.2 billion iPhones have been sold in total. There are 85.8 million iPhone users in the US and 68% of the world’s teenagers own an iPhone. The iPhone is, by far, world’s favourite. Hence we work hand-in-hand with iPhone technologies to bring to you customized iOS solutions to take your business to the next level!
+                                    The iPad app developers at Zerozilla adopt a holistic approach to app development, including business needs, design aesthetics, user experience, and app functionality. Our iPad app developers can assist you with quickly conceptualizing, strategizing, designing, building, testing, and delivering custom iPad apps that are ready for the App Store. 
                                 </p>
                                 <p className="sectionContent large bold secondary-color">
-                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod.
+                                    Capture the advantages that are exclusive to iPad 
                                 </p>
                                 <p className="sectionContent">
-                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.
+                                    Our development team can take full advantage of the larger screen size and faster processing to ensure that your app performs to its full potential and provides the greatest possible user experience.
                                 </p>
                                 <p className="sectionContent large bold secondary-color">
-                                    Lorem ipsum dolor sit amet, consetetur.
+                                    Stay ahead with your innovation. 
                                 </p>
                                 <p className="sectionContent">
-                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.
+                                    We broaden horizons, inspire possibilities, and implement innovations for well-known brands. We help you deliver the best user experience to your customer with our expertise. 
                                 </p>
                             </div>
                         </Fade>

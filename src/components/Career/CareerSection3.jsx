@@ -356,7 +356,7 @@ const Section3 = () => {
                                             </div>
                                         </td>
                                     </tr>
-                                    <tr>
+                                    <tr key={idx+1*100}>
                                         <td colSpan={6} style={{ width: "100%" }}>
                                             <Collapse in={mainIndex === idx} style={{ width: "100%" }}>
                                             

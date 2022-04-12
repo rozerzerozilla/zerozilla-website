@@ -45,8 +45,13 @@ const Section3 = () => {
               }}
             >
               <Fade bottom>
-                
+                {/* <video width="320" height="240" controls>
+                  <source src="https://www.youtube.com/embed/5eCbTywz88A"/>
+                </video> */}
                 <iframe
+                  style={{
+                    backgroundImage: "url(https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg)"
+                  }}
                   className="element"
                   width="100%"
                   height="400"
@@ -54,7 +59,6 @@ const Section3 = () => {
                   title="YouTube video player" frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen>
-                  
                   </iframe>
                 {/* <img
                   data-aos={"fade-left"}

@@ -23,19 +23,17 @@ const IOSSection3 = () => {
                     >
                         <Fade left>
                             <div className={`row`}>
-                                {!isMobile && <div className="col-1"></div>}
-                                <div className={`${isMobile ? "col-12" : "col-10"}`}>
+                                <div className={`${isMobile ? "col-12" : "col-8 mx-auto"}`}>
                                     <p className="section3Head black extra-bold text-center">
-                                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+                                        Find a stellar collection of ingenious apps for your business!
                                     </p>
                                     <p className="sectionContent text-center">
-                                        Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions.
+                                        We combine state-of-art technology to develop iPhone apps that generate great ROI for your business. 
                                     </p>
                                 </div>
-                                {!isMobile && <div className="col-1"></div>}
                             </div>
                         </Fade>
-                        <div className="row" style={{ marginTop: "40px" }}>
+                        {/* <div className="row" style={{ marginTop: "40px" }}>
                             {iOSStrategy.map((idea, index) => (
                                 <Fade top={index % 2 === 0 ? true : false} bottom={index % 2 === 0 ? false : true} key={idea.id}>
                                     <div
@@ -55,7 +53,7 @@ const IOSSection3 = () => {
                                     </div>
                                 </Fade>
                             ))}
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>

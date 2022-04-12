@@ -21,7 +21,7 @@ const IOSApps = () => {
             <IOSSection1 handleFunction={handleModal}/>
             <IOSSection2 />
             {/* <IOSSection3 /> */}
-            <IOSSection4 />
+            {/* <IOSSection4 /> */}
             <IOSSection5 />
             <IOSSection6 />
             </div>

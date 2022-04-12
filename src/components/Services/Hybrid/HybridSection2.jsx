@@ -34,11 +34,11 @@ const IOSSection3 = () => {
                             <div className={`row col-12 ${isMobile && "m-0"}`}>
                                 <div className={`row col-12 ${isMobile && "m-0"}`}>
                                     <p className="section3Head black extra-bold">
-                                        Need an Hybrid App? Yes, it is possible!
+                                        Seize the power of customized hybrid apps! 
                                     </p>
                                     <p className="sectionContent">
-                                        We provide end to end hybrid solutions and development across various operating systems.<br/><br/>
-                                        The beauty of Hybrid is that it uses the codes of HTML5, CSS3 and JavaScript, the same ones utilized in mobile operating systems. Hybrid apps can therefore, be developed quickly, easily and economically. These apps can be leveraged on both the web and native mobile technologies. Hybrid allows easy access to device data, works offline and scales to many platforms.
+                                        We provide end-to-end hybrid solutions and development across various operating systems.<br/><br/>
+                                        TThe beauty of Hybrid apps is that it uses the codes of HTML5, CSS3, and JavaScript, the same ones utilized in mobile operating systems. Hybrid apps can, therefore, be developed quickly, easily, and economically. These apps can be leveraged on both the web and native mobile technologies. Hybrid allows easy access to device data, works offline, and scales to many platforms.
                                     </p>
                                     <p className="sectionContent large bold secondary-color">
                                         Our end-to-end hybrid solutions include:

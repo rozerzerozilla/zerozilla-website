@@ -8,8 +8,8 @@ const Section1 = ({handleFunction}) => {
         <CommonSection1
             handleFunction={handleFunction}
             title={`iBeacon Application Development`}
-            subtitle1={`Get Optimized or Get Out!`}
-            subtitle2={`Let us help you Stay on Top of the Internet!`}
+            subtitle1={`Level up your customer interactions!`}
+            subtitle2={`Unlock the power of iBeacon!`}
             sectionCover={sectionCover}
             background={`#F4F8FF`}
             btnText={`Get a qoute`}

@@ -4,6 +4,8 @@ import { sliderAreaStyle, staticHomeSlider } from "../../helper";
 import BookCallButton from "../BookCallButton";
 import SliderNavButtons from "./SliderNav";
 import { AppContext } from "../../context/Context";
+import { Splide, SplideSlide } from '@splidejs/react-splide';
+import { FaPhoneAlt } from "react-icons/fa";
 const Section1 = ({ handleFunction}) => {
 
   const [isMobile, setIsMobile] = useContext(AppContext);
@@ -13,10 +15,10 @@ const Section1 = ({ handleFunction}) => {
       <div className="col-12 Home-main-area1">
         <Carousel
           ref={ref}
-          nextIcon={true}
-          prevIcon={true}
+          nextIcon={false}
+          prevIcon={false}
           controls={false}
-          indicators={false}
+          indicators={true}
         >
           {staticHomeSlider.map((el) => (
             <Carousel.Item className="static_maincar" key={el.id}>
@@ -45,34 +47,28 @@ const Section1 = ({ handleFunction}) => {
                           </p>
                         </div>
                         <div className="row" style={{ marginTop: "30px" }}>
-                          <div className="col-12">
-                            <div
-                              className={`${
-                                !isMobile ? "row" : "customFlexBox"
-                              }`}
+                          <div className={`${!isMobile ? "col-4" : "col-8 mb-4 mx-auto"}`}>
+                            <button onClick={handleFunction}
+                              className={`sliderBtns secondary-colored w-100`}
                             >
-                              <div className={`${!isMobile ? "col-4" : ""}`}>
-                                <BookCallButton
-                                  handleFunction={handleFunction}
-                                  width={"100%"}
-                                  className={null}
-                                  isColored={false}
-                                  text={"Contact Now"}
-                                  showImage={true}
-                                />
-                              </div>
-                              <div
-                                className={`${!isMobile ? "col-4 pl-0" : ""}`}
-                                style={{ paddingLeft: !isMobile ? 0 : "" }}
-                              >
-                                <a href="#about-us-home">
-                                  <button className="sliderBtns colored" style={{ width: "100%" }}>
-                                    <span>Know more</span>
-                                  </button>
-                                </a>
-                                
-                              </div>
-                            </div>
+                              <span style={{ marginRight: "10px" }}>
+                                <FaPhoneAlt />
+                              </span>
+                              <span>
+                                Contact Now
+                              </span>
+                            </button>
+                          </div>
+                          <div
+                            className={`${!isMobile ? "col-4" : "col-8 mx-auto"}`}
+                            style={{ paddingLeft: !isMobile ? 0 : "" }}
+                          >
+                            <a href="#about-us-home">
+                              <button className="sliderBtns white-colored-outline" style={{ width: "100%" }}>
+                                <span>Know more</span>
+                              </button>
+                            </a>
+
                           </div>
                         </div>
 
@@ -84,12 +80,12 @@ const Section1 = ({ handleFunction}) => {
             </Carousel.Item>
           ))}
         </Carousel>
-        <SliderNavButtons
+        {/* <SliderNavButtons
           reference={ref}
           justify={"center"}
           margin={"-30px"}
           absolute={false}
-        />
+        /> */}
       </div>
     </div>
   );

@@ -8,8 +8,8 @@ const Section1 = ({handleFunction}) => {
         <CommonSection1
             handleFunction={handleFunction}
             title={`Bots Application Devlopment`}
-            subtitle1={`Get Optimized or Get Out!`}
-            subtitle2={`Let us help you Stay on Top of the Internet!`}
+            subtitle1={`Streamline your customer interaction!`}
+            subtitle2={`Transform the way your business interacts with customers!`}
             sectionCover={""}
             animationData={lottieJson}
             animatedImage={true}
