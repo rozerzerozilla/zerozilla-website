@@ -18,24 +18,12 @@ const Section2 = () => {
                     <Fade top>
                         <div className={`row col-12 ${isMobile && "m-0"}`}>
                             <p className="section3Head black extra-bold">
-                                Why should you choose <span style={{color:"green"}}>NodeJS</span> over any other backend platform?
-                                
+                            Your search for the best CodeIgniter solution ends HERE!
                             </p>
                             <p className="sectionContent">
-                                NodeJS is a multipurpose platform with a rising popularity of 4 million+ users across the globe.
-                                The inherent benefit of robustness and simplicity entice NodeJS Application Developers and make
-                                the building of complex data-sensitive solutions as easy as pie. By using NodeJS, we have already
-                                supported many companies across diverse industries to enhance their performance to attain maximum revenue.
-                                <br /><br />
-                                Being an open source platform, NodeJS is highly popular with its wonderful features like event-driven
-                                architecture, cloud scalability, code reusability etc. It is highly compatible with both browser & server.
-                                NodeJS offers event-driven, non-blocking I/O model to develop server-side network web applications.
-                                The strong NodeJS community support makes it acceptable across the world. Many fortune companies
-                                around the world like Netflix, LinkedIn, Wal-Mart, eBay, and even the Big NASA had already migrated
-                                to NodeJS. They are all set for the extremely lightweight and simplistic avatars of the applications.
-                                At Zerozilla, we aim to provide exemplary NodeJS Application Development and make sure to exactly meet
-                                our clientele requirements within the specified timeframes, with utmost quality.
-
+                            At Zerozilla, we use the CodeIgniter framework to build safe and scalable online apps that meet the needs of our clients. We are equipped with CodeIgniter developers who know how to create websites and web apps with PHP frameworks.
+                               <br /><br />
+                               We have years of expertise as a top CodeIgniter Development Company delivering well-documented, safe, fast, and high-quality web development solutions for many types of businesses, including start-ups, small, medium, big, and enterprise levels. As a customer-focused web development firm, we strive to provide the best possible solutions depending on the specifications.
                             </p>
                         </div>
                         <div className="row-col-12" style={{ marginTop: "20px" }}>

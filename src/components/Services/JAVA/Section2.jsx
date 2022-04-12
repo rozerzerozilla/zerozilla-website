@@ -18,24 +18,12 @@ const Section2 = () => {
                     <Fade top>
                         <div className={`row col-12 ${isMobile && "m-0"}`}>
                             <p className="section3Head black extra-bold">
-                                Why should you choose <span style={{color:"green"}}>NodeJS</span> over any other backend platform?
-                                
+                            Think beyond the box with digital solutions powered by Java!
                             </p>
-                            <p className="sectionContent">
-                                NodeJS is a multipurpose platform with a rising popularity of 4 million+ users across the globe.
-                                The inherent benefit of robustness and simplicity entice NodeJS Application Developers and make
-                                the building of complex data-sensitive solutions as easy as pie. By using NodeJS, we have already
-                                supported many companies across diverse industries to enhance their performance to attain maximum revenue.
-                                <br /><br />
-                                Being an open source platform, NodeJS is highly popular with its wonderful features like event-driven
-                                architecture, cloud scalability, code reusability etc. It is highly compatible with both browser & server.
-                                NodeJS offers event-driven, non-blocking I/O model to develop server-side network web applications.
-                                The strong NodeJS community support makes it acceptable across the world. Many fortune companies
-                                around the world like Netflix, LinkedIn, Wal-Mart, eBay, and even the Big NASA had already migrated
-                                to NodeJS. They are all set for the extremely lightweight and simplistic avatars of the applications.
-                                At Zerozilla, we aim to provide exemplary NodeJS Application Development and make sure to exactly meet
-                                our clientele requirements within the specified timeframes, with utmost quality.
-
+                            <p>  
+                            JavaScript is a strong foundation that allows you to develop dynamic and responsive websites and apps that load quickly and perform well. JS can also be used to construct classic desktop apps. The ability to design unique and engaging interfaces allows businesses to better meet their customers' expectations, resulting in improved user experiences. JavaScript is a common front-end technology, alongside CSS and HTML. Many well-known websites are migrating to JavaScript since it allows us to create dynamic web pages. We can give a unique JavaScript development solution that suits your individual needs as one of the leading JavaScript development firms. 
+                            <br /><br />
+                            Zerozilla offers front-end and full-stack JavaScript development services for a wide range of commercial applications, from simple desktop applications to huge enterprise applications. We have a team of highly qualified and experienced JavaScript developers who are adept at integrating new technologies and offering custom JavaScript development services. 
                             </p>
                         </div>
                         <div className="row-col-12" style={{ marginTop: "20px" }}>

@@ -26,10 +26,10 @@ const IOSSection3 = () => {
                                 {!isMobile && <div className="col-1"></div>}
                                 <div className={`${isMobile ? "col-12" : "col-10"}`}>
                                     <p className="section3Head black extra-bold text-center">
-                                        Web designs that bring a smile on faces
+                                    Explore our PHP web development services 
                                     </p>
                                     <p className="sectionContent text-center">
-                                        Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions.
+                                    Check out how we can help you turn your business dream into a reality!
                                     </p>
                                 </div>
                                 {!isMobile && <div className="col-1"></div>}

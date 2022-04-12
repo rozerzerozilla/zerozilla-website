@@ -6,8 +6,8 @@ const Section1 = ({handleFunction}) => {
         <CommonSection1
             handleFunction={handleFunction}
             title={`Codeigniter Development`}
-            subtitle1={`Get Optimized or Get Out!`}
-            subtitle2={`Let us help you Stay on Top of the Internet!`}
+            subtitle1={`High quality digital solutions!`}
+            subtitle2={`Explore the elegant framework of CodeIgniter!`}
             sectionCover={"https://cdn.worldvectorlogo.com/logos/codeigniter.svg"}
             background={`#F4F8FF`}
             btnText={`Get a quote`}

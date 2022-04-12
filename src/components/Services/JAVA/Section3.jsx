@@ -25,10 +25,10 @@ const Section3 = () => {
                             <div className={`row`}>
                                 <div className={` mx-auto ${isMobile ? "col-12" : "col-8"}`}>
                                     <p className="section3Head black extra-bold text-center">
-                                        Benefits of Node.js
+                                    Futuristic, powerful JavaScript programming services!
                                     </p>
                                     <p className="sectionContent text-center">
-                                        Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions.
+                                    We offer full-stack JavaScript programming services to companies of all sizes, from startups to large corporations. Let's take a closer look at each JS development service.
                                     </p>
                                 </div>
                             </div>

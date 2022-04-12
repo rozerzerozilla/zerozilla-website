@@ -26,10 +26,12 @@ const IOSSection3 = () => {
                                 {!isMobile && <div className="col-1"></div>}
                                 <div className={`${isMobile ? "col-12" : "col-10"}`}>
                                     <p className="section3Head black extra-bold text-center">
-                                        Web designs that bring a smile on faces
+                                    Sturdy, safe and scalable<br/>
+                                    solutions with<br/>
+                                    WordPress!
                                     </p>
                                     <p className="sectionContent text-center">
-                                        Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions.
+                                    Regardless of the domain, geographic location, or organizational structure, get optimal solutions with WordPress from our expert WordPress developers.
                                     </p>
                                 </div>
                                 {!isMobile && <div className="col-1"></div>}

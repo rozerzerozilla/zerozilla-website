@@ -7,8 +7,8 @@ const Section1 = ({ handleFunction}) => {
         <CommonSection1
             handleFunction={handleFunction}
             title={`Laravel Development`}
-            subtitle1={`Lorem ipsum dolor sit amet, consetetur`}
-            subtitle2={`Lorem ipsum dolor sit amet, consetetur`}
+            subtitle1={`You are at the RIGHT place!`}
+            subtitle2={`Grow your business with US!`}
             sectionCover={sectionCover}
             animatedImage={false}
             background={`#F4F8FF`}

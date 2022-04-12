@@ -18,15 +18,12 @@ const Section2 = () => {
                     <Fade top>
                         <div className={`row col-12 ${isMobile && "m-0"}`}>
                             <p className="section3Head black extra-bold">
-                                Why should you choose <span style={{color:"green"}}>NodeJS</span> over any other backend platform?
+                            Why should you choose <span style={{color:"green"}}>Zerozilla</span> for CakePHP service?
                                 
                             </p>
                             <p className="sectionContent">
-                                NodeJS is a multipurpose platform with a rising popularity of 4 million+ users across the globe.
-                                The inherent benefit of robustness and simplicity entice NodeJS Application Developers and make
-                                the building of complex data-sensitive solutions as easy as pie. By using NodeJS, we have already
-                                supported many companies across diverse industries to enhance their performance to attain maximum revenue.
-                                <br /><br />
+                            Our mission as a leading CakePHP development firm is to create one-of-a-kind, interactive, and cost-effective design, development, functionality, and compatibility solutions. CakePHP is extensively used because it is PHP's most distinctive and dependable structure. Our primary goal is to provide you with the best CakePHP web development services possible to help you expand your business. Zerozilla is the place to be in if you're looking for CakePHP developers. Our CakePHP web development experts have extensive expertise and years of experience in CakePHP web development and can assist you in expanding your business. We have experience dealing with a variety of sectors. As a CakePHP development firm, we offer a wide range of versatile, resilient, scalable, and secure CakePHP development services to our customers.
+                            {/* <br /><br />
                                 Being an open source platform, NodeJS is highly popular with its wonderful features like event-driven
                                 architecture, cloud scalability, code reusability etc. It is highly compatible with both browser & server.
                                 NodeJS offers event-driven, non-blocking I/O model to develop server-side network web applications.
@@ -34,7 +31,7 @@ const Section2 = () => {
                                 around the world like Netflix, LinkedIn, Wal-Mart, eBay, and even the Big NASA had already migrated
                                 to NodeJS. They are all set for the extremely lightweight and simplistic avatars of the applications.
                                 At Zerozilla, we aim to provide exemplary NodeJS Application Development and make sure to exactly meet
-                                our clientele requirements within the specified timeframes, with utmost quality.
+                                our clientele requirements within the specified timeframes, with utmost quality. */}
 
                             </p>
                         </div>

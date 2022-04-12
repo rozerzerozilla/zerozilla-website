@@ -25,10 +25,10 @@ const Section3 = () => {
                             <div className={`row`}>
                                 <div className={` mx-auto ${isMobile ? "col-12" : "col-8"}`}>
                                     <p className="section3Head black extra-bold text-center">
-                                        Benefits of Node.js
+                                    An array of services to choose from!
                                     </p>
                                     <p className="sectionContent text-center">
-                                        Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions.
+                                    We offer solutions with CodeIgniter that will help you get the right amount of attention.
                                     </p>
                                 </div>
                             </div>

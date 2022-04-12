@@ -1019,23 +1019,23 @@ export const webdevCommonStrategy = [
   {
     id: 1,
     image: "meeting.png",
-    name: "Wordpress Design",
+    name: "Custom WordPress Development Services",
     description:
-      "There are many variations of lorem duos spassages of Lorem Ipsum available lora internet tend to repeat predefined.",
+      "WordPress custom theme and plugin creation, bug-free and SEO-friendly website development, Complete WordPress CMS Design and Development, Instant Support, Reliable Fixes, and more are some of the services we offer.",
   },
   {
     id: 2,
     image: "analytics.png",
-    name: "Responsive Design",
+    name: "Security and Code Review",
     description:
-      "There are many variations of lorem duos spassages of Lorem Ipsum available lora internet tend to repeat predefined.",
+      "Our developers provide full code review services for both existing and freshly constructed WordPress websites. For improved security and scalability, we also offer WordPress development services that adhere to WordPress coding standards.",
   },
   {
     id: 3,
     image: "aws-startup.png",
-    name: "UI/UX Rich Design",
+    name: "Services for WordPress Migration",
     description:
-      "There are many variations of lorem duos spassages of Lorem Ipsum available lora internet tend to repeat predefined.",
+      "Non-WordPress CMS Migration, WordPress DataBase Migration, Hosting & Domain Migration are all part of our WordPress Migration Services.",
   }
 ];
 
@@ -1193,23 +1193,23 @@ export const nodeJSCards = [
   {
     id: 1,
     image: "project-analysis-icon.svg",
-    name: "Open-source & Lightweight",
+    name: "Custom CakePHP Development",
     description:
-      "There are many variations of lorem duos spassages of Lorem Ipsum available lora internet tend to repeat predefined.",
+      "With the help of our CakePHP development services, you may create a bespoke website, web apps, CMS, eCommerce store, portals, or business websites that will help you attract more sales.",
   },
   {
     id: 2,
     image: "on-page-seo-icon.svg",
-    name: "Improved Productivity",
+    name: "CakePHP Web App Development",
     description:
-      "There are many variations of lorem duos spassages of Lorem Ipsum available lora internet tend to repeat predefined.",
+      "We create CakePHP web applications that are faster, smoother, more dependable, secure, and scalable. We provide CakePHP web development services to businesses of all sectors.",
   },
   {
     id: 3,
     image: "off-page-seo-icon.svg",
-    name: "Real-time Applications",
+    name: "CakePHP Migration Services",
     description:
-      "There are many variations of lorem duos spassages of Lorem Ipsum available lora internet tend to repeat predefined.",
+      "Our CakePHP experts have experience with MVC frameworks and migration services, so they can help you migrate from an older version of CakePHP to the most recent one.",
   }
 ];
 

@@ -6,8 +6,8 @@ const Section1 = ({handleFunction}) => {
         <CommonSection1
             handleFunction={handleFunction}
             title={`Java Development`}
-            subtitle1={`Get Optimized or Get Out!`}
-            subtitle2={`Let us help you Stay on Top of the Internet!`}
+            subtitle1={`Get dynamic and responsive apps`}
+            subtitle2={`Go an EXTRA mile with apps that perform EXTRA!`}
             sectionCover={"https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg"}
             background={`#F4F8FF`}
             btnText={`Get a quote`}

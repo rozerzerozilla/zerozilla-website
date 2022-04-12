@@ -6,9 +6,9 @@ const Section1 = ({handleFunction}) => {
     return (
         <CommonSection1
             handleFunction={handleFunction}
-            title={`PHP Developers`}
-            subtitle1={`Lorem ipsum dolor sit amet, consetetur`}
-            subtitle2={`Lorem ipsum dolor sit amet, consetetur`}
+            title={`PHP Development `}
+            subtitle1={`THE BEST PHP development services`}
+            subtitle2={`Robust, appealing and feature-rich-Get them HERE!`}
             sectionCover={sectionCover}
             animatedImage={false}
             background={`#F4F8FF`}

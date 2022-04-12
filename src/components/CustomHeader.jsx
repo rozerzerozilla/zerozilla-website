@@ -574,10 +574,12 @@ import sectionCover from "../assets/images/About-Section-3-Cover.webp"
             
           </Tooltip> */}
           <span>Careers</span>
-          <div ref={el => {
-            setInterval(() => el.style.opacity = 0.5, 500)
-            setInterval(() => el.style.opacity = 1, 1000)
-          }} style={{
+          <div 
+          // ref={el => {
+          //   setInterval(() => el?.style.opacity = 0.5, 500)
+          //   setInterval(() => el?.style.opacity = 1, 1000)
+          // }} 
+          style={{
             color: "#c31f5d",
             backgroundColor: "#ffeaf2",
             borderRadius: "5px",

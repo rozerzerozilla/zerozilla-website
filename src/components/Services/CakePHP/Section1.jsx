@@ -6,8 +6,8 @@ const Section1 = ({handleFunction}) => {
         <CommonSection1
             handleFunction={handleFunction}
             title={`CakePHP Development`}
-            subtitle1={`Get Optimized or Get Out!`}
-            subtitle2={`Let us help you Stay on Top of the Internet!`}
+            subtitle1={`Your search ends HERE!`}
+            subtitle2={`Get high-performing, scalable CakePHP service HERE!`}
             sectionCover={sectionCover}
             background={`#F4F8FF`}
             btnText={`Get a quote`}
