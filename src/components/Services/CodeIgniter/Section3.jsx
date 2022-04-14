@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { AppContext } from "../../../context/Context";
-import { nodeJSCards } from "../../../helper/services";
+import { codeigniterCards } from "../../../helper/services";
 import CommonCard from "../../Common/CommonCard";
 import Fade from 'react-reveal/Fade'
 const Section3 = () => {
@@ -35,7 +35,7 @@ const Section3 = () => {
                         </Fade>
                         <div className="container">
                             <div className="row" style={{ marginTop: "40px" }}>
-                                {nodeJSCards.map((idea, index) => (
+                                {codeigniterCards.map((idea, index) => (
                                     <Fade top={index % 2 === 0 ? true : false} bottom={index % 2 === 0 ? false : true} key={idea.id}>
                                         <div
                                             className={`${isMobile ? "col-12" : "col-4 my-auto"}`}

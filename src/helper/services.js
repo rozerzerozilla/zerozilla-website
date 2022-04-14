@@ -1213,6 +1213,27 @@ export const nodeJSCards = [
   }
 ];
 
+export const codeigniterCards = [
+  {
+    id: 1,
+    image: "project-analysis-icon.svg",
+    name: "CodeIgniter Web Development",
+    description: "Our skilled CodeIgniter developers can transform the value of your company into database-driven web apps that can be modified to meet your specific requirements, allowing you to increase your profits."
+  },
+  {
+    id: 2,
+    image: "on-page-seo-icon.svg",
+    name: "Website Development for E-Commerce",
+    description: "Using the CI framework, we plan to create a feature-rich eCommerce website. You can take advantage of the flexibility of the CodeIgniter PHP framework with our CodeIgniter eCommerce website solution."
+  },
+  {
+    id: 3,
+    image: "project-analysis-icon.svg",
+    name: "CodeIgniter Extension Development",
+    description: "We recognise the value of having feature-rich websites and online applications for your company. Our CI specialists work tirelessly to create one-of-a-kind extensions for your websites and web applications."
+  }
+]
+
 export const vueJSCards = [
   {
     id: 1,
