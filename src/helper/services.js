@@ -1035,7 +1035,7 @@ export const webdevCommonStrategy = [
     image: "aws-startup.png",
     name: "Services for WordPress Migration",
     description:
-      "Non-WordPress CMS Migration, WordPress DataBase Migration, Hosting & Domain Migration are all part of our WordPress Migration Services.",
+      "Non-WordPress CMS Migration, WordPress DataBase Migration, Hosting & Domain Migration are all part of our WordPress Migration Services. SEO ranking is also in a enhanced way with less brainstroming.",
   }
 ];
 

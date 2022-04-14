@@ -144,7 +144,7 @@ const FormComponent = ({ isMobile, handleFormSubmit, smallerText }) => {
             </div>
           </div>
           <div className="row mt-4">
-            <div className={`${isMobile ? "col-12 text-start" : "col-6 my-auto"}`}>
+            {/* <div className={`${isMobile ? "col-12 text-start" : "col-6 my-auto"}`}>
 
               <Recaptcha
                 sitekey="6Ld60JseAAAAALFiR6q0Q-6wrF6C7onyvA7ozBsh"
@@ -152,7 +152,7 @@ const FormComponent = ({ isMobile, handleFormSubmit, smallerText }) => {
                 onloadCallback={() => console.log("Recaptcha Loaded")}
                 verifyCallback={() => setIsVerified(true)}
               />
-            </div>
+            </div> */}
             <div
               className={`${isMobile ? "col-12 text-start mt-4" : "col-6 text-end my-auto"
                 }`}

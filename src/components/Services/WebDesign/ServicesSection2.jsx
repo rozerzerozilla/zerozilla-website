@@ -37,7 +37,7 @@ const Section2 = () => {
                 <div className="row" style={{ marginTop: "40px" }}>
                   {webIdeas.map((idea, index) => (
                     <div
-                      className={`${isMobile ? "col-12" : "col-4 my-auto mx-auto"}`}
+                      className={`${isMobile ? "col-12 my-4" : "col-6 my-auto mx-auto"}`}
                       key={idea.id}
                       style={!isMobile ? { paddingRight: "20px" } : null}
                     >
@@ -53,29 +53,28 @@ const Section2 = () => {
                           imageWidth={"50%"}
                           padding={"0px 30px"}
                         /> */}
-                        <div className="bizCard">
-                          <div className="d-flex align-items-center justify-content-center h-100">
-                            <div
-                              className={`col-4 row-height cardLeftCol`}
-                              style={{ background: "#EDF9FF", padding:"0 10px" }}
-                            >
-                              <img
-                                src={require(`../../../assets/icons/${idea.image}`)}
-                                alt="cardImage"
-                                style={{ height: "80px", objectFit: "cover", width: "unset" }}
-                              />
-                              {true && <p className="cardHead" style={{fontSize:"15px"}}>
-                                {idea.name}
-                              </p>}
-                            </div>
-                            <div
-                              className="col-8 row-height d-flex flex-column align-items-start justify-content-center"
-                              style={{ padding: "0px 30px" }}
-                            >
-                              <p className="cardDescription">{idea.description}</p>
-                              
-                            </div>
-                          </div >
+                        <div className="bizCard" style={{ display: "grid", gridTemplateColumns: isMobile ? "1fr" : "1fr 2fr" }}>
+                          <div
+                            className={`${isMobile ? 'cardTopCol':  'cardLeftCol' }`}
+                            style={{ background: "#EDF9FF", height: "100%" }}
+                          >
+                            <img
+                              src={require(`../../../assets/icons/${idea.image}`)}
+                              alt="cardImage"
+                              style={{ objectFit: "cover", width: "unset", height:isMobile ? "60px" : "80px" }}
+                            />
+
+                          </div>
+
+                          <div
+                            className="d-flex flex-column align-items-start justify-content-center w-100"
+                            style={{ padding: "30px" }}
+                          >
+                            <p className={`cardHead ${isMobile? "text-center" : " text-left"}`} style={{ fontSize: "15px" }}>
+                              {idea.name}
+                            </p>
+                            <p className="cardDescription">{idea.description}</p>
+                          </div>
                         </div>
                       </Fade>
                     </div>

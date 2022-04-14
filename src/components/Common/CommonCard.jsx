@@ -93,11 +93,11 @@ const CommonCard = ({
         
       :
         
-      <div className="bizCard">
-          <div className="d-flex align-items-center justify-content-center h-100">
+        <div className="bizCard" style={{ display:"grid"}}>
+          <div className="d-flex align-items-center justify-content-center ">
             <div
               className={`col-4 row-height cardLeftCol`}
-              style={{ background: background }}
+              style={{ background: background, height: "100%", }}
             >
             <img
               src={require(`../../assets/icons/${image}`)}

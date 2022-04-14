@@ -19,27 +19,53 @@ import artyss from "../../assets/logos/artyss.png";
 
 import { AppContext } from "../../context/Context";
 
+const logos = [
+  instaMart,
+  skillMine,
+  creditap,
+  medequip,
+  objectiveDone,
+  socialhr,
+  shealing,
+  ipeosolution,
+  medequip,
+  posbook,
+  panindia,
+  kidsonwheel,
+  innovativeacademy,
+  itt,
+  hathagroup,
+  drsujata,
+  cloudArmee,
+  artyss,
+]
+
+
 const Section2 = () => {
   const [isMobile, setIsMobile] = useContext(AppContext);
-  const sectionClass = `${
-    !isMobile ? "col-3 my-auto" : "col-12 justify-content-center text-center"
+  const sectionClass = `clients-each-box ${
+    !isMobile ? "col-12" : "col-12"
   }`;
   const sectionStyle = { marginBottom: isMobile && "50px" };
   return (
     <div className="row Home-area2" style={{ margin: 0, padding: "-50px", height: "" }}>
       <div className="col-12 Home-main-area2" style={{ marginTop: "50px" }}>
-        <div className=" kuLJSR">
-          {!isMobile && <div className="col-1 my-auto"></div>}
-          <div className={sectionClass} style={sectionStyle}>
+        <div className="kuLJSR">
+          {logos.map((ele, idx) => <div className={sectionClass} key={idx}>
+            <img src={ele} alt="instaMart" className="section2Logos" />
+          </div>)}
+        </div>
+        {/* <div className="kuLJSR">
+          <div className={sectionClass} >
             <img src={instaMart} alt="instaMart" className="section2Logos" />
           </div>
-          <div className={sectionClass} style={sectionStyle}>
+          <div className={sectionClass} >
             <img src={skillMine} alt="skillMine" className="section2Logos" />
           </div>
-          <div className={sectionClass} style={sectionStyle}>
+          <div className={sectionClass} >
             <img src={creditap} alt="creditap" className="section2Logos" />
           </div>
-          <div className={sectionClass} style={sectionStyle}>
+          <div className={sectionClass} >
             <img src={medequip} alt="medequip" className="section2Logos" />
           </div>
           <div className={sectionClass}>
@@ -49,47 +75,46 @@ const Section2 = () => {
               className="section2Logos"
             />
           </div>
-          <div className={sectionClass} style={sectionStyle}>
+          <div className={sectionClass} >
             <img src={socialhr} alt="socialhr" className="section2Logos " />
           </div>
-          <div className={sectionClass} style={sectionStyle}>
+          <div className={sectionClass} >
             <img src={shealing} alt="shealing" className="section2Logos " />
           </div>
-          <div className={sectionClass} style={sectionStyle}>
+          <div className={sectionClass} >
             <img src={ipeosolution} alt="medequip" className="section2Logos " />
           </div>
-          <div className={sectionClass} style={sectionStyle}>
+          <div className={sectionClass} >
             <img src={medequip} alt="medequip" className="section2Logos " />
           </div>
-          <div className={sectionClass} style={sectionStyle}>
+          <div className={sectionClass} >
             <img src={posbook} alt="medequip" className="section2Logos " />
           </div>
-          <div className={sectionClass} style={sectionStyle}>
+          <div className={sectionClass} >
             <img src={panindia} alt="medequip" className="section2Logos " />
           </div>
-          <div className={sectionClass} style={sectionStyle}>
+          <div className={sectionClass} >
             <img src={kidsonwheel} alt="medequip" className="section2Logos " />
           </div>
-          <div className={sectionClass} style={sectionStyle}>
+          <div className={sectionClass} >
             <img src={innovativeacademy} alt="medequip" className="section2Logos " />
           </div>
-          <div className={sectionClass} style={sectionStyle}>
+          <div className={sectionClass} >
             <img src={itt} alt="medequip" className="section2Logos " />
           </div>
-          <div className={sectionClass} style={sectionStyle}>
+          <div className={sectionClass} >
             <img src={hathagroup} alt="medequip" className="section2Logos " />
           </div>
-          <div className={sectionClass} style={sectionStyle}>
+          <div className={sectionClass} >
             <img src={drsujata} alt="medequip" className="section2Logos " />
           </div>
-          <div className={sectionClass} style={sectionStyle}>
+          <div className={sectionClass} >
             <img src={cloudArmee} alt="medequip" className="section2Logos " />
           </div>
-          <div className={sectionClass} style={sectionStyle}>
+          <div className={sectionClass} >
             <img src={artyss} alt="medequip" className="section2Logos " />
           </div>
-          {!isMobile && <div className="col-1 my-auto"></div>}
-        </div>
+        </div> */}
       </div>
     </div>
   );

@@ -50,6 +50,7 @@ export default function () {
             <div className="row">
                 {strategy.map((ele, idx) => <div key={idx} className={`pe-3 py-3 ${isMobile ? 'col-12' : 'col-4'}`}>
                     <Card
+                        isMobile={isMobile}
                         title={ele.title}
                         icon={ele.icon}
                         description={ele.description}

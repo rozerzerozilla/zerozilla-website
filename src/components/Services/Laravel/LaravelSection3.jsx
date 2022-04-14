@@ -39,11 +39,11 @@ const IOSSection3 = () => {
                             {webdevCommonStrategy.map((idea, index) => (
                                 <Fade top={index % 2 === 0 ? true : false} bottom={index % 2 === 0 ? false : true} key={idea.id}>
                                     <div
-                                        className={`${isMobile ? "col-12" : "col-3 me-auto ms-auto"}`}
+                                        className={`${isMobile ? "col-12" : "col-6"}`}
                                         key={idea.id}
                                     >
                                         <CommonCard
-                                            vertical={true}
+                                            vertical={false}
                                             image={idea.image}
                                             name={idea.name}
                                             description={idea.description}

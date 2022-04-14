@@ -42,16 +42,17 @@ const Section2 = () => {
                   className={`${isMobile ? "col-12" : "col-4 my-auto"}`}
                   key={idea.id}
                   style={!isMobile ? { paddingRight: "20px" } : null}
-                >
-                  <CommonCard
-                    image={idea.image}
-                    name={idea.name}
-                    description={idea.description}
-                    isMobile={isMobile}
-                    background={"#DEE8FF"}
-                    imageWidth={"50%"}
-                    padding={"20px 30px"}
-                  />
+                  >
+                    <CommonCard
+                      // vertical={true}
+                      image={idea.image}
+                      name={idea.name}
+                      description={idea.description}
+                      isMobile={isMobile}
+                      background={"#DEE8FF"}
+                      imageWidth={"50%"}
+                      padding={"20px"}
+                    />
                 </div>
                 </Fade>
               ))}

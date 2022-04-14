@@ -61,7 +61,7 @@ const Section4 = () => {
                     Call us an integrated team of enthusiastic and creative professionals on a mission- Empower your business and take it to the Top!
                   </div>
                   </div>
-                  <div className="col-10" style={{ marginTop: "20px" }}>
+                  <div className="col-xs-12 col-md-10" style={{ marginTop: "20px" }}>
                     <ButtonComponent
                       path={"/web-design"}
                       image={webDev}
@@ -70,7 +70,7 @@ const Section4 = () => {
                     />
                     
                   </div>
-                  <div className="col-10" style={{ marginTop: "10px" }}>
+                  <div className="col-xs-12 col-md-10" style={{ marginTop: "10px" }}>
                     <ButtonComponent
                       path={"/software-development"}
                       image={applicationDev}
@@ -78,7 +78,7 @@ const Section4 = () => {
                       isMobile={isMobile}
                     />
                   </div>
-                  <div className="col-10" style={{ marginTop: "10px" }}>
+                  <div className="col-xs-12 col-md-10" style={{ marginTop: "10px" }}>
                     <ButtonComponent
                       path={"/mobile-app-development"}
                       image={customSoftware}
@@ -86,7 +86,7 @@ const Section4 = () => {
                       isMobile={isMobile}
                     />
                   </div>
-                  <div className="col-10" style={{ marginTop: "10px" }}>
+                  <div className="col-xs-12 col-md-10" style={{ marginTop: "10px" }}>
                     <ButtonComponent
                       path={"/digital-marketing"}
                       image={digitalMarketing}

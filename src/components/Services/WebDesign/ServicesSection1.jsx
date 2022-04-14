@@ -5,6 +5,7 @@ import CommonSection1 from "../../Common/CommonSection1";
 const Section1 = ({handleFunction}) => {
   return (
     <CommonSection1
+      imageWidth={"100%"}
       handleFunction={handleFunction}
       title={`Web Design & Development`}
       subtitle1={`We live and breathe digital services powered by data.`}

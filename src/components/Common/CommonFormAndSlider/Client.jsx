@@ -1,9 +1,10 @@
-import React from "react";
+import React, {useContext} from "react";
 import OwlCarousel from "react-owl-carousel";
 import { responsiveSlider } from "../../../helper/services";
 import { clientsComments } from "../../../helper/portfolio";
 import leftQuote from "../../../assets/icons/left-quote.svg";
 import rightQuote from "../../../assets/icons/right-quote.svg";
+
 
 const ClientCarousel = ({ isMobile, smallerText }) => {
   return (
@@ -48,14 +49,12 @@ const ClientCarousel = ({ isMobile, smallerText }) => {
         >
           <div className="col-3 my-auto">
             <img src={require(`../../../assets/images/clients/${ele.clientimage}`)} alt="client"
-              style={{width:"100px", objectFit:"cover", borderRadius:"60px"} }
+              style={{ width: isMobile ?  "60px" : "100px", objectFit:"cover", borderRadius:"60px"}}
             />
           </div>
           <div className="col-9 my-auto">
             <p className="bold mb-0">{ele.name}</p>
-            <p
-              className={`italic ${smallerText ? "sectionContent small" : ""}`}
-            >
+            <p className={`italic ${smallerText ? "sectionContent small" : ""}`}>
               {ele.company}
             </p>
           </div>

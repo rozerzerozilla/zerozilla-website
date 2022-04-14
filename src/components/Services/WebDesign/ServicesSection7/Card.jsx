@@ -3,14 +3,14 @@ import styled from "styled-components";
 
 const Card = styled.div`
     width: 100%;
-    min-height: 252px;
+    min-height: ${props => props.isMobile ? "unset" : "252px"};
     position: relative;
 `;
 
 const IconBox = styled.div`
-    position: absolute;
-    left: 0;
-    top: 50.5px;
+    position: ${props => props.isMobile ? "relative" : "absolute"};
+    left: ${props => props.isMobile ? "50%" : "0px"};
+    top: ${props => props.isMobile ? "0px" : "50.5px"};
     width: 150px;
     height: 150px;
     display: flex;
@@ -20,20 +20,22 @@ const IconBox = styled.div`
     border: 0.5px solid #C31F5D;
     border-radius: 20px;
     background-color: white;
+    transform: ${props => props.isMobile ? "translate(-50%, 0)" : "translate(0, 0, 0)"};
 `;
 
 const TextBox = styled.div`
-    margin-left: 20%;
-    width: 80%;
-    min-height: 252px;
+    margin-left: ${props => props.isMobile ? "0" : "20%"};
+    margin-top: ${props => props.isMobile ? "-75px" : "0"};
+    width: ${props => props.isMobile ? "100%" : "80%"};
+    min-height: ${props => props.isMobile ? "inherit" : "252px"};
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: ${props => props.isMobile ? "center" : "start"};
     justify-content: center;
     background: #FFEFF5;
     border-radius: 20px;
-    padding-left: 20%;
-    padding-right: 10%;
+    padding-left: ${props => props.isMobile ? "10%" : "20%"};
+    padding-right: ${props => props.isMobile ? "10%" : "10%"};
 `;
 
 const NumberText = styled.div`
@@ -56,16 +58,16 @@ const Title = styled.div`
     font-size: 22px;
 `
 
-function StrategyCard({icon, title, description, number}) {
+function StrategyCard({icon, title, description, number, isMobile}) {
   return (
-      <Card>
-          <IconBox>
-              <img width={"80px"}
+      <Card primary>
+          <IconBox isMobile={isMobile}>
+              <img width={isMobile ? "80px":"80px"}
                   src={require(`../../../../assets/icons/${icon}`)}
                   alt={`icon-no-${number}`}
               />
           </IconBox>
-          <TextBox>
+          <TextBox isMobile={isMobile}>
               <div className="w-100 d-flex flex-row-reverse mt-2">
                   <NumberText>{number}</NumberText>
                 </div>
