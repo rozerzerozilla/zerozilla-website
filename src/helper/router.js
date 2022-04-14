@@ -210,7 +210,7 @@ export const businessServices = [
     {
         catetogy: 'Web Application',
         subtitle: 'Website Development',
-        href: '/web-design',
+        href: '/web-design-develoement',
         id: Math.random() * 10 + 1,
         icon: IoBusinessOutline,
         component: WebDesign

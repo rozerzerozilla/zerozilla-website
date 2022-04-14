@@ -53,7 +53,7 @@ const Section9 = () => {
 
     return (
         <form onSubmit={formik.handleSubmit}>
-        <div className="Home-areaSEO py-4 my-3">
+        <div className="Home-areaSEO py-4 my-3 mb-0">
             <Container fluid="md">
                 <div className="row">
                     <div

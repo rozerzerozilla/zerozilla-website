@@ -27,7 +27,7 @@ import sectionCover2 from "../assets/images/menu-insights.webp"
   const [menukey, setMenuKey] = useState(null);
   const handleClickOutside = (event) => {
     if (menu.current && !menu.current.contains(event.target)) {
-      setMobileOpen(false);
+      // setMobileOpen(false);
       setMenuKey(null)
     }
   };
@@ -44,187 +44,295 @@ import sectionCover2 from "../assets/images/menu-insights.webp"
   const handleMenuOpen = (e) => {
     setMobileOpen(prevState => !prevState)
   }
-  const mobileMenu = <>
-    <ul className={`navbar-menus mobile-menu px-4 py-3 ${openMobile ? ' show-menu' : ' hide-menu'}`} ref={menu}>
-      <li onClick={()=>setMenuKey(null)}><NavLink to="/home">Home</NavLink></li>
-      <li onClick={() => setMenuKey(null)}>
-        <div className="d-flex align-items-center">
-          <span className="pe-3">Company</span><FaChevronUp />
-        </div>
-        <div className={`mobile-drop-menu show ${menukey === 'services' ? 'show' : 'hide'}`} >
-          <Container style={{ width: '100%' }}>
-            <Row>
-              <Col xs="12">
-                <NavLink to={"/about-us"}
-                  className={isActive =>
-                    "subnavlink" + (isActive ? " active-subnavlink" : "")
-                  }
-                  isActive={(match, location) => {
-                    if (!match) {
-                      return false;
-                    }
-                    return location.pathname === '/about-us'
-                  }}
-                >
-                  <div className="d-flex align-items-center py-2">
-                    <div className="megaMenuIcons"><FaUser /></div>
-                    <span className="ps-3">About Us</span>
-                  </div>
-                </NavLink>
-              </Col>
-              <Col xs="12">
-                <a href={"/about-us#journey"}
-                  className={"subnavlink"}
-                >
-                  <div className="d-flex align-items-center py-2">
-                    <div className="megaMenuIcons"><FaUser /></div>
-                    <span className="ps-3">Journey</span>
-                  </div>
-                </a>
-              </Col>
-              <Col xs="12">
-                <a href={"/about-us#ourteam"}
-                  className={"subnavlink"}
-                >
-                  <div className="d-flex align-items-center py-2">
-                    <div className="megaMenuIcons"><FaTeamspeak /></div>
-                    <span className="ps-3">Our Team</span>
-                  </div>
-                </a>
-              </Col>
-            </Row>
-          </Container>
-        </div>
-      </li>
-      <li onClick={(e) => menukey === 'services'? setMenuKey(null) : setMenuKey("services")}>
-        <div className="d-flex align-items-center">
-          <span className="pe-3">Servies</span><FaChevronUp />
-        </div>
-        <div className={`mobile-drop-menu show ${menukey === 'services' ? 'show':'hide'}`} >
-          <Container style={{ width: '100%' }}>
-            <Row>
-              <Col xs="12" md="3">
-                <h4 className="megaMenuSubheading">Web Application</h4>
-                {businessServices.map(service => <Col xs="12" key={service.id}>
-                  <NavLink to={service.href}>
-                    <div className="d-flex align-items-center py-3">
-                      <div className="megaMenuIcons"><service.icon /></div>
-                      <span className="ps-3">{service.subtitle}</span>
-                    </div>
-                  </NavLink>
-                </Col>)}
-              </Col>
-              <Col xs="12" md="3">
-                <h4 className="megaMenuSubheading">Mobile Applications</h4>
-                {customServices.slice(0, 6).map(service => <Col xs="12" key={service.id}>
-                  <NavLink to={service.href}>
-                    <div className="d-flex align-items-center py-3">
-                      <div className="megaMenuIcons"><service.icon /></div>
-                      <span className="ps-3">{service.subtitle}</span>
-                    </div>
-                  </NavLink>
-                </Col>)}
-                {/* <Row>
-                  <Col xs="12" md="6">
-                    {customServices.slice(0, 6).map(service => <Col xs="12" key={service.id}>
-                      <NavLink to={service.href}>
-                        <div className="d-flex align-items-center py-3">
-                          <div className="megaMenuIcons"><service.icon /></div>
-                          <span className="ps-3">{service.subtitle}</span>
-                        </div>
-                      </NavLink>
-                    </Col>)}
+  // const mobileMenu = <>
+  //   <ul className={`navbar-menus mobile-menu px-4 py-3 ${openMobile ? ' show-menu' : ' hide-menu'}`} ref={menu}>
+  //     <li onClick={()=>setMenuKey(null)}><NavLink to="/home">Home</NavLink></li>
+  //     <li onClick={() => setMenuKey(null)}>
+  //       <div className="d-flex align-items-center">
+  //         <span className="pe-3">Company</span><FaChevronUp />
+  //       </div>
+  //       <div className={`mobile-drop-menu show ${menukey === 'services' ? 'show' : 'hide'}`} >
+  //         <Container style={{ width: '100%' }}>
+  //           <Row>
+  //             <Col xs="12">
+  //               <NavLink to={"/about-us"}
+  //                 className={isActive =>
+  //                   "subnavlink" + (isActive ? " active-subnavlink" : "")
+  //                 }
+  //                 isActive={(match, location) => {
+  //                   if (!match) {
+  //                     return false;
+  //                   }
+  //                   return location.pathname === '/about-us'
+  //                 }}
+  //               >
+  //                 <div className="d-flex align-items-center py-2">
+  //                   <div className="megaMenuIcons"><FaUser /></div>
+  //                   <span className="ps-3">About Us</span>
+  //                 </div>
+  //               </NavLink>
+  //             </Col>
+  //             <Col xs="12">
+  //               <a href={"/about-us#journey"}
+  //                 className={"subnavlink"}
+  //               >
+  //                 <div className="d-flex align-items-center py-2">
+  //                   <div className="megaMenuIcons"><FaUser /></div>
+  //                   <span className="ps-3">Journey</span>
+  //                 </div>
+  //               </a>
+  //             </Col>
+  //             <Col xs="12">
+  //               <a href={"/about-us#ourteam"}
+  //                 className={"subnavlink"}
+  //               >
+  //                 <div className="d-flex align-items-center py-2">
+  //                   <div className="megaMenuIcons"><FaTeamspeak /></div>
+  //                   <span className="ps-3">Our Team</span>
+  //                 </div>
+  //               </a>
+  //             </Col>
+  //           </Row>
+  //         </Container>
+  //       </div>
+  //     </li>
+  //     <li onClick={(e) => menukey === 'services'? setMenuKey(null) : setMenuKey("services")}>
+  //       <div className="d-flex align-items-center">
+  //         <span className="pe-3">Servies</span><FaChevronUp />
+  //       </div>
+  //       <div className={`mobile-drop-menu show ${menukey === 'services' ? 'show':'hide'}`} >
+  //         <Container style={{ width: '100%' }}>
+  //           <Row>
+  //             <Col xs="12" md="3">
+  //               <h4 className="megaMenuSubheading">Web Application</h4>
+  //               {businessServices.map(service => <Col xs="12" key={service.id}>
+  //                 <NavLink to={service.href}>
+  //                   <div className="d-flex align-items-center py-3">
+  //                     <div className="megaMenuIcons"><service.icon /></div>
+  //                     <span className="ps-3">{service.subtitle}</span>
+  //                   </div>
+  //                 </NavLink>
+  //               </Col>)}
+  //             </Col>
+  //             <Col xs="12" md="3">
+  //               <h4 className="megaMenuSubheading">Mobile Applications</h4>
+  //               {customServices.slice(0, 6).map(service => <Col xs="12" key={service.id}>
+  //                 <NavLink to={service.href}>
+  //                   <div className="d-flex align-items-center py-3">
+  //                     <div className="megaMenuIcons"><service.icon /></div>
+  //                     <span className="ps-3">{service.subtitle}</span>
+  //                   </div>
+  //                 </NavLink>
+  //               </Col>)}
+  //               {/* <Row>
+  //                 <Col xs="12" md="6">
+  //                   {customServices.slice(0, 6).map(service => <Col xs="12" key={service.id}>
+  //                     <NavLink to={service.href}>
+  //                       <div className="d-flex align-items-center py-3">
+  //                         <div className="megaMenuIcons"><service.icon /></div>
+  //                         <span className="ps-3">{service.subtitle}</span>
+  //                       </div>
+  //                     </NavLink>
+  //                   </Col>)}
 
-                  </Col>
-                  <Col xs="12" md="6">
-                    {customServices.slice(6, 12).map(service => <Col xs="12" key={service.id}>
-                      <NavLink to={service.href}>
-                        <div className="d-flex align-items-center py-3">
-                          <div className="megaMenuIcons"><service.icon /></div>
-                          <span className="ps-3">{service.subtitle}</span>
-                        </div>
-                      </NavLink>
-                    </Col>)}
-                  </Col>
-                </Row> */}
-              </Col>
-              <Col xs="12" md="3">
-                <h4 className="megaMenuSubheading">Cloud Service</h4>
-                {cloudServices.map(service => <Col xs="12" key={service.id}>
-                  <NavLink to={service.href}>
-                    <div className="d-flex align-items-center py-3">
-                      <div className="megaMenuIcons"><service.icon /></div>
-                      <span className="ps-3">{service.subtitle}</span>
-                    </div>
-                  </NavLink>
-                </Col>)}
-              </Col>
-              <Col xs="12" md="3">
-                <h4 className="megaMenuSubheading">Marketing Services</h4>
-                {marketingServices.map(service => <Col xs="12" key={service.id}>
-                  <NavLink to={service.href}>
-                    <div className="d-flex align-items-center py-3">
-                      <div className="megaMenuIcons"><service.icon /></div>
-                      <span className="ps-3">{service.subtitle}</span>
-                    </div>
-                  </NavLink>
-                </Col>)}
-              </Col>
-            </Row>
-          </Container>
-        </div>
-      </li>
-      <li onClick={(e) => menukey === 'insights' ? setMenuKey(null) : setMenuKey("insights")}>
-        <div className="d-flex align-items-center">
-          <span className="pe-3">Insights</span><FaChevronUp />
-        </div>
-        <div className={`mobile-drop-menu show ${menukey === 'insights' ? 'show' : 'hide'}`}>
-          <Container style={{ width: '100%' }}>
-            <Row>
-              <Col xs="12" md="4">
-                <h4 className="megaMenuSubheading">Portfolios</h4>
-                {portfolioInsights.map(service => <Col xs="12" key={service.id}>
-                  <NavLink to={service.href}>
-                    <div className="d-flex align-items-center py-3">
-                      <div className="megaMenuIcons"><service.icon /></div>
-                      <span className="ps-3">{service.subtitle}</span>
-                    </div>
-                  </NavLink>
-                </Col>)}
-              </Col>
-              <Col xs="12" md="4">
-                <h4 className="megaMenuSubheading">Blogs</h4>
-                <Col xs="12" md="6">
-                  {blogInsights.slice(0, 6).map(service => <Col xs="12" key={service.id}>
-                    <NavLink to={service.href}>
-                      <div className="d-flex align-items-center py-3">
-                        <div className="megaMenuIcons"><service.icon /></div>
-                        <span className="ps-3">{service.subtitle}</span>
-                      </div>
-                    </NavLink>
-                  </Col>)}
-                </Col>
-              </Col>
-              <Col xs="12" md="4">
-                <h4 className="megaMenuSubheading">Videos</h4>
-                {videosInsights.map(service => <Col xs="12" key={service.id}>
-                  <NavLink to={service.href}>
-                    <div className="d-flex align-items-center py-3">
-                      <div className="megaMenuIcons"><service.icon /></div>
-                      <span className="ps-3">{service.subtitle}</span>
-                    </div>
-                  </NavLink>
-                </Col>)}
-              </Col>
-            </Row>
-          </Container>
-        </div>
-      </li>
-      <li><NavLink to="/contact-us">Contact</NavLink></li>
-      <li><NavLink to="/career">Career</NavLink></li>
-    </ul>
-  </>;
+  //                 </Col>
+  //                 <Col xs="12" md="6">
+  //                   {customServices.slice(6, 12).map(service => <Col xs="12" key={service.id}>
+  //                     <NavLink to={service.href}>
+  //                       <div className="d-flex align-items-center py-3">
+  //                         <div className="megaMenuIcons"><service.icon /></div>
+  //                         <span className="ps-3">{service.subtitle}</span>
+  //                       </div>
+  //                     </NavLink>
+  //                   </Col>)}
+  //                 </Col>
+  //               </Row> */}
+  //             </Col>
+  //             <Col xs="12" md="3">
+  //               <h4 className="megaMenuSubheading">Cloud Service</h4>
+  //               {cloudServices.map(service => <Col xs="12" key={service.id}>
+  //                 <NavLink to={service.href}>
+  //                   <div className="d-flex align-items-center py-3">
+  //                     <div className="megaMenuIcons"><service.icon /></div>
+  //                     <span className="ps-3">{service.subtitle}</span>
+  //                   </div>
+  //                 </NavLink>
+  //               </Col>)}
+  //             </Col>
+  //             <Col xs="12" md="3">
+  //               <h4 className="megaMenuSubheading">Marketing Services</h4>
+  //               {marketingServices.map(service => <Col xs="12" key={service.id}>
+  //                 <NavLink to={service.href}>
+  //                   <div className="d-flex align-items-center py-3">
+  //                     <div className="megaMenuIcons"><service.icon /></div>
+  //                     <span className="ps-3">{service.subtitle}</span>
+  //                   </div>
+  //                 </NavLink>
+  //               </Col>)}
+  //             </Col>
+  //           </Row>
+  //         </Container>
+  //       </div>
+  //     </li>
+  //     <li onClick={(e) => menukey === 'insights' ? setMenuKey(null) : setMenuKey("insights")}>
+  //       <div className="d-flex align-items-center">
+  //         <span className="pe-3">Insights</span><FaChevronUp />
+  //       </div>
+  //       <div className={`mobile-drop-menu show ${menukey === 'insights' ? 'show' : 'hide'}`}>
+  //         <Container style={{ width: '100%' }}>
+  //           <Row>
+  //             <Col xs="12" md="4">
+  //               <h4 className="megaMenuSubheading">Portfolios</h4>
+  //               {portfolioInsights.map(service => <Col xs="12" key={service.id}>
+  //                 <NavLink to={service.href}>
+  //                   <div className="d-flex align-items-center py-3">
+  //                     <div className="megaMenuIcons"><service.icon /></div>
+  //                     <span className="ps-3">{service.subtitle}</span>
+  //                   </div>
+  //                 </NavLink>
+  //               </Col>)}
+  //             </Col>
+  //             <Col xs="12" md="4">
+  //               <h4 className="megaMenuSubheading">Blogs</h4>
+  //               <Col xs="12" md="6">
+  //                 {blogInsights.slice(0, 6).map(service => <Col xs="12" key={service.id}>
+  //                   <NavLink to={service.href}>
+  //                     <div className="d-flex align-items-center py-3">
+  //                       <div className="megaMenuIcons"><service.icon /></div>
+  //                       <span className="ps-3">{service.subtitle}</span>
+  //                     </div>
+  //                   </NavLink>
+  //                 </Col>)}
+  //               </Col>
+  //             </Col>
+  //             <Col xs="12" md="4">
+  //               <h4 className="megaMenuSubheading">Videos</h4>
+  //               {videosInsights.map(service => <Col xs="12" key={service.id}>
+  //                 <NavLink to={service.href}>
+  //                   <div className="d-flex align-items-center py-3">
+  //                     <div className="megaMenuIcons"><service.icon /></div>
+  //                     <span className="ps-3">{service.subtitle}</span>
+  //                   </div>
+  //                 </NavLink>
+  //               </Col>)}
+  //             </Col>
+  //           </Row>
+  //         </Container>
+  //       </div>
+  //     </li>
+  //     <li><NavLink to="/contact-us">Contact</NavLink></li>
+  //     <li><NavLink to="/career">Career</NavLink></li>
+  //   </ul>
+  // </>;
 
+   /**------------- Mobile Menu ------------------**/
+   const mobileMenu = <>
+     <ul className={`navbar-menus mobile-menu px-4 py-3 ${openMobile ? ' show-menu' : ' hide-menu'}`}>
+       <li onClick={() => setMenuKey(null)}><NavLink to="/home">Home</NavLink></li>
+       <li onClick={() => setMenuKey(null)}><NavLink to="/about-us">About Us</NavLink></li>
+       <li onClick={(e) => menukey === 'services' ? setMenuKey(null) : setMenuKey("services")}>
+         <div className="d-flex align-items-center">
+           <span className="pe-3">Solutions</span><FaChevronUp />
+         </div>
+         <div className={`mobile-drop-menu-wrapper show ${menukey === 'services' ? 'show' : 'hide'}`} ref={menu}>
+           <div className={`mobile-drop-menu show ${menukey === 'services' ? 'show' : 'hide'}`} >
+             <Container style={{ width: '100%' }}>
+               <Row>
+                 <Col xs="12" md="3">
+                   <h4 className="megaMenuSubheading">Services</h4>
+                   {businessServices.map(service => <Col xs="12" key={service.id}>
+                     <NavLink to={service.href}>
+                       <div className="d-flex align-items-center py-1">
+                         <div className="megaMenuIcons"><service.icon /></div>
+                         <span className="ps-3">{service.subtitle}</span>
+                       </div>
+                     </NavLink>
+                   </Col>)}
+                 </Col>
+                 <Col xs="12" md="3">
+                   <h4 className="megaMenuSubheading">Technologies</h4>
+                   {customServices.slice(0, 6).map(service => <Col xs="12" key={service.id}>
+                     <NavLink to={service.href}>
+                       <div className="d-flex align-items-center py-1">
+                         <div className="megaMenuIcons"><service.icon /></div>
+                         <span className="ps-3">{service.subtitle}</span>
+                       </div>
+                     </NavLink>
+                   </Col>)}
+                 </Col>
+                 <Col xs="12" md="3">
+                   <h4 className="megaMenuSubheading">Digital Marketing</h4>
+                   {marketingServices.map(service => <Col xs="12" key={service.id}>
+                     <NavLink to={service.href}>
+                       <div className="d-flex align-items-center py-1">
+                         <div className="megaMenuIcons"><service.icon /></div>
+                         <span className="ps-3">{service.subtitle}</span>
+                       </div>
+                     </NavLink>
+                   </Col>)}
+                 </Col>
+               </Row>
+             </Container>
+           </div>
+         </div>
+       </li>
+       <li onClick={(e) => menukey === 'insights' ? setMenuKey(null) : setMenuKey("insights")}>
+         <div className="d-flex align-items-center">
+           <span className="pe-3">Insights</span><FaChevronUp />
+         </div>
+         <div className={`mobile-drop-menu-wrapper show ${menukey === 'insights' ? 'show' : 'hide'}`} ref={menu}>
+           <div className={`mobile-drop-menu show ${menukey === 'insights' ? 'show' : 'hide'}`}>
+             <Container style={{ width: '100%' }}>
+               <Row>
+                 <Col xs="12">
+                   <NavLink to={"/portfolio"}
+                     className={isActive =>
+                       "subnavlink" + (isActive ? " active-subnavlink" : "")
+                     }
+                     isActive={(match, location) => {
+                       if (!match) {
+                         return false;
+                       }
+                       return location.pathname === '/portfolio'
+                     }}
+                   >
+                     <div className="d-flex align-items-center py-2">
+                       <div className="megaMenuIcons"><FaSquare /></div>
+                       <span className="ps-3">Portfolio</span>
+                     </div>
+                   </NavLink>
+                 </Col>
+                 <Col xs="12">
+                   <NavLink to={"/journey"}><a href="https://www.zerozilla.com/blog/" target="_blank"
+                     className={isActive =>
+                       "navlink" + (isActive ? " active-navlink" : "")
+                     }
+                     isActive={(match, location) => {
+                       if (!match) {
+                         return false;
+                       }
+                       return location.pathname === "https://www.zerozilla.com/blog/"
+                     }}
+                   >
+                     <div className="d-flex align-items-center py-2">
+                       <div className="megaMenuIcons"><FaSquare /></div>
+                       <span className="ps-3">Blog</span>
+                     </div>
+                   </a></NavLink>
+                 </Col>
+                 <Col xs="12">
+                   <img src={sectionCover2} style={{ height: "100%", width: "100%", objectFit: "cover", borderRadius: "8px" }} />
+                 </Col>
+               </Row>
+             </Container>
+           </div>
+         </div>
+         
+       </li>
+       <li><NavLink to="/contact-us">Contact</NavLink></li>
+       <li><NavLink to="/career">Career</NavLink></li>
+     </ul>
+   </>;
   /**------------- Desktop Menu ------------------**/
   const desktopMenu = (
     <>
@@ -370,27 +478,6 @@ import sectionCover2 from "../assets/images/menu-insights.webp"
                     </Col>
                   </Row>
                 </Col>
-                {/* <Col xs="12" md="4">
-                  <NavLink to={"/cloud-service"}><h4 className="megaMenuSubheading">Cloud Service</h4></NavLink>
-                  {cloudServices.map(service => <Col xs="12" key={service.id}>
-                    <NavLink to={service.href}
-                      className={isActive =>
-                        "subnavlink" + (isActive ? " active-subnavlink" : "")
-                      }
-                      isActive={(match, location) => {
-                        if (!match) {
-                          return false;
-                        }
-                        return location.pathname === service.href
-                      }}
-                    >
-                      <div className="d-flex align-items-center py-2">
-                        <div className="megaMenuIcons"><service.icon /></div>
-                        <span className="ps-3">{service.subtitle}</span>
-                      </div>
-                    </NavLink>
-                  </Col>)}
-                </Col> */}
                 <Col xs="12" md="4">
                   <NavLink to={"/digital-marketing"}><h4 className="megaMenuSubheading">Digital Marketing</h4></NavLink>
                   {marketingServices.map(service => <Col xs="12" key={service.id}>
@@ -460,24 +547,6 @@ import sectionCover2 from "../assets/images/menu-insights.webp"
                       </div>
                     </a></NavLink>
                   </Col>
-                  <Col xs="12">
-                    <NavLink to={"/career"}
-                      className={isActive =>
-                        "subnavlink" + (isActive ? " active-subnavlink" : "")
-                      }
-                      isActive={(match, location) => {
-                        if (!match) {
-                          return false;
-                        }
-                        return location.pathname === '/career'
-                      }}
-                    >
-                      <div className="d-flex align-items-center py-2">
-                        <div className="megaMenuIcons"><FaSquare /></div>
-                        <span className="ps-3">Gallery</span>
-                      </div>
-                    </NavLink>
-                  </Col>
                 </Col>
 
                 <Col xs="5">
@@ -487,20 +556,6 @@ import sectionCover2 from "../assets/images/menu-insights.webp"
             </Container>
           </div>
         </li>
-
-
-
-        {/* <li><NavLink to={"/portfolio"}
-          className={isActive =>
-            "navlink" + (isActive ? " active-navlink" : "")
-          }
-          isActive={(match, location) => {
-            if (!match) {
-              return false;
-            }
-            return location.pathname === '/portfolio'
-          }}
-        >Portfolio</NavLink></li> */}
         <li><NavLink to="/contact-us"
           className={isActive =>
             "navlink" + (isActive ? " active-navlink" : "")
@@ -524,32 +579,8 @@ import sectionCover2 from "../assets/images/menu-insights.webp"
             return location.pathname === '/career'
           }}
         >
-          {/* <Tooltip title="We are hiring"
-            overlayInnerStyle={{
-              color: "#c31f5d",
-              backgroundColor: "#ffeaf2",
-              borderRadius: "5px",
-              boxShadow: "none",
-              fontSize: "12px",
-            }}
-            overlayStyle={{
-              position:"relative",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              marginTop:"-5px"
-            }}
-            color={"#ffeaf2"}
-            placement="rightTop"
-          >
-            
-          </Tooltip> */}
           <span>Careers</span>
-          <div 
-          // ref={el => {
-          //   setInterval(() => el?.style.opacity = 0.5, 500)
-          //   setInterval(() => el?.style.opacity = 1, 1000)
-          // }} 
+          <div
           style={{
             color: "#c31f5d",
             backgroundColor: "#ffeaf2",

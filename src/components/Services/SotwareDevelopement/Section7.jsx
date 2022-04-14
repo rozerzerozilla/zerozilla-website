@@ -70,9 +70,9 @@ function Section7() {
           <div className="row mt-4">
               <div className="col-xs-12 col-md-8 mx-auto">
                   <p className="black-head-section extra-bold text-center">
-                  Web Technologies, We’ve Expertise In
+                      Know our expertise a bit closer!
                   </p>
-                  <p>No looking back now that you are here! Explore the areas we are experts in!</p>
+                  <p className="text-center">Wondering why you should choose us? Let our technical expertise speak for itself! </p>
               </div>
           </div>
           <div className="row mt-3">

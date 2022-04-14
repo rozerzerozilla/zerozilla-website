@@ -54,7 +54,7 @@ const Section2 = () => {
                 <div
                   key={card.id}
                   className={`${!isMobile ? "col-4" : "col-12"}`}
-                  style={{ marginBottom: "40px" }}
+                  style={{ marginBottom: "40px", display:"grid" }}
                 >
                   <div className="service-card">
                     <div className="d-flex flex-column align-items-center justify-content-center">
@@ -70,14 +70,14 @@ const Section2 = () => {
                     <p className="sliderHead1 no-underline small text-center">
                       {card.description}
                     </p>
-                    <p className="text-center" style={{ marginTop: "20px" }}>
+                    {/* <p className="text-center" style={{ marginTop: "20px" }}>
                       <BookCallButton
                         className={"common-section-1"}
                         isColored={false}
                         text={`Know More`}
                         showImage={false}
                       />
-                    </p>
+                    </p> */}
                   </div>
                   </div>
                   </Fade>

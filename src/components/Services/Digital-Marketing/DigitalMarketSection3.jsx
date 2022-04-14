@@ -41,20 +41,18 @@ const Section3 = () => {
             </Fade>
           </div>
         </div>
-        <div className="row g-0" style={{ marginTop: "20px" }}>
+        <div className="row" style={{ marginTop: "20px" }}>
           <Fade left>
           <div
             className={`${isMobile ? "col-12" : "col-6"} p-0`}
-            style={{ borderRadius: !isMobile ? "66px 0 0 0" : "66px" }}
+            style={{ borderRadius: !isMobile ? "66px 0 0 0" : "15px" }}
           >
-            <p className="mb-0">
               <img
-                className="w-100"
+                className="w-100 digital-streamline-marketing-img"
                 src={sectionCover1}
                 alt="marketing-strategy-cover-1"
               />
-            </p>
-            <div className="strategy-container1 text-center">
+            <div className="strategy-container1 text-center" style={{height: isMobile? "inherit":"16rem"}}>
               <p className="sliderHead1 no-underline">Crafting Strategy</p>
               <p className="sliderHead1 no-underline small">
                 Crafting a Strategy We believe everything must start from
@@ -72,16 +70,14 @@ const Section3 = () => {
           <Fade right>
           <div
             className={`${isMobile ? "col-12" : "col-6"} p-0`}
-            style={{ borderRadius: !isMobile ? "0 66px 0 0" : "66px", marginTop: isMobile && 30 }}
+            style={{ borderRadius: !isMobile ? "0 66px 0 0" : "15px", marginTop: isMobile && 30 }}
           >
-            <p className="mb-0">
-              <img
-                className="w-100"
-                src={sectionCover2}
-                alt="marketing-strategy-cover-1"
-              />
-            </p>
-            <div className="strategy-container2 text-center">
+            <img
+              className="w-100 digital-streamline-marketing-img"
+              src={sectionCover2}
+              alt="marketing-strategy-cover-1"
+            />
+            <div className="strategy-container2 text-center" style={{ height: isMobile ? "inherit" : "16rem" }}>
               <p className="sliderHead1 no-underline">Launch Checklist</p>
               <p className="sliderHead1 no-underline small">
                 There are multiple strategies to achieve success in the online

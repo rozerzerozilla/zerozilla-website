@@ -11,7 +11,7 @@ const Section1 = ({ handleFunction}) => {
   const [isMobile, setIsMobile] = useContext(AppContext);
   const ref = useRef(null);
   return (
-    <div className="row Home-area1" style={{ margin: 0, padding: 0 }}>
+    <div className="row Home-area1" style={{ margin: 0, padding: 0, height:"100vh" }}>
       <div className="col-12 Home-main-area1">
         <Carousel
           ref={ref}
@@ -21,14 +21,14 @@ const Section1 = ({ handleFunction}) => {
           indicators={true}
         >
           {staticHomeSlider.map((el, idx) => (
-            <Carousel.Item className="static_maincar" key={el.id}>
-              <div className={`row slider-area${el.id}`}>
+            <Carousel.Item className="static_maincar" key={el.id} style={{ height: "100%" }}>
+              <div className={`row slider-area${el.id}`} style={{ height: "100%" }}>
                 <div
                   className={`col-12 slider-main-area${el.id}`}
-                  style={sliderAreaStyle(isMobile)}
+                  style={sliderAreaStyle(isMobile, { height: "calc(100vh - 80px)"})}
                 >
-                  <div className={`${isMobile ? "mobile" : "desktop"}`}>
-                    <div className="row">
+                  <div className={`container ${isMobile ? "mobile" : "desktop"}`} style={{ height: "100%" }}>
+                    <div className="row" style={{ height: "100%" }}>
                       <div className={`${isMobile ? "col-12" : "col-6"}`}>
                         <div
                           className="row"

@@ -52,13 +52,6 @@ export const staticHomeSlider = [
 
 export const bizIdeas = [
   {
-    id: 1,
-    image: "organic-search.svg",
-    name: "Enhanced performance",
-    description:
-      "Our out-of-box ideas align with your objectives, enhance your performance, and help you place a firm foot in the business world.",
-  },
-  {
     id: 2,
     image: "creativity-bulb.svg",
     name: "Innovation",
@@ -93,6 +86,13 @@ export const bizIdeas = [
     description:
       "A thorough mapping of your project milestones is done to help your business confront challenges and overcome obstacles. ",
   },
+  {
+    id: 1,
+    image: "organic-search.svg",
+    name: "Enhanced performance",
+    description:
+      "Our out-of-box ideas align with your objectives, enhance your performance, and help you place a firm foot in the business world.",
+  },
 ];
 
 
@@ -101,36 +101,31 @@ export const webIdeas = [
     id: 1,
     image: "webdev-icon-1.svg",
     name: "Custom Web App Development",
-    description:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
+    description:"Get high-performing and secure web applications that support your business and serve your customers equally. We have been working with market leaders across domains and generating web solutions to rely on, using our expertise."
   },
   {
     id: 2,
     image: "webdev-icon-2.svg",
     name: "Enterprise Web Development",
-    description:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
+    description:"We deliver functional and visually compelling web solutions to help your business achieve a competitive edge. We enable businesses to recreate perfect experiences across desktops, smartphones, and tablets. "
   },
   {
     id: 3,
     image: "webdev-icon-3.svg",
     name: "Backend & API Development",
-    description:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
+    description: "We equip the nerve center of your business application, i.e. backend by unlocking its transformation. By ensuring perfect harmony at the backend, we support the binding force of your website- the backend. "
   },
   {
     id: 4,
     image: "webdev-icon-4.svg",
     name: "Full Stack Development",
-    description:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
-  },
+    description: "Give momentum to your web and mobile app development with our full-stack development service. We devise scalable solutions for your business with our expertise to build feature-rich solutions.  "
+ },
   {
     id: 5,
     image: "webdev-icon-5.svg",
     name: "Social Media App Integration",
-    description:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
+    description: "The progressive enhancement strategies employed by us help us to develop cross-platform web applications for businesses like yours. We execute high performance in both online and offline modes for your business. "
   },
   {
     id: 6,
@@ -143,15 +138,13 @@ export const webIdeas = [
     id: 7,
     image: "webdev-icon-7.svg",
     name: "Migration & Upgradation",
-    description:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
+    description: "Our experts equipped with the latest technologies develop robust solutions for your business. We ensure a smooth transition whether the requirement is up-gradation of outdated web technology or migration to a new CMS. "
   },
   {
     id: 8,
     image: "webdev-icon-8.svg",
     name: "Maintenance & Support",
-    description:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
+    description:"We are constantly there for you! Our support extends beyond our service. You can avail our maintenance and support throughout all the phases of web design and development service. "
   },
 ];
 

@@ -47,7 +47,7 @@ const CommonSection1 = ({
     fullbackground? 
       <div className="row Home-area3" style={{ margin: 0, padding: 0 }}>
         <div
-          className="col-12 slider-main-area-1"
+          className="col-12 slider-main-area-1 mx-auto"
           style={{ padding: isMobile ? "20px" : "50px 70px" }}
         >
           <div
@@ -65,7 +65,7 @@ const CommonSection1 = ({
             }}
           >
             {/* {type2 && <div className="bg-overlay"></div>} */}
-            <div className={`${isMobile ? "mobile" : "desktop"}`}>
+            <div className={`mx-auto ${isMobile ? "mobile" : "desktop"}`}>
               <div className="row-col-12">
                 <Fade top>
                   <p

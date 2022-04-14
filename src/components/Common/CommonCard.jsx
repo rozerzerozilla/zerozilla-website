@@ -93,7 +93,7 @@ const CommonCard = ({
         
       :
         
-        <div className="bizCard" style={{ display:"grid"}}>
+        <div className="bizCard" style={{ display:"grid", height:"100%"}}>
           <div className="d-flex align-items-center justify-content-center ">
             <div
               className={`col-4 row-height cardLeftCol`}

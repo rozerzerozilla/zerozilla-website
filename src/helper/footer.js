@@ -21,21 +21,26 @@ export const footerLink = [
     },
     {
         title:"Services",
-        subList:[
+        subList: [
             {
                 id: 'footer-link' + 21,
-                name: "Mobile App development",
-                href:"#"
+                name: "Website Developement",
+                href: "/web-design-develoement"
             },
             {
                 id: 'footer-link' + 22,
-                name: "Websites",
-                href:"#"
+                name: "Software developement",
+                href: "/software-development"
             },
             {
                 id: 'footer-link' + 23,
-                name: "Web developement",
-                href:"#"
+                name: "Mobile App development",
+                href:"/mobile-app-development"
+            },
+            {
+                id: 'footer-link' + 24,
+                name: "Digital Marketing",
+                href:"/digital-marketing"
             },
         ]
     },
@@ -45,18 +50,18 @@ export const footerLink = [
             {
                 id: 'footer-link' + 31,
                 name: "Portfolio",
-                href:"#"
+                href:"/portfolio"
             },
             {
                 id: 'footer-link' + 32,
                 name: "Blogs",
-                href:"#"
+                href:"https://www.zerozilla.com/blog/"
             },
-            {
-                id: 'footer-link' + 33,
-                name: "Vidoes",
-                href:"#"
-            },
+            // {
+            //     id: 'footer-link' + 33,
+            //     name: "Vidoes",
+            //     href:"#"
+            // },
         ]
     }
   ];
