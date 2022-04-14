@@ -20,7 +20,7 @@ const Section1 = ({ handleFunction}) => {
           controls={false}
           indicators={true}
         >
-          {staticHomeSlider.map((el) => (
+          {staticHomeSlider.map((el, idx) => (
             <Carousel.Item className="static_maincar" key={el.id}>
               <div className={`row slider-area${el.id}`}>
                 <div
@@ -39,11 +39,11 @@ const Section1 = ({ handleFunction}) => {
                           }
                         >
                           <p className="sliderHead1" style={{fontSize:"16px"}}>
-                            Experience ‘digital’ like never before!
+                            {el.title}
                           </p>
                           <p className="sliderHead2 mb-0">
                             {/* Your dependable partner for business success! */}
-                            The most valued addition your business will ever experience!
+                            {el.description}
                           </p>
                         </div>
                         <div className="row" style={{ marginTop: "30px" }}>

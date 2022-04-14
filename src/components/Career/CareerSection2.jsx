@@ -9,10 +9,10 @@ const Section2 = () => {
     return (
         <div className="container career-section-2 mb-5 mt-5">
             <div className="row align-items-center text-center">
-                <h2>Hear from the Team</h2>
+                <h2>Hear it from the Team</h2>
                 <div className="w-100">
                     <label className="career-subtitle">
-                        We’re equal parts left and right brained. And we’re generally likeable. We won’t bored you with more adjectives. See for yourself.
+                    We combine creativity, hard work, and soul into our work. Yes! We love what we do. You would, too!
                     </label>
                 </div>
             </div>

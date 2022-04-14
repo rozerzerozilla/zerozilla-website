@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import { AppContext } from "../../../context/Context";
-import { oneLink } from "../../../helper/services";
+import { oneLink, dedicatedLink, backLink, highValueLink } from "../../../helper/services";
 import { leadGenTypes } from "../../../helper/services";
 import oneWayLink from "../../../assets/images/one-way-building.webp";
 import { typesOfLinks } from "../../../helper/renderData";
@@ -47,7 +47,7 @@ const Section3 = () => {
             title={selectedLink}
             isMobile={isMobile}
             image={oneWayLink}
-            data={oneLink}
+            data={dedicatedLink}
           />
         );
       case typesOfLinks.d3:
@@ -56,7 +56,7 @@ const Section3 = () => {
             title={selectedLink}
             isMobile={isMobile}
             image={oneWayLink}
-            data={oneLink}
+            data={backLink}
           />
         );
       case typesOfLinks.d4:
@@ -65,7 +65,7 @@ const Section3 = () => {
             title={selectedLink}
             isMobile={isMobile}
             image={oneWayLink}
-            data={oneLink}
+            data={highValueLink}
           />
         );
       default:

@@ -24,20 +24,20 @@ const Section2 = () => {
             <Fade bottom>
               <div className={`row col-12 ${isMobile && "m-0"}`}>
                 <p className="section3Head black extra-bold">
-                  Lorem ipsum dolor sit amet, consetetur.
+                High-quality E-commerce apps guaranteed.
                 </p>
                 <p className="sectionContent">
-                  Almost 22% of people in the world shop online, most of them via their mobile phones. By 2021, the number of people purchasing online is expected to reach 2.14 billion. And with good reason… Mobile-based online shopping is simple, quick, has just the right amount of interaction and is completely secure.
+                At Zerozilla, we plan, strategize, and develop the best eCommerce mobile apps that deliver an engaging and exciting purchasing experience. Our talented and experienced team of eCommerce mobile app developers helps you prioritize your requirements. Whether you need an exclusive Android or iOS app, a hybrid or cross-platform mobile app, or a hybrid or cross-platform mobile app, Zerozilla can provide you with a high-quality solution.
                 </p>
 
                 <p className="sectionContent large bold secondary-color">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+                Take a look at what you can achieve with us:
                 </p>
                 <ul>
-                  <li>Lorem ipsum dolor sit amet, consetetur sadipscing </li>
-                  <li>Lorem ipsum dolor sit amet, consetetur sadipscing </li>
-                  <li>Lorem ipsum dolor sit amet, consetetur sadipscing </li>
-                  <li>Lorem ipsum dolor sit amet, consetetur sadipscing </li>
+                  <li>Super easy navigation and predictable user flow.</li>
+                  <li>Hassle-free check-out process.</li>
+                  <li>Multiple payment options and shipping methods.</li>
+                  <li>Social media integration and advanced features.</li>
                 </ul>
               </div>
             </Fade>

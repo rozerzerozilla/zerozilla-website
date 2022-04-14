@@ -96,7 +96,7 @@ input:active{
   overflow: hidden;
 }
 .Home-area2 {
-  background: var(--primary-color);
+  background: var(--gray-background);
 }
 .Home-area3,
 .Home-area5,
@@ -150,9 +150,12 @@ input:active{
   padding-bottom: 50px;
 }
 .section-1-content-area {
-  padding: 70px 50px;
+  padding: 40px 50px;
   border-radius: 30px;
+  max-width: 1200px;
+  margin-top: 40px;
 }
+
 .Home-main-area3 {
   padding-left: 70px;
 }
@@ -163,12 +166,10 @@ input:active{
 .Home-area1.about {
   background: transparent url("../images/About-Section1-Cover.webp");
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left left;
 }
-@media screen and (max-width:700px) {
-  .career{
-    height: 100vh;
-  }
-}
+
 .career {
   background: transparent url("../images/career-section-1-cover.webp");
   background-repeat: no-repeat;
@@ -180,7 +181,7 @@ input:active{
 
 
 .slider-area2 {
-  background: transparent url("../images/sliderImage1.webp");
+  background: transparent url("../images/sliderImage2.webp");
   background-repeat: no-repeat;
 }
 .slider-area3 {
@@ -213,13 +214,14 @@ input:active{
   font-family: Light;
 }
 .sliderHead2 {
-  font-size: 47px;
+  font-size: 3rem;
+  line-height: 3.2rem;
   font-family: ExtraBold;
 }
 .section3Head,
 .section4Head {
-  line-height: 54px;
-  font-size: 42px;
+  line-height: 2.6rem;
+  font-size: 2.5rem;
   color: var(--primary-color);
   font-family: Medium;
   font-weight: 600;
@@ -269,6 +271,7 @@ input:active{
   border-radius: 8px;
   transition: 0.3s;
 }
+
 
 .sliderBtns{
   font-size: 16px;
@@ -426,8 +429,15 @@ input:active{
   color: #fff;
   background: var(--secondary-color);
 }
+.clients-each-box{
+  width: 100%;
+  padding: 15px;
+  background-color: var(--white-color);
+  border-radius: 15px;
+}
 .section2Logos {
-  width: 80%;
+  width: 100%;
+  /* object-fit: contain; */
 }
 .highlightedSectionText,
 .successRate {
@@ -441,6 +451,7 @@ input:active{
   min-height: 500px;
 }
 .bizCard {
+  position: relative;
   background: #fff;
   box-shadow: var(--box-shadow);
   margin-bottom: 40px;
@@ -450,8 +461,11 @@ input:active{
   height: 100%;
   box-sizing: border-box;
 }
+
+
 .cardLeftCol {
   /* background: #ddc9ff; */
+  position: relative;
   border-radius: 16px 0px 0px 16px;
   display: flex;
   flex-direction: column;
@@ -508,8 +522,8 @@ input:active{
 }
 .seoHead {
   font-weight: 600;
-  font-size: 28px;
-  line-height: 36px
+  font-size: 1.6rem;
+  line-height: 1.7rem
 }
 .seoHeadCol {
   border-right: 1px solid #fff;
@@ -872,109 +886,6 @@ input:active{
   opacity: 0.6;
 }
 
-/* media queries */
-
-@media (min-width: 900px) {
-  .color-nav .navbar-menu-links {
-    position: absolute;
-    right: 70px;
-  }
-  .appfilters {
-    max-width: 80%;
-  }
-}
-
-@media (max-width: 900px) {
-  .appLogo {
-  }
-  .section2Logos {
-    width: 50%;
-  }
-  .Home-main-areaSEO input,
-  .Home-main-areaSEO input:focus {
-    width: 100%;
-  }
-  .absoluteDoubleQuotes {
-    width: 50px;
-    margin-top: -46px;
-  }
-  .clientCustomBorder {
-    padding: 15px;
-  }
-  .absoluteDoubleQuotesClient {
-    width: 40px !important;
-    margin-top: 0px !important;
-  }
-  .section-1-content-area {
-    padding: 50px 30px;
-  }
-  .custom-dev .service-card {
-    margin-bottom: 50px;
-  }
-  .strategy-container1,
-  .strategy-container2 {
-    border-radius: 0 0 66px 66px;
-  }
-  .strategy-section img {
-    border-radius: 66px 66px 0 0;
-  }
-  .appfilters {
-    margin-bottom: 0;
-  }
-}
-
-@media (max-width: 1200px) and (min-width: 900px) {
-  .appfilters {
-    max-width: 90%;
-  }
-}
-
-@media (max-width: 900px) and (min-width: 600px) {
-  .cardLeftCol img {
-    width: 40% !important;
-  }
-}
-
-@media (max-width: 600px) {
-  .cardLeftCol img {
-    width: 60% !important;
-  }
-  .section3Head {
-    font-size: 34px;
-  }
-  .sliderHead2 {
-    font-size: 38px;
-  }
-  .scollToTop,
-  .scollToTop:focus {
-    bottom: 25px;
-    right: 25px;
-  }
-  .Home-area4 .appBtn {
-    font-size: 16px;
-  }
-  /* .cardLeftCol {
-    padding: 80px 15px 20px 25px;
-  } */
-}
-
-@media (max-width: 500px) {
-  .filterBtn {
-    padding: 5px 10px;
-  }
-}
-@media (max-width: 360px) {
-  .filterBtn {
-    padding: 5px;
-  }
-}
-
-@media (min-width: 1500px){
-  .customImageWidth{
-    width: 50% !important;
-  }
-}
-
 /* footer styles */
 footer{
   background-color: var(--footer-background);
@@ -1262,25 +1173,7 @@ nav .nav-search-wrapper input{
   transition: 0.2s;
   border-radius: 2px;
 }
-@media screen and (max-width:1000px){
-	nav{
-		flex-direction: row;
-	}
 
-	nav .navbar-menus{
-		position: absolute;
-		left: 0;
-		top: 65px;
-		min-width: 300px;
-		height: 100vh;
-		overflow-y: scroll;
-		flex-direction: column;
-		background-color: var(--white-color);
-		transition: 0.2s;
-		justify-content: flex-start;
-		align-items: baseline;
-	}
-}
 
 .show-menu{
 	transform: translateX(0);
@@ -1363,11 +1256,18 @@ nav .nav-search-wrapper input{
   border-radius: 5px;
 }
 .kuLJSR {
-    animation: 40s linear 0s infinite normal none running continueAnime;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  gap: 1rem
+    /* animation: 40s linear 0s infinite normal none running continueAnime;
     display: flex;
     flex-wrap: nowrap;
     margin: 20px auto;
-    width: calc(100vw);
+    width: calc(100vw); */
 }
 
 @keyframes continueAnime {
@@ -1744,4 +1644,172 @@ nav .nav-search-wrapper input{
 }
 .case-study:hover .case-study-hover{
   opacity: 1;
+}
+
+@media screen and (max-width:700px) {
+  .career{
+    height: 100vh;
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 900px) {
+  .appfilters {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 900px) and (min-width: 600px) {
+  .cardLeftCol img {
+    width: 40% !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .Home-area3{
+    padding: 10px;
+  }
+  .cardLeftCol img {
+    width: 60% !important;
+  }
+  .section3Head {
+    line-height: 1.5rem;
+    font-size: 1.3rem;
+  }
+  .sliderHead2 {
+    font-size: 1.5rem;
+    line-height: 1.6rem;
+  }
+  .scollToTop,
+  .scollToTop:focus {
+    bottom: 25px;
+    right: 25px;
+  }
+  .Home-area4 .appBtn {
+    font-size: 16px;
+  }
+
+  .seoHead {
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1.3rem
+  }
+  .section-1-content-area{
+    margin: 10px;
+  }
+
+  .section2Logos{
+    width: 100%;
+  }
+  .kuLJSR{
+    grid-template-columns: 1fr;
+  }
+  /* .cardLeftCol {
+    padding: 80px 15px 20px 25px;
+  } */
+}
+
+/* media queries */
+
+@media (min-width: 900px) {
+  .color-nav .navbar-menu-links {
+    position: absolute;
+    right: 70px;
+  }
+  .appfilters {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 900px) {
+  .appLogo {
+  }
+  .section2Logos {
+    width: 50%;
+  }
+  .Home-main-areaSEO input,
+  .Home-main-areaSEO input:focus {
+    width: 100%;
+  }
+  .absoluteDoubleQuotes {
+    width: 50px;
+    margin-top: -46px;
+  }
+  .clientCustomBorder {
+    padding: 15px;
+  }
+  .absoluteDoubleQuotesClient {
+    width: 40px !important;
+    margin-top: 0px !important;
+  }
+  .section-1-content-area {
+    padding: 50px 30px;
+  }
+  .custom-dev .service-card {
+    margin-bottom: 50px;
+  }
+  .strategy-container1,
+  .strategy-container2 {
+    border-radius: 0 0 66px 66px;
+  }
+  .strategy-section img {
+    border-radius: 66px 66px 0 0;
+  }
+  .appfilters {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .filterBtn {
+    padding: 5px 10px;
+  }
+}
+@media (max-width: 360px) {
+  .filterBtn {
+    padding: 5px;
+  }
+}
+
+@media (min-width: 1500px){
+  .customImageWidth{
+    width: 50% !important;
+  }
+}
+
+
+@media screen and (max-width:1000px){
+	nav{
+		flex-direction: row;
+	}
+
+	nav .navbar-menus{
+		position: absolute;
+		left: 0;
+		top: 65px;
+		min-width: 300px;
+		height: 100vh;
+		overflow-y: scroll;
+		flex-direction: column;
+		background-color: var(--white-color);
+		transition: 0.2s;
+		justify-content: flex-start;
+		align-items: baseline;
+	}
+}
+
+@media (max-width: 960px){
+  .kuLJSR{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .section2Logos{
+    width: 100%;
+  }
+}
+@media (max-width: 720px){
+  .kuLJSR{
+    grid-template-columns: 1fr 1fr;
+  }
+  .section2Logos{
+    width: 100%;
+  }
 }

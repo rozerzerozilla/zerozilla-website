@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import sectionCover from "../../assets/images/section6Cover.webp";
+import sectionCover from "../../assets/images/approach.webp";
 import { AppContext } from "../../context/Context";
 import Fade from 'react-reveal/Fade';
 import { Container } from "react-bootstrap";

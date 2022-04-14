@@ -27,14 +27,12 @@ const Section3 = () => {
               {!isMobile && <div className="col-1"></div>}
               <div className={`${isMobile ? "col-12" : "col-10"}`}>
                 <p className="section3Head black extra-bold text-center small">
-                  What is Zerozilla’s PPC Strategy?
+                What is Zerozilla’s PPC Strategy?
                 </p>
                 <p className="sectionContent text-center small">
-                  PPC ads if not done right can burn your pocket. Choosing the
-                  Right Goal,
+                PPC ads if not done right can burn your pocket. Choosing the Right Goal,
                   <br />
-                  writing the compelling Ad copies, Ad format, tracking the
-                  performance, EVERYTHING matters.
+                  writing the compelling Ad copies, Ad format, tracking the performance, EVERYTHING matters.
                 </p>
               </div>
               {!isMobile && <div className="col-1"></div>}

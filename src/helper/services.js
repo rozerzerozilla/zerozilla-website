@@ -333,28 +333,28 @@ export const ppcStrategies = [
     image: "brand-positioning-icon.svg",
     name: "Campaign Specific Landing Page",
     description:
-      "We will start with the mobile-first landing page with interactive content & images. Placing the Call-to-action at the right place & improving the user experience with the classy design! We ensure the landing page is optimised for conversions before sending out the Ad.",
+      "We start off with the mobile-first landing page with interactive content and images. Placing the Call-to-action at the right place and improving the user experience with the classy design! We ensure the landing page is optimized for conversions before sending out the Ad.",
   },
   {
     id: 2,
     image: "lead-generation-icon.svg",
     name: "Compelling Ad Copy",
     description:
-      "Your Ad copy should grab the attention in a fraction of seconds. By understanding the user behaviour & the current trend, we write top-notch ad copies for you which boosts click through rates. This helps to attract quality traffic and make the conversions easier for you!.",
+      "Your Ad copy should grab the attention in a fraction of seconds. By understanding the user behaviour and the current trend, we write top-notch ad copies for you which boosts click through rates. This helps to attract quality traffic and make the conversions easier for you!",
   },
   {
     id: 3,
     image: "increase-engagement.svg",
     name: "Performance Tracking",
     description:
-      "Monitoring the campaigns & fine-tuning them as per the recommendations & best practices we ensure to get the best results for each spends. By creating multiple ad formats to A/B testing, the goal is to find the best strategy that drives more leads.",
+      "By monitoring the campaigns and fine-tuning them as per the recommendations and best practices, we ensure to get the best results for each spends. By creating multiple ad formats to A/B testing, the goal is to find the best strategy that drives more leads.",
   },
   {
     id: 4,
     image: "project-analysis-icon.svg",
-    name: "Transparent & Quick Results",
+    name: "Transparent and Quick Results",
     description:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit.",
+      "You don’t have to wait for ages to see the results. That’s the beauty of our Pay-per-click services. We help you increase your search engine visibility and get immediate results.",
   },
 ];
 
@@ -405,7 +405,7 @@ export const fruitfulPartnershipsTips2 = [
   {
     id: 1,
     title:
-      "Designing online ads that make your customers want to click on them",
+      "Designing online ads that make your customers want to click on them.",
   },
   {
     id: 2,
@@ -436,8 +436,12 @@ export const leadGenSection2Points = [
     title: "Manage comments and feedback and Blogging",
   },
   {
-    id: 5,
+    id: 6,
     title: "E-mail marketing and Newsletters",
+  },
+  {
+    id: 7,
+    title: "One-way link building",
   },
 ];
 
@@ -445,9 +449,9 @@ export const rankYourPageCards = [
   {
     id: 1,
     image: "sales-spikes-icon.svg",
-    name: "High-quality traffic ",
+    name: "High-quality traffic",
     description:
-      "By identifying the right business keywords and optimizing them we drive organic traffic to your website.",
+      "By identifying the right business keywords and optimizing them, we drive organic traffic to your website.",
   },
   {
     id: 2,
@@ -459,7 +463,7 @@ export const rankYourPageCards = [
   {
     id: 3,
     image: "target-perfection.svg",
-    name: "Higher conversion and sales ",
+    name: "Higher conversion and sales",
     description:
       "You attract more potential buyers who are searching with buying intent. Hence you see the sales spikes!",
   },
@@ -468,7 +472,7 @@ export const rankYourPageCards = [
     image: "brand-awareness.svg",
     name: "Market dominance",
     description:
-      "SEO is the most cost-effective way to beat your competitors. Through our enterprise Search Engine Optimization we help you stay ahead of your competitors. ",
+      "SEO is the most cost-effective way to beat your competitors. We help you stay ahead of your competitors through our enterprise Search Engine Optimization.",
   },
 ];
 
@@ -530,25 +534,92 @@ export const oneLink = [
   {
     id: 1,
     title:
-      "We apply the best One Way Link Building Strategies to help your business get improved visibility during online searches and improved ranking on the search engines.",
+      "The best One Way Link Building Strategies.",
   },
   {
     id: 2,
     title:
-      "Enhance brand popularity with popular one-way links",
+      "Multi-touch leads for your business.",
   },
   {
     id: 3,
     title:
-      "Niche specific one way links built with ease",
+      "Careful research and analysis of your target market.",
   },
   {
     id: 4,
     title:
-      "Harness the power of one way linking juice",
+      "Focus on segmentation, targeting, and positioning.",
   },
 ];
 
+export const dedicatedLink = [
+  {
+    id: 1,
+    title:
+      "Improve visibility during online searches.",
+  },
+  {
+    id: 2,
+    title:
+      "Enhance brand popularity with popular one-way links.",
+  },
+  {
+    id: 3,
+    title:
+      "Niche-specific one way links built with ease.",
+  },
+  {
+    id: 4,
+    title:
+      "We help you improve your ranking on the search engines.",
+  },
+];
+
+export const backLink = [
+  {
+    id: 1,
+    title:
+      "Generate high-quality backlinks to your website.",
+  },
+  {
+    id: 2,
+    title:
+      "Help search engines recognize your site.",
+  },
+  {
+    id: 3,
+    title:
+      "Increase your page ranking.",
+  },
+  {
+    id: 4,
+    title:
+      "Get increased traffic generation.",
+  },
+];
+export const highValueLink = [
+  {
+    id: 1,
+    title:
+      "High-quality leads entering the sales funnel.",
+  },
+  {
+    id: 2,
+    title:
+      "Cost-effective packages.",
+  },
+  {
+    id: 3,
+    title:
+      "Possibility of more profit when converted into SALE.",
+  },
+  {
+    id: 4,
+    title:
+      "Maximize your chances of success in the future.",
+  },
+];
 
 
 export const awsStrategy = [
@@ -601,23 +672,23 @@ export const ecomWebStrategy = [
   {
     id: 1,
     image: "aws-windows.png",
-    name: "Custom Mobile App Development",
+    name: "Fast loading",
     description:
-      "We offer support for Red Hat Enterprise, Amazon Linux, and Microsoft Windows Servers.",
+      "We can make sure that your mobile app remains speedy in serving your customer’s requests. A slow-loading app will make you lose customers.",
   },
   {
     id: 2,
     image: "aws-cloud-settings.png",
-    name: "E-commerce Mobile App",
+    name: "Simple registration process",
     description:
-      "Our solutions help you to enhance the workload management for cloud services.",
+      "This is basically an introduction to the working of your app. We devise efficient and easy registration process that will retain customers.",
   },
   {
     id: 3,
     image: "aws-startup.png",
-    name: "Bots Application Development",
+    name: "Easy check out",
     description:
-      "We are experts in developing and deploying high-performance cloud applications.",
+      "Let us make the checkout process simple along with multiple payment options to ensure that the customer doesn’t abandon the cart.",
   },
 ];
 
@@ -997,21 +1068,21 @@ export const brandingStrategy = [
     image: "meeting.png",
     name: "Knowing your business",
     description:
-      "As entrepreneur you need to understand your business as well as your target audience thoroughly. Sound understanding of your business & market can pave the way for a perfect social media marketing plan.",
+      "As an entrepreneur, you need to understand your business and your target audience thoroughly. A sound understanding of your business and market can pave the way for a perfect social media marketing plan.",
   },
   {
     id: 2,
     image: "analytics.png",
     name: "Market research and Gap Analysis",
     description:
-      "In-depth market research can make you identify the loopholes or gaps in your marketing plan and chalk out fitting solutions to plug those gaps. Also, market research & analysis can help you fathom the degree of competition in the market.",
+      "In-depth market research can help you identify the loopholes or gaps in your marketing plan and chalk out fitting solutions to plug those gaps. Also, market research and analysis can help you fathom the degree of competition in the market.",
   },
   {
     id: 3,
     image: "aws-startup.png",
     name: "Watch your traffic grow exponentially",
     description:
-      "Traffic to your business website and to your social platforms can make your business grow & your sales soar. Get increased traffic through your social media interactions based on well researched & well optimized social media marketing plans.",
+      "Traffic to your business website and your social platforms can make your business grow and your sales soar. Get increased traffic through your social media interactions based on well-researched and well-optimized social media marketing plans.",
   }
 ];
 
@@ -1035,7 +1106,7 @@ export const webdevCommonStrategy = [
     image: "aws-startup.png",
     name: "Services for WordPress Migration",
     description:
-      "Non-WordPress CMS Migration, WordPress DataBase Migration, Hosting & Domain Migration are all part of our WordPress Migration Services.",
+      "Non-WordPress CMS Migration, WordPress DataBase Migration, Hosting & Domain Migration are all part of our WordPress Migration Services. SEO ranking is also in a enhanced way with less brainstroming.",
   }
 ];
 
@@ -1233,6 +1304,53 @@ export const codeigniterCards = [
     description: "We recognise the value of having feature-rich websites and online applications for your company. Our CI specialists work tirelessly to create one-of-a-kind extensions for your websites and web applications."
   }
 ]
+export const laravelCards = [
+  {
+    id: 1,
+    image: "project-analysis-icon.svg",
+    name: "Custom Laravel Development",
+    description:
+      "Our Laravel development services provide unique web application development solutions that are tailored to meet your company's requirements.",
+  },
+  {
+    id: 2,
+    image: "on-page-seo-icon.svg",
+    name: "Laravel CMS Development",
+    description:
+      "If you want to strengthen your client interactions, a personalised CRM is a must-have for your organisation. Our Laravel developers work with you to create a feature-rich CRM.",
+  },
+  {
+    id: 3,
+    image: "off-page-seo-icon.svg",
+    name: "E-Commerce App Development",
+    description:
+      "We provide eCommerce app development services to help you grow up your sales while providing a better user experience.",
+  }
+];
+
+export const phpCards = [
+  {
+    id: 1,
+    image: "project-analysis-icon.svg",
+    name: "Custom PHP Development",
+    description:
+      "To meet your business objectives, we can create and deliver user-friendly, dynamic, static, integrated, custom web apps. ",
+  },
+  {
+    id: 2,
+    image: "on-page-seo-icon.svg",
+    name: "Support & Maintenance",
+    description:
+      "We provide ongoing assistance and maintenance after the project is completed, to resolve any bugs and improve functionality and performance.",
+  },
+  {
+    id: 3,
+    image: "off-page-seo-icon.svg",
+    name: "Open-Source CMS development",
+    description:
+      "We are experts in custom PHP development using open-source CMS like WordPress, Joomla, Drupal, Magento, etc.",
+  }
+];
 
 export const vueJSCards = [
   {
@@ -1257,8 +1375,6 @@ export const vueJSCards = [
       "There are many variations of lorem duos spassages of Lorem Ipsum available lora internet tend to repeat predefined.",
   }
 ];
-
-
 
 export const javaCards = [
   {

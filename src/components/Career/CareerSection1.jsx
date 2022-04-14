@@ -30,18 +30,18 @@ const Section1 = ({handleFunction}) => {
                             <Fade bottom>
                                 <div className="row">
                                     <div className="col-12 d-flex flex-column align-items-center">
-                                        <br /><br /><br /><br /><br /><br /><br /><br /><br/>
-                                        <p className="sectionContent">Welcome to your next Adventure</p>
+                                        <br /><br /><br /><br/>
+                                        <p className="sectionContent">Welcome to your next Adventure!</p>
                                         <p className="sliderHead2 mb-0">
-                                            Join the Team
+                                        Join US!
                                         </p>
                                         <p
                                             className="sectionContent mb-0 no-underline"
                                             style={{ textAlign: isMobile && "center" }}
                                         >
-                                            We’re equal parts left and right brained. And we’re generally likeable.
+                                           An exceptional workplace where every day is a learning experience.
                                             {!isMobile && <br />}
-                                            We won’t bored you with more adjectives. See for yourself.
+                                            Sounds like a dream? It's real! Find out for yourself!
                                         </p>
                                     </div>
                                 </div>

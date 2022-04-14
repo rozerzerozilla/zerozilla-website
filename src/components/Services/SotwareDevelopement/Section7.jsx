@@ -70,13 +70,13 @@ function Section7() {
           <div className="row mt-4">
               <div className="col-xs-12 col-md-8 mx-auto">
                   <p className="black-head-section extra-bold text-center">
-                      Web Technologies, We’ve Expertise In
+                  Web Technologies, We’ve Expertise In
                   </p>
-                  <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</p>
+                  <p>No looking back now that you are here! Explore the areas we are experts in!</p>
               </div>
           </div>
           <div className="row mt-3">
-              {techStacks.map((ele, idx) => <div className="col-xs-6 col-md-2 mb-5 py-2">
+              {techStacks.map((ele, idx) => <div className="col-6 col-md-2 mb-5 py-2">
                   <div className="d-flex flex-column align-items-center justify-content-center w-100 tech-card">
                       <div className="pt-4">
                           <img src={require(`../../../assets/icons/${ele.icon}`)} width="60px"/>

@@ -33,14 +33,20 @@ export const staticHomeSlider = [
   {
     id: 1,
     type: "content-1",
+    title: 'Experience digital like never before!',
+    description: 'The most valued addition your business will ever experience!',
   },
   {
     id: 2,
     type: "content-2",
+    title: 'Add true value at EVERY step!',
+    description: 'Join the DIGITAL REVOLUTION with US!',
   },
   {
     id: 3,
     type: "content-3",
+    title: 'Explore NEW POSSIBILITIES at Zerozilla!',
+    description: 'Your growth story begins HERE!',
   },
 ];
 

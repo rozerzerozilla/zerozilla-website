@@ -34,28 +34,19 @@ const Section2 = () => {
             <Fade left>
             <div className={`row col-12 ${isMobile && "m-0"}`}>
               <p className="section3Head black extra-bold small">
-                Engaging in fruitful partnerships for a successful outcome
+              Engaging in fruitful partnerships for a successful outcome
               </p>
               <p className="sectionContent small">
-                The fact that you clicked on a link to this page means that you
-                already know something about PPC Marketing. Now that you’re
-                here, we will need to pay our advertiser.
+              Ok. Now that you have clicked on a link to this page, we know that you already know something about PPC Marketing. 
               </p>
               <p className="sectionContent large bold secondary-color customized">
                 That’s how it works!
               </p>
               <p className="sectionContent small">
-                In case you are not completely aware of why PPC Marketing is
-                such a hit, here’s a reason - Research shows us that
-                Pay-per-click audiences hold 50% more chances of translating
-                into purchases over a visitor created out of organic means.
-                That’s pretty unbelievable for people who are familiar with the
-                effects of traditional print, TV or radio advertising.
+              In case you are not completely aware of why PPC Marketing is such a hit, here’s a reason - Research shows us that Pay-per-click audiences hold 50% more chances of translating into purchases over a visitor created out of organic means. That’s pretty unbelievable for people who are familiar with the effects of traditional print, TV or radio advertising.
               </p>
               <p className="sectionContent small">
-                The other reason is its financial convenience. You don’t pay
-                till that 50% of a chance of securing a customer are confirmed.
-                That’s a good deal, especially for an SME or Start-up.
+              The other reason is its financial convenience. You don’t pay till that 50% of a chance of securing a customer are confirmed. That’s a good deal, especially for an SME or Start-up.
               </p>
               <p className="sectionContent large bold secondary-color customized">
                 Our skills lie in:
@@ -83,7 +74,7 @@ const Section2 = () => {
                 </div>
               ))}
               <p className="sectionContent bold secondary-color small">
-                But best of all
+              But here is the best one!
               </p>
               <div className="row sectionContent mb-2">
                 <div
@@ -100,8 +91,7 @@ const Section2 = () => {
                     textAlign: isMobile && "left",
                   }}
                 >
-                  We know how to create a win-win without a customer feeling she
-                  was tricked into it!
+                  We know how to create a win-win without a customer feeling she was tricked into it!
                 </div>
               </div>
               </div>

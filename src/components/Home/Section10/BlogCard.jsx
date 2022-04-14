@@ -4,6 +4,8 @@ import {FiArrowRight} from "react-icons/fi"
 const ImageBox = styled.div`
   position: relative;
   width: 100%;
+  border-top-left-radius: 19px;
+  border-top-right-radius: 19px;
 `;
 const Badge = styled.div`;
   transform: translateY(-50%);
@@ -31,8 +33,8 @@ export default function BlogCard({ image, desc, link, title, category}) {
     <div className="d-flex flex-column justify-content-between blogCard">
       <ImageBox>
         <img src={require(`../../../assets/images/blogs/${image}`)}
-          width="100%"
-          style={{ objectFt: "cover" }}
+          width="100%" height="200px"
+          style={{ objectFt: "cover", borderTopLeftRadius: "19px", borderTopRightRadius: "19px"  }}
         />
         <Badge>{category}</Badge>
       </ImageBox>

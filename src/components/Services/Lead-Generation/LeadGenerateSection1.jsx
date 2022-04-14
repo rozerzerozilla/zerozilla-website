@@ -7,9 +7,9 @@ const Section1 = ({handleFunction}) => {
     <CommonSection1
       handleFunction={handleFunction}
       title={`Lead Generation Services`}
-      subtitle1={`Our end-to-end lead generation will evoke interest,`}
-      subtitle2={`inform, re-affirm, weed out and present to you a list of`}
-      subtitle3={`customers in full bloom!`}
+      subtitle1={`Evoke interest, inform, and re-affirm with US!`}
+      subtitle2={`Get a list of customers and grow BIG!`}
+      // subtitle3={`customers in full bloom!`}
       sectionCover={sectionCover}
       background={`#F8F8F8`}
       btnText={`Let’s Talk`}

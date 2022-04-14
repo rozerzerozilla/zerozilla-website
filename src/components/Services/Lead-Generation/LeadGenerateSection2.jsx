@@ -34,38 +34,29 @@ const Section2 = () => {
             <Fade left>
             <div className={`row col-12 ${isMobile && "m-0"}`}>
               <p className="section3Head black extra-bold small">
-                Our end-to-end lead generation will evoke interest, inform,
-                re-affirm, weed out and present to you a list of customers in
-                full bloom!
+              Our end-to-end lead generation services help businesses like yours to increase sales MULTIFOLD!
               </p>
               <p className="sectionContent small">
-                They say if you can’t bring a horse to the water, bring him a
-                bucket of it! We say we’ll not only bring the horse to you but
-                also make him drink the water, nibble on a carrot and do a
-                little two-step!
+              Do you own a business and are having trouble generating high-quality leads? If your answer is yes, our lead generation services could assist you in standing out in your sector and specialization.
               </p>
-              <p className="sectionContent small">
+              {/* <p className="sectionContent small">
                 By the horse we, of course, mean your customer. By water, we
                 refer to a product you’re offering, the carrot is another
                 product and the dance is basically the customer delight that
                 follows!
-              </p>
+              </p> */}
               <p className="sectionContent large bold secondary-color customized">
-                So, what makes us so sure?
+              So, what makes us so sure?
               </p>
               <p className="sectionContent small">
-                Our qualified leads are scientifically curated using intelligent
-                data. Guesses and bets don’t work in our business. In fact, all
-                our leads are so ready-to-buy that all you need to do is show up
-                and deliver.
+              Our qualified leads are scientifically curated using intelligent data. Guesses and bets don’t work in our business. All our leads are so ready-to-buy that all you need to do is show up and deliver. That's not it.
               </p>
               <p className="sectionContent small">
-                Plus our efforts towards attracting these leads are pretty
-                thorough(bred!).
+              We use omnichannel marketing strategies to target audiences from both the global and domestic sectors to achieve market share. It also aids in the most efficient development of trust and credibility in your company.
               </p>
-              <p className="sectionContent large bold secondary-color customized">
+              {/* <p className="sectionContent large bold secondary-color customized">
                 So, what makes us so sure?
-              </p>
+              </p> */}
               {leadGenSection2Points.map((strategy, idx) => (
                 <div className="row sectionContent mb-2" key={idx + 1}>
                   <div

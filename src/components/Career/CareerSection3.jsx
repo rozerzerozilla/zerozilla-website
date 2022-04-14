@@ -194,10 +194,7 @@ const Section3 = () => {
                             <h2>Are You Ready To Make A Difference?</h2>
                             <div className="w-100">
                                 <label className="career-subtitle">
-                                    We believe in marketing, we believe in entrepreneurship,
-                                    and we believe small businesses are the lifeblood of
-                                    our communities. If you have that spirit and you believe
-                                    in helping small businesses grow, we're looking for you!
+                                Are you a creative head with the ability to be a change-maker, team player, and significant contributor? Or, let's make it easier for you. Are you a Jack of all trades? Well, here is your place to be a Master, then. We're on a mission to create exceptional work and happy clients.
                                 </label>
                             </div>
                     </div>

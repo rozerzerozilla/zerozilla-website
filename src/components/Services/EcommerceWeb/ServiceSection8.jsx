@@ -26,12 +26,10 @@ const Section3 = () => {
                                 {!isMobile && <div className="col-1"></div>}
                                 <div className={`${isMobile ? "col-12" : "col-10"}`}>
                                     <p className="section3Head black extra-bold text-center">
-                                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+                                    Our solutions that help you stay on TOP
                                     </p>
                                     <p className="sectionContent text-center">
-                                        No more bookish strategies or fake promises! Transparent &
-                                        proven methodologies for skyrocketing <br />
-                                        your business in no time!
+                                    Great experience, high performance and quality can go hand-in-hand when it comes to apps IF you have the right partner- US.
                                     </p>
                                 </div>
                                 {!isMobile && <div className="col-1"></div>}

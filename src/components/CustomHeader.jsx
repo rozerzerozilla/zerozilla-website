@@ -16,7 +16,8 @@ import {
   videosInsights,
   cloudServices,
 } from "../helper/router";
-import sectionCover from "../assets/images/About-Section-3-Cover.webp"
+import sectionCover from "../assets/images/menu-about.webp"
+import sectionCover2 from "../assets/images/menu-insights.webp"
  const CustomHeader = () => {
   const menu = useRef(null);
   const history = useHistory();
@@ -243,36 +244,6 @@ import sectionCover from "../assets/images/About-Section-3-Cover.webp"
             Home
           </NavLink>
         </li>
-        {/* <li>
-          <NavLink to="/about-us" 
-            className={isActive =>
-              "navlink" + (isActive ? " active-navlink" : "")
-            }
-            isActive={(match, location) => {
-              if (!match) {
-                return false;
-              }
-              return location.pathname === '/about-us'
-            }}
-          >
-            About Us
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to="/company"
-            className={isActive =>
-              "navlink" + (isActive ? " active-navlink" : "")
-            }
-            isActive={(match, location) => {
-              if (!match) {
-                return false;
-              }
-              return location.pathname === '/company'
-            }}
-          >
-            Company
-          </NavLink>
-        </li> */}
         <li className="dropdown-list">
           <NavLink to="#" className="pe-2 navlink"><span>Company</span> <FaChevronUp className="drop-arrow"/></NavLink>
           <div className="dropdown-menus">
@@ -510,7 +481,7 @@ import sectionCover from "../assets/images/About-Section-3-Cover.webp"
                 </Col>
 
                 <Col xs="5">
-                  <img src={sectionCover} style={{ height: "100%", width: "100px", objectFit: "cover", borderRadius: "8px" }} />
+                  <img src={sectionCover2} style={{ height: "100%", width: "100px", objectFit: "cover", borderRadius: "8px" }} />
                 </Col>
               </Row>
             </Container>

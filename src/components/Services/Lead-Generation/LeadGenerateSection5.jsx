@@ -26,13 +26,10 @@ const Section5 = () => {
               {!isMobile && <div className="col-1"></div>}
               <div className={`${isMobile ? "col-12" : "col-10"}`}>
                 <p className="section3Head black extra-bold text-center small">
-                  Unfolding the brilliant advantages that our smart lead
-                  generation solutions
+                Unfolding the brilliant advantages that our smart lead generation solutions
                 </p>
                 <p className="sectionContent text-center small">
-                  Generating leads can work to the advantage of any business as
-                  good leads can become the most loyal customers for any
-                  business entity in just no time!
+                Generating leads can work to the advantage of any business as good leads can become the most loyal customers for any business entity in just NO TIME!
                 </p>
               </div>
               {!isMobile && <div className="col-1"></div>}

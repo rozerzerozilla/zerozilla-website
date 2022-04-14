@@ -7,8 +7,8 @@ const BrandingSection1 = ({handleFunction}) => {
         <CommonSection1
             handleFunction={handleFunction}
             title={`Branding Services`}
-            subtitle1={`Lorem ipsum dolor sit amet, consetetur`}
-            subtitle2={`Lorem ipsum dolor sit amet, consetetur`}
+            subtitle1={`Establish your digital presence.`}
+            subtitle2={`Build a brand identity. Stand apart!`}
             sectionCover={""}
             animationData={lottieJson}
             animatedImage={true}

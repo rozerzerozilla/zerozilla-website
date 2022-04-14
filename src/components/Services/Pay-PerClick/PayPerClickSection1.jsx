@@ -7,9 +7,9 @@ const Section1 = ({handleFunction}) => {
     <CommonSection1
       handleFunction={handleFunction}
       title={`Pay-Per Click`}
-      subtitle1={`You don’t pay till your customer is 50% committed.`}
-      subtitle2={"That’s the beauty of PPC and we know how to make it happen!"}
-        sectionCover={sectionCover}
+      subtitle1={`High level brand exposure guaranteed!`}
+      subtitle2={"Let us help you attract more leads."}
+      sectionCover={sectionCover}
       btnText={`Let's talk`}
       background={"#E8C5CE"}
       boxShadow={true}

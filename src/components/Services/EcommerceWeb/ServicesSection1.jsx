@@ -7,7 +7,7 @@ const Section1 = ({handleFunction}) => {
     <CommonSection1
       handleFunction={handleFunction}
       title={`E-Commerce Development`}
-      subtitle1={`Cart management to inventory management stunning Ecommerce site development with the latest technology.`}
+      subtitle1={`Bring the BEST to your customers with our ULTIMATE services.`}
       subtitle2={``}
       sectionCover={sectionCover}
       btnText={`Let's talk`}
