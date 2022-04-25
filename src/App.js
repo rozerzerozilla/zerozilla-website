@@ -3,7 +3,7 @@ import { Switch, Route, Redirect } from "react-router-dom";
 
 
 // google analytics
-// import ReactGA from "react-ga";
+import ReactGA from "react-ga";
 
 //css
 import "./App.css";
@@ -44,8 +44,8 @@ const WebDevlopment = lazy(() => import('./pages/Home'));
 
 const App = () => {
   
-  // ReactGA.initialize('UA-000000-01');
-  // ReactGA.pageview(window.location.pathname + window.location.search);
+  ReactGA.initialize('UA-82074099-1');
+  ReactGA.pageview(window.location.pathname + window.location.search);
 
   return (
     <AppProvider>

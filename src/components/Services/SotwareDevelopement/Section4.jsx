@@ -7,33 +7,33 @@ import CommonCard from "../../Common/CommonCard"
 const services = [
     {
         id: 1,
-        icon: "software-sec-3-icon-1.svg",
+        icon: "soft-service-icon-1.svg",
         title: "Requirement Assessment",
-        description:"Requirement assessment refers to finding out the precise business requirement. We shape the application goals, complete features, target audience, and other similar information about the application in this stage. ",
+        description:"We shape the application goals, complete features, target audience, and other similar information about the application in this stage.",
     },
     {
         id: 1,
-        icon: "software-sec-3-icon-1.svg",
+        icon: "soft-service-icon-2.svg",
         title: "Project Summary",
-        description: "The project summary sums up the website's requirements. This stage serves as a reference point throughout the software development process. ",
+        description: "The project summary sums up the website's requirements. This stage serves as a reference point throughout the software development process.",
     },
     {
         id: 1,
-        icon: "software-sec-3-icon-1.svg",
+        icon: "soft-service-icon-3.svg",
         title: "Determining Required Resources",
-        description: "The project planning stage also defines the software and other resource requirements for the website project. In this step, the needs of 3rd party media are identified. All of the resource requirements are then added to the budget of the project.",
+        description: "In this step, the needs of 3rd party media are identified. All of the resource requirements are then added to the budget of the project"
     },
     {
         id: 1,
-        icon: "software-sec-3-icon-1.svg",
+        icon: "soft-service-icon-4.svg",
         title: "Key performance goals",
-        description: "The software planning stage also involves determining key performance goals. Budgeted costs, project deadlines, and page speed are some of the website design and advance goals that are set at this stage. ",
+        description: "Budgeted costs, project deadlines, and page speed are some of the website design and advance goals that are set at this stage.",
     },
     {
         id: 1,
-        icon: "software-sec-3-icon-1.svg",
+        icon: "soft-service-icon-5.svg",
         title: "Competitor Analysis",
-        description: "Competitor analysis is done to understand the type of audience, daily hits, load capability, security, and more. Other things that are considered important at this stage include visual branding, call to action, navigation, and layout.",
+        description: "Competitor analysis is done to understand the type of audience, daily hits, load capability, security, and more.",
     },
 ]
 
@@ -51,7 +51,7 @@ export default function Section4() {
                       </span>
                   </p>
                   <p className="sectionContent text-center">
-                      Project planning refers to defining goals and objectives of the overall web development project. This is the most important stage in the entire project. It is further divided into the following five parts.
+                      We divide the project planning stage into the following five parts
                   </p>
               </div>
           </div>

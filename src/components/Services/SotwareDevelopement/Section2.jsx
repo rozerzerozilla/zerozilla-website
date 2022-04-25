@@ -49,7 +49,7 @@ const Section2 = () => {
                             >
                                 
                                 <div>
-                                    As a software development services provider, we enable businesses like yours to make use of the latest technologies. We create best-in-class software as per the industry standard within your budget constraints. Zerozilla provides full-cycle software development services that adapt smoothly to your project objectives and business demands- from IT strategy consulting and complete technological roadmaps to end-to-end development of scalable solutions. 
+                                    We enable businesses like yours to make use of the latest technologies. We provide full-cycle software development services that adapt smoothly to your project objectives and business demands. 
                                 </div>
                             </div>
                         </div>

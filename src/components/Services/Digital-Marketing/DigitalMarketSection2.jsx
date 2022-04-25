@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import {Link} from 'react-router-dom'
 import { AppContext } from "../../../context/Context";
 import { digitalMarketCards } from "../../../helper/services";
 import BookCallButton from "../../BookCallButton";
@@ -49,7 +50,7 @@ const Section2 = () => {
               </div>
             </Fade>
             <div className="row" style={{ marginTop: "40px" }}>
-              {digitalMarketCards.map((card, idx) => (
+              {digitalMarketCards.slice(0,6).map((card, idx) => (
                 <Fade key={card.id} top={idx % 3 === 2 ? true : false} bottom={idx % 3 === 1 ? true : false} right={idx % 3 === 0 ? true : false}>
                 <div
                   key={card.id}
@@ -70,14 +71,14 @@ const Section2 = () => {
                     <p className="sliderHead1 no-underline small text-center">
                       {card.description}
                     </p>
-                    {/* <p className="text-center" style={{ marginTop: "20px" }}>
-                      <BookCallButton
+                    <div className="text-center" style={{ marginTop: "20px" }}>
+                      {idx <= 5 && <Link to={card.href}><BookCallButton
                         className={"common-section-1"}
                         isColored={false}
                         text={`Know More`}
                         showImage={false}
-                      />
-                    </p> */}
+                        /></Link>}
+                    </div>
                   </div>
                   </div>
                   </Fade>

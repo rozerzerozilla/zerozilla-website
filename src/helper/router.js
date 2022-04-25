@@ -217,7 +217,7 @@ export const businessServices = [
     },
     {
         catetogy: 'Web Application',
-        subtitle: 'Software Devlopement',
+        subtitle: 'Software Devlopment',
         href: '/software-development',
         id: Math.random() * 10 + 1,
         icon: FiSquare,

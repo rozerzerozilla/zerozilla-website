@@ -72,7 +72,7 @@ function StrategyCard({icon, title, description, number, isMobile}) {
                   <NumberText>{number}</NumberText>
                 </div>
               <Title >{title}</Title>
-              <p>{description}</p>
+              <div>{description}</div>
           </TextBox>
     </Card>
   )

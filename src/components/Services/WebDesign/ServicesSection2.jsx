@@ -28,9 +28,9 @@ const Section2 = () => {
                   <div className={`row`}>
                     <div className={`mx-auto ${isMobile ? "col-12" : "col-10"}`}>
                       <p className="black-head-section extra-bold text-center">
-                        Web services we provide
+                        Web services that give you TANGIBLE results!
                       </p>
-                      <p className="text-center">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</p>
+                      <p className="text-center">Let us help you ramp up quickly and get your mission-critical projects executed within the deadline</p>
                     </div>
                   </div>
                 </Zoom>
@@ -55,7 +55,7 @@ const Section2 = () => {
                         /> */}
                         <div className="bizCard" style={{ display: "grid", gridTemplateColumns: isMobile ? "1fr" : "1fr 2fr" }}>
                           <div
-                            className={`${isMobile ? 'cardTopCol':  'cardLeftCol' }`}
+                            className={`${isMobile ? 'cardTopCol text-center':  'cardLeftCol' }`}
                             style={{ background: "#EDF9FF", height: "100%" }}
                           >
                             <img
@@ -70,7 +70,7 @@ const Section2 = () => {
                             className="d-flex flex-column align-items-start justify-content-center w-100"
                             style={{ padding: "30px" }}
                           >
-                            <p className={`cardHead ${isMobile? "text-center" : " text-left"}`} style={{ fontSize: "15px" }}>
+                            <p className={`cardHead w-100 ${isMobile? "text-center" : " text-left"}`} style={{ fontSize: "15px" }}>
                               {idea.name}
                             </p>
                             <p className="cardDescription">{idea.description}</p>

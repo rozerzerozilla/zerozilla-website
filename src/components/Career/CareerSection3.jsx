@@ -247,7 +247,7 @@ const Section3 = () => {
                                 </select>
                             </div>
                         </div>
-                        <div className={`${isMobile ? "col-12" : "col-3"}`}>
+                            <div className={`${isMobile ? "col-12 mt-4" : "col-3"}`}>
                             <div className={`career-form-inputs sectionContent w-100 d-flex align-items-center`}>
                                 <img width={"20px"} height={"20px"} src={workTypeIcon} alt="icons" />
                                 <select className="ms-3"
@@ -281,12 +281,12 @@ const Section3 = () => {
 
                 <div className="row mt-5">
                     <div className="col-12 p-4 ">
-                            <table className="career-table">
+                            <table className="career-table" style={{ overflowX: isMobile ? 'auto':'hidden'}}>
                                 <thead>
                                     <tr>
-                                        <th style={{width:"20px"}}></th>
+                                        {/* <th style={{width:"20px"}}></th> */}
                                         <th>Designation</th>
-                                        <th>No of Positions</th>
+                                        {/* <th>No of Positions</th> */}
                                         <th>Work Type</th>
                                         <th>Location</th>
                                         <th>Department</th>
@@ -296,7 +296,7 @@ const Section3 = () => {
                             <tbody>
                                 {career.map((career, idx) =><>
                                     <tr key={idx} onClick={() => openRow(idx)} >
-                                        <td onClick={() => openRow(idx)} style={{cursor:"pointer", width:"20px"}}>
+                                        {/* <td onClick={() => openRow(idx)} style={{cursor:"pointer", width:"20px"}}>
                                             <MdKeyboardArrowDown
                                                 style={{
                                                     fontSize: "24px",
@@ -304,20 +304,20 @@ const Section3 = () => {
                                                     color: "#4c2e88",
                                                     transform: mainIndex === idx ? 'rotate(180deg)' : 'rotate(0deg)',
                                                 }} />
-                                        </td>
+                                        </td> */}
                                         <td>
                                             <div className="d-flex flex-column align-items-start py-3">
                                                 <label className="career-postion-text">{career.post}</label>
                                                 <label className="career-posted-text">{ career.date_posted}</label>
                                             </div>
                                         </td>
-                                        <td>
+                                        {/* <td>
                                             <div className="py-3">
                                                 <div className="">
                                                     {career.no_of_position}
                                                 </div>
                                             </div>
-                                        </td>
+                                        </td> */}
                                         <td>
                                             <div className="py-3">
                                                 <div className={`color-label ${career.remote ? "primary-label" : "secondary-label"} `}>

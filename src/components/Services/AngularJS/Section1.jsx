@@ -6,8 +6,8 @@ const Section1 = ({handleFunction}) => {
         <CommonSection1
             handleFunction={handleFunction}
             title={`Angular Development`}
-            subtitle1={`Get Optimized or Get Out!`}
-            subtitle2={`Let us help you Stay on Top of the Internet!`}
+            subtitle1={`Get secure and scalable apps! `}
+            subtitle2={`EMPOWER your business! `}
             sectionCover={"https://angular.io/assets/images/logos/angular/angular.svg"}
             background={`#F4F8FF`}
             btnText={`Get a quote`}

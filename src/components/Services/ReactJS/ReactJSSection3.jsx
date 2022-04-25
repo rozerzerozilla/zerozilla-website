@@ -26,7 +26,7 @@ const IOSSection3 = () => {
                                 {!isMobile && <div className="col-1"></div>}
                                 <div className={`${isMobile ? "col-12" : "col-10"}`}>
                                     <p className="section3Head black extra-bold text-center">
-                                        Banner: Brace up. Scale up. With our ReactJS services. 
+                                        Brace up. Scale up. With our ReactJS services. 
                                     </p>
                                     <p className="sectionContent text-center">
                                         Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions.
@@ -39,7 +39,7 @@ const IOSSection3 = () => {
                             {iOSStrategy.map((idea, index) => (
                                 <Fade top={index % 2 === 0 ? true : false} bottom={index % 2 === 0 ? false : true} key={idea.id}>
                                     <div
-                                        className={`${isMobile ? "col-12" : "col-4 my-auto"}`}
+                                        className={`${isMobile ? "col-12 mb-3" : "col-4"}`}
                                         key={idea.id}
                                         style={!isMobile ? { paddingRight: "20px" } : null}
                                     >

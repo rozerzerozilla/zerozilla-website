@@ -56,7 +56,7 @@ const Section4 = () => {
                                 <Fade top={idx % 3 === 2 ? true : false} bottom={idx % 3 === 1 ? true : false} right={idx % 3 === 0 ? true : false}>
                                     <div
                                         key={card.id}
-                                        className={`${!isMobile ? "col-3" : "col-12"}`}
+                                        className={`${!isMobile ? "col-3" : "col-12 mb-3"}`}
                                         style={
                                             isMobile
                                                 ? { marginBottom: "25px", marginTop: idx === 0 && "25px" }

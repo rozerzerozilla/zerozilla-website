@@ -54,6 +54,7 @@ const CommonSection1 = ({
             className={`section-1-content-area ${boxShadow ? "apply-shadow" : ""
               }`}
             style={{
+              borderRadius: isMobile && '0px',
               background: background,
               backgroundImage: `url(${sectionCover})`,
               backgroundRepeat: "no-repeat",
@@ -66,7 +67,7 @@ const CommonSection1 = ({
           >
             {/* {type2 && <div className="bg-overlay"></div>} */}
             <div className={`mx-auto ${isMobile ? "mobile" : "desktop"}`}>
-              <div className="row-col-12">
+              {/* <div className="row-col-12">
                 <Fade top>
                   <p
                     className="sliderHead1 no-underline light"
@@ -75,7 +76,7 @@ const CommonSection1 = ({
                     <BreadCrumbs className={type2 || whiteText ? "white" : "black"} />
                   </p>
                 </Fade>
-              </div>
+              </div> */}
               <div className="row">
                 <div
                   className={`${isMobile ? "col-12" : `${!type2 ? "col-6 my-auto" : "col-12"}`
@@ -181,6 +182,7 @@ const CommonSection1 = ({
         <div className={`section-1-content-area mx-auto ${boxShadow ? "apply-shadow" : ""
             }`}
           style={{
+            borderRadius: isMobile && '0px',
             background: background,
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
@@ -189,7 +191,7 @@ const CommonSection1 = ({
             boxShadow: type2 && `inset 0 0 0 2000px rgba(36,36,36, ${opacity})`,
           }}
         >
-          {!isMobile && <div className="row-col-12">
+          {/* {!isMobile && <div className="row-col-12">
             <Fade top>
               <p
                 className="sliderHead1 no-underline light"
@@ -198,8 +200,8 @@ const CommonSection1 = ({
                 <BreadCrumbs className={type2 ? "white" : "black"} />
               </p>
             </Fade>
-          </div>}
-          <div className="row common-hero-section">
+          </div>} */}
+          <div className="row common-hero-section" style={{ borderRadius: isMobile && '0px'}}>
             <div
               className={`order-1 order-md-0 ${isMobile ? "col-12" : `${!type2 ? "col-6 my-auto" : "col-12"}`
                 }`}
@@ -284,7 +286,7 @@ const CommonSection1 = ({
                   <img
                     src={sectionCover}
                     alt="section-1"
-                    style={{ width: isMobile? "50%":"100%" }}
+                    style={{ width: isMobile? "50%":"100%", maxHeight:"350px", objectFit:"contain" }}
                   />}
               </div>
             )}

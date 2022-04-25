@@ -25,10 +25,10 @@ const Section3 = () => {
                             <div className={`row`}>
                                 <div className={` mx-auto ${isMobile ? "col-12" : "col-8"}`}>
                                     <p className="section3Head black extra-bold text-center">
-                                        Benefits of Node.js
+                                        Drive these benefits home with NodeJS 
                                     </p>
                                     <p className="sectionContent text-center">
-                                        Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions.
+                                        Our Node.Js developers offer cutting-edge services to assist you in achieving your company goals. 
                                     </p>
                                 </div>
                             </div>
@@ -38,7 +38,7 @@ const Section3 = () => {
                                 {nodeJSCards.map((idea, index) => (
                                     <Fade top={index % 2 === 0 ? true : false} bottom={index % 2 === 0 ? false : true} key={idea.id}>
                                         <div
-                                            className={`${isMobile ? "col-12" : "col-4 my-auto"}`}
+                                            className={`${isMobile ? "col-12 mb-3" : "col-4 my-auto"}`}
                                             key={idea.id}
                                             style={!isMobile ? { paddingRight: "20px" } : null}
                                         >

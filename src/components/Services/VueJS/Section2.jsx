@@ -18,24 +18,18 @@ const Section2 = () => {
                     <Fade top>
                         <div className={`row col-12 ${isMobile && "m-0"}`}>
                             <p className="section3Head black extra-bold">
-                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod.
+                                Your ONE-STOP-STOP for a Vue.Js Development
                             </p>
                             <p className="sectionContent">
-                                NodeJS is a multipurpose platform with a rising popularity of 4 million+ users across the globe.
-                                The inherent benefit of robustness and simplicity entice NodeJS Application Developers and make
-                                the building of complex data-sensitive solutions as easy as pie. By using NodeJS, we have already
-                                supported many companies across diverse industries to enhance their performance to attain maximum revenue.
-                                <br /><br />
-                                Being an open source platform, NodeJS is highly popular with its wonderful features like event-driven
-                                architecture, cloud scalability, code reusability etc. It is highly compatible with both browser & server.
-                                NodeJS offers event-driven, non-blocking I/O model to develop server-side network web applications.
-                                The strong NodeJS community support makes it acceptable across the world. Many fortune companies
-                                around the world like Netflix, LinkedIn, Wal-Mart, eBay, and even the Big NASA had already migrated
-                                to NodeJS. They are all set for the extremely lightweight and simplistic avatars of the applications.
-                                At Zerozilla, we aim to provide exemplary NodeJS Application Development and make sure to exactly meet
-                                our clientele requirements within the specified timeframes, with utmost quality.
-
+                                Design apps that are safe, scalable, and provide visually engaging user experiences with Vue JS. We enable enterprises of all sizes to achieve this with our best-in-class Vue Js Development Services.
+                                <br/>
+                                Vue.js is a popular JavaScript framework for progressive web applications. Due to its customizable user interface and ability to create single-page apps, Vue.Js development is becoming increasingly popular, particularly in the web and mobile app development industries. 
                             </p>
+                            {/* <p className="sectionContent">
+                                Vue.js developers at Zerozilla help you create appealing front-ends, strong single-page applications, customized Vue.Js apps, social networking apps, various portals, or interactive dashboards.
+                                <br/>
+                                We can construct the best user interfaces possible in the shortest amount of time thanks to the Vue.js framework and the expertise of our talented Vue JS engineers.
+                            </p> */}
                         </div>
                         <div className="row-col-12" style={{ marginTop: "20px" }}>
                             <button className="appBtn">Explore our services</button>

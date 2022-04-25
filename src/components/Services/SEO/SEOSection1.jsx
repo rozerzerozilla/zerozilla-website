@@ -9,10 +9,10 @@ const Section1 = ({handleFunction}) => {
       title={`Enterprise <br/> SEO`}
       subtitle1={`Let us help you Stay on Top of the Internet!`}
       subtitle2={`SEO solutions that generate actual results!`}
-      subtitle3={`Find your spot on Page #1 with Us!`}
+      subtitle3={null}
       sectionCover={sectionCover}
       background={`#F4F8FF`}
-      btnText={`Let’s rank you on Page #1`}
+      btnText={`Rank your Page #1`}
       boxShadow={false}
       extraText={false}
       isColored={false}

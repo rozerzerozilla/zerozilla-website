@@ -69,7 +69,7 @@ const Section9 = () => {
                             >
                                 <p className={`mb-0 seoHead text-center}`}>
                                         Confused on what suits best for your business growth?
-                                        Let’s have a casual chat & see the possible opportunity!
+                                        <br/>Let’s have a casual chat & see the possible opportunity!
                                 </p>
                             </div>
                             <div  className={`${isMobile ? "col-12" : "col-12 mx-auto my-2"} ${!isMobile && "d-flex justify-content-between"

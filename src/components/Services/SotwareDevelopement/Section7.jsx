@@ -18,6 +18,17 @@ const Text = styled.div`
     }
 `;
 
+const TechCard = styled.div`
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+    margin-bottom: 50px;
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr 1fr;
+    }
+`
+
 const techStacks = [
     {
         icon: "tech-angular.svg",
@@ -75,8 +86,8 @@ function Section7() {
                   <p className="text-center">Wondering why you should choose us? Let our technical expertise speak for itself! </p>
               </div>
           </div>
-          <div className="row mt-3">
-              {techStacks.map((ele, idx) => <div className="col-6 col-md-2 mb-5 py-2">
+          <TechCard>
+              {techStacks.map((ele, idx) => <div className="w-100">
                   <div className="d-flex flex-column align-items-center justify-content-center w-100 tech-card">
                       <div className="pt-4">
                           <img src={require(`../../../assets/icons/${ele.icon}`)} width="60px"/>
@@ -84,7 +95,7 @@ function Section7() {
                       <Text primary={true}>{ele.tech}</Text>
                 </div>
               </div>)}
-          </div>
+          </TechCard>
           
           
       </Container>

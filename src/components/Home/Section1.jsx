@@ -28,6 +28,7 @@ const Section1 = ({ handleFunction}) => {
                   style={sliderAreaStyle(isMobile, { height: "calc(100vh - 80px)"})}
                 >
                   <div className={`container ${isMobile ? "mobile" : "desktop"}`} style={{ height: "100%" }}>
+                    {isMobile ? <><br /><br /></> : <><br /><br /><br /><br/></>}
                     <div className="row" style={{ height: "100%" }}>
                       <div className={`${isMobile ? "col-12" : "col-6"}`}>
                         <div

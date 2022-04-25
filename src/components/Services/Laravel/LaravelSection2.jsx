@@ -27,8 +27,22 @@ const ContentServiceSection3 = () => {
                                 Create innovative, enterprise-level applications with Laravel!
                                 </p>
                                 <p className="sectionContent">
-                                Laravel is a PHP-based web app framework that is free and open-source. Due to its quick development approach and MVC architectural pattern, it is favoured by developers. It offers stress-free coding. At Zerozilla, you can find experts in delivering simple code for numerous bundles to create robust and alluring websites for diverse verticals of industry and domains. Our developers can develop Laravel PHP Framework suiting both small and large-scale projects. Zerozilla offers the best Laravel development services, including developing web and mobile applications that are smooth, scalable, resilient, high-performance, and secure. We can provide you with dedicated Laravel developers to help you create high-end, feature-rich web applications. Our certified Laravel developers have worked across a wide range of businesses. Our strong team of Laravel developers and programmers, provide high end and reliable solutions at the most competitive rates. We help a business to righteously achieve its
-                                underlying goals using outstanding offers of Laravel framework.</p>
+                                    Laravel is a PHP-based web app framework that is free and open-source. Due to its quick development approach and
+                                    MVC architectural pattern, it is favoured by developers. It offers stress-free coding.
+                                    <br />
+                                    At Zerozilla, you can find experts in delivering simple code for numerous bundles to create robust and
+                                    alluring websites for diverse verticals of industry and domains. Our developers can develop Laravel
+                                    PHP Framework suiting both small and large-scale projects.
+                                    <br />
+                                    Zerozilla offers the best Laravel development services, including developing web and mobile applications that
+                                    are smooth, scalable, resilient, high-performance, and secure. We can provide you with dedicated Laravel developers
+                                    to help you create high-end, feature-rich web applications. Our certified Laravel developers have worked across a
+                                    wide range of businesses. Our strong team of Laravel developers and programmers, provide high end and reliable
+                                    solutions at the most competitive rates.
+                                    <br />
+                                    We help a business to righteously achieve its
+                                    underlying goals using outstanding offers of Laravel framework.
+                                </p>
                                 {/* <p className="sectionContent large bold secondary-color">
                                     We therefore:
                                 </p>

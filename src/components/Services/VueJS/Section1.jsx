@@ -7,8 +7,8 @@ const Section1 = ({handleFunction}) => {
         <CommonSection1
             handleFunction={handleFunction}
             title={`Vue JS Development`}
-            subtitle1={`Get Optimized or Get Out!`}
-            subtitle2={`Let us help you Stay on Top of the Internet!`}
+            subtitle1={`Stay AHEAD in the game with Vue JS!`}
+            subtitle2={`Get high-performing, reactive apps ready in a snap!`}
             sectionCover={sectionCover}
             background={`#F4F8FF`}
             btnText={`Get a quote`}

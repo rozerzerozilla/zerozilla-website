@@ -26,7 +26,7 @@ const WebDevlopment = () => {
         <Section7 />
         <Section8 />
         <Section3 />
-      <Section4 />
+        <Section4 />
         <Section5 />
       <Section6 handleFunction={handleModal}/>
       </div>

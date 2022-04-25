@@ -17,7 +17,7 @@ const CommonCard = ({
 }) => {
   if (buttonCard && imageCard) { 
     return (
-      <div className="bizCard row">
+      <div className="bizCard row" style={{ display: "grid", height: "100%" }}>
         <div className="col-12 cardImgCol">
           <img
             src={require(`../../assets/images/${image}`)}
@@ -43,7 +43,7 @@ const CommonCard = ({
   }
   else if(vertical) {
     return (
-      <div className="bizCard row">
+      <div className="bizCard row" style={{ display: "grid", height: "100%" }}>
         <div
           className="col-12 cardTopCol"
           style={{ background: background }}

@@ -96,12 +96,11 @@ const Section3 = () => {
                 }}
               >
                 
-                <div className="d-flex justify-content-around appfilters">
+                  <div className={`d-flex ${isMobile?' flex-column ':  ' flex-row '} justify-content-around appfilters`}>
                   {leadGenTypes.map((filter) => (
                     <>{sectionButton(filter, null, false)}</>
                   ))}
                   </div>
-                
               </div>
             ) : (
               <div className="p1 custom-overflow">

@@ -23,25 +23,25 @@ const AWSSection2 = () => {
                     >
                         <Fade left>
                             <div className={`row`}>
-                                {!isMobile && <div className="col-1"></div>}
-                                <div className={`${isMobile ? "col-12" : "col-10"}`}>
+                                
+                                <div className={`${isMobile ? "col-12" : "col-10 mx-auto"}`}>
                                     <p className="section3Head black extra-bold text-center">
-                                        Marketing Strategy that works in REAL!
+                                        Cloud Optimization that works in REAL!
                                     </p>
-                                    <p className="sectionContent text-center">
+                                    {/* <p className="sectionContent text-center">
                                         No more bookish strategies or fake promises! Transparent &
                                         proven methodologies for skyrocketing <br />
                                         your business in no time!
-                                    </p>
+                                    </p> */}
                                 </div>
-                                {!isMobile && <div className="col-1"></div>}
+                                
                             </div>
                         </Fade>
                         <div className="row" style={{ marginTop: "40px" }}>
                             {awsStrategy.map((idea, index) => (
                                 <Fade top={index % 2 === 0 ? true : false} bottom={index % 2 === 0 ? false : true} key={idea.id}>
                                     <div
-                                        className={`${isMobile ? "col-12" : "col-4 my-auto"}`}
+                                        className={`${isMobile ? "col-12 mb-3" : "col-4 mb-5"}`}
                                         key={idea.id}
                                         style={!isMobile ? { paddingRight: "20px" } : null}
                                     >
@@ -52,7 +52,7 @@ const AWSSection2 = () => {
                                             isMobile={isMobile}
                                             background={"#DEE8FF"}
                                             imageWidth={"50%"}
-                                            padding={"20px 30px"}
+                                            padding={"30px"}
                                         />
                                     </div>
                                 </Fade>

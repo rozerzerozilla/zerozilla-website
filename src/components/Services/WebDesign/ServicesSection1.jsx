@@ -7,7 +7,7 @@ const Section1 = ({handleFunction}) => {
     <CommonSection1
       imageWidth={"100%"}
       handleFunction={handleFunction}
-      title={`Web Design & Development`}
+      title={`Website development`}
       subtitle1={`We live and breathe digital services powered by data.`}
       subtitle2={`What drives us is making a lasting impact on your growth.`}
       sectionCover={sectionCover}

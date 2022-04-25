@@ -27,12 +27,15 @@ const ContentServiceSection3 = () => {
                                 We are the experts in working with cutting-edge technologies!
                                 </p>
                                 <p className="sectionContent">
-                                Zerozilla is a prominent PHP web development company that provides clients across the world with powerful, comprehensive, appealing, feature-rich, and full-stack PHP development services. We have developed social networking websites, eCommerce stores, corporate websites, plugins, extensions, PHP scripts, CMS development, payment gateways, and other PHP web development solutions. We can provide you with dedicated PHP developers to help you form your own development team.
+                                    Zerozilla is a prominent PHP web development company that provides clients across the world with powerful, comprehensive, appealing, feature-rich, and full-stack PHP development services. 
                                  </p>
                                 <p className="sectionContent large bold secondary-color">
                                 Why choose PHP?
                                 </p>
-                                <ul>
+                                <p className="sectionContent">
+                                    We have developed social networking websites, eCommerce stores, corporate websites, plugins, extensions, PHP scripts, CMS development, payment gateways, and other PHP web development solutions. We can provide you with dedicated PHP developers to help you form your own development team.
+                                </p>
+                                {/* <ul>
                                     <li className="sectionContent">
                                     Open Source: PHP is an open-source language and can be embedded into HTML.
                                     </li>
@@ -51,7 +54,7 @@ const ContentServiceSection3 = () => {
                                     <li className="sectionContent">
                                     High Performance: It’s an appealing, high performing and reliable language.
                                     </li>
-                                </ul>
+                                </ul> */}
 
                             </div>
                         </Fade>

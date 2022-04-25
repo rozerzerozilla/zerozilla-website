@@ -228,7 +228,7 @@ import sectionCover2 from "../assets/images/menu-insights.webp"
    /**------------- Mobile Menu ------------------**/
    const mobileMenu = <>
      <ul className={`navbar-menus mobile-menu px-4 py-3 ${openMobile ? ' show-menu' : ' hide-menu'}`}>
-       <li onClick={() => setMenuKey(null)}><NavLink to="/home">Home</NavLink></li>
+       <li onClick={() => setMenuKey(null)}><NavLink to="/">Home</NavLink></li>
        <li onClick={() => setMenuKey(null)}><NavLink to="/about-us">About Us</NavLink></li>
        <li onClick={(e) => menukey === 'services' ? setMenuKey(null) : setMenuKey("services")}>
          <div className="d-flex align-items-center">

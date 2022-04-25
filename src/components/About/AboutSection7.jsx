@@ -22,9 +22,9 @@ const Section7 = () => {
               <p className="section3Head black mb-0">
                 Ready to be a part of The-Z team?
               </p>
-              <p className="sectionContent">
+              {/* <p className="sectionContent">
                 Take the first step towards your BRAND EVOLUTION!
-              </p>
+              </p> */}
             </div>
           </Fade>
         </div>

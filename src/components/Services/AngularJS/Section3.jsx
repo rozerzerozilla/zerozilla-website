@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { AppContext } from "../../../context/Context";
-import { nodeJSCards } from "../../../helper/services";
+import { angularJSCards } from "../../../helper/services";
 import CommonCard from "../../Common/CommonCard";
 import Fade from 'react-reveal/Fade'
 const Section3 = () => {
@@ -25,17 +25,17 @@ const Section3 = () => {
                             <div className={`row`}>
                                 <div className={` mx-auto ${isMobile ? "col-12" : "col-8"}`}>
                                     <p className="section3Head black extra-bold text-center">
-                                        Benefits of Node.js
+                                        Grab the benefits of Angular 
                                     </p>
                                     <p className="sectionContent text-center">
-                                        Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions.
+                                        AngularJS is an open-source framework for creating dynamic and powerful web applications utilizing the MVC model.
                                     </p>
                                 </div>
                             </div>
                         </Fade>
                         <div className="container">
                             <div className="row" style={{ marginTop: "40px" }}>
-                                {nodeJSCards.map((idea, index) => (
+                                {angularJSCards.map((idea, index) => (
                                     <Fade top={index % 2 === 0 ? true : false} bottom={index % 2 === 0 ? false : true} key={idea.id}>
                                         <div
                                             className={`${isMobile ? "col-12" : "col-4 my-auto"}`}

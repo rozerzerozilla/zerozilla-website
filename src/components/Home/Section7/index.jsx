@@ -11,12 +11,12 @@ import { Container, Row } from "react-bootstrap";
 
 
 const clientTestimonials = [
-  {
-    imgsrc:'ayu.webp',
-    name: "SHRIPAD PUJARI",
-    testimonial: "I worked with Zerozilla. I must say the team is really good. They understand the client’s requirements really well and deliver the same. They are always available and deliver services quickly. I highly recommend them.",
-    company:"Ayubazaar",
-  },
+  // {
+  //   imgsrc:'ayu.webp',
+  //   name: "SHRIPAD PUJARI",
+  //   testimonial: "I worked with Zerozilla. I must say the team is really good. They understand the client’s requirements really well and deliver the same. They are always available and deliver services quickly. I highly recommend them.",
+  //   company:"Ayubazaar",
+  // },
   // {
   //   name: "DEEPIKA",
   //   testimonial: "Great guys! They designed our event management website.",
@@ -50,6 +50,27 @@ const clientTestimonials = [
     name: "Aarti Bhatt",
     testimonial: "We have been working closely with ZZ for more than a year. Working with them has been a pleasure. The team of professionals at Zerozilla is easy to work with and is available at any point of time for support",
     company: "Leadership Tribe",
+  },
+  {
+    id: 2,
+    name: "Satish ",
+    comments: `Our on-going journey with Zerozilla team has been thoroughly professional and they are quick in terms of response. With core strength in SEO, website and APP related projects they are a complete solution provider. Highly recommended!`,
+    clientimage: "client-handipro.webp",
+    company: "Handipro",
+  },
+  {
+    id: 3,
+    name: "CA Praveen M R",
+    comments: `We had an urgent requirement for website, email and digital marketing for a client of ours.Team zerozilla were very helpful in getting the same done in a very low turnaround time.We highly recommend zerozilla for all our future requirements`,
+    clientimage: "client-mrpraveen.webp",
+    company: "Success Mind",
+  },
+  {
+    id: 5,
+    name: "Praveen Prakash",
+    comments: `We are very happy with the services rendered by Zerozilla. They followed up with us continuously for details required to develop our website. Prompt actions were taken and solutions provided whenever problems arised. I thank Vinay of Zerozilla for an awesome service experience.`,
+    clientimage: "client-praveen.webp",
+    company: "Success Thumb Services",
   },
 ]
 
@@ -90,7 +111,7 @@ const Section7 = () => {
                   autoPlay={true}
                   autoplayTimeout={1000}
                   margin={20}
-                  nav
+                  // nav
                   className="owl-theme"
                   responsive={responsiveSlider}
                   dots={true}

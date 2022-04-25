@@ -18,24 +18,16 @@ const Section2 = () => {
                     <Fade top>
                         <div className={`row col-12 ${isMobile && "m-0"}`}>
                             <p className="section3Head black extra-bold">
-                                Why should you choose <span style={{color:"green"}}>NodeJS</span> over any other backend platform?
+                                 
+                                DYNAMIC web apps with <span style={{ color: "red" }}>Angular JS</span> technology
                                 
                             </p>
                             <p className="sectionContent">
-                                NodeJS is a multipurpose platform with a rising popularity of 4 million+ users across the globe.
-                                The inherent benefit of robustness and simplicity entice NodeJS Application Developers and make
-                                the building of complex data-sensitive solutions as easy as pie. By using NodeJS, we have already
-                                supported many companies across diverse industries to enhance their performance to attain maximum revenue.
+                                Google is primarily responsible for the development and maintenance of Angular JS.
+                                Angular can provide a highly interactive and dynamic user interface for websites 
+                                and mobile applications by upgrading HTML. 
                                 <br /><br />
-                                Being an open source platform, NodeJS is highly popular with its wonderful features like event-driven
-                                architecture, cloud scalability, code reusability etc. It is highly compatible with both browser & server.
-                                NodeJS offers event-driven, non-blocking I/O model to develop server-side network web applications.
-                                The strong NodeJS community support makes it acceptable across the world. Many fortune companies
-                                around the world like Netflix, LinkedIn, Wal-Mart, eBay, and even the Big NASA had already migrated
-                                to NodeJS. They are all set for the extremely lightweight and simplistic avatars of the applications.
-                                At Zerozilla, we aim to provide exemplary NodeJS Application Development and make sure to exactly meet
-                                our clientele requirements within the specified timeframes, with utmost quality.
-
+                                During the development and testing phases of the project, our developers employ the MVC framework. You can be sure to acquire scalable AngularJS web application development services with fantastic features that can serve a variety of business verticals.
                             </p>
                         </div>
                         <div className="row-col-12" style={{ marginTop: "20px" }}>

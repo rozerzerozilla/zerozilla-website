@@ -40,9 +40,8 @@ const IOSSection3 = () => {
                                 {phpCards.map((idea, index) => (
                                     <Fade top={index % 2 === 0 ? true : false} bottom={index % 2 === 0 ? false : true} key={idea.id}>
                                         <div
-                                            className={`${isMobile ? "col-12" : "col-4 my-auto"}`}
+                                            className={`${isMobile ? "col-12 mb-3" : "col-4"}`}
                                             key={idea.id}
-                                            style={!isMobile ? { paddingRight: "20px" } : null}
                                         >
                                             <CommonCard
                                                 vertical={true}

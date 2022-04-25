@@ -39,7 +39,7 @@ const Section3 = () => {
                             {ecomWebStrategy.map((idea, index) => (
                                 <Fade top={index % 2 === 0 ? true : false} bottom={index % 2 === 0 ? false : true} key={idea.id}>
                                     <div
-                                        className={`${isMobile ? "col-12" : "col-4 my-auto"}`}
+                                        className={`${isMobile ? "col-12" : "col-4"}`}
                                         key={idea.id}
                                         style={!isMobile ? { paddingRight: "20px" } : null}
                                     >

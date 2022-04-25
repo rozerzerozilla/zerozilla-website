@@ -28,7 +28,7 @@ const Section2 = () => {
                             className={`${!isMobile ? "col-4" : "col-12"}`}
                             style={
                                 isMobile
-                                    ? { marginBottom: "25px", marginTop: idx === 0 && "25px" }
+                                    ? { marginBottom: "80px", marginTop: idx === 0 && "25px" }
                                     : null
                             }
                         >

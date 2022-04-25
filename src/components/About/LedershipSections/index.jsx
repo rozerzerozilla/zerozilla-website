@@ -30,9 +30,9 @@ const LeadershipSection = () => {
                     <p className="section3Head black mb-0">
                         Meet Our Leaders
                     </p>
-                    <p className="sectionContent">
+                    {/* <p className="sectionContent">
                         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-                    </p>
+                    </p> */}
                 </div>
             </div>
             {showDetails ?  <>

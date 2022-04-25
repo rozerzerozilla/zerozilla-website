@@ -48,7 +48,7 @@ const Section2 = () => {
                 enquiryType: values.enquiryType,
                 message: values.message
             }
-            fetch("http://localhost:9000/web-mails", {
+            fetch(`${process.env.REACT_APP_ENDPOINT_API}/web-mails`, {
                 method: "POST",
                 headers: {
                     "Content-type": "application/json"

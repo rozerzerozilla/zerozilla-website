@@ -40,9 +40,10 @@ const Section3 = () => {
                   What can a social media marketing services company do for me?" you might wonder. In simple words, the most significant advantage that our social media marketing company can offer you is more time and a higher ROI at a low cost. 
               </p>
               <p className="sectionContent">
-                  The ability to minimize your CPA (cost per acquisition) and increase your ROI is the key to developing a successful social media management campaign (or any digital marketing campaign for that matter!) We, at Zerozilla, assist businesses like you with social media marketing services to save time and generate results.
+                  The ability to minimize your CPA (cost per acquisition) and increase your ROI is the key to developing a successful social media management campaign (or any digital marketing campaign for that matter!).
               </p>
-              <p className="sectionContent">
+                <p className="sectionContent">
+                  We, at Zerozilla, assist businesses like you with social media marketing services to save time and generate results.
                   More traffic, more engagement, more leads for your business. This is the motto of our SMM services.  
               </p>
               <p className="sectionContent large bold secondary-color">

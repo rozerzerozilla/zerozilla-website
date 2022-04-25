@@ -13,7 +13,7 @@ const Section1 = ({handleFunction}) => {
       background={`#F2EBFF`}
       btnText={`Let’s Talk`}
       boxShadow={false}
-      extraText={`Qualified Leads  ·  Generate Calls  ·  Make Transitions  ·  New Clients`}
+      extraText={null}
       isColored={true}
       titleColor={`#4C2E88`}
       btnColor={`#4C2E88`}

@@ -16,7 +16,7 @@ const Section3 = () => {
             >
                 <div className="row">
                     <div
-                        className={`${isMobile ? "col-12" : "col-7 my-auto"}`}
+                        className={`order-1 order-md-0 ${isMobile ? "col-12" : "col-7 my-auto"}`}
                         style={
                             isMobile ? { padding: "0px 20px", textAlign: "center" } : null
                         }
@@ -57,7 +57,7 @@ const Section3 = () => {
                         </Fade>
                     </div>
                     <div
-                        className={`${isMobile ? "col-12" : "col-5 my-auto"}`}
+                        className={`order-0 order-md-1 ${isMobile ? "col-12" : "col-5 my-auto"}`}
                         style={{
                             marginTop: isMobile && "40px",
                             textAlign: isMobile ? "center" : "right",

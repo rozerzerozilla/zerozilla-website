@@ -42,7 +42,7 @@ const Section4 = () => {
                 style={{ marginBottom: "40px" }}
               >
                 <Fade top>
-                <div className="service-card">
+                <div className="service-card" style={{display:"grid"}}>
                   <p className="sectionContent large bold secondary-color">
                     Finding the Right Platform
                   </p>
@@ -57,7 +57,7 @@ const Section4 = () => {
                 style={{ marginBottom: "40px" }}
               >
                 <Fade bottom>
-                <div className="service-card">
+                  <div className="service-card" style={{ display: "grid" }}>
                   <p className="sectionContent large bold secondary-color">
                     Targeting Perfection
                   </p>
@@ -72,7 +72,7 @@ const Section4 = () => {
                 style={{ marginBottom: "40px" }}
               >
                 <Fade top>
-                <div className="service-card">
+                  <div className="service-card" style={{ display: "grid" }}>
                   <p className="sectionContent large bold secondary-color">
                     Performance Tracking
                   </p>

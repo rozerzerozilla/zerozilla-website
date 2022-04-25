@@ -17,7 +17,7 @@ const Section7 = () => {
             style={{ paddingLeft: isMobile && "25px" }}
           >
             <p className="section3Head black mb-0">
-              Ready to grow your business with us?
+              Ready to grow your business
             </p>
             <p className="sectionContent">
               Take the first step towards your BRAND EVOLUTION!

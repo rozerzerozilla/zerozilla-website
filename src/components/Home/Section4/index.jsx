@@ -57,9 +57,9 @@ const Section4 = () => {
                 >
                   <div className={`row ${isMobile && "m-0"}`}>
                     <div className="col-12">
-                      <div className="section4Head mb-4">What we do?</div>
+                      <div className="section4Head mb-4">How we help our customers?</div>
                       <div className="sectionContent">
-                        Call us an integrated team of enthusiastic and creative professionals on a mission- Empower your business and take it to the Top!
+                        Call us an integrated team of enthusiastic and creative professionals <br />on a mission- Empower your business and take it to the Top!
                       </div>
                     </div>
                     <div className="col-xs-12 col-md-10" style={{ marginTop: "20px" }}>

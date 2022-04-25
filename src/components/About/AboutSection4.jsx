@@ -19,7 +19,7 @@ const Section4 = () => {
       >
         <div className="row">
           <div
-            className={`${isMobile ? "col-12" : "col-4 my-auto"}`}
+            className={`${isMobile ? "col-12" : "col-5 my-auto"}`}
             style={
               isMobile
                 ? {
@@ -32,21 +32,17 @@ const Section4 = () => {
           >
             <Fade left>
             <div className={`row col-12 ${isMobile && "m-0"}`}>
-              <p className="section3Head black extra-bold">Who we are?</p>
+              <p className="section3Head black extra-bold"></p>
               <p className="sectionContent">
-                Digital consumers signal their individuality in all kinds of
-                ways. We build winning marketing strategies based on a deep
-                understanding of those consumers and what drives their
-                decision-making across all channels.
+                  Digital consumers signal their individuality in all kinds of ways. We build winning marketing strategies based on a deep understanding of your consumers and what drives their decision-making across all channels.
+
+                  
               </p>
               <p className="sectionContent">
-                Know who your customers are. Know where to find them. Know how
-                to connect with them. Know if it’s working.
+                  Know who your customers are, where to find them, how to connect with them, and if it's working.
               </p>
               <p className="sectionContent">
-                That’s how we amplify results and deliver award-winning digital
-                advertising, SEO, social, analytics and digital creative
-                services.
+                  That's how we amplify results and deliver award-winning digital advertising, SEO, social, analytics, and digital creative services.  
               </p>
               </div>
             </Fade>
@@ -58,7 +54,7 @@ const Section4 = () => {
             </div>
           </div>
           <div
-            className={`${isMobile ? "col-12" : "col-8 my-auto"}`}
+            className={`${isMobile ? "col-12" : "col-7 my-auto"}`}
             style={
               isMobile
                 ? { marginTop: "40px", textAlign: "center" }

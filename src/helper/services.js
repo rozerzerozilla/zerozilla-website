@@ -48,16 +48,14 @@ export const reactJSCard = [
     id: 1,
     image: <CgComponents style={{ fontSize: "36px", color: "#C31F5D", fontWeight: "600" }} />,
     name: "ReactJS Components Development",
-    description:
-      "To complete tasks that involve both autonomous and collaborative work, our team follows the planning, architecture, and reuse of existing components.",
+    description:"Our team follows the planning, architecture, and reuse of existing components.",
     href: '/ios-app-development',
   },
   {
     id: 1,
     image: <FiSettings style={{ fontSize: "36px", color: "#C31F5D", fontWeight: "600" }} />,
     name: "ReactJS Support & Maintenance ",
-    description:
-      "Add value to your online presence, by letting us handle upgrades and technical developments in addition to offering maintenance for your web projects. ",
+    description:"Add value to your online presence, by letting us handle upgrades and technical developments.",
     href: '/ios-app-development',
   },
 ]
@@ -133,25 +131,22 @@ export const customWebDevCard = [
     id: 9,
     image: "hybrid-app-icon.svg",
     name: "Hybrid App",
-    description:
-      "Our in-depth knowledge about various Hybrid application frameworks allows us to come up with top-notch hybrid apps ",
+    description:"We develop top-notch hybrid apps using our knowledge about various Hybrid application frameworks.",
     href: '/hybrid-app-development',
   },
   {
     id: 10,
     image: "iot-icon.svg",
     name: "IoT App",
-    description:
-      "Using Wi-Fi, Bluetooth, NFC, and other technologies unlock the potential of high-performing mobile apps that interface with hardware/wearables/IoT. ",
-    href: '/iot-app-development',
+    description:"Using Wi-Fi, Bluetooth, NFC, and other technologies, unlock the potential of high-performing mobile apps.",
+      href: '/iot-app-development',
   },
   {
     id: 11,
     image: "react-icon.svg",
     name: "React Native Apps",
-    description:
-      "We boast of our expertise in designing Javascript framework based uniquely ‘native’ & reactive Apps that empower businesses",
-    href: '/react-native-app-development',
+    description:"We develop top-notch hybrid apps using our knowledge about various Hybrid application frameworks.",
+      href: '/react-native-app-development',
   },
 ];
 
@@ -164,6 +159,7 @@ export const digitalMarketCards = [
     name: "Search Engine Optimization",
     description:
       "Soar to a high rank in the top search engines & get noticed before all others in the queue",
+    href:"/search-engine-optimization",
   },
   {
     id: 2,
@@ -171,6 +167,7 @@ export const digitalMarketCards = [
     name: "Pay-Per Click",
     description:
       "Unleash the power of PPC Ads to get multiple clicks to your website & generate big sales figures",
+    href:"/pay-per-click",
   },
   {
     id: 3,
@@ -178,6 +175,7 @@ export const digitalMarketCards = [
     name: "Social Media Marketing",
     description:
       "Be a known figure on social media & get more traffic for your business through social media marketing",
+    href:"/social-media-marketing",
   },
   {
     id: 4,
@@ -185,6 +183,7 @@ export const digitalMarketCards = [
     name: "Lead Generation Services",
     description:
       "Generate valuable, targeted & qualified leads and convert your leads into sure-shot buyers in just no time!",
+    href:"/lead-generation",
   },
   {
     id: 5,
@@ -192,6 +191,7 @@ export const digitalMarketCards = [
     name: "Branding Services",
     description:
       "Position your brand in the right way, garner all attention and build an impressive brand identity online",
+    href:"/branding-service",
   },
   {
     id: 6,
@@ -199,6 +199,7 @@ export const digitalMarketCards = [
     name: "Content Marketing Services",
     description:
       "Industry-best content marketing support to help you create optimized content aimed at fueling conversions and boosting sales",
+      href:"#",
   },
   {
     id: 7,
@@ -206,6 +207,7 @@ export const digitalMarketCards = [
     name: "Video Marketing",
     description:
       "Grab the audience’s interest & let them stay interested in your products and services through engaging marketing films",
+      href:"#",
   },
   {
     id: 8,
@@ -213,6 +215,7 @@ export const digitalMarketCards = [
     name: "App Marketing Services",
     description:
       "Make use of creatively designed mobile apps in order to access a larger audience in a shorter time period",
+      href:"#",
   },
   {
     id: 9,
@@ -220,6 +223,7 @@ export const digitalMarketCards = [
     name: "Email Marketing Service",
     description:
       "Send marketing emails that make your target audience read it over & over again and then buy from you",
+      href:"#",
   },
 ];
 
@@ -259,43 +263,37 @@ export const seoStrategy = [
     id: 1,
     image: "project-analysis-icon.svg",
     name: "SEO Audit",
-    description:
-      "We examine your website's current performance in terms of content, mapping, coding, and keyword volume after understanding your company, target market, and intended outcomes.  ",
+    description:"We examine your website's current performance in terms of content, mapping, coding, and keyword volume.",
   },
   {
     id: 2,
     image: "on-page-seo-icon.svg",
     name: "Objective and strategy ",
-    description:
-      "We set the objectives and goals for your SEO campaigns after establishing a close relationship with the customer. A strategy is then planned to improve your present website in order to reach the desired results.",
+    description:"We set the objectives and goals for your SEO campaigns after establishing a close relationship with the customer."
   },
   {
     id: 3,
     image: "off-page-seo-icon.svg",
     name: "Configuration",
-    description:
-      "Thorough keyword research is conducted in order to develop a content strategy that will improve your search ranking. (Blogs, articles, guides, whitepapers, and other pillar content curation and creation)",
+    description:"Thorough keyword research is conducted in order to develop a content strategy that will improve your search ranking."
   },
   {
     id: 4,
     image: "competitor-research-icon.svg",
     name: "Deployment",
-    description:
-      "We undertake cleaning up your site's code, content, architecture, mapping (internal links, synonyms, etc.), Content and Image Optimization, Page Speed Optimization, Landing Page Load Speed, Navigation, or Crawlability in the webpage, URL Structure, and Code Cleaning. ",
+    description:"We undertake cleaning up your site's code, content, architecture, mapping (internal links, synonyms, etc.), etc."
   },
   {
     id: 5,
     image: "reaccess-icon.svg",
     name: "Implementation and Monitoring ",
-    description:
-      "We implement off-page optimization strategies such as quality link building (Back Links), link building through content marketing, SMO (Twitter, Facebook, LinkedIn, etc.), engagement in Q&A forums, links to social bookmarking, and so on.",
+    description:"We implement off-page optimization strategies such as quality link building (Back Links), SMO (Twitter, Facebook, LinkedIn), etc."
   },
   {
     id: 6,
     image: "reporting-icon.svg",
     name: "Report and Analysis ",
-    description:
-      "We assess the campaign's results, monitor performance and milestones in real-time, and keep in touch with customers at the same time. Following the launch of the campaign, on-the-go optimization is used to fill in the gaps.",
+    description:"We assess the campaign's results, monitor performance and milestones in real-time, and keep in touch with customers too."
   },
 ];
 
@@ -304,26 +302,25 @@ export const generatePromisingSocialLinks = [
     id: 1,
     image: "brand-positioning-icon.svg",
     name: "Brand Positioning",
-    description:"Our consistent approach enhances key messaging via a unique style that portrays your brand. This helps to position your brand on social media making it memorable & trustworthy. Create a reliable and understandable brand image with us."
-  
+    description:"Our consistent approach enhances key messaging via a unique style that portrays your brand. This helps to position your brand as trustworthy",
   },
   {
     id: 2,
     image: "lead-generation-icon.svg",
     name: "Leads Generation",
-    description: "Driving quality traffic to your website requires strategic positioning and increased engagement. We qualify leads with the right social media marketing services by encouraging them to buy your products or services on a regular basis. "
+    description: "We qualify leads with the right social media marketing services by encouraging them to buy your products or services on a regular basis."
   },
   {
     id: 3,
     image: "increase-engagement.svg",
     name: "Increased Engagement",
-    description:"Social media opens up avenues to build trust for your brand. Consumer-focused campaigns make them memorable and create more engagement. We believe in actionable social media management services to drive your engagement strategy. "
+    description:"We believe in actionable social media management services to drive your engagement strategy."
   },
   {
     id: 4,
     image: "project-analysis-icon.svg",
     name: "Social Proof for Growth",
-    description:"The best place to show the world what your happy customers have to say about your services is social media. We help in building trust and a powerful brand association for your customers by finding the best way to build strong social proof."
+    description:"We help in building trust and a powerful brand association for your customers by finding the best way to build strong social proof."
   },
 ];
 
@@ -332,29 +329,25 @@ export const ppcStrategies = [
     id: 1,
     image: "brand-positioning-icon.svg",
     name: "Campaign Specific Landing Page",
-    description:
-      "We start off with the mobile-first landing page with interactive content and images. Placing the Call-to-action at the right place and improving the user experience with the classy design! We ensure the landing page is optimized for conversions before sending out the Ad.",
+    description:"We start off with a mobile-first landing page with interactive content. We ensure the landing page is optimized for conversions before sending out the Ad."
   },
   {
     id: 2,
     image: "lead-generation-icon.svg",
     name: "Compelling Ad Copy",
-    description:
-      "Your Ad copy should grab the attention in a fraction of seconds. By understanding the user behaviour and the current trend, we write top-notch ad copies for you which boosts click through rates. This helps to attract quality traffic and make the conversions easier for you!",
+    description:"By understanding the user behaviour and the current trend, we write top-notch ad copies for you which boosts click through rates.",
   },
   {
     id: 3,
     image: "increase-engagement.svg",
     name: "Performance Tracking",
-    description:
-      "By monitoring the campaigns and fine-tuning them as per the recommendations and best practices, we ensure to get the best results for each spends. By creating multiple ad formats to A/B testing, the goal is to find the best strategy that drives more leads.",
+    description:"By monitoring the campaigns and fine-tuning them as per the recommendations and best practices, we ensure to get the best results for each spends."
   },
   {
     id: 4,
     image: "project-analysis-icon.svg",
     name: "Transparent and Quick Results",
-    description:
-      "You don’t have to wait for ages to see the results. That’s the beauty of our Pay-per-click services. We help you increase your search engine visibility and get immediate results.",
+    description:"You don’t have to wait for ages to see the results. We help you increase your search engine visibility and get immediate results."
   },
 ];
 
@@ -1074,15 +1067,13 @@ export const brandingStrategy = [
     id: 2,
     image: "analytics.png",
     name: "Market research and Gap Analysis",
-    description:
-      "In-depth market research can help you identify the loopholes or gaps in your marketing plan and chalk out fitting solutions to plug those gaps. Also, market research and analysis can help you fathom the degree of competition in the market.",
+    description:"In-depth market research can help you identify the loopholes or gaps in your marketing plan and chalk out fitting solutions to plug those gaps."
   },
   {
     id: 3,
     image: "aws-startup.png",
     name: "Watch your traffic grow exponentially",
-    description:
-      "Traffic to your business website and your social platforms can make your business grow and your sales soar. Get increased traffic through your social media interactions based on well-researched and well-optimized social media marketing plans.",
+    description:"Get increased traffic through your social media interactions based on well-researched and well-optimized social media marketing plans."
   }
 ];
 
@@ -1091,8 +1082,7 @@ export const webdevCommonStrategy = [
     id: 1,
     image: "meeting.png",
     name: "Custom WordPress Development Services",
-    description:
-      "WordPress custom theme and plugin creation, bug-free and SEO-friendly website development, Complete WordPress CMS Design and Development, Instant Support, Reliable Fixes, and more are some of the services we offer.",
+    description:"WordPress custom theme and plugin creation, bug-free and SEO-friendly website development, Complete WordPress CMS Design and Development, Instant Support, Reliable Fixes, and more."
   },
   {
     id: 2,
@@ -1264,16 +1254,14 @@ export const nodeJSCards = [
   {
     id: 1,
     image: "project-analysis-icon.svg",
-    name: "Custom CakePHP Development",
-    description:
-      "With the help of our CakePHP development services, you may create a bespoke website, web apps, CMS, eCommerce store, portals, or business websites that will help you attract more sales.",
+    name: "Faster time-to-market",
+    description:"NodeJS makes the time-to-market cycle shorter by massively reducing the app development time.",
   },
   {
     id: 2,
     image: "on-page-seo-icon.svg",
-    name: "CakePHP Web App Development",
-    description:
-      "We create CakePHP web applications that are faster, smoother, more dependable, secure, and scalable. We provide CakePHP web development services to businesses of all sectors.",
+    name: "Scalability ",
+    description:"NodeJS has scalability at its core. It has the capability to handle a massive number of concurrent connections.",
   },
   {
     id: 3,
@@ -1281,6 +1269,27 @@ export const nodeJSCards = [
     name: "CakePHP Migration Services",
     description:
       "Our CakePHP experts have experience with MVC frameworks and migration services, so they can help you migrate from an older version of CakePHP to the most recent one.",
+  }
+];
+
+export const angularJSCards = [
+  {
+    id: 1,
+    image: "project-analysis-icon.svg",
+    name: "Open-source & Lightweight ",
+    description:"Angular loads fast and can be publicly accessible seen, used, and modified by anyone.",
+  },
+  {
+    id: 2,
+    image: "on-page-seo-icon.svg",
+    name: "Improved Productivity ",
+    description:"With the comprehensive set of built-in features in Angular, it is possible to build anything.",
+  },
+  {
+    id: 3,
+    image: "off-page-seo-icon.svg",
+    name: "Real-time Applications",
+    description:"Angular is a cost-friendly solution with a logical, consistent, and easy-to-follow code."
   }
 ];
 
@@ -1357,22 +1366,19 @@ export const vueJSCards = [
     id: 1,
     image: "project-analysis-icon.svg",
     name: "Lightning-quick speed",
-    description:
-      "There are many variations of lorem duos spassages of Lorem Ipsum available lora internet tend to repeat predefined.",
+    description:"Vue JS is an exceptionally fast tool. Simple, yet powerful."
   },
   {
     id: 2,
     image: "on-page-seo-icon.svg",
     name: "Suitable for long-term",
-    description:
-      "There are many variations of lorem duos spassages of Lorem Ipsum available lora internet tend to repeat predefined.",
+    description:"It is simple and provides a modular and flexible development environment."
   },
   {
     id: 3,
     image: "off-page-seo-icon.svg",
     name: "Simple Integration",
-    description:
-      "There are many variations of lorem duos spassages of Lorem Ipsum available lora internet tend to repeat predefined.",
+    description:"Vue JS is simple to understand, use and integrate which makes it a top pick.",
   }
 ];
 

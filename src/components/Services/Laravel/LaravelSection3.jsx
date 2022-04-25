@@ -63,11 +63,11 @@ const IOSSection3 = () => {
                             {laravelCards.map((idea, index) => (
                                 <Fade top={index % 2 === 0 ? true : false} bottom={index % 2 === 0 ? false : true} key={idea.id}>
                                     <div
-                                        className={`${isMobile ? "col-12" : "col-6"}`}
+                                        className={`${isMobile ? "col-12 mb-3" : "col-4"}`}
                                         key={idea.id}
                                     >
                                         <CommonCard
-                                            vertical={false}
+                                            vertical={true}
                                             image={idea.image}
                                             name={idea.name}
                                             description={idea.description}

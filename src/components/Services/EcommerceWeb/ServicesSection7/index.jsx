@@ -6,32 +6,32 @@ import Card from "./Card";
 const strategy = [
     {
         title: "UX Process",
-        description: "We craft intuitive, robust apps, with Pixel perfect designs that combine the best practices of a great UX.",
+        description:"We craft intuitive, robust apps, with Pixel perfect designs.",
         icon : "web-strat-icon-1.svg",
     },
     {
         title: "Design",
-        description: "Our designs follow the architecture and principles of HIG for iOS with no loss of clarity.",
+        description: "Our designs follow the architecture and principles of HIG for iOS.",
         icon: "web-strat-icon-2.svg",
     },
     {
         title: "Development",
-        description: "The development stage is safe in the hands of our professional app developers who understand every nuance of the process.",
+        description: "The development stage is safe in our hands.",
         icon: "web-strat-icon-3.svg",
     },
     {
         title: "Testing",
-        description: "We ensure that no glitches come in the way of creating the best experience for your customers.",
+        description: "We ensure that no glitches come by in creating the best user experience.",
         icon: "web-strat-icon-4.svg",
     },
     {
         title: "Launch",
-        description: "We assist you in the launch of your app by making sure that it meets the deadlines set by you.",
+        description: "We help you launch he app within the deadlines set by you.",
         icon: "web-strat-icon-5.svg",
     },
     {
         title: "Support",
-        description: "Our support and assistance extend beyond the launch phase. We help you in maintaining the app in optimal condition.",
+        description: "We help you in maintaining the app in optimal condition.",
         icon: "web-strat-icon-6.svg",
     },
 

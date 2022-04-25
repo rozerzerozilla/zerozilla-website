@@ -23,7 +23,7 @@ const WordpressServices = () => {
                 <WordPressSection1 handleFunction={handleModal}/>
                 <WordPressSection2 />
                 <WordPressSection3 />
-                <WordPressSection4 />
+                {/* <WordPressSection4 /> */}
                 {/* <WordPressSection5 /> */}
                 <WordPressSection6 />
                 <WordPressSection7 />

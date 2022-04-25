@@ -31,7 +31,7 @@ const Section5 = () => {
                         Grow. Evolve. Empower. With Zerozilla!
                       </p>
                       <p className="sectionDescription text-center">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, temporibus sapiente. Maxime reiciendis ab suscipit illo earum, asperiores sint recusandae dignissimos quo aut obcaecati hic. Debitis iusto fugiat illo totam.
+                        Get ready for a ‘digital’ overhaul with Zerozilla- Your dependable partner for business success!
                       </p>
                     </div>
                   </div>

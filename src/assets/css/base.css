@@ -25,7 +25,7 @@ body {
 }
 p{
   font-size: 1rem;
-  line-height: 1.2rem;
+  /* line-height: 1.2rem; */
 }
 .display-grid{
   display: grid;
@@ -50,6 +50,8 @@ input:active{
 }
 .sectionContent.large {
   font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0px;
 }
 .primary-color {
   color: var(--primary-color);
@@ -90,10 +92,12 @@ input:active{
 }
 .sectionContent.small {
   font-size: 16px;
+  letter-spacing: 0px;
 }
 .sectionContent.large.customized,
 .seoHead.small {
   font-size: 18px;
+  letter-spacing: 0px;
 }
 .section3Head.small,
 .subHead.small {
@@ -159,9 +163,9 @@ input:active{
 .section-1-content-area {
   padding: 40px 50px;
   border-radius: 30px;
-  max-width: 1200px;
-  margin-top: 40px;
+  max-width: 1300px;
   margin: 0 auto;
+  margin-top: 40px;
 }
 
 .Home-main-area3 {
@@ -170,6 +174,7 @@ input:active{
 .slider-area1 {
   background: transparent url("../images/sliderImage4.webp");
   background-repeat: no-repeat;
+  background-position: left left;
 }
 .Home-area1.about {
   background: transparent url("../images/About-Section1-Cover.webp");
@@ -191,10 +196,12 @@ input:active{
 .slider-area2 {
   background: transparent url("../images/sliderImage2.webp");
   background-repeat: no-repeat;
+  background-position: left left;
 }
 .slider-area3 {
   background: transparent url("../images/sliderImage3.webp");
   background-repeat: no-repeat;
+  background-position: left left;
 }
 .slider-area1,
 .slider-area2,
@@ -202,6 +209,7 @@ input:active{
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  background-position: left left;
 }
 .appLogo {
   width: 150px;
@@ -243,6 +251,7 @@ input:active{
 }
 .sectionContent {
   font-size: 18px;
+  letter-spacing: 0px;
 }
 .slider-content {
   font-size: 20px;
@@ -463,12 +472,12 @@ input:active{
   position: relative;
   background: #fff;
   box-shadow: var(--box-shadow);
-  margin-bottom: 40px;
   border-radius: 16px;
   min-height: 200px;
   width: 100%;
   height: 100%;
   box-sizing: border-box;
+  margin-bottom: 40px;
 }
 
 
@@ -633,6 +642,9 @@ input:active{
 .Home-main-area3 ul{
   margin-left: 20px;
 }
+.Home-main-area3 li{
+  font-size: 18px;
+}
 
 
 .nav-link {
@@ -787,12 +799,12 @@ input:active{
 }
 
 .strategy-container1 {
-  background: #e8dfe3;
+  background: #F2EBFF;
   border-radius: 0px 0px 0px 66px;
   padding: 30px 30px 40px 30px;
 }
 .strategy-container2 {
-  background: #f5f5f5;
+  background: #F2EBFF;
   border-radius: 0px 0px 66px 0px;
   padding: 20px 30px 15px 30px;
 }
@@ -1433,6 +1445,7 @@ nav .nav-search-wrapper input{
 }
 .career-card{
   position: relative;
+  width: 100%;
 }
 
 .career-card .content-section{
@@ -1670,8 +1683,10 @@ nav .nav-search-wrapper input{
 
 .digital-streamline-marketing-img{
   width: 100%;
-  height: 150px;
+  height: 100%;
   object-fit: cover;
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
 }
 
 @media screen and (max-width:700px) {
@@ -1700,12 +1715,12 @@ nav .nav-search-wrapper input{
     width: 60% !important;
   }
   .section3Head {
-    line-height: 1.5rem;
+    line-height: 1.3em;
     font-size: 1.3rem;
   }
   .sliderHead2 {
     font-size: 1.5rem;
-    line-height: 1.6rem;
+    line-height: 1.3em;
   }
   .scollToTop,
   .scollToTop:focus {
@@ -1722,6 +1737,8 @@ nav .nav-search-wrapper input{
     line-height: 1.3rem
   }
   .section-1-content-area{
+    position: relative;
+    height: 100%;
     margin: 10px;
   }
 

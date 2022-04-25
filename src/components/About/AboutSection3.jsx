@@ -18,7 +18,7 @@ const Section3 = () => {
       >
         <div className="row">
           <div
-            className={`${isMobile ? "col-12" : "col-8 my-auto"}`}
+            className={`${isMobile ? "col-12" : "col-7 my-auto"}`}
             style={
               isMobile
                 ? { marginTop: "40px", textAlign: "center" }
@@ -34,7 +34,7 @@ const Section3 = () => {
             </Fade>
           </div>
           <div
-            className={`${isMobile ? "col-12" : "col-4 my-auto"}`}
+            className={`${isMobile ? "col-12" : "col-5 my-auto"}`}
             style={
               isMobile
                 ? {
@@ -52,12 +52,8 @@ const Section3 = () => {
                   <span className="highlightedSectionText">
                     Hello! We are Zerozilla.
                   </span>
-                  <br /> If there’s one thing we’ve learned about marketing in
-                  these times, is that ‘if it’s not on the web, it doesn’t really
-                  count!’ Out of the 7.7 billion people on earth, almost 4 billion
-                  have the means to access the internet. If you have a product or
-                  service to offer, your target customer is most likely to be
-                  among this 4 billion segment.
+                  <br />
+                  A team of highly-charged individuals fuelled by the passion for bringing in some REAL change to your business.We help you reach the right audience for your product at the right time.You heard that right!No fake promises; Only activities that deliver results! 
                 </p>
               </div>
             </Fade>

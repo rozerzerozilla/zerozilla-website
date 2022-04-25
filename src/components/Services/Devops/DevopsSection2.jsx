@@ -43,7 +43,7 @@ const Section2 = () => {
                             <div className="row" style={{ marginTop: "40px" }}>
                                 {devopsServices.map((idea, index) => (
                                     <div
-                                        className={`${isMobile ? "col-12" : "col-4 my-auto"}`}
+                                        className={`${isMobile ? "col-12 mb-3" : "col-4 mb-4"}`}
                                         key={idea.id}
                                         style={!isMobile ? { paddingRight: "20px" } : null}
                                     >
@@ -56,7 +56,7 @@ const Section2 = () => {
                                                 isMobile={isMobile}
                                                 background={"#E0D1FF"}
                                                 imageWidth={"50%"}
-                                                padding={"20px 30px"}
+                                                padding={"30px"}
                                             />
                                         </Fade>
                                     </div>

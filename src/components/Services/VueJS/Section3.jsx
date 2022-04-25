@@ -25,10 +25,10 @@ const Section3 = () => {
                             <div className={`row`}>
                                 <div className={` mx-auto ${isMobile ? "col-12" : "col-8"}`}>
                                     <p className="section3Head black extra-bold text-center">
-                                        Benefits of Node.js
+                                        Why choose Vue JS? 
                                     </p>
                                     <p className="sectionContent text-center">
-                                        Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions.
+                                        The Vue.Js framework has a lot of positives that make it the most popular front-end development framework. 
                                     </p>
                                 </div>
                             </div>
@@ -38,7 +38,7 @@ const Section3 = () => {
                                 {vueJSCards.map((idea, index) => (
                                     <Fade top={index % 2 === 0 ? true : false} bottom={index % 2 === 0 ? false : true} key={idea.id}>
                                         <div
-                                            className={`${isMobile ? "col-12" : "col-4 my-auto"}`}
+                                            className={`${isMobile ? "col-12 mb-3" : "col-4 my-auto"}`}
                                             key={idea.id}
                                             style={!isMobile ? { paddingRight: "20px" } : null}
                                         >

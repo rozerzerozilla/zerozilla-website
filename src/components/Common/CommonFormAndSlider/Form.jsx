@@ -154,8 +154,7 @@ const FormComponent = ({ isMobile, handleFormSubmit, smallerText }) => {
               />
             </div> */}
             <div
-              className={`${isMobile ? "col-12 text-start mt-4" : "col-6 text-end my-auto"
-                }`}
+              className={`col-12`}
             >
               <BookCallButton
                 type="submit"

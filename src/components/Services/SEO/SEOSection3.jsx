@@ -24,7 +24,7 @@ const Section3 = () => {
             <Fade bottom>
             <div className={`row col-12 ${isMobile && "m-0"}`}>
               <p className="section3Head black extra-bold">
-                  Stay in the spotlight with Zerozilla’s enterprise SEO! 
+                  Stay on top of the SEO game!
               </p>
               <p className="sectionContent">
                   Any business today recognizes the value and returns associated with a web page's first-page internet search result for a relevant search query. Hence, businesses today understand the importance of being associated with the best SEO company. At Zerozilla, we take care of all areas of your business related to your ROI and tune them for the expected outcome. As a top SEO company, we offer search engine optimization, local SEO services, and more. 
